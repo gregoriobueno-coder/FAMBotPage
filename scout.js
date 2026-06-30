@@ -678,7 +678,7 @@ async function scoutOneSourcePortal(portal, browser) {
     console.log('Git repository detected. Attempting to sync changes to remote...');
     const { execSync } = require('child_process');
     try {
-      execSync('git add docs/ data/seen_deals.json', { stdio: 'inherit' });
+      execSync('git add index.html flyers/ .nojekyll data/seen_deals.json', { stdio: 'inherit' });
       execSync('git commit -m "Auto-update deals database & static dashboard"', { stdio: 'inherit' });
       
       // Check if remote is configured

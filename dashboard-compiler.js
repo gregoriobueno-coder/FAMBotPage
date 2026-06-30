@@ -671,14 +671,14 @@ function compileStaticDashboard() {
         // Extract filename from pdfUrl if relative path
         const isExternal = deal.pdfUrl.startsWith('http');
         const filename = isExternal ? 'View Original PDF' : deal.pdfUrl.split('/').pop();
-        const displayLink = isExternal ? deal.pdfUrl : \`./downloads/\${filename}\`;
+        const displayLink = isExternal ? deal.pdfUrl : \`./flyers/\${filename}\`;
 
         card.innerHTML = \`
           <div class="card-header">
             <span class="portal-badge \${badgeClass}">\${getPortalLabel(deal.portal)}</span>
             <span class="date-badge">\${formatDate(deal.firstSeen)}</span>
           </div>
-          <h3 class="card-title">\text=\${deal.title || 'FAM Rates Flyer'}</h3>
+          <h3 class="card-title">\${deal.title || 'FAM Rates Flyer'}</h3>
           <div class="card-actions">
             <a href="\${displayLink}" target="_blank" class="btn btn-primary" id="pdf-\${idx}">View Flyer PDF</a>
             <button class="btn btn-secondary" onclick="toggleSummary(\${idx})" id="btn-summary-\${idx}">AI Deals List</button>
@@ -751,28 +751,28 @@ function compileStaticDashboard() {
 </html>
   `;
 
-  const docsDir = path.join(__dirname, 'docs');
-  if (!fs.existsSync(docsDir)) {
-    fs.mkdirSync(docsDir, { recursive: true });
-  }
-
-  // Copy downloaded PDFs to docs/downloads/ for GitHub Pages local path linking
-  const docsDownloadsDir = path.join(docsDir, 'downloads');
-  if (!fs.existsSync(docsDownloadsDir)) {
-    fs.mkdirSync(docsDownloadsDir, { recursive: true });
+  // Copy downloaded PDFs to flyers/ for GitHub Pages local path linking at root
+  const flyersDir = path.join(__dirname, 'flyers');
+  if (!fs.existsSync(flyersDir)) {
+    fs.mkdirSync(flyersDir, { recursive: true });
   }
 
   try {
     const files = fs.readdirSync(downloadsDir);
     for (const file of files) {
-      fs.copyFileSync(path.join(downloadsDir, file), path.join(docsDownloadsDir, file));
+      // Don't copy mock PDFs
+      if (file.startsWith('mock-')) continue;
+      fs.copyFileSync(path.join(downloadsDir, file), path.join(flyersDir, file));
     }
   } catch (err) {
-    console.error('Failed to copy downloads folder:', err.message);
+    console.error('Failed to copy flyers folder:', err.message);
   }
 
-  fs.writeFileSync(path.join(docsDir, 'index.html'), htmlContent, 'utf8');
-  console.log(`Static dashboard successfully compiled to docs/index.html! (Type: ${payloadType})`);
+  // Create .nojekyll file to prevent GitHub from parsing with Jekyll (enabling raw HTML rendering)
+  fs.writeFileSync(path.join(__dirname, '.nojekyll'), '', 'utf8');
+
+  fs.writeFileSync(path.join(__dirname, 'index.html'), htmlContent, 'utf8');
+  console.log(`Static dashboard successfully compiled to index.html at root! (Type: ${payloadType})`);
 }
 
 module.exports = { compileStaticDashboard };
