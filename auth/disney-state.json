@@ -1,0 +1,45 @@
+{
+  "cookies": [
+    {
+      "name": "ADRUM",
+      "value": "s=1782663061775&r=https%3A%2F%2Fwww.disneytravelagents.com%2F%3F1906785930",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_sv",
+      "value": "3F50911C9044A58404696E2807FD3170~YAAQspI6F8FZzP6eAQAAktUjDwCR5IBLNHLROYzTCcvP5hHPHRM88Y7j+gnAd821g40lQV7YtxsbrviQu3Ffl2xL1reOeIhB/SuoJo3rDUf6OH89UkDcEUEkr05vbI4RZ90F1lA4h6Y7nAguLKbi7kY4pZkFfPCFBm1KAsNQ3KK1yOA6IUsVDi1O9hvJO/mG9Rj8F4Jb34bFZ848vI7cc6lIC4HP/lRx9FH0NtnZnY8uqxwjnoxJ6RQ55B1BC3D2ZB0xbco8YsrDKvIovA==~1",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": 1782670257.459375,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "bm_mi",
+      "value": "16151DAEF04F999D2C213C910E90B54F~YAAQr5I6F1071wafAQAAFJP/DgBfV/2xjOB7r588zGped4AZbLAlR6Trcewsts25P5iKybCcfOheyDs0HY0w6X+FpId27slraxho5P1ZW/D9tbB9hRSV70MaLGzIlp88RmaQYnuqPrIwXkM+Zn3rfOlDeFmWICLtfILYCWNTXMU3NWYcvgLT4fr22vN1QGUXROBPW0wyisO8AXa1qi+lPPw1APFVgR0Xp5PSkd6Bpbd2j8sq1dBcCwVKKeMXdW1ZVJK0C1LLPt7oo2ddJWjiPi2MP+CoepGUNHcbz51Ya4/uj7nLVJg67aAlktRqNtD1UW0DyduMoaef4Q==~1",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": 1782670258.116873,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "PHPSESSID",
+      "value": "f13a80ba42b5f65bf07752904c51710a",
+      "domain": "agentcentral.disneytravelagents.com",
+      "path": "/",
+      "expires": 1782669034.45934,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

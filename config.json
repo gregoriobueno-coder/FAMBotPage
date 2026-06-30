@@ -1,0 +1,63 @@
+{
+  "portals": [
+    {
+      "name": "disney",
+      "displayName": "Disney Travel Agents",
+      "loginUrl": "https://agentcentral.disneytravelagents.com/benefits/list",
+      "url": "https://agentcentral.disneytravelagents.com/benefits/list",
+      "type": "pdf",
+      "selectors": {
+        "checkLoggedIn": ".user-profile-menu, .logout-link, a[href*='logout']",
+        "pdfLink": "a[href*='dcl'], a[href$='.pdf']",
+        "usernameInput": "input[name='username'], #username, input[type='email']:not([id*='create']), input[name='email']:not([id*='create'])",
+        "passwordInput": "input[type='password'], #password",
+        "submitButton": "button[type='submit']"
+      }
+    },
+    {
+      "name": "virgin",
+      "displayName": "Virgin Voyages First Mates",
+      "loginUrl": "https://www.firstmates.com/fmrates",
+      "url": "https://www.firstmates.com/fmrates",
+      "type": "pdf",
+      "selectors": {
+        "checkLoggedIn": ".user-profile, .logout, a[href*='logout']",
+        "pdfLink": "a[href*='rates'], a[href$='.pdf']",
+        "preLoginClick": "text=SIGN IN",
+        "usernameInput": "input[name='username'], input[type='email'], #username",
+        "passwordInput": "input[name='password'], input[type='password'], #password",
+        "submitButton": "button[type='submit']"
+      }
+    },
+    {
+      "name": "onesource",
+      "displayName": "OneSource (Princess/Holland/Cunard)",
+      "loginUrl": "https://www.onesourcecruises.com/onesource/login",
+      "url": "https://www.onesourcecruises.com/onesource/home/pages/other/travel-advisor-rates",
+      "type": "pdf",
+      "selectors": {
+        "checkLoggedIn": "text=Sign Out",
+        "usernameInput": "#userName",
+        "passwordInput": "#password",
+        "submitButton": "button[type='submit']"
+      }
+    },
+    {
+      "name": "cruisingpower",
+      "displayName": "Cruising Power (Royal Caribbean)",
+      "loginUrl": "https://secure.cruisingpower.com/login",
+      "url": "https://secure.cruisingpower.com/login",
+      "type": "table",
+      "selectors": {
+        "checkLoggedIn": ".logout-btn, #logout, a[href*='logout']",
+        "tableRow": "table tbody tr",
+        "shipCell": "td:nth-child(1)",
+        "dateCell": "td:nth-child(2)",
+        "rateCell": "td:nth-child(3)",
+        "usernameInput": "#username, input[name='username']",
+        "passwordInput": "#password, input[name='password']",
+        "submitButton": "#login-btn, button[type='submit']"
+      }
+    }
+  ]
+}

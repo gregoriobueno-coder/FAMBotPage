@@ -1,0 +1,25 @@
+{
+  "name": "fam-scout",
+  "version": "1.0.0",
+  "description": "Headless scraper to monitor cruise FAM trip portals",
+  "main": "scout.js",
+  "scripts": {
+    "auth": "node auth.js",
+    "inspect": "node inspect.js",
+    "start": "node scout.js",
+    "mock": "node mock-server.js",
+    "verify": "node verify.js",
+    "dashboard": "node dashboard-server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.6.8",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-notifier": "^10.0.1",
+    "nodemailer": "^6.9.13",
+    "pdf-parse": "^1.1.1",
+    "playwright": "^1.44.1"
+  }
+}

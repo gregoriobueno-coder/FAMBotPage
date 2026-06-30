@@ -1,0 +1,20 @@
+# Dependency directories
+node_modules/
+.npm-cache/
+
+# Local environment and secret credentials files
+.env
+*cookies.json
+data/credentials.enc
+
+# Logs
+*.log
+scout-error.log
+scout-output.log
+
+# Local downloads (dashboard uses copies in docs/downloads/)
+downloads/
+
+# OS specific files
+.DS_Store
+Thumbs.db
