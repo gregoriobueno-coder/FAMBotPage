@@ -7,6 +7,7 @@ function compileStaticDashboard() {
   const dataDir = path.join(__dirname, 'data');
   const downloadsDir = path.join(__dirname, 'downloads');
   const seenDealsPath = path.join(dataDir, 'seen_deals.json');
+  
   if (!fs.existsSync(seenDealsPath)) {
     console.log('No deals database found to compile.');
     return;
@@ -18,9 +19,55 @@ function compileStaticDashboard() {
   });
   uniqueDeals.sort((a, b) => new Date(b.firstSeen) - new Date(a.firstSeen));
 
-  const dealsJson = JSON.stringify(uniqueDeals);
+  // Extract individual sailings from the Gemini summaries
+  const allSailings = [];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  for (const deal of uniqueDeals) {
+    if (!deal.summary) continue;
+
+    const lines = deal.summary.split('\n').map(l => l.trim()).filter(l => l);
+    for (const line of lines) {
+      if (line.includes('|-') || line.toLowerCase().includes('sail date')) continue;
+      
+      const cells = line.split('|').map(c => c.trim()).filter((c, i, a) => i > 0 && i < a.length - 1);
+      if (cells.length < 5) continue;
+
+      const [sailDateStr, ship, nightsStr, itinerary, category, priceStr] = cells;
+      
+      // Parse date
+      const sailDate = new Date(sailDateStr);
+      const isExpired = !isNaN(sailDate.getTime()) && sailDate < today;
+      
+      if (isExpired) {
+        // Skip expired sailings at compile time
+        continue;
+      }
+
+      // Format filename for local linking
+      const isExternal = deal.pdfUrl.startsWith('http');
+      const filename = isExternal ? 'View Original PDF' : deal.pdfUrl.split('/').pop();
+      const displayLink = isExternal ? deal.pdfUrl : `./flyers/${filename}`;
+
+      allSailings.push({
+        portal: deal.portal,
+        pdfUrl: displayLink,
+        sailDateStr,
+        sailDateObj: !isNaN(sailDate.getTime()) ? sailDate.getTime() : null,
+        ship,
+        nights: parseInt(nightsStr) || 0,
+        itinerary,
+        category,
+        priceStr,
+        price: parseInt(priceStr.replace(/[^0-9]/g, '')) || 0
+      });
+    }
+  }
+
+  const payloadJson = JSON.stringify(allSailings);
   let payloadType = 'plaintext';
-  let payloadData = Buffer.from(dealsJson).toString('base64');
+  let payloadData = Buffer.from(payloadJson).toString('base64');
   let saltBase64 = '';
   let ivBase64 = '';
 
@@ -29,13 +76,12 @@ function compileStaticDashboard() {
     console.log('Encrypting static dashboard payload...');
     payloadType = 'encrypted';
     
-    // Encrypt the JSON data using AES-GCM
     const salt = crypto.randomBytes(16);
     const iv = crypto.randomBytes(12);
     const key = crypto.pbkdf2Sync(password, salt, 100000, 32, 'sha256');
     const cipher = crypto.createCipheriv('aes-256-gcm', key, iv);
     
-    const encrypted = Buffer.concat([cipher.update(dealsJson, 'utf8'), cipher.final()]);
+    const encrypted = Buffer.concat([cipher.update(payloadJson, 'utf8'), cipher.final()]);
     const tag = cipher.getAuthTag();
 
     const ciphertext = Buffer.concat([encrypted, tag]);
@@ -50,7 +96,7 @@ function compileStaticDashboard() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAM Scout - Travel Agent Rates Dashboard</title>
+  <title>FAM Scout - Master Cruise Rates Dashboard</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,7 +134,7 @@ function compileStaticDashboard() {
     }
 
     .container {
-      max-width: 1300px;
+      max-width: 1400px;
       margin: 0 auto;
       display: none; /* Hidden until authenticated */
     }
@@ -222,34 +268,73 @@ function compileStaticDashboard() {
       font-size: 0.95rem;
     }
 
-    .stats-badge {
-      background: rgba(79, 172, 254, 0.15);
-      border: 1px solid rgba(79, 172, 254, 0.3);
-      border-radius: 12px;
-      padding: 0.6rem 1.2rem;
-      font-size: 0.9rem;
-      color: var(--neon-blue);
-      font-weight: 600;
+    /* Dashboard Metrics Row */
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
     }
 
-    /* Controls Panel */
-    .controls-panel {
+    .metric-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       backdrop-filter: blur(16px);
       border-radius: 20px;
       padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .metric-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+      height: 2px;
+      background: linear-gradient(to right, var(--neon-blue), var(--neon-teal));
+      opacity: 0.5;
+    }
+
+    .metric-label {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .metric-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    /* Filters Layout */
+    .filter-panel {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
+      padding: 2rem;
       margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .filter-row-top {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
       align-items: center;
-      justify-content: space-between;
     }
 
     .search-wrapper {
-      position: relative;
-      flex: 1;
+      flex: 2;
       min-width: 300px;
     }
 
@@ -258,7 +343,7 @@ function compileStaticDashboard() {
       background: rgba(7, 10, 19, 0.6);
       border: 1px solid var(--card-border);
       border-radius: 12px;
-      padding: 0.8rem 1rem;
+      padding: 0.9rem 1.2rem;
       color: var(--text-main);
       font-size: 0.95rem;
       outline: none;
@@ -267,6 +352,7 @@ function compileStaticDashboard() {
 
     .search-input:focus {
       border-color: var(--neon-blue);
+      box-shadow: 0 0 15px rgba(79, 172, 254, 0.2);
     }
 
     .filter-tabs {
@@ -276,10 +362,10 @@ function compileStaticDashboard() {
     }
 
     .filter-tab {
-      background: transparent;
+      background: rgba(255, 255, 255, 0.03);
       border: 1px solid var(--card-border);
       border-radius: 10px;
-      padding: 0.6rem 1.1rem;
+      padding: 0.65rem 1.2rem;
       color: var(--text-muted);
       cursor: pointer;
       font-size: 0.88rem;
@@ -298,139 +384,68 @@ function compileStaticDashboard() {
       color: var(--bg-dark);
     }
 
-    /* Deals Grid */
-    .deals-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-      gap: 1.5rem;
+    /* Sub-filters (Nights and Price sliders) */
+    .filter-row-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 1.5rem;
     }
 
-    .deal-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      backdrop-filter: blur(16px);
-      border-radius: 20px;
-      padding: 1.5rem;
-      position: relative;
-      overflow: hidden;
-      transition: var(--transition);
+    .slider-container {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      gap: 0.5rem;
+      min-width: 280px;
+      flex: 1;
     }
 
-    .deal-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4px;
-      height: 100%;
-      background: linear-gradient(to bottom, var(--neon-blue), var(--neon-teal));
-      opacity: 0.7;
-    }
-
-    .deal-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(79, 172, 254, 0.4);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-    }
-
-    .card-header {
+    .slider-label-row {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 1rem;
-    }
-
-    .portal-badge {
-      border-radius: 8px;
-      padding: 0.3rem 0.6rem;
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .badge-disney { background: rgba(248, 87, 166, 0.15); color: var(--neon-pink); }
-    .badge-virgin { background: rgba(255, 68, 68, 0.15); color: #ff4444; }
-    .badge-onesource { background: rgba(79, 172, 254, 0.15); color: var(--neon-blue); }
-
-    .date-badge {
-      color: var(--text-muted);
-      font-size: 0.8rem;
-    }
-
-    .card-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      line-height: 1.4;
-      flex-grow: 1;
-    }
-
-    .card-actions {
-      display: flex;
-      gap: 0.8rem;
-      margin-top: 1rem;
-    }
-
-    .btn {
-      flex: 1;
-      padding: 0.65rem 1rem;
-      border-radius: 10px;
       font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      transition: var(--transition);
+      color: var(--text-muted);
+    }
+
+    .slider-control {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.1);
       outline: none;
     }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--neon-blue), var(--neon-teal));
-      color: var(--bg-dark);
-      border: none;
+    .slider-control::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--neon-blue);
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(79, 172, 254, 0.5);
+      transition: var(--transition);
     }
 
-    .btn-primary:hover {
-      box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+    .slider-control::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
     }
 
-    .btn-secondary {
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--text-main);
+    /* Master Table Card */
+    .table-card {
+      background: var(--card-bg);
       border: 1px solid var(--card-border);
-    }
-
-    /* Expander summary */
-    .summary-section {
-      max-height: 0;
+      backdrop-filter: blur(16px);
+      border-radius: 24px;
       overflow: hidden;
-      transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
-      background: rgba(7, 10, 19, 0.4);
-      border-radius: 12px;
-      margin-top: 1rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     }
 
-    .summary-section.expanded {
-      max-height: 1000px;
-      transition: max-height 0.4s cubic-bezier(1, 0, 1, 0);
-      border: 1px solid var(--card-border);
-      padding: 1rem;
-    }
-
-    .summary-section h4 {
-      font-size: 0.88rem;
-      color: var(--neon-blue);
-      margin-bottom: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .table-container {
+    .table-wrapper {
       width: 100%;
       overflow-x: auto;
     }
@@ -438,34 +453,104 @@ function compileStaticDashboard() {
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.8rem;
-      margin-top: 0.5rem;
+      text-align: left;
     }
 
     th, td {
-      padding: 0.5rem 0.75rem;
-      text-align: left;
+      padding: 1.2rem 1.5rem;
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     th {
-      color: var(--neon-teal);
+      font-family: 'Outfit', sans-serif;
       font-weight: 600;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      user-select: none;
+      background: rgba(255, 255, 255, 0.02);
+      transition: var(--transition);
     }
 
-    tr:hover {
-      background: rgba(255, 255, 255, 0.03);
+    th:hover {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
     }
 
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-      }
-      .controls-panel {
-        flex-direction: column;
-        align-items: stretch;
+    th.active-sort {
+      color: var(--neon-teal);
+    }
+
+    td {
+      font-size: 0.95rem;
+      vertical-align: middle;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.015);
+    }
+
+    /* Badges & Accents */
+    .portal-badge {
+      border-radius: 8px;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .badge-disney { background: rgba(248, 87, 166, 0.15); color: var(--neon-pink); }
+    .badge-virgin { background: rgba(255, 68, 68, 0.15); color: #ff4444; }
+    .badge-onesource { background: rgba(79, 172, 254, 0.15); color: var(--neon-blue); }
+
+    .price-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--neon-teal);
+      font-size: 1.1rem;
+    }
+
+    .btn-pdf {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text-main);
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .btn-pdf:hover {
+      background: linear-gradient(135deg, var(--neon-blue), var(--neon-teal));
+      border-color: transparent;
+      color: var(--bg-dark);
+      box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+    }
+
+    /* Empty state */
+    .no-results {
+      text-align: center;
+      padding: 5rem 2rem;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 992px) {
+      td, th {
+        padding: 0.9rem 1.1rem;
       }
     }
   </style>
@@ -489,41 +574,104 @@ function compileStaticDashboard() {
         <h1>Wandering Bear FAM Scout</h1>
         <p>Interactive Cruise Rates & Special Incentives Monitor</p>
       </div>
-      <div class="stats-badge" id="stats-badge">Total Active Deals: 0</div>
+      <div class="stats-badge" id="last-updated">Real-time Rates</div>
     </header>
 
-    <div class="controls-panel">
-      <div class="search-wrapper">
-        <input type="text" id="search-bar" class="search-input" placeholder="Search by Ship, Itinerary, or Document Title..." oninput="filterDeals()">
+    <!-- Metrics Summary Cards -->
+    <div class="metrics-row">
+      <div class="metric-card">
+        <span class="metric-label">Active FAM Sailing Deals</span>
+        <span class="metric-value" id="metric-deals">0</span>
       </div>
-      
-      <div class="filter-tabs">
-        <button class="filter-tab active" onclick="setBrandFilter('all')">All Brands</button>
-        <button class="filter-tab" onclick="setBrandFilter('disney')">Disney</button>
-        <button class="filter-tab" onclick="setBrandFilter('virgin')">Virgin Voyages</button>
-        <button class="filter-tab" onclick="setBrandFilter('princess')">Princess</button>
-        <button class="filter-tab" onclick="setBrandFilter('holland')">Holland America</button>
-        <button class="filter-tab" onclick="setBrandFilter('cunard')">Cunard</button>
-        <button class="filter-tab" onclick="setBrandFilter('seabourn')">Seabourn</button>
+      <div class="metric-card">
+        <span class="metric-label">Lowest Price Deal</span>
+        <span class="metric-value" id="metric-min-price">$0</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Average Cruise Rate</span>
+        <span class="metric-value" id="metric-avg-price">$0</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Brands Monitored</span>
+        <span class="metric-value" id="metric-brands">6</span>
       </div>
     </div>
 
-    <div class="deals-grid" id="deals-grid">
-      <!-- Deals injected dynamically -->
+    <!-- Interactive Filters Dashboard -->
+    <div class="filter-panel">
+      <div class="filter-row-top">
+        <div class="search-wrapper">
+          <input type="text" id="search-bar" class="search-input" placeholder="Search by Ship, Itinerary, or Category..." oninput="filterAndRender()">
+        </div>
+        
+        <div class="filter-tabs">
+          <button class="filter-tab active" onclick="setBrandFilter('all')">All Brands</button>
+          <button class="filter-tab" onclick="setBrandFilter('disney')">Disney</button>
+          <button class="filter-tab" onclick="setBrandFilter('virgin')">Virgin Voyages</button>
+          <button class="filter-tab" onclick="setBrandFilter('princess')">Princess</button>
+          <button class="filter-tab" onclick="setBrandFilter('holland')">Holland America</button>
+          <button class="filter-tab" onclick="setBrandFilter('cunard')">Cunard</button>
+          <button class="filter-tab" onclick="setBrandFilter('seabourn')">Seabourn</button>
+        </div>
+      </div>
+
+      <div class="filter-row-bottom">
+        <div class="slider-container">
+          <div class="slider-label-row">
+            <span>Max Price limit</span>
+            <span id="price-slider-val">$5000</span>
+          </div>
+          <input type="range" id="price-slider" class="slider-control" min="0" max="5000" step="50" value="5000" oninput="updateSliders()">
+        </div>
+
+        <div class="slider-container">
+          <div class="slider-label-row">
+            <span>Max Nights Limit</span>
+            <span id="nights-slider-val">20 Nights</span>
+          </div>
+          <input type="range" id="nights-slider" class="slider-control" min="1" max="21" step="1" value="21" oninput="updateSliders()">
+        </div>
+      </div>
+    </div>
+
+    <!-- Unified Master Table Card -->
+    <div class="table-card">
+      <div class="table-wrapper">
+        <table id="sailings-table">
+          <thead>
+            <tr>
+              <th onclick="toggleSort('portal')" id="th-portal">Brand</th>
+              <th onclick="toggleSort('sailDateObj')" id="th-sailDateObj" class="active-sort">Sail Date</th>
+              <th onclick="toggleSort('nights')" id="th-nights">Nights</th>
+              <th onclick="toggleSort('ship')" id="th-ship">Ship</th>
+              <th onclick="toggleSort('itinerary')" id="th-itinerary">Itinerary</th>
+              <th onclick="toggleSort('category')" id="th-category">Cabin Category</th>
+              <th onclick="toggleSort('price')" id="th-price">Rate</th>
+              <th>PDF Flyer</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <!-- Populated dynamically -->
+          </tbody>
+        </table>
+        <div class="no-results" id="no-results-view" style="display: none;">
+          No matching active sailings found. Try refining your filters!
+        </div>
+      </div>
     </div>
   </div>
 
   <script>
-    // Embedded Payload Config
     window.PAYLOAD_TYPE = "${payloadType}";
     window.PAYLOAD_DATA = "${payloadData}";
     window.PAYLOAD_SALT = "${saltBase64}";
     window.PAYLOAD_IV = "${ivBase64}";
 
-    let allDeals = [];
+    let allSailings = [];
     let currentBrand = 'all';
+    let currentSort = { column: 'sailDateObj', direction: 'asc' };
 
-    // Base64 to ArrayBuffer helper
+    // Decryption helpers
     function base64ToArrayBuffer(base64) {
       const binaryString = window.atob(base64);
       const len = binaryString.length;
@@ -534,7 +682,6 @@ function compileStaticDashboard() {
       return bytes.buffer;
     }
 
-    // Client-side AES-GCM PBKDF2 Decryption
     async function decryptPayload(password) {
       const salt = base64ToArrayBuffer(window.PAYLOAD_SALT);
       const iv = base64ToArrayBuffer(window.PAYLOAD_IV);
@@ -583,14 +730,12 @@ function compileStaticDashboard() {
       const password = field.value;
 
       try {
-        allDeals = await decryptPayload(password);
+        allSailings = await decryptPayload(password);
         
-        // Hide lock screen, show dashboard
         document.getElementById('lock-screen').style.display = 'none';
         document.getElementById('main-container').style.display = 'block';
         
-        document.getElementById('stats-badge').innerText = \`Total Active Deals: \${allDeals.length}\`;
-        renderDeals(allDeals);
+        initializeData();
       } catch (err) {
         console.error(err);
         card.classList.add('shake');
@@ -599,112 +744,70 @@ function compileStaticDashboard() {
       }
     }
 
-    // Format Date helper
+    // Helper functions
     function formatDate(dateStr) {
       const date = new Date(dateStr);
-      return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' });
-    }
-
-    // Parse Markdown table helper
-    function parseMarkdownTable(markdown) {
-      if (!markdown) return '<p style="color: var(--text-muted); font-size: 0.8rem;">No AI Summarized deals found inside this document.</p>';
-      
-      const lines = markdown.split('\\n').map(l => l.trim()).filter(l => l);
-      if (lines.length === 0) return '';
-      
-      let html = '<table>';
-      let hasHeader = false;
-      
-      for (const line of lines) {
-        if (line.includes('|-')) continue;
-        
-        const cells = line.split('|').map(c => c.trim()).filter((c, i, a) => i > 0 && i < a.length - 1);
-        if (cells.length === 0) continue;
-        
-        if (!hasHeader) {
-          html += '<thead><tr>';
-          for (const cell of cells) {
-            html += \`<th>\${cell}</th>\`;
-          }
-          html += '</tr></thead><tbody>';
-          hasHeader = true;
-        } else {
-          html += '<tr>';
-          for (const cell of cells) {
-            html += \`<td>\${cell}</td>\`;
-          }
-          html += '</tr>';
-        }
-      }
-      if (hasHeader) html += '</tbody>';
-      html += '</table>';
-      return html;
+      if (isNaN(date.getTime())) return dateStr;
+      return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     }
 
     function getPortalLabel(portal) {
-      if (portal === 'disney') return 'Disney Cruise';
-      if (portal === 'virgin') return 'Virgin Voyages';
-      if (portal.includes('princess')) return 'Princess Cruises';
-      if (portal.includes('holland')) return 'Holland America';
-      if (portal.includes('cunard')) return 'Cunard Line';
+      if (portal === 'disney') return 'Disney';
+      if (portal === 'virgin') return 'Virgin';
+      if (portal.includes('princess')) return 'Princess';
+      if (portal.includes('holland')) return 'Holland';
+      if (portal.includes('cunard')) return 'Cunard';
       if (portal.includes('seabourn')) return 'Seabourn';
       return portal;
     }
 
-    function renderDeals(deals) {
-      const grid = document.getElementById('deals-grid');
-      grid.innerHTML = '';
-
-      if (deals.length === 0) {
-        grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 4rem;">No matching deals found.</div>';
-        return;
-      }
-
-      deals.forEach((deal, idx) => {
-        const card = document.createElement('div');
-        card.className = 'deal-card';
-        
-        let badgeClass = 'badge-onesource';
-        if (deal.portal === 'disney') badgeClass = 'badge-disney';
-        else if (deal.portal === 'virgin') badgeClass = 'badge-virgin';
-
-        // Extract filename from pdfUrl if relative path
-        const isExternal = deal.pdfUrl.startsWith('http');
-        const filename = isExternal ? 'View Original PDF' : deal.pdfUrl.split('/').pop();
-        const displayLink = isExternal ? deal.pdfUrl : \`./flyers/\${filename}\`;
-
-        card.innerHTML = \`
-          <div class="card-header">
-            <span class="portal-badge \${badgeClass}">\${getPortalLabel(deal.portal)}</span>
-            <span class="date-badge">\${formatDate(deal.firstSeen)}</span>
-          </div>
-          <h3 class="card-title">\${deal.title || 'FAM Rates Flyer'}</h3>
-          <div class="card-actions">
-            <a href="\${displayLink}" target="_blank" class="btn btn-primary" id="pdf-\${idx}">View Flyer PDF</a>
-            <button class="btn btn-secondary" onclick="toggleSummary(\${idx})" id="btn-summary-\${idx}">AI Deals List</button>
-          </div>
-          <div class="summary-section" id="summary-\${idx}">
-            <h4>🎯 Active Rates List (AI Parsed)</h4>
-            <div class="table-container">
-              \${parseMarkdownTable(deal.summary)}
-            </div>
-          </div>
-        \`;
-        grid.appendChild(card);
-      });
+    function getBrandBadgeClass(portal) {
+      if (portal === 'disney') return 'badge-disney';
+      if (portal === 'virgin') return 'badge-virgin';
+      return 'badge-onesource';
     }
 
-    function toggleSummary(idx) {
-      const panel = document.getElementById(\`summary-\${idx}\`);
-      const btn = document.getElementById(\`btn-summary-\${idx}\`);
+    // Main execution
+    function initializeData() {
+      // Clean dates: filter out expired cruise dates dynamically based on client calendar
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      allSailings = allSailings.filter(s => {
+        if (!s.sailDateObj) return true; // Fail-safe
+        return new Date(s.sailDateObj) >= today;
+      });
+
+      // Calculate max price and nights to auto-configure sliders max values
+      const prices = allSailings.map(s => s.price).filter(p => p > 0);
+      const maxPrice = prices.length ? Math.max(...prices) : 3000;
       
-      if (panel.classList.contains('expanded')) {
-        panel.classList.remove('expanded');
-        btn.innerText = 'AI Deals List';
-      } else {
-        panel.classList.add('expanded');
-        btn.innerText = 'Close Summary';
+      const slider = document.getElementById('price-slider');
+      slider.max = maxPrice;
+      slider.value = maxPrice;
+      document.getElementById('price-slider-val').innerText = '$' + maxPrice;
+
+      // Populate metrics
+      document.getElementById('metric-deals').innerText = allSailings.length;
+      
+      if (prices.length) {
+        const minPrice = Math.min(...prices);
+        const avgPrice = Math.round(prices.reduce((a, b) => a + b, 0) / prices.length);
+        document.getElementById('metric-min-price').innerText = '$' + minPrice;
+        document.getElementById('metric-avg-price').innerText = '$' + avgPrice;
       }
+
+      filterAndRender();
+    }
+
+    function updateSliders() {
+      const priceVal = document.getElementById('price-slider').value;
+      const nightsVal = document.getElementById('nights-slider').value;
+      
+      document.getElementById('price-slider-val').innerText = '$' + priceVal;
+      document.getElementById('nights-slider-val').innerText = nightsVal == 21 ? '20+ Nights' : nightsVal + ' Nights';
+      
+      filterAndRender();
     }
 
     function setBrandFilter(brand) {
@@ -717,41 +820,107 @@ function compileStaticDashboard() {
           tab.classList.remove('active');
         }
       });
-      filterDeals();
+      filterAndRender();
     }
 
-    function filterDeals() {
+    function toggleSort(column) {
+      if (currentSort.column === column) {
+        currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+      } else {
+        currentSort.column = column;
+        currentSort.direction = 'asc';
+      }
+
+      // Update active header styling
+      document.querySelectorAll('th').forEach(th => th.classList.remove('active-sort'));
+      document.getElementById('th-' + column).classList.add('active-sort');
+
+      filterAndRender();
+    }
+
+    function filterAndRender() {
       const query = document.getElementById('search-bar').value.toLowerCase();
-      
-      const filtered = allDeals.filter(deal => {
+      const maxPrice = parseInt(document.getElementById('price-slider').value) || 99999;
+      const maxNights = parseInt(document.getElementById('nights-slider').value) || 99;
+
+      let filtered = allSailings.filter(s => {
+        // Brand filter
         let brandMatch = false;
         if (currentBrand === 'all') brandMatch = true;
-        else if (currentBrand === 'disney') brandMatch = deal.portal === 'disney';
-        else if (currentBrand === 'virgin') brandMatch = deal.portal === 'virgin';
-        else brandMatch = deal.portal.includes(currentBrand);
+        else if (currentBrand === 'disney') brandMatch = s.portal === 'disney';
+        else if (currentBrand === 'virgin') brandMatch = s.portal === 'virgin';
+        else brandMatch = s.portal.includes(currentBrand);
 
-        const textMatch = (deal.title || '').toLowerCase().includes(query) || 
-                          (deal.summary || '').toLowerCase().includes(query) || 
-                          (deal.portal || '').toLowerCase().includes(query);
+        // Slider filters
+        const priceMatch = s.price === 0 || s.price <= maxPrice;
+        const nightsMatch = s.nights === 0 || s.nights <= (maxNights === 21 ? 999 : maxNights);
 
-        return brandMatch && textMatch;
+        // Search text match
+        const textMatch = (s.ship || '').toLowerCase().includes(query) || 
+                          (s.itinerary || '').toLowerCase().includes(query) || 
+                          (s.category || '').toLowerCase().includes(query) ||
+                          (s.portal || '').toLowerCase().includes(query);
+
+        return brandMatch && priceMatch && nightsMatch && textMatch;
       });
 
-      renderDeals(filtered);
+      // Apply sorting
+      filtered.sort((a, b) => {
+        let valA = a[currentSort.column];
+        let valB = b[currentSort.column];
+
+        // Handle nulls
+        if (valA === null || valA === undefined) return 1;
+        if (valB === null || valB === undefined) return -1;
+
+        if (typeof valA === 'string') {
+          return currentSort.direction === 'asc' 
+            ? valA.localeCompare(valB) 
+            : valB.localeCompare(valA);
+        } else {
+          return currentSort.direction === 'asc' 
+            ? valA - valB 
+            : valB - valA;
+        }
+      });
+
+      // Render table
+      const tbody = document.getElementById('table-body');
+      tbody.innerHTML = '';
+
+      if (filtered.length === 0) {
+        document.getElementById('no-results-view').style.display = 'block';
+        return;
+      }
+      document.getElementById('no-results-view').style.display = 'none';
+
+      filtered.forEach(s => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = \`
+          <td><span class="portal-badge \${getBrandBadgeClass(s.portal)}">\${getPortalLabel(s.portal)}</span></td>
+          <td><strong>\${formatDate(s.sailDateStr)}</strong></td>
+          <td>\${s.nights} Nights</td>
+          <td>\${s.ship}</td>
+          <td>\${s.itinerary}</td>
+          <td>\${s.category}</td>
+          <td><span class="price-value">\${s.priceStr}</span></td>
+          <td><a href="\${s.pdfUrl}" target="_blank" class="btn-pdf">Flyer PDF</a></td>
+        \`;
+        tbody.appendChild(tr);
+      });
     }
 
     // Initialize plaintext immediately if unencrypted
     if (window.PAYLOAD_TYPE === 'plaintext') {
-      allDeals = JSON.parse(window.atob(window.PAYLOAD_DATA));
-      document.getElementById('stats-badge').innerText = \`Total Active Deals: \${allDeals.length}\`;
-      renderDeals(allDeals);
+      allSailings = JSON.parse(window.atob(window.PAYLOAD_DATA));
+      initializeData();
     }
   </script>
 </body>
 </html>
   `;
 
-  // Copy downloaded PDFs to flyers/ for GitHub Pages local path linking at root
+  // Copy downloaded PDFs to flyers/ for GitHub Pages local path linking
   const flyersDir = path.join(__dirname, 'flyers');
   if (!fs.existsSync(flyersDir)) {
     fs.mkdirSync(flyersDir, { recursive: true });
@@ -760,7 +929,6 @@ function compileStaticDashboard() {
   try {
     const files = fs.readdirSync(downloadsDir);
     for (const file of files) {
-      // Don't copy mock PDFs
       if (file.startsWith('mock-')) continue;
       fs.copyFileSync(path.join(downloadsDir, file), path.join(flyersDir, file));
     }
@@ -768,9 +936,10 @@ function compileStaticDashboard() {
     console.error('Failed to copy flyers folder:', err.message);
   }
 
-  // Create .nojekyll file to prevent GitHub from parsing with Jekyll (enabling raw HTML rendering)
+  // Create .nojekyll file to prevent Jekyll processing
   fs.writeFileSync(path.join(__dirname, '.nojekyll'), '', 'utf8');
 
+  // Write new HTML file
   fs.writeFileSync(path.join(__dirname, 'index.html'), htmlContent, 'utf8');
   console.log(`Static dashboard successfully compiled to index.html at root! (Type: ${payloadType})`);
 }
