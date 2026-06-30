@@ -283,14 +283,16 @@ function compileStaticDashboard() {
     }
 
     .header-logo {
-      height: 70px;
+      height: 90px;
+      width: auto;
       object-fit: contain;
+      filter: drop-shadow(0 4px 10px rgba(43, 24, 16, 0.08));
     }
 
     .brand-section h1 {
       font-family: 'Outfit', sans-serif;
       font-weight: 800;
-      font-size: 2.1rem;
+      font-size: 2.3rem;
       color: var(--espresso);
       margin-bottom: 0.1rem;
     }
@@ -835,13 +837,22 @@ function compileStaticDashboard() {
       }
     }
 
-    /* Empty view */
+    /* Empty view & Footnotes */
     .no-results {
       text-align: center;
       padding: 5rem 2rem;
       color: var(--cocoa-gray);
       font-size: 1.1rem;
       font-weight: 600;
+    }
+
+    .table-footnote {
+      padding: 1.2rem 1.5rem;
+      font-size: 0.82rem;
+      color: var(--cocoa-gray);
+      border-top: 1px solid var(--card-border);
+      background: rgba(43, 24, 16, 0.005);
+      font-style: italic;
     }
   </style>
 </head>
@@ -850,7 +861,7 @@ function compileStaticDashboard() {
   <div class="lock-screen" id="lock-screen" style="display: ${payloadType === 'encrypted' ? 'flex' : 'none'};">
     <div class="lock-card" id="lock-card">
       <div class="lock-logo-wrapper">
-        ${hasLogo ? `<img src="./logo.png" alt="Wandering Bear Logo" class="lock-logo">` : `<span style="font-size:4rem;">🐻</span>`}
+        ${hasLogo ? `<img src="logo.png" alt="Wandering Bear Logo" class="lock-logo">` : `<span style="font-size:4rem;">🐻</span>`}
       </div>
       <h2>Secure Access</h2>
       <p>Please enter your credentials password to load the FAM rates dashboard.</p>
@@ -863,7 +874,7 @@ function compileStaticDashboard() {
   <div class="container" id="main-container" style="display: ${payloadType === 'plaintext' ? 'block' : 'none'};">
     <header>
       <div class="brand-section">
-        ${hasLogo ? `<img src="./logo.png" alt="Wandering Bear Logo" class="header-logo">` : `<span style="font-size:3rem;">🐻</span>`}
+        ${hasLogo ? `<img src="logo.png" alt="Wandering Bear Logo" class="header-logo">` : `<span style="font-size:3rem;">🐻</span>`}
         <div>
           <h1>Wandering Bear FAM Scout</h1>
           <p>Interactive Cruise Rates & Special Incentives Monitor</p>
@@ -963,7 +974,7 @@ function compileStaticDashboard() {
               <th onclick="toggleSort('ship')" id="th-ship">Ship</th>
               <th onclick="toggleSort('itinerary')" id="th-itinerary">Itinerary</th>
               <th onclick="toggleSort('category')" id="th-category">Cabin Category</th>
-              <th onclick="toggleSort('price')" id="th-price">Rate</th>
+              <th onclick="toggleSort('price')" id="th-price">Rate (PP)*</th>
               <th onclick="toggleSort('dealScore')" id="th-dealScore">Deal Score</th>
               <th>AI Insight</th>
               <th>Actions</th>
@@ -973,6 +984,9 @@ function compileStaticDashboard() {
             <!-- Populated dynamically -->
           </tbody>
         </table>
+        <div class="table-footnote">
+          * Note: Rates are listed Per Person (PP) double occupancy in USD, unless explicitly stated otherwise in the original flyer notes.
+        </div>
         <div class="no-results" id="no-results-view" style="display: none;">
           No matching active sailings found. Try refining your filters!
         </div>
@@ -987,7 +1001,7 @@ function compileStaticDashboard() {
       
       <!-- Styled Branded Quote Card -->
       <div class="quote-card" id="printable-quote">
-        ${hasLogo ? `<img src="./logo.png" alt="Wandering Bear Logo" class="quote-logo">` : `<span style="font-size:3rem;">🐻</span>`}
+        ${hasLogo ? `<img src="logo.png" alt="Wandering Bear Logo" class="quote-logo">` : `<span style="font-size:3rem;">🐻</span>`}
         <div style="font-family:'Outfit', sans-serif; font-size: 1.4rem; font-weight: 800; letter-spacing: 0.05em; color: var(--espresso);">WANDERING BEAR</div>
         <div class="quote-subtitle">TRAVEL AGENCY — EST. 2024</div>
         
