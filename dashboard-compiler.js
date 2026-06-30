@@ -13,16 +13,9 @@ function compileStaticDashboard() {
     return;
   }
 
-  // Load and Base64 encode the Wandering Bear logo
-  let logoBase64 = '';
+  // Check if the Wandering Bear logo exists in the root
   const logoPath = path.join(__dirname, 'logo.png');
-  if (fs.existsSync(logoPath)) {
-    try {
-      logoBase64 = `data:image/png;base64,${fs.readFileSync(logoPath).toString('base64')}`;
-    } catch (err) {
-      console.error('Failed to read logo.png:', err.message);
-    }
-  }
+  const hasLogo = fs.existsSync(logoPath);
 
   const rawData = JSON.parse(fs.readFileSync(seenDealsPath, 'utf8'));
   const uniqueDeals = Object.values(rawData).filter(deal => {
@@ -852,7 +845,7 @@ function compileStaticDashboard() {
   <div class="lock-screen" id="lock-screen" style="display: ${payloadType === 'encrypted' ? 'flex' : 'none'};">
     <div class="lock-card" id="lock-card">
       <div class="lock-logo-wrapper">
-        ${logoBase64 ? `<img src="${logoBase64}" alt="Wandering Bear Logo" class="lock-logo">` : `<span style="font-size:4rem;">🐻</span>`}
+        ${hasLogo ? `<img src="./logo.png" alt="Wandering Bear Logo" class="lock-logo">` : `<span style="font-size:4rem;">🐻</span>`}
       </div>
       <h2>Secure Access</h2>
       <p>Please enter your credentials password to load the FAM rates dashboard.</p>
@@ -865,7 +858,7 @@ function compileStaticDashboard() {
   <div class="container" id="main-container" style="display: ${payloadType === 'plaintext' ? 'block' : 'none'};">
     <header>
       <div class="brand-section">
-        ${logoBase64 ? `<img src="${logoBase64}" alt="Wandering Bear Logo" class="header-logo">` : `<span style="font-size:3rem;">🐻</span>`}
+        ${hasLogo ? `<img src="./logo.png" alt="Wandering Bear Logo" class="header-logo">` : `<span style="font-size:3rem;">🐻</span>`}
         <div>
           <h1>Wandering Bear FAM Scout</h1>
           <p>Interactive Cruise Rates & Special Incentives Monitor</p>
@@ -990,7 +983,7 @@ function compileStaticDashboard() {
       
       <!-- Styled Branded Quote Card -->
       <div class="quote-card" id="printable-quote">
-        ${logoBase64 ? `<img src="${logoBase64}" alt="Wandering Bear Logo" class="quote-logo">` : `<span style="font-size:3rem;">🐻</span>`}
+        ${hasLogo ? `<img src="./logo.png" alt="Wandering Bear Logo" class="quote-logo">` : `<span style="font-size:3rem;">🐻</span>`}
         <div style="font-family:'Outfit', sans-serif; font-size: 1.4rem; font-weight: 800; letter-spacing: 0.05em; color: var(--espresso);">WANDERING BEAR</div>
         <div class="quote-subtitle">TRAVEL AGENCY — EST. 2024</div>
         
