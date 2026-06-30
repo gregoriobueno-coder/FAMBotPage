@@ -25,11 +25,14 @@ You are an expert travel agent assistant. Analyze the following raw text content
 Extract the list of active special rates / deals / sailings and format them as a clean, highly structured Markdown table.
 
 Rules:
-1. Columns must include: Sail Date, Ship, Nights, Itinerary, Category, Price.
+1. Columns must include exactly: Sail Date | Ship | Nights | Itinerary | Category | Price | Rate Basis | Deal Score | AI Insight
 2. If any value is missing, use N/A.
-3. Keep the table short: only select the top 10 most relevant/attractive deals (e.g. soonest sail dates or best rates) to prevent cluttering a mobile Telegram screen.
+3. Keep the table short: only select the top 10 most relevant/attractive deals (e.g. soonest sail dates or best rates) to prevent cluttering a screen.
 4. Output ONLY the markdown table. Do not include any introduction, conversational response, greeting, explanation, or markdown backticks around the table itself.
-5. If no deals or rates lists are found in the text, simply output: "No active rates lists found in document."
+5. In "Rate Basis", analyze if the price is "Per Person" (PP), "Per Cabin" (Cabin), or "Single" based on flyer annotations (default to "PP" if not specified, as standard double occupancy applies).
+6. In "Deal Score", evaluate the deal value on a scale from 1 (Poor) to 10 (Exceptional) considering the brand standard, itinerary, nights, and cabin type price.
+7. In "AI Insight", provide a 3-5 word summary of the unique value (e.g., "70% off retail", "Rare solo rate", "Great balcony deal").
+8. If no deals or rates lists are found in the text, simply output: "No active rates lists found in document."
 
 Raw text content:
 ${pdfText.substring(0, 15000)}

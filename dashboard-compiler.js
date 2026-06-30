@@ -13,13 +13,35 @@ function compileStaticDashboard() {
     return;
   }
 
+  // Load and Base64 encode the Wandering Bear logo
+  let logoBase64 = '';
+  const logoPath = path.join(__dirname, 'logo.png');
+  if (fs.existsSync(logoPath)) {
+    try {
+      logoBase64 = `data:image/png;base64,${fs.readFileSync(logoPath).toString('base64')}`;
+    } catch (err) {
+      console.error('Failed to read logo.png:', err.message);
+    }
+  }
+
   const rawData = JSON.parse(fs.readFileSync(seenDealsPath, 'utf8'));
   const uniqueDeals = Object.values(rawData).filter(deal => {
     return deal.urlHash && deal.pdfUrl && !deal.bufferHash.includes(deal.urlHash);
   });
   uniqueDeals.sort((a, b) => new Date(b.firstSeen) - new Date(a.firstSeen));
 
-  // Extract individual sailings from the Gemini summaries
+  // Region classification helper
+  function getRegion(itinerary) {
+    const it = (itinerary || '').toLowerCase();
+    if (it.includes('alaska')) return 'Alaska';
+    if (it.includes('bahamas')) return 'Bahamas';
+    if (it.includes('caribbean') || it.includes('cayman')) return 'Caribbean';
+    if (it.includes('mediterranean') || it.includes('aegean') || it.includes('europe') || it.includes('france') || it.includes('italy') || it.includes('greece') || it.includes('croatia') || it.includes('spain')) return 'Europe & Med';
+    if (it.includes('transatlantic') || it.includes('crossing')) return 'Transatlantic';
+    if (it.includes('fjord') || it.includes('norway') || it.includes('iceland')) return 'Northern Europe';
+    return 'Other / Global';
+  }
+
   const allSailings = [];
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -34,18 +56,15 @@ function compileStaticDashboard() {
       const cells = line.split('|').map(c => c.trim()).filter((c, i, a) => i > 0 && i < a.length - 1);
       if (cells.length < 5) continue;
 
-      const [sailDateStr, ship, nightsStr, itinerary, category, priceStr] = cells;
+      const [sailDateStr, ship, nightsStr, itinerary, category, priceStr, rateBasis, dealScoreStr, aiInsight] = cells;
       
-      // Parse date
       const sailDate = new Date(sailDateStr);
       const isExpired = !isNaN(sailDate.getTime()) && sailDate < today;
       
       if (isExpired) {
-        // Skip expired sailings at compile time
-        continue;
+        continue; // Exclude expired sailings
       }
 
-      // Format filename for local linking
       const isExternal = deal.pdfUrl.startsWith('http');
       const filename = isExternal ? 'View Original PDF' : deal.pdfUrl.split('/').pop();
       const displayLink = isExternal ? deal.pdfUrl : `./flyers/${filename}`;
@@ -60,7 +79,11 @@ function compileStaticDashboard() {
         itinerary,
         category,
         priceStr,
-        price: parseInt(priceStr.replace(/[^0-9]/g, '')) || 0
+        price: parseInt(priceStr.replace(/[^0-9]/g, '')) || 0,
+        rateBasis: rateBasis || 'PP',
+        dealScore: parseInt(dealScoreStr) || 0,
+        aiInsight: aiInsight || '',
+        region: getRegion(itinerary)
       });
     }
   }
@@ -96,7 +119,7 @@ function compileStaticDashboard() {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAM Scout - Master Cruise Rates Dashboard</title>
+  <title>FAM Scout - Wandering Bear Travel Agency</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -104,15 +127,18 @@ function compileStaticDashboard() {
   
   <style>
     :root {
-      --bg-dark: #070a13;
-      --card-bg: rgba(18, 25, 41, 0.65);
-      --card-border: rgba(255, 255, 255, 0.08);
-      --neon-teal: #00f2fe;
-      --neon-blue: #4facfe;
-      --neon-pink: #f857a6;
-      --text-main: #f3f4f6;
-      --text-muted: #9ca3af;
-      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      /* Wandering Bear Branded Warm Colors */
+      --bg-warm: #f6f3eb;
+      --card-bg: #ffffff;
+      --card-border: #e1dacb;
+      --espresso: #2b1810;
+      --cocoa-gray: #7a6b63;
+      --terracotta: #cf5230;
+      --terracotta-light: rgba(207, 82, 48, 0.1);
+      --seafoam-teal: #46958a;
+      --seafoam-light: rgba(70, 149, 138, 0.15);
+      --amber: #d68d45;
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     * {
@@ -123,14 +149,10 @@ function compileStaticDashboard() {
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: var(--bg-dark);
-      background-image: 
-        radial-gradient(at 10% 20%, rgba(79, 172, 254, 0.15) 0px, transparent 50%),
-        radial-gradient(at 90% 80%, rgba(248, 87, 166, 0.1) 0px, transparent 50%);
-      color: var(--text-main);
+      background-color: var(--bg-warm);
+      color: var(--espresso);
       min-height: 100vh;
       padding: 2rem 1.5rem;
-      overflow-x: hidden;
     }
 
     .container {
@@ -139,7 +161,7 @@ function compileStaticDashboard() {
       display: none; /* Hidden until authenticated */
     }
 
-    /* Password Screen */
+    /* Lock Screen for Authenticated Access */
     .lock-screen {
       position: fixed;
       top: 0;
@@ -150,48 +172,51 @@ function compileStaticDashboard() {
       justify-content: center;
       align-items: center;
       z-index: 9999;
-      background: var(--bg-dark);
+      background: var(--bg-warm);
     }
 
     .lock-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      backdrop-filter: blur(24px);
-      border-radius: 24px;
+      border-radius: 28px;
       padding: 3rem 2rem;
       max-width: 420px;
       width: 90%;
       text-align: center;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 12px 40px rgba(43, 24, 16, 0.08);
     }
 
-    .lock-icon {
-      font-size: 3rem;
-      background: linear-gradient(135deg, var(--neon-blue), var(--neon-teal));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 1rem;
+    .lock-logo-wrapper {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .lock-logo {
+      height: 100px;
+      object-fit: contain;
     }
 
     .lock-card h2 {
       font-family: 'Outfit', sans-serif;
       font-weight: 800;
       margin-bottom: 0.5rem;
+      color: var(--espresso);
     }
 
     .lock-card p {
-      color: var(--text-muted);
+      color: var(--cocoa-gray);
       font-size: 0.9rem;
       margin-bottom: 2rem;
     }
 
     .pw-input {
       width: 100%;
-      background: rgba(7, 10, 19, 0.6);
+      background: var(--bg-warm);
       border: 1px solid var(--card-border);
       border-radius: 12px;
       padding: 0.9rem 1.2rem;
-      color: var(--text-main);
+      color: var(--espresso);
       font-size: 1rem;
       outline: none;
       text-align: center;
@@ -201,14 +226,14 @@ function compileStaticDashboard() {
     }
 
     .pw-input:focus {
-      border-color: var(--neon-blue);
-      box-shadow: 0 0 15px rgba(79, 172, 254, 0.3);
+      border-color: var(--terracotta);
+      box-shadow: 0 0 12px rgba(207, 82, 48, 0.2);
     }
 
     .pw-btn {
       width: 100%;
-      background: linear-gradient(135deg, var(--neon-blue), var(--neon-teal));
-      color: var(--bg-dark);
+      background: var(--terracotta);
+      color: #ffffff;
       border: none;
       border-radius: 12px;
       padding: 0.9rem;
@@ -219,11 +244,12 @@ function compileStaticDashboard() {
     }
 
     .pw-btn:hover {
-      box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+      background: #b43c22;
+      box-shadow: 0 6px 20px rgba(207, 82, 48, 0.3);
     }
 
     .error-msg {
-      color: #ff4444;
+      color: #d23f30;
       font-size: 0.85rem;
       margin-top: 1rem;
       display: none;
@@ -239,36 +265,55 @@ function compileStaticDashboard() {
       40%, 80% { transform: translateX(10px); }
     }
 
-    /* Glassmorphism Header */
+    /* Branded Header */
     header {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      backdrop-filter: blur(16px);
       border-radius: 24px;
-      padding: 2rem;
+      padding: 1.5rem 2rem;
       margin-bottom: 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      box-shadow: 0 4px 20px rgba(43, 24, 16, 0.03);
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .header-logo {
+      height: 70px;
+      object-fit: contain;
     }
 
     .brand-section h1 {
       font-family: 'Outfit', sans-serif;
       font-weight: 800;
-      font-size: 2.2rem;
-      background: linear-gradient(135deg, var(--neon-blue), var(--neon-teal));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 0.25rem;
+      font-size: 2.1rem;
+      color: var(--espresso);
+      margin-bottom: 0.1rem;
     }
 
     .brand-section p {
-      color: var(--text-muted);
+      color: var(--cocoa-gray);
       font-size: 0.95rem;
+      font-weight: 600;
     }
 
-    /* Dashboard Metrics Row */
+    .stats-badge {
+      background: var(--terracotta-light);
+      border: 1px solid var(--terracotta);
+      border-radius: 12px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      color: var(--terracotta);
+      font-weight: 700;
+    }
+
+    /* Metrics Cards */
     .metrics-row {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -279,80 +324,70 @@ function compileStaticDashboard() {
     .metric-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      backdrop-filter: blur(16px);
       border-radius: 20px;
       padding: 1.5rem;
       display: flex;
       flex-direction: column;
-      position: relative;
-    }
-
-    .metric-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 20px;
-      right: 20px;
-      height: 2px;
-      background: linear-gradient(to right, var(--neon-blue), var(--neon-teal));
-      opacity: 0.5;
+      box-shadow: 0 4px 15px rgba(43, 24, 16, 0.02);
     }
 
     .metric-label {
-      color: var(--text-muted);
+      color: var(--cocoa-gray);
       font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       margin-bottom: 0.5rem;
+      font-weight: 700;
     }
 
     .metric-value {
       font-family: 'Outfit', sans-serif;
-      font-size: 2.2rem;
+      font-size: 2.1rem;
       font-weight: 800;
-      color: var(--text-main);
+      color: var(--espresso);
     }
 
     /* Filters Layout */
     .filter-panel {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      backdrop-filter: blur(16px);
       border-radius: 24px;
       padding: 2rem;
       margin-bottom: 2rem;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
+      box-shadow: 0 4px 15px rgba(43, 24, 16, 0.02);
     }
 
     .filter-row-top {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 1.5rem;
       align-items: center;
     }
 
     .search-wrapper {
-      flex: 2;
+      flex: 1;
       min-width: 300px;
     }
 
     .search-input {
       width: 100%;
-      background: rgba(7, 10, 19, 0.6);
+      background: var(--bg-warm);
       border: 1px solid var(--card-border);
       border-radius: 12px;
       padding: 0.9rem 1.2rem;
-      color: var(--text-main);
+      color: var(--espresso);
       font-size: 0.95rem;
       outline: none;
       transition: var(--transition);
     }
 
     .search-input:focus {
-      border-color: var(--neon-blue);
-      box-shadow: 0 0 15px rgba(79, 172, 254, 0.2);
+      border-color: var(--terracotta);
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(207, 82, 48, 0.1);
     }
 
     .filter-tabs {
@@ -362,11 +397,11 @@ function compileStaticDashboard() {
     }
 
     .filter-tab {
-      background: rgba(255, 255, 255, 0.03);
+      background: var(--bg-warm);
       border: 1px solid var(--card-border);
       border-radius: 10px;
       padding: 0.65rem 1.2rem;
-      color: var(--text-muted);
+      color: var(--espresso);
       cursor: pointer;
       font-size: 0.88rem;
       font-weight: 600;
@@ -374,24 +409,51 @@ function compileStaticDashboard() {
     }
 
     .filter-tab:hover {
-      border-color: var(--text-muted);
-      color: var(--text-main);
+      border-color: var(--espresso);
     }
 
     .filter-tab.active {
-      background: linear-gradient(135deg, var(--neon-blue), var(--neon-teal));
+      background: var(--terracotta);
       border-color: transparent;
-      color: var(--bg-dark);
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(207, 82, 48, 0.2);
     }
 
-    /* Sub-filters (Nights and Price sliders) */
+    /* Sub-filters (Sliders and Dropdowns) */
     .filter-row-bottom {
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
       align-items: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-top: 1px solid var(--card-border);
       padding-top: 1.5rem;
+    }
+
+    .dropdown-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      min-width: 200px;
+      flex: 1;
+    }
+
+    .dropdown-label {
+      font-size: 0.85rem;
+      color: var(--cocoa-gray);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .select-control {
+      background: var(--bg-warm);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      color: var(--espresso);
+      outline: none;
+      font-weight: 600;
+      cursor: pointer;
     }
 
     .slider-container {
@@ -399,14 +461,17 @@ function compileStaticDashboard() {
       flex-direction: column;
       gap: 0.5rem;
       min-width: 280px;
-      flex: 1;
+      flex: 1.5;
     }
 
     .slider-label-row {
       display: flex;
       justify-content: space-between;
       font-size: 0.85rem;
-      color: var(--text-muted);
+      color: var(--cocoa-gray);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
     .slider-control {
@@ -415,7 +480,7 @@ function compileStaticDashboard() {
       width: 100%;
       height: 6px;
       border-radius: 3px;
-      background: rgba(255, 255, 255, 0.1);
+      background: var(--card-border);
       outline: none;
     }
 
@@ -425,24 +490,20 @@ function compileStaticDashboard() {
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      background: var(--neon-blue);
+      background: var(--terracotta);
       cursor: pointer;
-      box-shadow: 0 0 10px rgba(79, 172, 254, 0.5);
+      box-shadow: 0 0 8px rgba(207, 82, 48, 0.4);
       transition: var(--transition);
     }
 
-    .slider-control::-webkit-slider-thumb:hover {
-      transform: scale(1.2);
-    }
-
-    /* Master Table Card */
+    /* Master Table Styling */
     .table-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      backdrop-filter: blur(16px);
       border-radius: 24px;
       overflow: hidden;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 4px 20px rgba(43, 24, 16, 0.03);
+      margin-bottom: 3rem;
     }
 
     .table-wrapper {
@@ -458,29 +519,29 @@ function compileStaticDashboard() {
 
     th, td {
       padding: 1.2rem 1.5rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid var(--card-border);
     }
 
     th {
       font-family: 'Outfit', sans-serif;
-      font-weight: 600;
-      color: var(--text-muted);
+      font-weight: 700;
+      color: var(--cocoa-gray);
       font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       cursor: pointer;
       user-select: none;
-      background: rgba(255, 255, 255, 0.02);
+      background: rgba(43, 24, 16, 0.01);
       transition: var(--transition);
     }
 
     th:hover {
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--text-main);
+      background: rgba(43, 24, 16, 0.03);
+      color: var(--espresso);
     }
 
     th.active-sort {
-      color: var(--neon-teal);
+      color: var(--terracotta);
     }
 
     td {
@@ -493,10 +554,10 @@ function compileStaticDashboard() {
     }
 
     tr:hover td {
-      background: rgba(255, 255, 255, 0.015);
+      background: rgba(43, 24, 16, 0.008);
     }
 
-    /* Badges & Accents */
+    /* Branded Badges */
     .portal-badge {
       border-radius: 8px;
       padding: 0.4rem 0.8rem;
@@ -508,50 +569,281 @@ function compileStaticDashboard() {
       text-align: center;
     }
 
-    .badge-disney { background: rgba(248, 87, 166, 0.15); color: var(--neon-pink); }
-    .badge-virgin { background: rgba(255, 68, 68, 0.15); color: #ff4444; }
-    .badge-onesource { background: rgba(79, 172, 254, 0.15); color: var(--neon-blue); }
+    .badge-disney { background: rgba(248, 87, 166, 0.1); color: #db2777; border: 1px solid rgba(248, 87, 166, 0.2); }
+    .badge-virgin { background: rgba(255, 68, 68, 0.08); color: #dc2626; border: 1px solid rgba(255, 68, 68, 0.15); }
+    .badge-onesource { background: var(--terracotta-light); color: var(--terracotta); border: 1px solid rgba(207, 82, 48, 0.2); }
 
     .price-value {
       font-family: 'Outfit', sans-serif;
-      font-weight: 700;
-      color: var(--neon-teal);
-      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--terracotta);
+      font-size: 1.15rem;
     }
 
-    .btn-pdf {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.05);
+    .basis-badge {
+      font-size: 0.72rem;
+      color: var(--cocoa-gray);
       border: 1px solid var(--card-border);
-      color: var(--text-main);
+      border-radius: 6px;
+      padding: 0.2rem 0.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .deal-score-pill {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      border-radius: 20px;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.82rem;
+      text-align: center;
+      display: inline-block;
+      min-width: 54px;
+    }
+    .score-high { background: rgba(70, 149, 138, 0.15); color: var(--seafoam-teal); border: 1px solid rgba(70, 149, 138, 0.3); }
+    .score-medium { background: rgba(214, 141, 69, 0.15); color: var(--amber); border: 1px solid rgba(214, 141, 69, 0.3); }
+    .score-fair { background: rgba(122, 107, 99, 0.1); color: var(--cocoa-gray); border: 1px solid rgba(122, 107, 99, 0.2); }
+    .score-low { background: rgba(43, 24, 16, 0.05); color: var(--espresso); border: 1px solid rgba(43, 24, 16, 0.15); }
+
+    .btn-action {
+      display: inline-block;
+      background: var(--bg-warm);
+      border: 1px solid var(--card-border);
+      color: var(--espresso);
       border-radius: 10px;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 0.9rem;
       font-size: 0.85rem;
-      font-weight: 600;
+      font-weight: 700;
       text-decoration: none;
       text-align: center;
+      cursor: pointer;
       transition: var(--transition);
+      margin-right: 0.4rem;
     }
 
-    .btn-pdf:hover {
-      background: linear-gradient(135deg, var(--neon-blue), var(--neon-teal));
+    .btn-action:hover {
+      border-color: var(--espresso);
+      background: #ffffff;
+    }
+
+    .btn-quote {
+      background: var(--terracotta-light);
+      border-color: rgba(207, 82, 48, 0.3);
+      color: var(--terracotta);
+    }
+
+    .btn-quote:hover {
+      background: var(--terracotta);
+      color: #ffffff;
       border-color: transparent;
-      color: var(--bg-dark);
-      box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+      box-shadow: 0 4px 10px rgba(207, 82, 48, 0.2);
     }
 
-    /* Empty state */
+    /* Branded Quote Modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(43, 24, 16, 0.5);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    .modal-container {
+      background: var(--bg-warm);
+      border: 2px solid var(--card-border);
+      border-radius: 28px;
+      width: 90%;
+      max-width: 580px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 50px rgba(43, 24, 16, 0.25);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: none;
+      border: none;
+      font-size: 1.8rem;
+      color: var(--cocoa-gray);
+      cursor: pointer;
+    }
+
+    /* Branded Quote Card Style (Matches Logo Background Style) */
+    .quote-card {
+      background: #ffffff;
+      border: 1px solid #e1dacb;
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    }
+
+    .quote-logo {
+      height: 85px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .quote-subtitle {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      color: var(--cocoa-gray);
+      text-transform: uppercase;
+      font-weight: 800;
+      margin-top: -0.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .quote-divider {
+      height: 1px;
+      background: #e1dacb;
+      margin: 1.5rem 0;
+      position: relative;
+    }
+
+    .quote-divider::before {
+      content: '⚓';
+      position: absolute;
+      top: -10px;
+      left: calc(50% - 10px);
+      background: #ffffff;
+      padding: 0 8px;
+      font-size: 0.9rem;
+      color: var(--terracotta);
+    }
+
+    .quote-details {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .quote-detail-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed #e1dacb;
+      padding-bottom: 0.5rem;
+    }
+
+    .quote-label {
+      color: var(--cocoa-gray);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+    }
+
+    .quote-val {
+      font-weight: 600;
+      color: var(--espresso);
+      font-size: 0.95rem;
+      text-align: right;
+    }
+
+    .quote-price {
+      font-size: 1.5rem;
+      color: var(--terracotta);
+      font-weight: 800;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .notes-field {
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 0.8rem 1rem;
+      color: var(--espresso);
+      font-family: inherit;
+      font-size: 0.9rem;
+      resize: none;
+      outline: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .notes-field:focus {
+      border-color: var(--terracotta);
+    }
+
+    .quote-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .quote-btn-primary {
+      flex: 1;
+      background: var(--terracotta);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 0.9rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+      text-align: center;
+    }
+
+    .quote-btn-primary:hover {
+      background: #b43c22;
+    }
+
+    /* Print styles for Quote Card export */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      .modal-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: none;
+        backdrop-filter: none;
+        display: flex !important;
+        justify-content: center;
+        visibility: visible;
+      }
+      .modal-container {
+        border: none;
+        box-shadow: none;
+        background: none;
+        visibility: visible;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+      }
+      .modal-container * {
+        visibility: visible;
+      }
+      .notes-field, .quote-actions, .modal-close {
+        display: none !important;
+      }
+      .quote-card {
+        border: 2px solid #2b1810;
+        box-shadow: none;
+      }
+    }
+
+    /* Empty view */
     .no-results {
       text-align: center;
       padding: 5rem 2rem;
-      color: var(--text-muted);
+      color: var(--cocoa-gray);
       font-size: 1.1rem;
-    }
-
-    @media (max-width: 992px) {
-      td, th {
-        padding: 0.9rem 1.1rem;
-      }
+      font-weight: 600;
     }
   </style>
 </head>
@@ -559,7 +851,9 @@ function compileStaticDashboard() {
   <!-- Lock Screen for Authenticated Access -->
   <div class="lock-screen" id="lock-screen" style="display: ${payloadType === 'encrypted' ? 'flex' : 'none'};">
     <div class="lock-card" id="lock-card">
-      <div class="lock-icon">🔒</div>
+      <div class="lock-logo-wrapper">
+        ${logoBase64 ? `<img src="${logoBase64}" alt="Wandering Bear Logo" class="lock-logo">` : `<span style="font-size:4rem;">🐻</span>`}
+      </div>
       <h2>Secure Access</h2>
       <p>Please enter your credentials password to load the FAM rates dashboard.</p>
       <input type="password" id="password-field" class="pw-input" placeholder="••••••••" onkeydown="if(event.key==='Enter') verifyAndUnlock()">
@@ -571,8 +865,11 @@ function compileStaticDashboard() {
   <div class="container" id="main-container" style="display: ${payloadType === 'plaintext' ? 'block' : 'none'};">
     <header>
       <div class="brand-section">
-        <h1>Wandering Bear FAM Scout</h1>
-        <p>Interactive Cruise Rates & Special Incentives Monitor</p>
+        ${logoBase64 ? `<img src="${logoBase64}" alt="Wandering Bear Logo" class="header-logo">` : `<span style="font-size:3rem;">🐻</span>`}
+        <div>
+          <h1>Wandering Bear FAM Scout</h1>
+          <p>Interactive Cruise Rates & Special Incentives Monitor</p>
+        </div>
       </div>
       <div class="stats-badge" id="last-updated">Real-time Rates</div>
     </header>
@@ -616,6 +913,28 @@ function compileStaticDashboard() {
       </div>
 
       <div class="filter-row-bottom">
+        <div class="dropdown-container">
+          <span class="dropdown-label">Destination Region</span>
+          <select id="region-filter" class="select-control" onchange="filterAndRender()">
+            <option value="all">All Regions</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Caribbean">Caribbean</option>
+            <option value="Europe & Med">Europe & Mediterranean</option>
+            <option value="Northern Europe">Northern Europe</option>
+            <option value="Transatlantic">Transatlantic</option>
+            <option value="Other / Global">Other / Global</option>
+          </select>
+        </div>
+
+        <div class="dropdown-container">
+          <span class="dropdown-label">Departure Month</span>
+          <select id="month-filter" class="select-control" onchange="filterAndRender()">
+            <option value="all">All Months</option>
+            <!-- Filled dynamically based on dataset -->
+          </select>
+        </div>
+
         <div class="slider-container">
           <div class="slider-label-row">
             <span>Max Price limit</span>
@@ -647,7 +966,10 @@ function compileStaticDashboard() {
               <th onclick="toggleSort('itinerary')" id="th-itinerary">Itinerary</th>
               <th onclick="toggleSort('category')" id="th-category">Cabin Category</th>
               <th onclick="toggleSort('price')" id="th-price">Rate</th>
-              <th>PDF Flyer</th>
+              <th onclick="toggleSort('rateBasis')" id="th-rateBasis">Basis</th>
+              <th onclick="toggleSort('dealScore')" id="th-dealScore">Deal Score</th>
+              <th>AI Insight</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody id="table-body">
@@ -657,6 +979,55 @@ function compileStaticDashboard() {
         <div class="no-results" id="no-results-view" style="display: none;">
           No matching active sailings found. Try refining your filters!
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Branded Client Quote Modal Overlay -->
+  <div class="modal-overlay" id="quote-modal" onclick="if(event.target===this) closeQuoteModal()">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeQuoteModal()">×</button>
+      
+      <!-- Styled Branded Quote Card -->
+      <div class="quote-card" id="printable-quote">
+        ${logoBase64 ? `<img src="${logoBase64}" alt="Wandering Bear Logo" class="quote-logo">` : `<span style="font-size:3rem;">🐻</span>`}
+        <div style="font-family:'Outfit', sans-serif; font-size: 1.4rem; font-weight: 800; letter-spacing: 0.05em; color: var(--espresso);">WANDERING BEAR</div>
+        <div class="quote-subtitle">TRAVEL AGENCY — EST. 2024</div>
+        
+        <div class="quote-divider"></div>
+        
+        <div class="quote-details">
+          <div class="quote-detail-row">
+            <span class="quote-label">Cruise Line</span>
+            <span class="quote-val" id="q-brand">-</span>
+          </div>
+          <div class="quote-detail-row">
+            <span class="quote-label">Ship Name</span>
+            <span class="quote-val" id="q-ship">-</span>
+          </div>
+          <div class="quote-detail-row">
+            <span class="quote-label">Departure Date</span>
+            <span class="quote-val" id="q-date">-</span>
+          </div>
+          <div class="quote-detail-row">
+            <span class="quote-label">Itinerary</span>
+            <span class="quote-val" id="q-itinerary">-</span>
+          </div>
+          <div class="quote-detail-row">
+            <span class="quote-label">Stateroom Category</span>
+            <span class="quote-val" id="q-category">-</span>
+          </div>
+          <div class="quote-detail-row" style="border-bottom: none; margin-top: 0.5rem;">
+            <span class="quote-label" style="align-self: center;">Special Agent Rate</span>
+            <span class="quote-price" id="q-price">-</span>
+          </div>
+        </div>
+      </div>
+
+      <textarea id="quote-notes" class="notes-field" rows="3" placeholder="Add personalized agent notes for your client here..."></textarea>
+      
+      <div class="quote-actions">
+        <button class="quote-btn-primary" onclick="window.print()">Print / Save PDF</button>
       </div>
     </div>
   </div>
@@ -744,7 +1115,7 @@ function compileStaticDashboard() {
       }
     }
 
-    // Helper functions
+    // Date formatting helper
     function formatDate(dateStr) {
       const date = new Date(dateStr);
       if (isNaN(date.getTime())) return dateStr;
@@ -767,18 +1138,17 @@ function compileStaticDashboard() {
       return 'badge-onesource';
     }
 
-    // Main execution
     function initializeData() {
-      // Clean dates: filter out expired cruise dates dynamically based on client calendar
       const today = new Date();
       today.setHours(0, 0, 0, 0);
 
+      // Exclude expired
       allSailings = allSailings.filter(s => {
-        if (!s.sailDateObj) return true; // Fail-safe
+        if (!s.sailDateObj) return true;
         return new Date(s.sailDateObj) >= today;
       });
 
-      // Calculate max price and nights to auto-configure sliders max values
+      // Calculate slider limits
       const prices = allSailings.map(s => s.price).filter(p => p > 0);
       const maxPrice = prices.length ? Math.max(...prices) : 3000;
       
@@ -787,9 +1157,8 @@ function compileStaticDashboard() {
       slider.value = maxPrice;
       document.getElementById('price-slider-val').innerText = '$' + maxPrice;
 
-      // Populate metrics
+      // Populate summary metrics
       document.getElementById('metric-deals').innerText = allSailings.length;
-      
       if (prices.length) {
         const minPrice = Math.min(...prices);
         const avgPrice = Math.round(prices.reduce((a, b) => a + b, 0) / prices.length);
@@ -797,16 +1166,34 @@ function compileStaticDashboard() {
         document.getElementById('metric-avg-price').innerText = '$' + avgPrice;
       }
 
+      // Populate Month select options dynamically
+      const monthsMap = {};
+      allSailings.forEach(s => {
+        if (s.sailDateObj) {
+          const d = new Date(s.sailDateObj);
+          const monthKey = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
+          const monthLabel = d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+          monthsMap[monthKey] = monthLabel;
+        }
+      });
+
+      const monthSelect = document.getElementById('month-filter');
+      const sortedMonthKeys = Object.keys(monthsMap).sort();
+      sortedMonthKeys.forEach(key => {
+        const opt = document.createElement('option');
+        opt.value = key;
+        opt.innerText = monthsMap[key];
+        monthSelect.appendChild(opt);
+      });
+
       filterAndRender();
     }
 
     function updateSliders() {
       const priceVal = document.getElementById('price-slider').value;
       const nightsVal = document.getElementById('nights-slider').value;
-      
       document.getElementById('price-slider-val').innerText = '$' + priceVal;
       document.getElementById('nights-slider-val').innerText = nightsVal == 21 ? '20+ Nights' : nightsVal + ' Nights';
-      
       filterAndRender();
     }
 
@@ -831,10 +1218,8 @@ function compileStaticDashboard() {
         currentSort.direction = 'asc';
       }
 
-      // Update active header styling
       document.querySelectorAll('th').forEach(th => th.classList.remove('active-sort'));
       document.getElementById('th-' + column).classList.add('active-sort');
-
       filterAndRender();
     }
 
@@ -842,6 +1227,8 @@ function compileStaticDashboard() {
       const query = document.getElementById('search-bar').value.toLowerCase();
       const maxPrice = parseInt(document.getElementById('price-slider').value) || 99999;
       const maxNights = parseInt(document.getElementById('nights-slider').value) || 99;
+      const regionVal = document.getElementById('region-filter').value;
+      const monthVal = document.getElementById('month-filter').value;
 
       let filtered = allSailings.filter(s => {
         // Brand filter
@@ -851,40 +1238,45 @@ function compileStaticDashboard() {
         else if (currentBrand === 'virgin') brandMatch = s.portal === 'virgin';
         else brandMatch = s.portal.includes(currentBrand);
 
-        // Slider filters
+        // Region filter
+        const regionMatch = regionVal === 'all' || s.region === regionVal;
+
+        // Month filter
+        let monthMatch = true;
+        if (monthVal !== 'all' && s.sailDateObj) {
+          const d = new Date(s.sailDateObj);
+          const monthKey = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0');
+          monthMatch = monthKey === monthVal;
+        }
+
+        // Sliders
         const priceMatch = s.price === 0 || s.price <= maxPrice;
         const nightsMatch = s.nights === 0 || s.nights <= (maxNights === 21 ? 999 : maxNights);
 
-        // Search text match
+        // Text search
         const textMatch = (s.ship || '').toLowerCase().includes(query) || 
                           (s.itinerary || '').toLowerCase().includes(query) || 
                           (s.category || '').toLowerCase().includes(query) ||
                           (s.portal || '').toLowerCase().includes(query);
 
-        return brandMatch && priceMatch && nightsMatch && textMatch;
+        return brandMatch && regionMatch && monthMatch && priceMatch && nightsMatch && textMatch;
       });
 
-      // Apply sorting
+      // Sort
       filtered.sort((a, b) => {
         let valA = a[currentSort.column];
         let valB = b[currentSort.column];
 
-        // Handle nulls
         if (valA === null || valA === undefined) return 1;
         if (valB === null || valB === undefined) return -1;
 
         if (typeof valA === 'string') {
-          return currentSort.direction === 'asc' 
-            ? valA.localeCompare(valB) 
-            : valB.localeCompare(valA);
+          return currentSort.direction === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
         } else {
-          return currentSort.direction === 'asc' 
-            ? valA - valB 
-            : valB - valA;
+          return currentSort.direction === 'asc' ? valA - valB : valB - valA;
         }
       });
 
-      // Render table
       const tbody = document.getElementById('table-body');
       tbody.innerHTML = '';
 
@@ -894,7 +1286,14 @@ function compileStaticDashboard() {
       }
       document.getElementById('no-results-view').style.display = 'none';
 
-      filtered.forEach(s => {
+      function getScoreBadgeClass(score) {
+        if (score >= 9) return 'score-high';
+        if (score >= 7) return 'score-medium';
+        if (score >= 5) return 'score-fair';
+        return 'score-low';
+      }
+
+      filtered.forEach((s, idx) => {
         const tr = document.createElement('tr');
         tr.innerHTML = \`
           <td><span class="portal-badge \${getBrandBadgeClass(s.portal)}">\${getPortalLabel(s.portal)}</span></td>
@@ -904,10 +1303,35 @@ function compileStaticDashboard() {
           <td>\${s.itinerary}</td>
           <td>\${s.category}</td>
           <td><span class="price-value">\${s.priceStr}</span></td>
-          <td><a href="\${s.pdfUrl}" target="_blank" class="btn-pdf">Flyer PDF</a></td>
+          <td><span class="basis-badge">\${s.rateBasis}</span></td>
+          <td><span class="deal-score-pill \${getScoreBadgeClass(s.dealScore)}">\${s.dealScore}/10</span></td>
+          <td><em style="color: var(--seafoam-teal); font-size: 0.9rem;">\${s.aiInsight}</em></td>
+          <td>
+            <a href="\${s.pdfUrl}" target="_blank" class="btn-action">Flyer</a>
+            <button class="btn-action btn-quote" onclick="openQuoteModal(\${JSON.stringify(s).replace(/"/g, '&quot;')})">Quote</button>
+          </td>
         \`;
         tbody.appendChild(tr);
       });
+    }
+
+    // Modal Operations
+    function openQuoteModal(sailing) {
+      document.getElementById('q-brand').innerText = getPortalLabel(sailing.portal);
+      document.getElementById('q-ship').innerText = sailing.ship;
+      document.getElementById('q-date').innerText = formatDate(sailing.sailDateStr);
+      document.getElementById('q-itinerary').innerText = sailing.itinerary;
+      document.getElementById('q-category').innerText = sailing.category;
+      document.getElementById('q-price').innerText = sailing.priceStr + ' ' + sailing.rateBasis;
+      
+      document.getElementById('quote-notes').value = '';
+      
+      const modal = document.getElementById('quote-modal');
+      modal.style.display = 'flex';
+    }
+
+    function closeQuoteModal() {
+      document.getElementById('quote-modal').style.display = 'none';
     }
 
     // Initialize plaintext immediately if unencrypted
