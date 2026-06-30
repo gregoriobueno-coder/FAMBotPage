@@ -51,6 +51,12 @@ function compileStaticDashboard() {
 
       const [sailDateStr, ship, nightsStr, itinerary, category, priceStr, rateBasis, dealScoreStr, aiInsight] = cells;
       
+      // Parse pricing - if no price is available, do not add the sailing!
+      const price = parseInt(priceStr.replace(/[^0-9]/g, '')) || 0;
+      if (price === 0 || priceStr.toLowerCase().includes('n/a') || !priceStr) {
+        continue; // Skip sailings with no pricing
+      }
+
       const sailDate = new Date(sailDateStr);
       const isExpired = !isNaN(sailDate.getTime()) && sailDate < today;
       
@@ -72,8 +78,7 @@ function compileStaticDashboard() {
         itinerary,
         category,
         priceStr,
-        price: parseInt(priceStr.replace(/[^0-9]/g, '')) || 0,
-        rateBasis: rateBasis || 'PP',
+        price,
         dealScore: parseInt(dealScoreStr) || 0,
         aiInsight: aiInsight || '',
         region: getRegion(itinerary)
@@ -959,7 +964,6 @@ function compileStaticDashboard() {
               <th onclick="toggleSort('itinerary')" id="th-itinerary">Itinerary</th>
               <th onclick="toggleSort('category')" id="th-category">Cabin Category</th>
               <th onclick="toggleSort('price')" id="th-price">Rate</th>
-              <th onclick="toggleSort('rateBasis')" id="th-rateBasis">Basis</th>
               <th onclick="toggleSort('dealScore')" id="th-dealScore">Deal Score</th>
               <th>AI Insight</th>
               <th>Actions</th>
@@ -1296,7 +1300,6 @@ function compileStaticDashboard() {
           <td>\${s.itinerary}</td>
           <td>\${s.category}</td>
           <td><span class="price-value">\${s.priceStr}</span></td>
-          <td><span class="basis-badge">\${s.rateBasis}</span></td>
           <td><span class="deal-score-pill \${getScoreBadgeClass(s.dealScore)}">\${s.dealScore}/10</span></td>
           <td><em style="color: var(--seafoam-teal); font-size: 0.9rem;">\${s.aiInsight}</em></td>
           <td>
@@ -1315,7 +1318,7 @@ function compileStaticDashboard() {
       document.getElementById('q-date').innerText = formatDate(sailing.sailDateStr);
       document.getElementById('q-itinerary').innerText = sailing.itinerary;
       document.getElementById('q-category').innerText = sailing.category;
-      document.getElementById('q-price').innerText = sailing.priceStr + ' ' + sailing.rateBasis;
+      document.getElementById('q-price').innerText = sailing.priceStr;
       
       document.getElementById('quote-notes').value = '';
       
