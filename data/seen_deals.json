@@ -174,5 +174,14 @@
     "urlHash": "30cacfd78e9027391e51e64b4a1bfe80",
     "bufferHash": "onesource-rawbuf-7a101de56d6d57529529bf8cc8574d59",
     "firstSeen": "2026-06-28T17:16:29.073Z"
+  },
+  "virgin-rawbuf-aa462f6b811545484aeac27cebf43948": {
+    "portal": "virgin",
+    "pdfUrl": "https://storage.googleapis.com/vv-sales-crew-prod/First%20Mate%20Rates%20Flyer.pdf",
+    "urlHash": "697cf43ae029cb04fe16a25ea4dcc927",
+    "bufferHash": "virgin-rawbuf-aa462f6b811545484aeac27cebf43948",
+    "firstSeen": "2026-07-01T14:00:19.169Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
   }
 }
