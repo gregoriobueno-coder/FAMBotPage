@@ -674,7 +674,7 @@ async function scoutOneSourcePortal(portal, browser) {
   }
 
   // Auto-push to GitHub repository if git is configured
-  if (fs.existsSync(path.join(__dirname, '.git'))) {
+  if (fs.existsSync(path.join(__dirname, '.git')) && process.env.GITHUB_ACTIONS !== 'true') {
     console.log('Git repository detected. Attempting to sync changes to remote...');
     const { execSync } = require('child_process');
     try {

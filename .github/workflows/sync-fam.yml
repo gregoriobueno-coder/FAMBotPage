@@ -1,0 +1,49 @@
+name: FAM Scout Sync
+
+on:
+  schedule:
+    - cron: '0 13 * * *' # Every day at 13:00 UTC (8:00 AM EST)
+  workflow_dispatch: # Allow manual trigger from GitHub web UI
+
+permissions:
+  contents: write # Allows the runner to commit and push database/HTML updates back to main
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Install Node Dependencies
+        run: npm install
+
+      - name: Install Playwright & System Dependencies
+        run: npx playwright install --with-deps chromium
+
+      - name: Run FAM Scout
+        env:
+          CREDENTIALS_KEY: ${{ secrets.CREDENTIALS_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          DASHBOARD_PASSWORD: ${{ secrets.DASHBOARD_PASSWORD }}
+          ENABLE_TELEGRAM: true
+          ENABLE_DESKTOP: false
+          ENABLE_EMAIL: false
+          ENABLE_PUSHOVER: false
+        run: node scout.js
+
+      - name: Commit and Push Compiled Updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/seen_deals.json flyers/ auth/*-state.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated Sync: Update FAM deals database & dashboard" && git push origin main)
