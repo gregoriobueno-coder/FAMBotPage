@@ -3,6 +3,8 @@ name: FAM Scout Sync
 on:
   schedule:
     - cron: '0 13 * * *' # Every day at 13:00 UTC (8:00 AM EST)
+  push:
+    branches: [ main ]
   workflow_dispatch: # Allow manual trigger from GitHub web UI
 
 permissions:
