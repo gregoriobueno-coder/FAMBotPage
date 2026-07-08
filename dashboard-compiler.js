@@ -846,6 +846,8 @@ function compileStaticDashboard() {
       font-weight: 600;
     }
 
+    }
+
     .table-footnote {
       padding: 1.2rem 1.5rem;
       font-size: 0.82rem;
@@ -853,6 +855,57 @@ function compileStaticDashboard() {
       border-top: 1px solid var(--card-border);
       background: rgba(43, 24, 16, 0.005);
       font-style: italic;
+    }
+
+    /* Progress Overlay Styles */
+    #progress-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(43, 24, 16, 0.5);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+    }
+    .progress-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 2rem;
+      width: 90%;
+      max-width: 520px;
+      box-shadow: 0 12px 40px rgba(43, 24, 16, 0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .progress-bar-container {
+      background: #e6dfcf;
+      border-radius: 10px;
+      height: 10px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      background: var(--accent-mint);
+      width: 0%;
+      height: 100%;
+      transition: width 0.3s ease;
+    }
+    .progress-logs {
+      background: #faf8f5;
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 0.8rem;
+      height: 160px;
+      overflow-y: auto;
+      font-family: monospace;
+      font-size: 0.72rem;
+      color: var(--espresso-light);
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      text-align: left;
     }
   </style>
 </head>
@@ -880,7 +933,7 @@ function compileStaticDashboard() {
           <p>Interactive Cruise Rates & Special Incentives Monitor</p>
         </div>
       </div>
-      <div class="stats-badge" id="last-updated">Real-time Rates</div>
+      <button class="stats-badge" id="last-updated" onclick="triggerScraperRun()" style="cursor:pointer;border:none;outline:none;display:inline-flex;align-items:center;gap:0.4rem;transition:var(--transition);font-family:inherit;">🔄 Real-time Rates</button>
     </header>
 
     <!-- Metrics Summary Cards -->
@@ -1344,7 +1397,117 @@ function compileStaticDashboard() {
       document.getElementById('quote-modal').style.display = 'none';
     }
 
-    // Initialize plaintext immediately if unencrypted
+    function appendLog(container, message, isError = false) {
+      const line = document.createElement('div');
+      line.style.padding = '2px 0';
+      if (isError) {
+        line.style.color = 'var(--terracotta)';
+      }
+      line.innerText = \`[\${new Date().toLocaleTimeString()}] \${message}\`;
+      container.appendChild(line);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function addCloseButton(overlay, btn) {
+      const card = overlay.querySelector('.progress-card');
+      const closeBtn = document.createElement('button');
+      closeBtn.className = 'pw-btn';
+      closeBtn.style.marginTop = '1rem';
+      closeBtn.innerText = 'Dismiss Logs';
+      closeBtn.onclick = () => {
+        overlay.style.display = 'none';
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        btn.innerHTML = '🔄 Real-time Rates';
+      };
+      card.appendChild(closeBtn);
+    }
+
+    async function triggerScraperRun() {
+      const btn = document.getElementById('last-updated');
+      if (btn.disabled) return;
+
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+      btn.innerHTML = '⚙️ Executing...';
+
+      let overlay = document.getElementById('progress-overlay');
+      if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'progress-overlay';
+        overlay.innerHTML = \\\`
+          <div class="progress-card">
+            <h3 style="font-family:'Playfair Display', serif;font-weight:700;font-size:1.2rem;color:var(--espresso);margin-bottom:0.2rem;">Live Scraper Progress</h3>
+            <p id="progress-status" style="font-size:0.78rem;color:var(--cocoa-gray);margin-bottom:0.8rem;">Connecting to local backend server...</p>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-logs" id="progress-logs"></div>
+          </div>
+        \\\`;
+        document.body.appendChild(overlay);
+      } else {
+        overlay.style.display = 'flex';
+      }
+
+      const logContainer = document.getElementById('progress-logs');
+      const fill = document.getElementById('progress-fill');
+      const statusText = document.getElementById('progress-status');
+
+      logContainer.innerHTML = '';
+      fill.style.width = '3%';
+
+      try {
+        const source = new EventSource('/api/run-scraper');
+        
+        source.addEventListener('status', (e) => {
+          const data = JSON.parse(e.data);
+          statusText.innerText = data.message;
+          if (data.done) {
+            fill.style.width = '100%';
+            source.close();
+            
+            if (data.failed) {
+              fill.style.backgroundColor = 'var(--terracotta)';
+              addCloseButton(overlay, btn);
+            } else {
+              statusText.innerText = 'Sync succeeded! Reloading dashboard...';
+              setTimeout(() => window.location.reload(), 2000);
+            }
+          }
+        });
+
+        source.addEventListener('log', (e) => {
+          const data = JSON.parse(e.data);
+          appendLog(logContainer, data.message, false);
+          
+          if (data.message.includes('Status: queued')) {
+            fill.style.width = '20%';
+          } else if (data.message.includes('state: in_progress')) {
+            fill.style.width = '50%';
+          } else if (data.message.includes('completed successfully')) {
+            fill.style.width = '90%';
+          }
+        });
+
+        source.addEventListener('error', (e) => {
+          const data = JSON.parse(e.data);
+          appendLog(logContainer, data.message, true);
+        });
+
+        source.onerror = (err) => {
+          console.error(err);
+          appendLog(logContainer, 'Lost connection to local Express server.', true);
+          source.close();
+          fill.style.backgroundColor = 'var(--terracotta)';
+          addCloseButton(overlay, btn);
+        };
+      } catch (err) {
+        appendLog(logContainer, 'Failed to trigger scraper: ' + err.message, true);
+        fill.style.backgroundColor = 'var(--terracotta)';
+        addCloseButton(overlay, btn);
+      }
+    }
     if (window.PAYLOAD_TYPE === 'plaintext') {
       allSailings = JSON.parse(window.atob(window.PAYLOAD_DATA));
       initializeData();
