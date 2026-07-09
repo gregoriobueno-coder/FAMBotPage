@@ -36,8 +36,9 @@ function compileStaticDashboard() {
   }
 
   const allSailings = [];
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
+  const cutoffDate = new Date();
+  cutoffDate.setDate(cutoffDate.getDate() - 30);
+  cutoffDate.setHours(0, 0, 0, 0);
 
   for (const deal of uniqueDeals) {
     if (!deal.summary) continue;
@@ -58,10 +59,10 @@ function compileStaticDashboard() {
       }
 
       const sailDate = new Date(sailDateStr);
-      const isExpired = !isNaN(sailDate.getTime()) && sailDate < today;
+      const isExpired = !isNaN(sailDate.getTime()) && sailDate < cutoffDate;
       
       if (isExpired) {
-        continue; // Exclude expired sailings
+        continue; // Exclude expired sailings older than 30 days
       }
 
       const isExternal = deal.pdfUrl.startsWith('http');
@@ -1203,13 +1204,14 @@ function compileStaticDashboard() {
     }
 
     function initializeData() {
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
+      const cutoffDate = new Date();
+      cutoffDate.setDate(cutoffDate.getDate() - 30);
+      cutoffDate.setHours(0, 0, 0, 0);
 
-      // Exclude expired
+      // Exclude expired older than 30 days
       allSailings = allSailings.filter(s => {
         if (!s.sailDateObj) return true;
-        return new Date(s.sailDateObj) >= today;
+        return new Date(s.sailDateObj) >= cutoffDate;
       });
 
       // Calculate slider limits
