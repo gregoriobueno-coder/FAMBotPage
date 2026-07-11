@@ -1104,6 +1104,7 @@ function compileStaticDashboard() {
     window.PAYLOAD_IV = "${ivBase64}";
 
     let allSailings = [];
+    let lastFilteredSailings = [];
     let currentBrand = 'all';
     let currentSort = { column: 'sailDateObj', direction: 'asc' };
 
@@ -1343,6 +1344,8 @@ function compileStaticDashboard() {
         }
       });
 
+      lastFilteredSailings = filtered;
+
       const tbody = document.getElementById('table-body');
       tbody.innerHTML = '';
 
@@ -1373,7 +1376,7 @@ function compileStaticDashboard() {
           <td><em style="color: var(--seafoam-teal); font-size: 0.9rem;">\${s.aiInsight}</em></td>
           <td>
             <a href="\${s.pdfUrl}" target="_blank" class="btn-action">Flyer</a>
-            <button class="btn-action btn-quote" onclick="openQuoteModal(\${JSON.stringify(s).replace(/"/g, '&quot;')})">Quote</button>
+            <button class="btn-action btn-quote" onclick="openQuoteModal(\${idx})">Quote</button>
           </td>
         \`;
         tbody.appendChild(tr);
@@ -1381,7 +1384,10 @@ function compileStaticDashboard() {
     }
 
     // Modal Operations
-    function openQuoteModal(sailing) {
+    function openQuoteModal(idx) {
+      const sailing = lastFilteredSailings[idx];
+      if (!sailing) return;
+
       document.getElementById('q-brand').innerText = getPortalLabel(sailing.portal);
       document.getElementById('q-ship').innerText = sailing.ship;
       document.getElementById('q-date').innerText = formatDate(sailing.sailDateStr);
@@ -1437,7 +1443,7 @@ function compileStaticDashboard() {
       if (!overlay) {
         overlay = document.createElement('div');
         overlay.id = 'progress-overlay';
-        overlay.innerHTML = \\\`
+        overlay.innerHTML = \`
           <div class="progress-card">
             <h3 style="font-family:'Playfair Display', serif;font-weight:700;font-size:1.2rem;color:var(--espresso);margin-bottom:0.2rem;">Live Scraper Progress</h3>
             <p id="progress-status" style="font-size:0.78rem;color:var(--cocoa-gray);margin-bottom:0.8rem;">Connecting to local backend server...</p>
@@ -1446,7 +1452,7 @@ function compileStaticDashboard() {
             </div>
             <div class="progress-logs" id="progress-logs"></div>
           </div>
-        \\\`;
+        \`;
         document.body.appendChild(overlay);
       } else {
         overlay.style.display = 'flex';
