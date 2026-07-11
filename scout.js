@@ -579,6 +579,8 @@ async function scoutOneSourcePortal(portal, browser) {
 
       const rawHash = crypto.createHash('md5').update(pdfBuffer).digest('hex');
       const bufferHash = `onesource-rawbuf-${rawHash}`;
+      const isNewUrl = !seenDeals[urlHash];
+      const isNewBuffer = !seenDeals[bufferHash];
 
       let pdfText = '';
       try {
