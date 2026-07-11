@@ -125,19 +125,19 @@ function compileStaticDashboard() {
   
   <style>
     :root {
-      /* Wandering Bear Sleek Dark Mode */
-      --bg-dark: #0c0b0a;
-      --card-bg: rgba(26, 23, 22, 0.65);
-      --card-border: rgba(225, 218, 203, 0.08);
-      --espresso: #f6f3eb;
-      --cocoa-gray: #bdafa6;
-      --terracotta: #f15d3b;
-      --terracotta-light: rgba(241, 93, 59, 0.12);
-      --seafoam-teal: #4db3a5;
-      --seafoam-light: rgba(77, 179, 165, 0.15);
-      --amber: #fca84d;
-      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      --glass-blur: blur(20px);
+      /* Wandering Bear Premium Warm Light Theme */
+      --bg-warm: #fdfbf7;
+      --card-bg: #ffffff;
+      --card-border: rgba(43, 24, 16, 0.08);
+      --input-bg: #f5f0e4;
+      --espresso: #21120b;
+      --cocoa-gray: #6b5c54;
+      --terracotta: #cf5230;
+      --terracotta-light: rgba(207, 82, 48, 0.06);
+      --seafoam-teal: #367c72;
+      --seafoam-light: rgba(70, 149, 138, 0.08);
+      --amber: #b97025;
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     * {
@@ -148,9 +148,9 @@ function compileStaticDashboard() {
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: var(--bg-dark);
-      background-image: radial-gradient(circle at 10% 20%, rgba(241, 93, 59, 0.05) 0%, transparent 40%),
-                        radial-gradient(circle at 90% 80%, rgba(77, 179, 165, 0.04) 0%, transparent 50%);
+      background-color: var(--bg-warm);
+      background-image: radial-gradient(circle at 10% 20%, rgba(207, 82, 48, 0.015) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(70, 149, 138, 0.015) 0%, transparent 50%);
       color: var(--espresso);
       min-height: 100vh;
       padding: 2.5rem 1.5rem;
@@ -173,21 +173,19 @@ function compileStaticDashboard() {
       justify-content: center;
       align-items: center;
       z-index: 9999;
-      background-color: var(--bg-dark);
-      background-image: radial-gradient(circle at 50% 50%, rgba(241, 93, 59, 0.08) 0%, transparent 60%);
+      background-color: var(--bg-warm);
+      background-image: radial-gradient(circle at 50% 50%, rgba(207, 82, 48, 0.04) 0%, transparent 60%);
     }
 
     .lock-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
       border-radius: 32px;
       padding: 3.5rem 2.5rem;
       max-width: 440px;
       width: 90%;
       text-align: center;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 20px 40px rgba(43, 24, 16, 0.06);
     }
 
     .lock-logo-wrapper {
@@ -218,7 +216,7 @@ function compileStaticDashboard() {
 
     .pw-input {
       width: 100%;
-      background: rgba(0, 0, 0, 0.2);
+      background: var(--bg-warm);
       border: 1px solid var(--card-border);
       border-radius: 14px;
       padding: 1rem 1.2rem;
@@ -233,8 +231,8 @@ function compileStaticDashboard() {
 
     .pw-input:focus {
       border-color: var(--terracotta);
-      background: rgba(0, 0, 0, 0.35);
-      box-shadow: 0 0 15px rgba(241, 93, 59, 0.25);
+      background: #ffffff;
+      box-shadow: 0 0 15px rgba(207, 82, 48, 0.15);
     }
 
     .pw-btn {
@@ -247,14 +245,14 @@ function compileStaticDashboard() {
       font-size: 1.05rem;
       font-weight: 700;
       cursor: pointer;
-      box-shadow: 0 4px 15px rgba(241, 93, 59, 0.3);
+      box-shadow: 0 4px 15px rgba(207, 82, 48, 0.2);
       transition: var(--transition);
     }
 
     .pw-btn:hover {
-      background: #f87456;
+      background: #b43c22;
       transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(241, 93, 59, 0.4);
+      box-shadow: 0 8px 25px rgba(207, 82, 48, 0.3);
     }
 
     .error-msg {
@@ -278,15 +276,13 @@ function compileStaticDashboard() {
     header {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      backdrop-filter: var(--glass-blur);
-      -webkit-backdrop-filter: var(--glass-blur);
       border-radius: 28px;
       padding: 1.8rem 2.5rem;
       margin-bottom: 2.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 8px 30px rgba(43, 24, 16, 0.04);
     }
 
     .brand-section {
@@ -299,7 +295,7 @@ function compileStaticDashboard() {
       height: 100px;
       width: auto;
       object-fit: contain;
-      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0 8px 16px rgba(43, 24, 16, 0.05));
     }
 
     .brand-section h1 {
@@ -322,32 +318,31 @@ function compileStaticDashboard() {
       border: 1px solid var(--terracotta);
       border-radius: 14px;
       padding: 0.7rem 1.4rem;
-      font-size: 0.95rem;
-      color: var(--terracotta);
-      font-weight: 700;
-      box-shadow: 0 4px 15px rgba(241, 93, 59, 0.15);
-      transition: var(--transition);
-    }
+       font-size: 0.95rem;
+       color: var(--terracotta);
+       font-weight: 700;
+       box-shadow: 0 4px 15px rgba(207, 82, 48, 0.08);
+       transition: var(--transition);
+     }
 
-    .stats-badge:hover {
-      background: var(--terracotta);
-      color: #ffffff;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(241, 93, 59, 0.3);
-    }
+     .stats-badge:hover {
+       background: var(--terracotta);
+       color: #ffffff;
+       transform: translateY(-2px);
+       box-shadow: 0 8px 25px rgba(207, 82, 48, 0.2);
+     }
 
-
-    /* Filters Layout */
-    .filter-panel {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 24px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      box-shadow: 0 4px 15px rgba(43, 24, 16, 0.02);
+     /* Filters Layout */
+     .filter-panel {
+       background: var(--card-bg);
+       border: 1px solid var(--card-border);
+       border-radius: 28px;
+       padding: 2rem;
+       margin-bottom: 2.5rem;
+       display: flex;
+       flex-direction: column;
+       gap: 1.8rem;
+       box-shadow: 0 8px 30px rgba(43, 24, 16, 0.04);
     }
 
     .filter-row-top {
@@ -364,7 +359,7 @@ function compileStaticDashboard() {
 
     .search-input {
       width: 100%;
-      background: var(--bg-warm);
+      background: var(--input-bg);
       border: 1px solid var(--card-border);
       border-radius: 12px;
       padding: 0.9rem 1.2rem;
@@ -387,7 +382,7 @@ function compileStaticDashboard() {
     }
 
     .filter-tab {
-      background: var(--bg-warm);
+      background: var(--input-bg);
       border: 1px solid var(--card-border);
       border-radius: 10px;
       padding: 0.65rem 1.2rem;
@@ -403,10 +398,10 @@ function compileStaticDashboard() {
     }
 
     .filter-tab.active {
-      background: var(--terracotta);
+      background: var(--espresso);
       border-color: transparent;
       color: #ffffff;
-      box-shadow: 0 4px 12px rgba(207, 82, 48, 0.2);
+      box-shadow: 0 4px 12px rgba(33, 18, 11, 0.25);
     }
 
     /* Sub-filters (Sliders and Dropdowns) */
@@ -436,7 +431,7 @@ function compileStaticDashboard() {
     }
 
     .select-control {
-      background: var(--bg-warm);
+      background: var(--input-bg);
       border: 1px solid var(--card-border);
       border-radius: 10px;
       padding: 0.8rem 1rem;
@@ -490,10 +485,10 @@ function compileStaticDashboard() {
     .table-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      border-radius: 24px;
+      border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 4px 20px rgba(43, 24, 16, 0.03);
-      margin-bottom: 3rem;
+      box-shadow: 0 8px 30px rgba(43, 24, 16, 0.04);
+      margin-bottom: 4rem;
     }
 
     .table-wrapper {
