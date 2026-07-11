@@ -37,7 +37,6 @@ function compileStaticDashboard() {
 
   const allSailings = [];
   const cutoffDate = new Date();
-  cutoffDate.setDate(cutoffDate.getDate() - 30);
   cutoffDate.setHours(0, 0, 0, 0);
 
   for (const deal of uniqueDeals) {
@@ -1206,10 +1205,9 @@ function compileStaticDashboard() {
 
     function initializeData() {
       const cutoffDate = new Date();
-      cutoffDate.setDate(cutoffDate.getDate() - 30);
       cutoffDate.setHours(0, 0, 0, 0);
 
-      // Exclude expired older than 30 days
+      // Exclude expired older than today
       allSailings = allSailings.filter(s => {
         if (!s.sailDateObj) return true;
         return new Date(s.sailDateObj) >= cutoffDate;
