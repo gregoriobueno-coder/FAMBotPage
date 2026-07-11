@@ -125,18 +125,19 @@ function compileStaticDashboard() {
   
   <style>
     :root {
-      /* Wandering Bear Branded Warm Colors */
-      --bg-warm: #f6f3eb;
-      --card-bg: #ffffff;
-      --card-border: #e1dacb;
-      --espresso: #2b1810;
-      --cocoa-gray: #7a6b63;
-      --terracotta: #cf5230;
-      --terracotta-light: rgba(207, 82, 48, 0.1);
-      --seafoam-teal: #46958a;
-      --seafoam-light: rgba(70, 149, 138, 0.15);
-      --amber: #d68d45;
-      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      /* Wandering Bear Sleek Dark Mode */
+      --bg-dark: #0c0b0a;
+      --card-bg: rgba(26, 23, 22, 0.65);
+      --card-border: rgba(225, 218, 203, 0.08);
+      --espresso: #f6f3eb;
+      --cocoa-gray: #bdafa6;
+      --terracotta: #f15d3b;
+      --terracotta-light: rgba(241, 93, 59, 0.12);
+      --seafoam-teal: #4db3a5;
+      --seafoam-light: rgba(77, 179, 165, 0.15);
+      --amber: #fca84d;
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --glass-blur: blur(20px);
     }
 
     * {
@@ -147,10 +148,12 @@ function compileStaticDashboard() {
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: var(--bg-warm);
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(circle at 10% 20%, rgba(241, 93, 59, 0.05) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(77, 179, 165, 0.04) 0%, transparent 50%);
       color: var(--espresso);
       min-height: 100vh;
-      padding: 2rem 1.5rem;
+      padding: 2.5rem 1.5rem;
     }
 
     .container {
@@ -170,62 +173,68 @@ function compileStaticDashboard() {
       justify-content: center;
       align-items: center;
       z-index: 9999;
-      background: var(--bg-warm);
+      background-color: var(--bg-dark);
+      background-image: radial-gradient(circle at 50% 50%, rgba(241, 93, 59, 0.08) 0%, transparent 60%);
     }
 
     .lock-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      border-radius: 28px;
-      padding: 3rem 2rem;
-      max-width: 420px;
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-radius: 32px;
+      padding: 3.5rem 2.5rem;
+      max-width: 440px;
       width: 90%;
       text-align: center;
-      box-shadow: 0 12px 40px rgba(43, 24, 16, 0.08);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
     }
 
     .lock-logo-wrapper {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.8rem;
       display: flex;
       justify-content: center;
     }
 
     .lock-logo {
-      height: 100px;
+      height: 110px;
       object-fit: contain;
     }
 
     .lock-card h2 {
       font-family: 'Outfit', sans-serif;
       font-weight: 800;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
       color: var(--espresso);
+      letter-spacing: -0.01em;
     }
 
     .lock-card p {
       color: var(--cocoa-gray);
-      font-size: 0.9rem;
-      margin-bottom: 2rem;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin-bottom: 2.2rem;
     }
 
     .pw-input {
       width: 100%;
-      background: var(--bg-warm);
+      background: rgba(0, 0, 0, 0.2);
       border: 1px solid var(--card-border);
-      border-radius: 12px;
-      padding: 0.9rem 1.2rem;
+      border-radius: 14px;
+      padding: 1rem 1.2rem;
       color: var(--espresso);
-      font-size: 1rem;
+      font-size: 1.05rem;
       outline: none;
       text-align: center;
-      letter-spacing: 0.2em;
-      margin-bottom: 1rem;
+      letter-spacing: 0.25em;
+      margin-bottom: 1.2rem;
       transition: var(--transition);
     }
 
     .pw-input:focus {
       border-color: var(--terracotta);
-      box-shadow: 0 0 12px rgba(207, 82, 48, 0.2);
+      background: rgba(0, 0, 0, 0.35);
+      box-shadow: 0 0 15px rgba(241, 93, 59, 0.25);
     }
 
     .pw-btn {
@@ -233,17 +242,19 @@ function compileStaticDashboard() {
       background: var(--terracotta);
       color: #ffffff;
       border: none;
-      border-radius: 12px;
-      padding: 0.9rem;
-      font-size: 1rem;
+      border-radius: 14px;
+      padding: 1rem;
+      font-size: 1.05rem;
       font-weight: 700;
       cursor: pointer;
+      box-shadow: 0 4px 15px rgba(241, 93, 59, 0.3);
       transition: var(--transition);
     }
 
     .pw-btn:hover {
-      background: #b43c22;
-      box-shadow: 0 6px 20px rgba(207, 82, 48, 0.3);
+      background: #f87456;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(241, 93, 59, 0.4);
     }
 
     .error-msg {
@@ -267,85 +278,64 @@ function compileStaticDashboard() {
     header {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
-      border-radius: 24px;
-      padding: 1.5rem 2rem;
-      margin-bottom: 2rem;
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-radius: 28px;
+      padding: 1.8rem 2.5rem;
+      margin-bottom: 2.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 4px 20px rgba(43, 24, 16, 0.03);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     }
 
     .brand-section {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 1.8rem;
     }
 
     .header-logo {
-      height: 90px;
+      height: 100px;
       width: auto;
       object-fit: contain;
-      filter: drop-shadow(0 4px 10px rgba(43, 24, 16, 0.08));
+      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
     }
 
     .brand-section h1 {
       font-family: 'Outfit', sans-serif;
       font-weight: 800;
-      font-size: 2.3rem;
+      font-size: 2.6rem;
       color: var(--espresso);
-      margin-bottom: 0.1rem;
+      margin-bottom: 0.2rem;
+      letter-spacing: -0.02em;
     }
 
     .brand-section p {
       color: var(--cocoa-gray);
-      font-size: 0.95rem;
+      font-size: 1.05rem;
       font-weight: 600;
     }
 
     .stats-badge {
       background: var(--terracotta-light);
       border: 1px solid var(--terracotta);
-      border-radius: 12px;
-      padding: 0.6rem 1.2rem;
-      font-size: 0.9rem;
+      border-radius: 14px;
+      padding: 0.7rem 1.4rem;
+      font-size: 0.95rem;
       color: var(--terracotta);
       font-weight: 700;
+      box-shadow: 0 4px 15px rgba(241, 93, 59, 0.15);
+      transition: var(--transition);
     }
 
-    /* Metrics Cards */
-    .metrics-row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-      margin-bottom: 2rem;
+    .stats-badge:hover {
+      background: var(--terracotta);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(241, 93, 59, 0.3);
     }
 
-    .metric-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 20px;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0 4px 15px rgba(43, 24, 16, 0.02);
-    }
-
-    .metric-label {
-      color: var(--cocoa-gray);
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-    }
-
-    .metric-value {
-      font-family: 'Outfit', sans-serif;
-      font-size: 2.1rem;
-      font-weight: 800;
-      color: var(--espresso);
-    }
 
     /* Filters Layout */
     .filter-panel {
@@ -936,26 +926,6 @@ function compileStaticDashboard() {
       <button class="stats-badge" id="last-updated" onclick="triggerScraperRun()" style="cursor:pointer;border:none;outline:none;display:inline-flex;align-items:center;gap:0.4rem;transition:var(--transition);font-family:inherit;">🔄 Real-time Rates</button>
     </header>
 
-    <!-- Metrics Summary Cards -->
-    <div class="metrics-row">
-      <div class="metric-card">
-        <span class="metric-label">Active FAM Sailing Deals</span>
-        <span class="metric-value" id="metric-deals">0</span>
-      </div>
-      <div class="metric-card">
-        <span class="metric-label">Lowest Price Deal</span>
-        <span class="metric-value" id="metric-min-price">$0</span>
-      </div>
-      <div class="metric-card">
-        <span class="metric-label">Average Cruise Rate</span>
-        <span class="metric-value" id="metric-avg-price">$0</span>
-      </div>
-      <div class="metric-card">
-        <span class="metric-label">Brands Monitored</span>
-        <span class="metric-value" id="metric-brands">6</span>
-      </div>
-    </div>
-
     <!-- Interactive Filters Dashboard -->
     <div class="filter-panel">
       <div class="filter-row-top">
@@ -1222,14 +1192,7 @@ function compileStaticDashboard() {
       slider.value = maxPrice;
       document.getElementById('price-slider-val').innerText = '$' + maxPrice;
 
-      // Populate summary metrics
-      document.getElementById('metric-deals').innerText = allSailings.length;
-      if (prices.length) {
-        const minPrice = Math.min(...prices);
-        const avgPrice = Math.round(prices.reduce((a, b) => a + b, 0) / prices.length);
-        document.getElementById('metric-min-price').innerText = '$' + minPrice;
-        document.getElementById('metric-avg-price').innerText = '$' + avgPrice;
-      }
+
 
       // Populate Month select options dynamically
       const monthsMap = {};
