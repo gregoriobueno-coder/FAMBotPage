@@ -38,6 +38,7 @@ function compileStaticDashboard() {
   const allSailings = [];
   const cutoffDate = new Date();
   cutoffDate.setHours(0, 0, 0, 0);
+  const seenKeys = new Set();
 
   for (const deal of uniqueDeals) {
     if (!deal.summary) continue;
@@ -61,8 +62,15 @@ function compileStaticDashboard() {
       const isExpired = !isNaN(sailDate.getTime()) && sailDate < cutoffDate;
       
       if (isExpired) {
-        continue; // Exclude expired sailings older than 30 days
+        continue; // Exclude expired sailings
       }
+
+      // Deduplicate: same ship, date, nights, itinerary, category, price
+      const key = `${sailDateStr}|${ship}|${nightsStr}|${itinerary}|${category}|${price}`;
+      if (seenKeys.has(key)) {
+        continue;
+      }
+      seenKeys.add(key);
 
       const isExternal = deal.pdfUrl.startsWith('http');
       const filename = isExternal ? 'View Original PDF' : deal.pdfUrl.split('/').pop();
