@@ -1374,52 +1374,52 @@ function compileStaticDashboard() {
       document.getElementById('quote-modal').style.display = 'none';
     }
 
-    function appendLog(container, message, isError = false) {
-      const line = document.createElement('div');
-      line.style.padding = '2px 0';
-      if (isError) {
-        line.style.color = 'var(--terracotta)';
-      }
-      line.innerText = \`[\${new Date().toLocaleTimeString()}] \${message}\`;
-      container.appendChild(line);
-      container.scrollTop = container.scrollHeight;
-    }
-
-    function addCloseButton(overlay, btn) {
-      const card = overlay.querySelector('.progress-card');
-      const closeBtn = document.createElement('button');
-      closeBtn.className = 'pw-btn';
-      closeBtn.style.marginTop = '1rem';
-      closeBtn.innerText = 'Dismiss Logs';
-      closeBtn.onclick = () => {
-        overlay.style.display = 'none';
-        btn.disabled = false;
-        btn.style.opacity = '1';
-        btn.innerHTML = '🔄 Real-time Rates';
-      };
-      card.appendChild(closeBtn);
-    }
+    let pollInterval = null;
 
     async function triggerScraperRun() {
-      const btn = document.getElementById('last-updated');
-      if (btn.disabled) return;
-
-      btn.disabled = true;
-      btn.style.opacity = '0.6';
-      btn.innerHTML = '⚙️ Executing...';
-
       let overlay = document.getElementById('progress-overlay');
       if (!overlay) {
         overlay = document.createElement('div');
         overlay.id = 'progress-overlay';
         overlay.innerHTML = \`
-          <div class="progress-card">
-            <h3 style="font-family:'Playfair Display', serif;font-weight:700;font-size:1.2rem;color:var(--espresso);margin-bottom:0.2rem;">Live Scraper Progress</h3>
-            <p id="progress-status" style="font-size:0.78rem;color:var(--cocoa-gray);margin-bottom:0.8rem;">Connecting to local backend server...</p>
-            <div class="progress-bar-container">
-              <div class="progress-bar-fill" id="progress-fill"></div>
+          <div class="progress-card" style="max-width: 500px; width: 90%;">
+            <h3 style="font-family:'Playfair Display', serif;font-weight:700;font-size:1.4rem;color:var(--espresso);margin-bottom:0.2rem;">Scraper Audit & Control</h3>
+            <p style="font-size:0.8rem;color:var(--cocoa-gray);margin-bottom:1.2rem;">Monitor daily automated executions and trigger manual updates.</p>
+            
+            <div style="border-bottom: 1px solid var(--card-border); margin-bottom: 1rem; display: flex; gap: 0.8rem; justify-content: center; width: 100%;">
+              <button id="tab-audit-log" class="filter-tab active" onclick="switchScraperTab('log')" style="padding: 0.4rem 0.8rem; font-size: 0.8rem; border-radius: 8px;">Audit Log</button>
+              <button id="tab-scraper-trigger" class="filter-tab" onclick="switchScraperTab('trigger')" style="padding: 0.4rem 0.8rem; font-size: 0.8rem; border-radius: 8px;">Trigger Manual Run</button>
             </div>
-            <div class="progress-logs" id="progress-logs"></div>
+            
+            <!-- Audit Log Tab Content -->
+            <div id="scraper-log-content" style="width: 100%;">
+              <div id="audit-list" style="max-height: 250px; overflow-y: auto; text-align: left; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.6rem; padding: 0.5rem 0;">
+                Loading run history...
+              </div>
+            </div>
+            
+            <!-- Trigger Tab Content -->
+            <div id="scraper-trigger-content" style="display: none; text-align: left; font-size: 0.85rem; width: 100%;">
+              <div id="trigger-instructions" style="margin-bottom: 1rem; color: var(--cocoa-gray); line-height: 1.4;">
+                To trigger the scraper directly from this static dashboard, provide a GitHub Personal Access Token (PAT) with <code>workflow</code> permission.
+                <br><a href="https://github.com/settings/tokens/new?scopes=workflow" target="_blank" style="color: var(--accent-mint); font-weight: 600; text-decoration: underline;">Generate token on GitHub</a>
+                <br><span style="color:var(--amber); font-size: 0.75rem; display: block; margin-top: 0.25rem;">🔒 Token is saved securely in your browser's local storage and is never shared.</span>
+              </div>
+              
+              <div style="display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.2rem;">
+                <label style="font-weight: 700; font-size: 0.75rem; text-transform: uppercase; color: var(--espresso);">GitHub PAT (Personal Access Token):</label>
+                <input type="password" id="github-pat-field" class="pw-input" placeholder="ghp_..." style="letter-spacing: 0; text-align: left; padding: 0.8rem; margin-bottom: 0; font-size: 0.9rem;">
+              </div>
+              
+              <div style="display: flex; gap: 0.8rem;">
+                <button class="pw-btn" onclick="executeManualWorkflow()" style="padding: 0.8rem; font-size: 0.95rem; flex: 2; margin-bottom: 0;">🚀 Trigger Scraper</button>
+                <button class="pw-btn" onclick="clearGithubToken()" style="padding: 0.8rem; font-size: 0.95rem; background: var(--terracotta); flex: 1; margin-bottom: 0; box-shadow: none;">Clear</button>
+              </div>
+              
+              <div id="trigger-status-msg" style="margin-top: 1rem; color: var(--accent-mint); font-weight: 600; display: none; text-align: center; font-size: 0.85rem;"></div>
+            </div>
+            
+            <button class="pw-btn" onclick="closeScraperModal()" style="margin-top: 1.5rem; background: #6b5c54; padding: 0.8rem; font-size: 0.95rem; width: 100%; border: none; box-shadow: none; color: #fff;">Close</button>
           </div>
         \`;
         document.body.appendChild(overlay);
@@ -1427,64 +1427,159 @@ function compileStaticDashboard() {
         overlay.style.display = 'flex';
       }
 
-      const logContainer = document.getElementById('progress-logs');
-      const fill = document.getElementById('progress-fill');
-      const statusText = document.getElementById('progress-status');
+      // Populate token if exists
+      const savedToken = localStorage.getItem('github_pat');
+      if (savedToken) {
+        document.getElementById('github-pat-field').value = savedToken;
+      }
 
-      logContainer.innerHTML = '';
-      fill.style.width = '3%';
+      switchScraperTab('log');
+    }
 
-      try {
-        const source = new EventSource('/api/run-scraper');
+    function switchScraperTab(tab) {
+      const logTab = document.getElementById('tab-audit-log');
+      const triggerTab = document.getElementById('tab-scraper-trigger');
+      const logContent = document.getElementById('scraper-log-content');
+      const triggerContent = document.getElementById('scraper-trigger-content');
+
+      if (tab === 'log') {
+        logTab.classList.add('active');
+        triggerTab.classList.remove('active');
+        logContent.style.display = 'block';
+        triggerContent.style.display = 'none';
+        loadRunHistory();
         
-        source.addEventListener('status', (e) => {
-          const data = JSON.parse(e.data);
-          statusText.innerText = data.message;
-          if (data.done) {
-            fill.style.width = '100%';
-            source.close();
-            
-            if (data.failed) {
-              fill.style.backgroundColor = 'var(--terracotta)';
-              addCloseButton(overlay, btn);
-            } else {
-              statusText.innerText = 'Sync succeeded! Reloading dashboard...';
-              setTimeout(() => window.location.reload(), 2000);
-            }
-          }
-        });
-
-        source.addEventListener('log', (e) => {
-          const data = JSON.parse(e.data);
-          appendLog(logContainer, data.message, false);
-          
-          if (data.message.includes('Status: queued')) {
-            fill.style.width = '20%';
-          } else if (data.message.includes('state: in_progress')) {
-            fill.style.width = '50%';
-          } else if (data.message.includes('completed successfully')) {
-            fill.style.width = '90%';
-          }
-        });
-
-        source.addEventListener('error', (e) => {
-          const data = JSON.parse(e.data);
-          appendLog(logContainer, data.message, true);
-        });
-
-        source.onerror = (err) => {
-          console.error(err);
-          appendLog(logContainer, 'Lost connection to local Express server.', true);
-          source.close();
-          fill.style.backgroundColor = 'var(--terracotta)';
-          addCloseButton(overlay, btn);
-        };
-      } catch (err) {
-        appendLog(logContainer, 'Failed to trigger scraper: ' + err.message, true);
-        fill.style.backgroundColor = 'var(--terracotta)';
-        addCloseButton(overlay, btn);
+        // Start polling runs history while open
+        if (!pollInterval) {
+          pollInterval = setInterval(loadRunHistory, 5000);
+        }
+      } else {
+        logTab.classList.remove('active');
+        triggerTab.classList.add('active');
+        logContent.style.display = 'none';
+        triggerContent.style.display = 'block';
+        
+        if (pollInterval) {
+          clearInterval(pollInterval);
+          pollInterval = null;
+        }
       }
     }
+
+    function closeScraperModal() {
+      document.getElementById('progress-overlay').style.display = 'none';
+      if (pollInterval) {
+        clearInterval(pollInterval);
+        pollInterval = null;
+      }
+    }
+
+    async function loadRunHistory() {
+      const auditList = document.getElementById('audit-list');
+      if (!auditList) return;
+
+      try {
+        const response = await fetch('https://api.github.com/repos/gregoriobueno-coder/FAMBotPage/actions/workflows/sync-fam.yml/runs');
+        
+        if (!response.ok) throw new Error('Failed to fetch run history from GitHub.');
+        const data = await response.json();
+        
+        if (!data.workflow_runs || data.workflow_runs.length === 0) {
+          auditList.innerHTML = '<div style="color: var(--cocoa-gray); text-align: center;">No runs found.</div>';
+          return;
+        }
+
+        let html = '';
+        data.workflow_runs.slice(0, 5).forEach(run => {
+          const startTime = new Date(run.created_at).toLocaleString();
+          let statusBadgeColor = '#e2e8f0';
+          let statusTextColor = '#475569';
+          let statusText = run.status;
+
+          if (run.status === 'completed') {
+            statusText = run.conclusion === 'success' ? 'Success' : 'Failed';
+            statusBadgeColor = run.conclusion === 'success' ? '#d1fae5' : '#fee2e2';
+            statusTextColor = run.conclusion === 'success' ? '#065f46' : '#991b1b';
+          } else if (run.status === 'in_progress' || run.status === 'queued') {
+            statusText = 'Running ⏳';
+            statusBadgeColor = '#fef3c7';
+            statusTextColor = '#92400e';
+          }
+
+          html += \`
+            <div style="border: 1px solid var(--card-border); border-radius: 12px; padding: 0.8rem; background: #faf8f5; display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <strong style="color: var(--espresso); font-size: 0.9rem;">Run #\${run.run_number}</strong>
+                <span style="font-size: 0.72rem; color: var(--cocoa-gray); display: block; margin-top: 0.15rem;">Triggered: \${startTime}</span>
+                <span style="font-size: 0.72rem; color: var(--espresso); display: block; margin-top: 0.15rem;">Event: \${run.event}</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem;">
+                <span style="background: \${statusBadgeColor}; color: \${statusTextColor}; border-radius: 6px; padding: 0.2rem 0.5rem; font-weight: 700; font-size: 0.75rem;">\${statusText}</span>
+                <a href="\${run.html_url}" target="_blank" style="font-size: 0.72rem; color: var(--accent-mint); text-decoration: underline;">View Details</a>
+              </div>
+            </div>
+          \`;
+        });
+        
+        auditList.innerHTML = html;
+      } catch (err) {
+        auditList.innerHTML = \`<div style="color: var(--terracotta); text-align: center;">Error loading history: \${err.message}</div>\`;
+      }
+    }
+
+    async function executeManualWorkflow() {
+      const patField = document.getElementById('github-pat-field');
+      const token = patField.value.trim();
+      const statusMsg = document.getElementById('trigger-status-msg');
+
+      if (!token) {
+        statusMsg.style.display = 'block';
+        statusMsg.style.color = 'var(--terracotta)';
+        statusMsg.innerText = '⚠️ Please enter a GitHub Access Token.';
+        return;
+      }
+
+      statusMsg.style.display = 'block';
+      statusMsg.style.color = 'var(--espresso)';
+      statusMsg.innerText = '⏳ Triggering scraper on GitHub Actions...';
+
+      try {
+        const response = await fetch('https://api.github.com/repos/gregoriobueno-coder/FAMBotPage/actions/workflows/sync-fam.yml/dispatches', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/vnd.github.v3+json',
+            'Authorization': \`token \${token}\`
+          },
+          body: JSON.stringify({ ref: 'main' })
+        });
+
+        if (response.status === 204) {
+          localStorage.setItem('github_pat', token);
+          statusMsg.style.color = 'var(--accent-mint)';
+          statusMsg.innerText = '🚀 Scraper successfully triggered! Switching to Audit Log to monitor...';
+          setTimeout(() => {
+            switchScraperTab('log');
+            statusMsg.style.display = 'none';
+          }, 2000);
+        } else {
+          const errData = await response.json().catch(() => ({}));
+          throw new Error(errData.message || \`HTTP \${response.status}\`);
+        }
+      } catch (err) {
+        statusMsg.style.color = 'var(--terracotta)';
+        statusMsg.innerText = \`❌ Error: \${err.message} (Verify token validity and permissions).\`;
+      }
+    }
+
+    function clearGithubToken() {
+      localStorage.removeItem('github_pat');
+      document.getElementById('github-pat-field').value = '';
+      const statusMsg = document.getElementById('trigger-status-msg');
+      statusMsg.style.display = 'block';
+      statusMsg.style.color = 'var(--terracotta)';
+      statusMsg.innerText = '🗑️ Token removed from browser storage.';
+    }
+
     if (window.PAYLOAD_TYPE === 'plaintext') {
       allSailings = JSON.parse(window.atob(window.PAYLOAD_DATA));
       initializeData();
