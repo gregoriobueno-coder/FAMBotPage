@@ -1,5 +1,29 @@
 [
   {
+    "timestamp": "2026-07-14T02:29:23.475Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 31,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    }
+  },
+  {
     "timestamp": "2026-07-14T02:26:50.043Z",
     "status": "success",
     "newDealsCount": 2,
