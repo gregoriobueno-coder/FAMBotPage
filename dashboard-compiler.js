@@ -926,7 +926,12 @@ function compileStaticDashboard() {
           <p>Interactive Cruise Rates & Special Incentives Monitor</p>
         </div>
       </div>
-      <button class="stats-badge" id="last-updated" onclick="triggerScraperRun()" style="cursor:pointer;border:none;outline:none;display:inline-flex;align-items:center;gap:0.4rem;transition:var(--transition);font-family:inherit;">🔄 Real-time Rates</button>
+      <div style="display:inline-flex;align-items:center;gap:1rem;">
+        <a href="https://github.com/gregoriobueno-coder/FAMBotPage/actions/workflows/sync-fam.yml" target="_blank" style="display:inline-flex;align-items:center;text-decoration:none;" title="View Scraper Actions Runs & Audit logs">
+          <img src="https://github.com/gregoriobueno-coder/FAMBotPage/actions/workflows/sync-fam.yml/badge.svg" alt="FAM Scout Sync Status" style="border-radius:4px;box-shadow:0 2px 8px rgba(43,24,16,0.05);height:20px;">
+        </a>
+        <button class="stats-badge" id="last-updated" onclick="triggerScraperRun()" style="cursor:pointer;border:none;outline:none;display:inline-flex;align-items:center;gap:0.4rem;transition:var(--transition);font-family:inherit;">🔄 Real-time Rates</button>
+      </div>
     </header>
 
     <!-- Interactive Filters Dashboard -->
