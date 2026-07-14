@@ -28,26 +28,7 @@ async function sendNotification(message, title = 'FAM Scout Alert') {
     }));
   }
 
-  // 2. Telegram Notification
-  if (process.env.ENABLE_TELEGRAM === 'true') {
-    const token = process.env.TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.TELEGRAM_CHAT_ID;
-    
-    if (token && chatId) {
-      const url = `https://api.telegram.org/bot${token}/sendMessage`;
-      promises.push(
-        axios.post(url, {
-          chat_id: chatId,
-          text: `*${title}*\n${message}`,
-          parse_mode: 'Markdown'
-        })
-        .then(() => console.log('Telegram notification sent.'))
-        .catch(err => console.error('Telegram notification failed:', err.message))
-      );
-    } else {
-      console.warn('Telegram enabled but TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID is missing.');
-    }
-  }
+
 
   // 3. Pushover Notification
   if (process.env.ENABLE_PUSHOVER === 'true') {

@@ -684,12 +684,23 @@ async function scoutOneSourcePortal(portal, browser) {
 
   // Save the updated database of seen deals
   fs.writeFileSync(seenDealsPath, JSON.stringify(seenDeals, null, 2), 'utf8');
-  const finalDealsCount = Object.keys(seenDeals).length;
-  const newDealsCount = finalDealsCount - initialDealsCount;
-  
-  runRecord.newDealsCount = newDealsCount;
-  runRecord.totalDealsCount = finalDealsCount;
-  console.log(`\nSeen deals database updated. Total items tracked: ${finalDealsCount} (${newDealsCount} new).`);
+
+  // Compile the serverless static dashboard page
+  let netNewDealsCount = 0;
+  let totalSailingsCount = 0;
+  try {
+    const compileResult = compileStaticDashboard();
+    if (compileResult) {
+      netNewDealsCount = compileResult.netNewDealsCount;
+      totalSailingsCount = compileResult.totalSailingsCount;
+    }
+  } catch (compileErr) {
+    console.error('Failed to compile static dashboard:', compileErr.message);
+  }
+
+  runRecord.newDealsCount = netNewDealsCount;
+  runRecord.totalDealsCount = totalSailingsCount;
+  console.log(`\nSeen deals database updated. Net new deals found: ${netNewDealsCount}. Total active sailings: ${totalSailingsCount}.`);
 
   // Update run history
   const runHistoryPath = path.join(dataDir, 'run_history.json');
@@ -704,13 +715,6 @@ async function scoutOneSourcePortal(portal, browser) {
   runHistory.unshift(runRecord);
   runHistory = runHistory.slice(0, 50); // Keep last 50 runs for visual audit
   fs.writeFileSync(runHistoryPath, JSON.stringify(runHistory, null, 2), 'utf8');
-
-  // Compile the serverless static dashboard page
-  try {
-    compileStaticDashboard();
-  } catch (compileErr) {
-    console.error('Failed to compile static dashboard:', compileErr.message);
-  }
 
   // Auto-push to GitHub repository if git is configured
   if (fs.existsSync(path.join(__dirname, '.git')) && process.env.GITHUB_ACTIONS !== 'true') {

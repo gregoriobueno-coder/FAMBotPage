@@ -40,6 +40,17 @@ function compileStaticDashboard() {
   cutoffDate.setHours(0, 0, 0, 0);
   const seenKeys = new Set();
 
+  const seenSailingKeysPath = path.join(__dirname, 'data', 'seen_sailing_keys.json');
+  let seenSailingKeys = new Set();
+  try {
+    if (fs.existsSync(seenSailingKeysPath)) {
+      seenSailingKeys = new Set(JSON.parse(fs.readFileSync(seenSailingKeysPath, 'utf8')));
+    }
+  } catch (err) {
+    console.error('Error loading seen_sailing_keys.json:', err.message);
+  }
+  let netNewDealsCount = 0;
+
   for (const deal of uniqueDeals) {
     if (!deal.summary) continue;
 
@@ -71,6 +82,13 @@ function compileStaticDashboard() {
         continue;
       }
       seenKeys.add(key);
+
+      // Check if this is a net new sailing key
+      const uniqueSailingKey = `${deal.portal}|${key}`;
+      if (!seenSailingKeys.has(uniqueSailingKey)) {
+        seenSailingKeys.add(uniqueSailingKey);
+        netNewDealsCount++;
+      }
 
       const isExternal = deal.pdfUrl.startsWith('http');
       const filename = isExternal ? 'View Original PDF' : deal.pdfUrl.split('/').pop();
@@ -1684,7 +1702,7 @@ function compileStaticDashboard() {
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--card-border); padding-bottom: 0.8rem; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 0.8rem;">
                 <div>
                   <strong style="color: var(--espresso); font-size: 0.95rem;">Run on \${runDate}</strong>
-                  <span style="display: block; font-size: 0.75rem; color: var(--cocoa-gray); margin-top: 0.15rem;">🆕 \${run.newDealsCount} new deals added (Total: \${run.totalDealsCount})</span>
+                  <span style="display: block; font-size: 0.75rem; color: var(--cocoa-gray); margin-top: 0.15rem;">🆕 \${run.newDealsCount} net new deals found (Total active: \${run.totalDealsCount})</span>
                 </div>
                 <span style="background: \${statusBg}; color: \${statusColor}; border-radius: 8px; padding: 0.3rem 0.6rem; font-weight: 700; font-size: 0.78rem;">\${statusText}</span>
               </div>
@@ -1733,6 +1751,14 @@ function compileStaticDashboard() {
   // Write new HTML file
   fs.writeFileSync(path.join(__dirname, 'index.html'), htmlContent, 'utf8');
   console.log(`Static dashboard successfully compiled to index.html at root! (Type: ${payloadType})`);
+
+  // Save the updated database of seen sailing keys
+  fs.writeFileSync(seenSailingKeysPath, JSON.stringify([...seenSailingKeys], null, 2), 'utf8');
+  
+  return { 
+    totalSailingsCount: allSailings.length,
+    netNewDealsCount: netNewDealsCount
+  };
 }
 
 module.exports = { compileStaticDashboard };
