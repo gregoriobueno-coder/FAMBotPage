@@ -644,6 +644,15 @@ async function scoutOneSourcePortal(portal, browser) {
   const headless = process.env.HEADLESS !== 'false';
   console.log(`Starting FAM Scout... Headless = ${headless}`);
   
+  const runRecord = {
+    timestamp: new Date().toISOString(),
+    status: "success",
+    newDealsCount: 0,
+    totalDealsCount: 0,
+    portals: {}
+  };
+  const initialDealsCount = Object.keys(seenDeals).length;
+
   // Launch Playwright browser if we need it
   const needsBrowser = portalsToScout.some(p => p.type === 'table' || p.name === 'onesource');
   let browser = null;
@@ -655,18 +664,46 @@ async function scoutOneSourcePortal(portal, browser) {
   }
 
   for (const portal of portalsToScout) {
-    if (portal.name === 'onesource' && browser) {
-      await scoutOneSourcePortal(portal, browser);
-    } else if (portal.type === 'pdf') {
-      await scoutPdfPortalAxios(portal);
-    } else if (portal.type === 'table' && browser) {
-      await scoutPortal(portal, browser);
+    runRecord.portals[portal.name] = { status: "checking", details: "" };
+    try {
+      if (portal.name === 'onesource' && browser) {
+        await scoutOneSourcePortal(portal, browser);
+      } else if (portal.type === 'pdf') {
+        await scoutPdfPortalAxios(portal);
+      } else if (portal.type === 'table' && browser) {
+        await scoutPortal(portal, browser);
+      }
+      runRecord.portals[portal.name].status = "success";
+    } catch (portalErr) {
+      console.error(`Error scouting ${portal.name}:`, portalErr.message);
+      runRecord.portals[portal.name].status = "failed";
+      runRecord.portals[portal.name].details = portalErr.message;
+      runRecord.status = "partial_failure";
     }
   }
 
   // Save the updated database of seen deals
   fs.writeFileSync(seenDealsPath, JSON.stringify(seenDeals, null, 2), 'utf8');
-  console.log(`\nSeen deals database updated. Total items tracked: ${Object.keys(seenDeals).length}`);
+  const finalDealsCount = Object.keys(seenDeals).length;
+  const newDealsCount = finalDealsCount - initialDealsCount;
+  
+  runRecord.newDealsCount = newDealsCount;
+  runRecord.totalDealsCount = finalDealsCount;
+  console.log(`\nSeen deals database updated. Total items tracked: ${finalDealsCount} (${newDealsCount} new).`);
+
+  // Update run history
+  const runHistoryPath = path.join(dataDir, 'run_history.json');
+  let runHistory = [];
+  try {
+    if (fs.existsSync(runHistoryPath)) {
+      runHistory = JSON.parse(fs.readFileSync(runHistoryPath, 'utf8'));
+    }
+  } catch (historyErr) {
+    console.error('Error reading run_history.json, resetting database history:', historyErr.message);
+  }
+  runHistory.unshift(runRecord);
+  runHistory = runHistory.slice(0, 50); // Keep last 50 runs for visual audit
+  fs.writeFileSync(runHistoryPath, JSON.stringify(runHistory, null, 2), 'utf8');
 
   // Compile the serverless static dashboard page
   try {
