@@ -930,6 +930,7 @@ function compileStaticDashboard() {
         <a href="https://github.com/gregoriobueno-coder/FAMBotPage/actions/workflows/sync-fam.yml" target="_blank" style="display:inline-flex;align-items:center;text-decoration:none;" title="View Scraper Actions Runs & Audit logs">
           <img src="https://github.com/gregoriobueno-coder/FAMBotPage/actions/workflows/sync-fam.yml/badge.svg" alt="FAM Scout Sync Status" style="border-radius:4px;box-shadow:0 2px 8px rgba(43,24,16,0.05);height:20px;">
         </a>
+        <button class="stats-badge" onclick="openAuditTrail()" style="cursor:pointer;border:none;outline:none;display:inline-flex;align-items:center;gap:0.4rem;transition:var(--transition);font-family:inherit;">📋 Scraper Trail</button>
         <button class="stats-badge" id="last-updated" onclick="triggerScraperRun()" style="cursor:pointer;border:none;outline:none;display:inline-flex;align-items:center;gap:0.4rem;transition:var(--transition);font-family:inherit;">🔄 Real-time Rates</button>
       </div>
     </header>
@@ -1578,6 +1579,127 @@ function compileStaticDashboard() {
       statusMsg.style.display = 'block';
       statusMsg.style.color = 'var(--terracotta)';
       statusMsg.innerText = '🗑️ Token removed from browser storage.';
+    }
+
+    async function openAuditTrail() {
+      let overlay = document.getElementById('audit-trail-overlay');
+      if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.id = 'audit-trail-overlay';
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0';
+        overlay.style.left = '0';
+        overlay.style.width = '100%';
+        overlay.style.height = '100%';
+        overlay.style.background = 'rgba(33, 18, 11, 0.4)';
+        overlay.style.backdropFilter = 'blur(8px)';
+        overlay.style.display = 'flex';
+        overlay.style.justifyContent = 'center';
+        overlay.style.alignItems = 'center';
+        overlay.style.zIndex = '10000';
+        
+        overlay.innerHTML = \`
+          <div class="progress-card" style="max-width: 750px; width: 95%; box-shadow: 0 20px 50px rgba(43, 24, 16, 0.12);">
+            <h3 style="font-family:'Playfair Display', serif;font-weight:700;font-size:1.5rem;color:var(--espresso);margin-bottom:0.2rem;">Scraper Visual Audit Trail</h3>
+            <p style="font-size:0.8rem;color:var(--cocoa-gray);margin-bottom:1.5rem;">Audit log of recent scraper executions, portal statuses, and new data updates.</p>
+            
+            <div id="audit-trail-list" style="max-height: 400px; overflow-y: auto; text-align: left; font-size: 0.85rem; display: flex; flex-direction: column; gap: 1rem; padding-right: 0.5rem;">
+              Loading audit trail history...
+            </div>
+            
+            <button class="pw-btn" onclick="closeAuditTrailModal()" style="margin-top: 1.5rem; background: #6b5c54; padding: 0.8rem; font-size: 0.95rem; width: 100%; border: none; box-shadow: none; color: #fff; margin-bottom: 0;">Close Audit Trail</button>
+          </div>
+        \`;
+        document.body.appendChild(overlay);
+      } else {
+        overlay.style.display = 'flex';
+      }
+
+      await loadAuditTrailData();
+    }
+
+    function closeAuditTrailModal() {
+      document.getElementById('audit-trail-overlay').style.display = 'none';
+    }
+
+    async function loadAuditTrailData() {
+      const container = document.getElementById('audit-trail-list');
+      if (!container) return;
+
+      try {
+        const response = await fetch('./data/run_history.json');
+        if (!response.ok) throw new Error('Run history file not found or empty.');
+        const runHistory = await response.json();
+        
+        if (!runHistory || runHistory.length === 0) {
+          container.innerHTML = '<div style="color: var(--cocoa-gray); text-align: center; padding: 2rem;">No scraper execution runs recorded yet.</div>';
+          return;
+        }
+
+        let html = '';
+        runHistory.forEach(run => {
+          const runDate = new Date(run.timestamp).toLocaleString();
+          let statusColor = '#065f46';
+          let statusText = '✅ Success';
+          let statusBg = '#d1fae5';
+
+          if (run.status === 'failed') {
+            statusColor = '#991b1b';
+            statusText = '❌ Scraper Error';
+            statusBg = '#fee2e2';
+          } else if (run.status === 'partial_failure') {
+            statusColor = '#b45309';
+            statusText = '⚠️ Issues Encountered';
+            statusBg = '#fef3c7';
+          }
+
+          // Portals grid
+          let portalBadges = '';
+          for (const portalName in run.portals) {
+            const p = run.portals[portalName];
+            let badgeBg = '#d1fae5';
+            let badgeText = '#065f46';
+            let icon = '✓';
+            
+            if (p.status === 'failed') {
+              badgeBg = '#fee2e2';
+              badgeText = '#991b1b';
+              icon = '✗';
+            } else if (p.status === 'checking') {
+              badgeBg = '#fef3c7';
+              badgeText = '#b45309';
+              icon = '⏳';
+            }
+
+            const cleanName = portalName.toUpperCase();
+            portalBadges += \`
+              <span class="portal-badge" style="background: \${badgeBg}; color: \${badgeText}; border-radius: 6px; padding: 0.2rem 0.4rem; font-size: 0.72rem; font-weight: 700; display: inline-flex; align-items: center; gap: 0.2rem;" title="\${p.details || 'Successfully scraped'}">
+                \${icon} \${cleanName}
+              </span>
+\`;
+          }
+
+          html += \`
+            <div style="border: 1px solid var(--card-border); border-radius: 16px; padding: 1.2rem; background: #ffffff; box-shadow: 0 4px 12px rgba(43, 24, 16, 0.02);">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--card-border); padding-bottom: 0.8rem; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 0.8rem;">
+                <div>
+                  <strong style="color: var(--espresso); font-size: 0.95rem;">Run on \${runDate}</strong>
+                  <span style="display: block; font-size: 0.75rem; color: var(--cocoa-gray); margin-top: 0.15rem;">🆕 \${run.newDealsCount} new deals added (Total: \${run.totalDealsCount})</span>
+                </div>
+                <span style="background: \${statusBg}; color: \${statusColor}; border-radius: 8px; padding: 0.3rem 0.6rem; font-weight: 700; font-size: 0.78rem;">\${statusText}</span>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: var(--cocoa-gray); text-transform: uppercase; margin-right: 0.4rem;">Portals Status:</span>
+                \${portalBadges}
+              </div>
+            </div>
+          \`;
+        });
+        
+        container.innerHTML = html;
+      } catch (err) {
+        container.innerHTML = \`<div style="color: var(--terracotta); text-align: center; padding: 2rem;">Error loading audit trail: \${err.message}</div>\`;
+      }
     }
 
     if (window.PAYLOAD_TYPE === 'plaintext') {
