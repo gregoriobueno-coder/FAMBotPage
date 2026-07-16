@@ -40,16 +40,24 @@ function compileStaticDashboard() {
   cutoffDate.setHours(0, 0, 0, 0);
   const seenKeys = new Set();
 
-  const seenSailingKeysPath = path.join(__dirname, 'data', 'seen_sailing_keys.json');
-  let seenSailingKeys = new Set();
+  const activePreviousPath = path.join(__dirname, 'data', 'active_sailings_previous.json');
+  let previousSailings = [];
   try {
-    if (fs.existsSync(seenSailingKeysPath)) {
-      seenSailingKeys = new Set(JSON.parse(fs.readFileSync(seenSailingKeysPath, 'utf8')));
+    if (fs.existsSync(activePreviousPath)) {
+      previousSailings = JSON.parse(fs.readFileSync(activePreviousPath, 'utf8'));
     }
   } catch (err) {
-    console.error('Error loading seen_sailing_keys.json:', err.message);
+    console.error('Error loading active_sailings_previous.json:', err.message);
   }
-  let netNewDealsCount = 0;
+
+  const prevMap = new Map();
+  previousSailings.forEach(s => {
+    const matchKey = `${s.ship}|${s.sailDateStr}|${s.nights}|${s.itinerary}|${s.category}`.toLowerCase();
+    prevMap.set(matchKey, s);
+  });
+
+  const addedDeals = [];
+  const priceChangedDeals = [];
 
   for (const deal of uniqueDeals) {
     if (!deal.summary) continue;
@@ -83,11 +91,23 @@ function compileStaticDashboard() {
       }
       seenKeys.add(key);
 
-      // Check if this is a net new sailing key
-      const uniqueSailingKey = `${deal.portal}|${key}`;
-      if (!seenSailingKeys.has(uniqueSailingKey)) {
-        seenSailingKeys.add(uniqueSailingKey);
-        netNewDealsCount++;
+      // Check for added / price changed deals
+      const matchKey = `${ship}|${sailDateStr}|${nightsStr}|${itinerary}|${category}`.toLowerCase();
+      const prevSailing = prevMap.get(matchKey);
+      if (!prevSailing) {
+        addedDeals.push({ ship, date: sailDateStr, category, price, itinerary });
+      } else {
+        if (prevSailing.price !== price) {
+          priceChangedDeals.push({
+            ship,
+            date: sailDateStr,
+            category,
+            oldPrice: prevSailing.price,
+            newPrice: price,
+            itinerary
+          });
+        }
+        prevMap.delete(matchKey);
       }
 
       const isExternal = deal.pdfUrl.startsWith('http');
@@ -1655,7 +1675,7 @@ function compileStaticDashboard() {
         }
 
         let html = '';
-        runHistory.forEach(run => {
+        runHistory.forEach((run, idx) => {
           const runDate = new Date(run.timestamp).toLocaleString();
           let statusColor = '#065f46';
           let statusText = '✅ Success';
@@ -1694,7 +1714,74 @@ function compileStaticDashboard() {
               <span class="portal-badge" style="background: \${badgeBg}; color: \${badgeText}; border-radius: 6px; padding: 0.2rem 0.4rem; font-size: 0.72rem; font-weight: 700; display: inline-flex; align-items: center; gap: 0.2rem;" title="\${p.details || 'Successfully scraped'}">
                 \${icon} \${cleanName}
               </span>
+            \`;
+          }
+
+          // Changes markup
+          let changesButton = '';
+          let changesDrawer = '';
+
+          if (run.changes) {
+            const hasAdded = run.changes.added && run.changes.added.length > 0;
+            const hasPrice = run.changes.priceChanged && run.changes.priceChanged.length > 0;
+            const hasRemoved = run.changes.removed && run.changes.removed.length > 0;
+
+            if (hasAdded || hasPrice || hasRemoved) {
+              const label = \`👁️ View Changes (\${run.changes.added ? run.changes.added.length : 0} new, \${run.changes.priceChanged ? run.changes.priceChanged.length : 0} shifts, \${run.changes.removed ? run.changes.removed.length : 0} gone)\`;
+              changesButton = \`
+                <button onclick="toggleAuditChanges('\${idx}')" style="cursor:pointer; background:none; border:1px solid var(--card-border); border-radius:6px; padding:0.25rem 0.5rem; font-size:0.75rem; font-family:inherit; color:var(--espresso); transition:var(--transition); font-weight: 700;">
+                  \${label}
+                </button>
 \`;
+
+              let addedListHtml = '';
+              if (hasAdded) {
+                addedListHtml = \`
+                  <div style="margin-bottom: 0.6rem;">
+                    <strong style="color: #065f46; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">🆕 Net New Deals Added (\${run.changes.added.length}):</strong>
+                    <ul style="margin: 0.2rem 0 0 1rem; padding-left: 0; list-style-type: square;">
+                      \${run.changes.added.map(d => \`<li><strong>\${d.ship}</strong> - \${d.date} (\${d.category}): <span style="color: var(--accent-mint); font-weight: 700;">$\${d.price}</span> - <em>\${d.itinerary}</em></li>\`).join('')}
+                    </ul>
+                  </div>
+\`;
+              }
+
+              let priceListHtml = '';
+              if (hasPrice) {
+                priceListHtml = \`
+                  <div style="margin-bottom: 0.6rem;">
+                    <strong style="color: #b45309; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">🔄 Price Updates (\${run.changes.priceChanged.length}):</strong>
+                    <ul style="margin: 0.2rem 0 0 1rem; padding-left: 0; list-style-type: square;">
+                      \${run.changes.priceChanged.map(d => {
+                        const arrow = d.newPrice < d.oldPrice ? '📉 Drop' : '📈 Increase';
+                        const color = d.newPrice < d.oldPrice ? '#065f46' : '#991b1b';
+                        return \`<li><strong>\${d.ship}</strong> - \${d.date} (\${d.category}): <span style="text-decoration: line-through; color: var(--cocoa-gray); font-size: 0.72rem;">$\${d.oldPrice}</span> &rarr; <span style="font-weight: 700; color: \${color};">$\${d.newPrice}</span> (\${arrow})</li>\`;
+                      }).join('')}
+                    </ul>
+                  </div>
+\`;
+              }
+
+              let removedListHtml = '';
+              if (hasRemoved) {
+                removedListHtml = \`
+                  <div>
+                    <strong style="color: #991b1b; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.5px;">❌ No Longer Available / Expired (\${run.changes.removed.length}):</strong>
+                    <ul style="margin: 0.2rem 0 0 1rem; padding-left: 0; list-style-type: square;">
+                      \${run.changes.removed.map(d => \`<li><strong>\${d.ship}</strong> - \${d.date} (\${d.category}): <span style="color: var(--cocoa-gray);">$\${d.price}</span> - <em>\${d.itinerary}</em></li>\`).join('')}
+                    </ul>
+                  </div>
+\`;
+              }
+
+              changesDrawer = \`
+                <div id="changes-drawer-\${idx}" style="display: none; border-top: 1px dashed var(--card-border); margin-top: 0.8rem; padding-top: 0.8rem; font-size: 0.78rem; line-height: 1.4; color: var(--espresso);">
+                  \${addedListHtml}
+                  \${priceListHtml}
+                  \${removedListHtml}
+                </div>
+\`;
+            }
           }
 
           html += \`
@@ -1706,10 +1793,14 @@ function compileStaticDashboard() {
                 </div>
                 <span style="background: \${statusBg}; color: \${statusColor}; border-radius: 8px; padding: 0.3rem 0.6rem; font-weight: 700; font-size: 0.78rem;">\${statusText}</span>
               </div>
-              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
-                <span style="font-size: 0.75rem; font-weight: 700; color: var(--cocoa-gray); text-transform: uppercase; margin-right: 0.4rem;">Portals Status:</span>
-                \${portalBadges}
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; justify-content: space-between;">
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;">
+                  <span style="font-size: 0.75rem; font-weight: 700; color: var(--cocoa-gray); text-transform: uppercase; margin-right: 0.4rem;">Portals Status:</span>
+                  \${portalBadges}
+                </div>
+                \${changesButton}
               </div>
+              \${changesDrawer}
             </div>
           \`;
         });
@@ -1717,6 +1808,13 @@ function compileStaticDashboard() {
         container.innerHTML = html;
       } catch (err) {
         container.innerHTML = \`<div style="color: var(--terracotta); text-align: center; padding: 2rem;">Error loading audit trail: \${err.message}</div>\`;
+      }
+    }
+
+    window.toggleAuditChanges = function(idx) {
+      const drawer = document.getElementById(\`changes-drawer-\${idx}\`);
+      if (drawer) {
+        drawer.style.display = drawer.style.display === 'none' ? 'block' : 'none';
       }
     }
 
@@ -1752,12 +1850,22 @@ function compileStaticDashboard() {
   fs.writeFileSync(path.join(__dirname, 'index.html'), htmlContent, 'utf8');
   console.log(`Static dashboard successfully compiled to index.html at root! (Type: ${payloadType})`);
 
-  // Save the updated database of seen sailing keys
-  fs.writeFileSync(seenSailingKeysPath, JSON.stringify([...seenSailingKeys], null, 2), 'utf8');
+  // Save the updated database of active sailings for the next comparison run
+  fs.writeFileSync(activePreviousPath, JSON.stringify(allSailings, null, 2), 'utf8');
   
+  const removedDeals = [];
+  prevMap.forEach(s => {
+    removedDeals.push({ ship: s.ship, date: s.sailDateStr, category: s.category, price: s.price, itinerary: s.itinerary });
+  });
+
   return { 
     totalSailingsCount: allSailings.length,
-    netNewDealsCount: netNewDealsCount
+    netNewDealsCount: addedDeals.length,
+    changes: {
+      added: addedDeals,
+      priceChanged: priceChangedDeals,
+      removed: removedDeals
+    }
   };
 }
 

@@ -688,8 +688,9 @@ async function scoutOneSourcePortal(portal, browser) {
   // Compile the serverless static dashboard page
   let netNewDealsCount = 0;
   let totalSailingsCount = 0;
+  let compileResult = null;
   try {
-    const compileResult = compileStaticDashboard();
+    compileResult = compileStaticDashboard();
     if (compileResult) {
       netNewDealsCount = compileResult.netNewDealsCount;
       totalSailingsCount = compileResult.totalSailingsCount;
@@ -700,7 +701,8 @@ async function scoutOneSourcePortal(portal, browser) {
 
   runRecord.newDealsCount = netNewDealsCount;
   runRecord.totalDealsCount = totalSailingsCount;
-  console.log(`\nSeen deals database updated. Net new deals found: ${netNewDealsCount}. Total active sailings: ${totalSailingsCount}.`);
+  runRecord.changes = (compileResult && compileResult.changes) ? compileResult.changes : { added: [], priceChanged: [], removed: [] };
+  console.log(`\nSeen deals database updated. Net new deals: ${netNewDealsCount}, Price changes: ${runRecord.changes.priceChanged.length}, Removed: ${runRecord.changes.removed.length}. Total active sailings: ${totalSailingsCount}.`);
 
   // Update run history
   const runHistoryPath = path.join(dataDir, 'run_history.json');
