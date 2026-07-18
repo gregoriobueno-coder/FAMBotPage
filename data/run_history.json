@@ -1,5 +1,70 @@
 [
   {
+    "timestamp": "2026-07-18T14:18:34.495Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 40,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "ISLAND",
+          "date": "7/15/2026",
+          "category": "ME",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "CORAL",
+          "date": "7/15/2026",
+          "category": "ME",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "ISLAND",
+          "date": "07/15/2026",
+          "category": "ME,MY,B2,BC,BE,BF,OB,OC,OE,OV,IA,IB,IC",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "CORAL",
+          "date": "07/15/2026",
+          "category": "ME,MY,BD,BE,BF,O5,O6,OB,OC,OE,OV,OW,OY,OZ,IA,IB,IC,ID,IE,IF",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "7/17/2026",
+          "category": "Verandah",
+          "price": 750,
+          "itinerary": "Bahamas from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-07-17T14:28:13.705Z",
     "status": "success",
     "newDealsCount": 0,
