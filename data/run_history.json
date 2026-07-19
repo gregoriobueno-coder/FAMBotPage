@@ -1,5 +1,112 @@
 [
   {
+    "timestamp": "2026-07-19T14:22:06.244Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 34,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "DISCOVERY",
+          "date": "7/18/2026",
+          "category": "S6",
+          "price": 160,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "ISLAND",
+          "date": "7/15/2026",
+          "category": "ME",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "CORAL",
+          "date": "7/15/2026",
+          "category": "ME",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "ROYAL",
+          "date": "7/18/2026",
+          "category": "BW",
+          "price": 170,
+          "itinerary": "Inside Passage (with Glacier Bay National Park)"
+        },
+        {
+          "ship": "GRAND",
+          "date": "7/18/2026",
+          "category": "ME",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "ISLAND",
+          "date": "07/15/2026",
+          "category": "ME,MY,B2,BC,BE,BF,OB,OC,OE,OV,IA,IB,IC",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "CORAL",
+          "date": "07/15/2026",
+          "category": "ME,MY,BD,BE,BF,O5,O6,OB,OC,OE,OV,OW,OY,OZ,IA,IB,IC,ID,IE,IF",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "DISCOVERY",
+          "date": "07/18/2026",
+          "category": "S6,MF,DE,DF,BE,BF,DW,BW,IA,IB,IC,ID,IE,IF",
+          "price": 160,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "ROYAL",
+          "date": "07/18/2026",
+          "category": "BW",
+          "price": 170,
+          "itinerary": "Inside Passage (with Glacier Bay National Park)"
+        },
+        {
+          "ship": "GRAND",
+          "date": "07/18/2026",
+          "category": "ME,BD,BE,BF,OC,OW,OY,OZ,IA",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "7/17/2026",
+          "category": "Verandah",
+          "price": 750,
+          "itinerary": "Bahamas from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-07-18T14:18:34.495Z",
     "status": "success",
     "newDealsCount": 0,
