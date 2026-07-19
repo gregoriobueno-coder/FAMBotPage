@@ -1,5 +1,126 @@
 [
   {
+    "timestamp": "2026-07-19T20:35:22.135Z",
+    "status": "success",
+    "newDealsCount": 6,
+    "totalDealsCount": 74,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [
+        {
+          "ship": "Queen Mary 2",
+          "date": "8/18/2026",
+          "category": "Inside",
+          "price": 639,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "8/30/2026",
+          "category": "Inside",
+          "price": 1019,
+          "itinerary": "Norwegian Fjords with Michel Roux"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/12/2026",
+          "category": "Inside",
+          "price": 739,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/17/2026",
+          "category": "Inside",
+          "price": 999,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/24/2026",
+          "category": "Inside",
+          "price": 1399,
+          "itinerary": "Panama Canal"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "price": 1389,
+          "itinerary": "New England and Canada"
+        }
+      ],
+      "priceChanged": [
+        {
+          "ship": "Queen Mary 2",
+          "date": "8/18/2026",
+          "category": "Inside",
+          "oldPrice": 639,
+          "newPrice": 937,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "8/30/2026",
+          "category": "Inside",
+          "oldPrice": 1019,
+          "newPrice": 1440,
+          "itinerary": "Norwegian Fjords with Michel Roux"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/12/2026",
+          "category": "Inside",
+          "oldPrice": 739,
+          "newPrice": 1073,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/17/2026",
+          "category": "Inside",
+          "oldPrice": 999,
+          "newPrice": 1359,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/24/2026",
+          "category": "Inside",
+          "oldPrice": 1399,
+          "newPrice": 2175,
+          "itinerary": "Panama Canal"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "oldPrice": 1389,
+          "newPrice": 1685,
+          "itinerary": "New England and Canada"
+        }
+      ],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-07-19T14:22:06.244Z",
     "status": "success",
     "newDealsCount": 0,
