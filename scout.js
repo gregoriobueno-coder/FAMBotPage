@@ -290,54 +290,83 @@ async function scrapeTablePortal(portal, page) {
 /**
  * Scrapes PDF-based deals using Axios direct HTTP requests with session cookies
  */
-async function scoutPdfPortalAxios(portal) {
+async function scoutPdfPortalAxios(portal, browser) {
   const statePath = path.join(__dirname, 'auth', `${portal.name}-state.json`);
+  
   if (!fs.existsSync(statePath)) {
-    console.log(`[${portal.displayName}] Session state cookies file not found. Skipping.`);
-    return;
+    console.log(`[${portal.displayName}] Session state cookies file not found. Attempting initial login...`);
+    if (browser) {
+      const freshContext = await tryAutoLogin(portal, browser, statePath);
+      if (freshContext) await freshContext.close();
+    }
   }
 
   console.log(`\n--- Scouting (Axios): ${portal.displayName} ---`);
   
   try {
-    const stateObj = JSON.parse(fs.readFileSync(statePath, 'utf8'));
-    const cookieHeader = stateObj.cookies.map(c => `${c.name}=${c.value}`).join('; ');
+    let html = '';
+    let cookieHeader = '';
 
-    console.log(`Fetching portal page: ${portal.url}`);
-    const response = await axios.get(portal.url, {
-      headers: {
-        'Cookie': cookieHeader,
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.5',
-        'Cache-Control': 'no-cache'
-      },
-      timeout: 15000
-    });
+  const performFetch = async () => {
+    if (!fs.existsSync(statePath)) return '';
+    try {
+      const stateObj = JSON.parse(fs.readFileSync(statePath, 'utf8'));
+      cookieHeader = stateObj.cookies.map(c => `${c.name}=${c.value}`).join('; ');
 
-    const html = response.data;
-    
-    // Find PDF link based on regex matches
-    console.log('Extracting PDF link from HTML...');
-    const matches = html.match(/href="([^"]+)"/g) || [];
+      console.log(`Fetching portal page: ${portal.url}`);
+      const response = await axios.get(portal.url, {
+        headers: {
+          'Cookie': cookieHeader,
+          'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+          'Accept-Language': 'en-US,en;q=0.5',
+          'Cache-Control': 'no-cache'
+        },
+        timeout: 15000
+      });
+      return response.data;
+    } catch (fetchErr) {
+      console.warn(`[${portal.displayName}] Direct fetch failed: ${fetchErr.message}`);
+      return '';
+    }
+  };
+
+  html = await performFetch();
+
+  const extractPdfUrl = (htmlContent) => {
+    if (!htmlContent) return '';
+    const matches = htmlContent.match(/href="([^"]+)"/g) || [];
     const hrefs = matches.map(m => m.replace(/^href="/, '').replace(/"$/, ''));
     
-    let pdfUrl = '';
     if (portal.name === 'disney') {
       const match = hrefs.find(h => h.includes('dclspecialrates') || h.includes('dcltaaprates') || h.toLowerCase().endsWith('.pdf'));
-      if (match) pdfUrl = match;
+      return match || '';
     } else if (portal.name === 'virgin') {
       const match = hrefs.find(h => h.includes('First%20Mate%20Rates%20Flyer.pdf') || h.toLowerCase().includes('rates') && h.toLowerCase().endsWith('.pdf'));
-      if (match) pdfUrl = match;
+      return match || '';
     } else {
       const match = hrefs.find(h => h.toLowerCase().endsWith('.pdf'));
-      if (match) pdfUrl = match;
+      return match || '';
     }
+  };
 
-    if (!pdfUrl) {
-      console.warn(`[${portal.displayName}] Could not locate PDF flyer link in HTML. User session might be expired.`);
-      return;
+  let pdfUrl = extractPdfUrl(html);
+
+  if (!pdfUrl && browser) {
+    console.log(`[${portal.displayName}] Session expired or no PDF link found. Retrying with automatic login...`);
+    const freshContext = await tryAutoLogin(portal, browser, statePath);
+    if (freshContext) {
+      await freshContext.close();
+      console.log(`[${portal.displayName}] Re-attempting fetch with fresh cookies...`);
+      html = await performFetch();
+      pdfUrl = extractPdfUrl(html);
     }
+  }
+
+  if (!pdfUrl) {
+    console.warn(`[${portal.displayName}] Could not locate PDF flyer link in HTML. User session might be expired.`);
+    return;
+  }
 
     // Resolve relative URLs
     if (!pdfUrl.startsWith('http')) {
@@ -510,11 +539,31 @@ async function scoutOneSourcePortal(portal, browser) {
         await locator.click();
         await page.waitForTimeout(4000);
 
-        // Extract direct PDF links on the page
+        // For Seabourn specifically, we also scan for the public rates website link
+        if (brand.name === 'Seabourn') {
+          const seabournLinkLoc = page.locator('a:has-text("Travel Advisor Appreciation Fares")').first();
+          if (await seabournLinkLoc.count() > 0) {
+            const seabournUrl = await seabournLinkLoc.getAttribute('href');
+            if (seabournUrl) {
+              const absoluteUrl = new URL(seabournUrl, page.url()).toString();
+              pdfsToDownload.push({
+                brandName: brand.displayName,
+                text: 'Travel Advisor Appreciation Fares (Web)',
+                url: absoluteUrl,
+                isWebPage: true
+              });
+            }
+          }
+        }
+
+        // Extract direct PDF links on the page (matching paths before query strings)
         const pagePdfs = await page.evaluate((brandName) => {
           return Array.from(document.querySelectorAll('a'))
             .map(a => ({ text: a.innerText.trim(), href: a.href }))
-            .filter(link => link.href.toLowerCase().endsWith('.pdf'))
+            .filter(link => {
+              const urlNoQuery = link.href.split('?')[0].toLowerCase();
+              return urlNoQuery.endsWith('.pdf');
+            })
             .map(link => ({
               brandName,
               text: link.text || 'Reduced Rates Flyer',
@@ -537,7 +586,10 @@ async function scoutOneSourcePortal(portal, browser) {
             const dealsPdfs = await page.evaluate((brandName) => {
               return Array.from(document.querySelectorAll('a'))
                 .map(a => ({ text: a.innerText.trim(), href: a.href }))
-                .filter(link => link.href.toLowerCase().endsWith('.pdf'))
+                .filter(link => {
+                  const urlNoQuery = link.href.split('?')[0].toLowerCase();
+                  return urlNoQuery.endsWith('.pdf');
+                })
                 .map(link => ({
                   brandName,
                   text: link.text || 'Weekly Deals PDF',
@@ -560,38 +612,54 @@ async function scoutOneSourcePortal(portal, browser) {
     }
   }
 
-  console.log(`Discovered ${pdfsToDownload.length} total PDF flyers across all OneSource brands.`);
+  console.log(`Discovered ${pdfsToDownload.length} total flyers/deals across all OneSource brands.`);
 
-  // Process the PDFs
+  // Process the PDFs / Web Pages
   for (const pdf of pdfsToDownload) {
     try {
       console.log(`Processing: [${pdf.brandName}] ${pdf.text} (${pdf.url})`);
 
       const urlHash = generateHash(`onesource-${pdf.url}`);
+      let isNewUrl = !seenDeals[urlHash];
+      let isNewBuffer = false;
+      let bufferHash = '';
+      let pdfText = '';
       let pdfBuffer = null;
 
-      try {
-        pdfBuffer = await downloadFile(page, pdf.url);
-      } catch (dlErr) {
-        console.error(`Failed to download PDF ${pdf.url}:`, dlErr.message);
-        continue;
-      }
+      if (pdf.isWebPage) {
+        console.log(`Scraping web page content for: ${pdf.url}`);
+        const webPage = await page.context().newPage();
+        await applyStealth(webPage);
+        await webPage.goto(pdf.url, { waitUntil: 'load' });
+        await webPage.waitForTimeout(4000);
+        pdfText = await webPage.evaluate(() => document.body.innerText);
+        await webPage.close();
 
-      const rawHash = crypto.createHash('md5').update(pdfBuffer).digest('hex');
-      const bufferHash = `onesource-rawbuf-${rawHash}`;
-      const isNewUrl = !seenDeals[urlHash];
-      const isNewBuffer = !seenDeals[bufferHash];
+        const rawHash = crypto.createHash('md5').update(pdfText).digest('hex');
+        bufferHash = `onesource-rawbuf-${rawHash}`;
+        isNewBuffer = !seenDeals[bufferHash];
+      } else {
+        try {
+          pdfBuffer = await downloadFile(page, pdf.url);
+        } catch (dlErr) {
+          console.error(`Failed to download PDF ${pdf.url}:`, dlErr.message);
+          continue;
+        }
 
-      let pdfText = '';
-      try {
-        const pdfData = await pdfParse(pdfBuffer);
-        pdfText = (pdfData.text || '').trim();
-      } catch (parseError) {
-        console.log(`Note: PDF text parsing skipped for ${pdf.url} (${parseError.message})`);
+        const rawHash = crypto.createHash('md5').update(pdfBuffer).digest('hex');
+        bufferHash = `onesource-rawbuf-${rawHash}`;
+        isNewBuffer = !seenDeals[bufferHash];
+
+        try {
+          const pdfData = await pdfParse(pdfBuffer);
+          pdfText = (pdfData.text || '').trim();
+        } catch (parseError) {
+          console.log(`Note: PDF text parsing skipped for ${pdf.url} (${parseError.message})`);
+        }
       }
 
       if (isNewUrl || isNewBuffer) {
-        console.log(`New document detected for ${pdf.brandName}!`);
+        console.log(`New document/content detected for ${pdf.brandName}!`);
 
         const aiSummary = (pdfText && process.env.GEMINI_API_KEY) ? await summarizePdfText(pdfText) : '';
 
@@ -608,7 +676,7 @@ async function scoutOneSourcePortal(portal, browser) {
         if (isNewUrl) seenDeals[urlHash] = pdfInfo;
         if (isNewBuffer) seenDeals[bufferHash] = pdfInfo;
 
-        let alertMessage = `📄 A new or updated FAM Rates PDF is available!\n⚓ Cruise Line: ${pdf.brandName}\n🏷️ Document: ${pdf.text}\n🔗 Link: ${pdf.url}\nPortal: OneSource`;
+        let alertMessage = `📄 A new or updated FAM Rates document is available!\n⚓ Cruise Line: ${pdf.brandName}\n🏷️ Document: ${pdf.text}\n🔗 Link: ${pdf.url}\nPortal: OneSource`;
         if (aiSummary) {
           alertMessage += `\n\n🎯 **AI Deal Summary:**\n${aiSummary}`;
         } else if (pdfText) {
@@ -624,15 +692,22 @@ async function scoutOneSourcePortal(portal, browser) {
           fs.mkdirSync(downloadsDir, { recursive: true });
         }
         const cleanBrand = pdf.brandName.toLowerCase().replace(/\s+/g, '-');
-        const fileName = `onesource-${cleanBrand}-${Date.now()}.pdf`;
-        const filePath = path.join(downloadsDir, fileName);
-        fs.writeFileSync(filePath, pdfBuffer);
-        console.log(`Saved PDF to: ${filePath}`);
+        if (pdf.isWebPage) {
+          const fileName = `onesource-${cleanBrand}-${Date.now()}.txt`;
+          const filePath = path.join(downloadsDir, fileName);
+          fs.writeFileSync(filePath, pdfText);
+          console.log(`Saved Web Text to: ${filePath}`);
+        } else if (pdfBuffer) {
+          const fileName = `onesource-${cleanBrand}-${Date.now()}.pdf`;
+          const filePath = path.join(downloadsDir, fileName);
+          fs.writeFileSync(filePath, pdfBuffer);
+          console.log(`Saved PDF to: ${filePath}`);
+        }
       } else {
         console.log(`Document content has not changed.`);
       }
     } catch (pdfError) {
-      console.error(`Error processing PDF ${pdf.url}:`, pdfError.message);
+      console.error(`Error processing document ${pdf.url}:`, pdfError.message);
     }
   }
 
@@ -653,24 +728,20 @@ async function scoutOneSourcePortal(portal, browser) {
   };
   const initialDealsCount = Object.keys(seenDeals).length;
 
-  // Launch Playwright browser if we need it
-  const needsBrowser = portalsToScout.some(p => p.type === 'table' || p.name === 'onesource');
-  let browser = null;
-  if (needsBrowser) {
-    browser = await chromium.launch({
-      headless,
-      args: ['--disable-http2']
-    });
-  }
+  // Launch Playwright browser
+  const browser = await chromium.launch({
+    headless,
+    args: ['--disable-http2']
+  });
 
   for (const portal of portalsToScout) {
     runRecord.portals[portal.name] = { status: "checking", details: "" };
     try {
-      if (portal.name === 'onesource' && browser) {
+      if (portal.name === 'onesource') {
         await scoutOneSourcePortal(portal, browser);
       } else if (portal.type === 'pdf') {
-        await scoutPdfPortalAxios(portal);
-      } else if (portal.type === 'table' && browser) {
+        await scoutPdfPortalAxios(portal, browser);
+      } else if (portal.type === 'table') {
         await scoutPortal(portal, browser);
       }
       runRecord.portals[portal.name].status = "success";

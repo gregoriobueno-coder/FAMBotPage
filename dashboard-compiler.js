@@ -1693,8 +1693,11 @@ function compileStaticDashboard() {
 
           // Portals grid
           let portalBadges = '';
+          let successCount = 0;
+          let totalCount = 0;
           for (const portalName in run.portals) {
             const p = run.portals[portalName];
+            totalCount++;
             let badgeBg = '#d1fae5';
             let badgeText = '#065f46';
             let icon = '✓';
@@ -1707,6 +1710,8 @@ function compileStaticDashboard() {
               badgeBg = '#fef3c7';
               badgeText = '#b45309';
               icon = '⏳';
+            } else if (p.status === 'success') {
+              successCount++;
             }
 
             const cleanName = portalName.toUpperCase();
@@ -1789,7 +1794,7 @@ function compileStaticDashboard() {
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--card-border); padding-bottom: 0.8rem; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 0.8rem;">
                 <div>
                   <strong style="color: var(--espresso); font-size: 0.95rem;">Run on \${runDate}</strong>
-                  <span style="display: block; font-size: 0.75rem; color: var(--cocoa-gray); margin-top: 0.15rem;">🆕 \${run.newDealsCount} net new deals found (Total active: \${run.totalDealsCount})</span>
+                  <span style="display: block; font-size: 0.75rem; color: var(--cocoa-gray); margin-top: 0.15rem;">🆕 \${run.newDealsCount} net new deals found (Total active: \${run.totalDealsCount}) &bull; \${successCount}/\${totalCount} portals active</span>
                 </div>
                 <span style="background: \${statusBg}; color: \${statusColor}; border-radius: 8px; padding: 0.3rem 0.6rem; font-weight: 700; font-size: 0.78rem;">\${statusText}</span>
               </div>
