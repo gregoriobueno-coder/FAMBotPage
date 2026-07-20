@@ -59,6 +59,8 @@ function compileStaticDashboard() {
   const addedDeals = [];
   const priceChangedDeals = [];
 
+  const rawSailings = [];
+
   for (const deal of uniqueDeals) {
     if (!deal.summary) continue;
 
@@ -79,42 +81,15 @@ function compileStaticDashboard() {
 
       const sailDate = new Date(sailDateStr);
       const isExpired = !isNaN(sailDate.getTime()) && sailDate < cutoffDate;
-      
       if (isExpired) {
         continue; // Exclude expired sailings
-      }
-
-      // Deduplicate: same ship, date, nights, itinerary, category, price
-      const key = `${sailDateStr}|${ship}|${nightsStr}|${itinerary}|${category}|${price}`;
-      if (seenKeys.has(key)) {
-        continue;
-      }
-      seenKeys.add(key);
-
-      // Check for added / price changed deals
-      const matchKey = `${ship}|${sailDateStr}|${nightsStr}|${itinerary}|${category}`.toLowerCase();
-      const prevSailing = prevMap.get(matchKey);
-      if (!prevSailing) {
-        addedDeals.push({ ship, date: sailDateStr, category, price, itinerary });
-      } else {
-        if (prevSailing.price !== price) {
-          priceChangedDeals.push({
-            ship,
-            date: sailDateStr,
-            category,
-            oldPrice: prevSailing.price,
-            newPrice: price,
-            itinerary
-          });
-        }
-        prevMap.delete(matchKey);
       }
 
       const isExternal = deal.pdfUrl.startsWith('http');
       const filename = isExternal ? 'View Original PDF' : deal.pdfUrl.split('/').pop();
       const displayLink = isExternal ? deal.pdfUrl : `./flyers/${filename}`;
 
-      allSailings.push({
+      rawSailings.push({
         portal: deal.portal,
         pdfUrl: displayLink,
         sailDateStr,
@@ -130,6 +105,43 @@ function compileStaticDashboard() {
         region: getRegion(itinerary)
       });
     }
+  }
+
+  // Deduplicate raw sailings: same ship, sailDateStr, nights, category (case-insensitive)
+  // Keep only the lowest price sailing!
+  const uniqueSailingsMap = new Map();
+  for (const s of rawSailings) {
+    const normShip = s.ship.toUpperCase().replace(/\s+/g, ' ').trim();
+    const normCategory = s.category.toUpperCase().replace(/\s+/g, ' ').trim();
+    const key = `${normShip}|${s.sailDateStr.trim()}|${s.nights}|${normCategory}`;
+    const existing = uniqueSailingsMap.get(key);
+    if (!existing || s.price < existing.price) {
+      uniqueSailingsMap.set(key, s);
+    }
+  }
+
+  // Process uniquely cheaper sailings
+  for (const s of uniqueSailingsMap.values()) {
+    // Check for added / price changed deals
+    const matchKey = `${s.ship}|${s.sailDateStr}|${s.nights}|${s.itinerary}|${s.category}`.toLowerCase();
+    const prevSailing = prevMap.get(matchKey);
+    if (!prevSailing) {
+      addedDeals.push({ ship: s.ship, date: s.sailDateStr, category: s.category, price: s.price, itinerary: s.itinerary });
+    } else {
+      if (prevSailing.price !== s.price) {
+        priceChangedDeals.push({
+          ship: s.ship,
+          date: s.sailDateStr,
+          category: s.category,
+          oldPrice: prevSailing.price,
+          newPrice: s.price,
+          itinerary: s.itinerary
+        });
+      }
+      prevMap.delete(matchKey);
+    }
+
+    allSailings.push(s);
   }
 
   const payloadJson = JSON.stringify(allSailings);
