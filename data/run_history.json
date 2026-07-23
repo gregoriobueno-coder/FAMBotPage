@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-07-23T15:04:49.152Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 64,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Zaandam",
+          "date": "7/22/2026",
+          "category": "Inside",
+          "price": 1014,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "CORAL",
+          "date": "7/22/2026",
+          "category": "S5",
+          "price": 160,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "ISLAND",
+          "date": "7/22/2026",
+          "category": "MB",
+          "price": 170,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-07-22T15:00:37.595Z",
     "status": "success",
     "newDealsCount": 0,

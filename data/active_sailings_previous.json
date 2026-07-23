@@ -452,21 +452,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "7/22/2026",
-    "sailDateObj": 1784678400000,
-    "ship": "Zaandam",
-    "nights": 7,
-    "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER",
-    "category": "Inside",
-    "priceStr": "$1014",
-    "price": 1014,
-    "dealScore": 5,
-    "aiInsight": "Standard Alaska Fare",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "7/25/2026",
     "sailDateObj": 1784937600000,
     "ship": "Koningsdam",
@@ -602,21 +587,6 @@
   {
     "portal": "onesource-princesscruises",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/pc/deals-and-limited-time-offers/weekly-deals/ReducedSingleSupplementVoyageList%207.12.pdf",
-    "sailDateStr": "7/22/2026",
-    "sailDateObj": 1784678400000,
-    "ship": "CORAL",
-    "nights": 7,
-    "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)",
-    "category": "S5",
-    "priceStr": "160%",
-    "price": 160,
-    "dealScore": 9,
-    "aiInsight": "Excellent single suite deal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-princesscruises",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/pc/deals-and-limited-time-offers/weekly-deals/ReducedSingleSupplementVoyageList%207.12.pdf",
     "sailDateStr": "7/25/2026",
     "sailDateObj": 1784937600000,
     "ship": "GRAND",
@@ -657,21 +627,6 @@
     "price": 160,
     "dealScore": 9,
     "aiInsight": "Excellent single suite deal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-princesscruises",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/pc/deals-and-limited-time-offers/weekly-deals/ReducedSingleSupplementVoyageList%207.12.pdf",
-    "sailDateStr": "7/22/2026",
-    "sailDateObj": 1784678400000,
-    "ship": "ISLAND",
-    "nights": 7,
-    "itinerary": "Voyage of the Glaciers (Northbound)",
-    "category": "MB",
-    "priceStr": "170%",
-    "price": 170,
-    "dealScore": 8,
-    "aiInsight": "Good single supplement deal",
     "region": "Other / Global"
   },
   {
