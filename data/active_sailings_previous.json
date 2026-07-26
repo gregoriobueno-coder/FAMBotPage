@@ -452,21 +452,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "7/25/2026",
-    "sailDateObj": 1784937600000,
-    "ship": "Koningsdam",
-    "nights": 7,
-    "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER",
-    "category": "Inside",
-    "priceStr": "$2051",
-    "price": 2051,
-    "dealScore": 1,
-    "aiInsight": "Standard Alaska Fare",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "8/9/2026",
     "sailDateObj": 1786233600000,
     "ship": "Nieuw Amsterdam",
@@ -583,36 +568,6 @@
     "dealScore": 5,
     "aiInsight": "Budget-Friendly Cruise",
     "region": "Alaska"
-  },
-  {
-    "portal": "onesource-princesscruises",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/pc/deals-and-limited-time-offers/weekly-deals/ReducedSingleSupplementVoyageList%207.12.pdf",
-    "sailDateStr": "7/25/2026",
-    "sailDateObj": 1784937600000,
-    "ship": "GRAND",
-    "nights": 7,
-    "itinerary": "Voyage of the Glaciers (Northbound)",
-    "category": "S4",
-    "priceStr": "160%",
-    "price": 160,
-    "dealScore": 9,
-    "aiInsight": "Excellent single suite deal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-princesscruises",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/pc/deals-and-limited-time-offers/weekly-deals/ReducedSingleSupplementVoyageList%207.12.pdf",
-    "sailDateStr": "7/25/2026",
-    "sailDateObj": 1784937600000,
-    "ship": "DISCOVERY",
-    "nights": 7,
-    "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)",
-    "category": "M1",
-    "priceStr": "160%",
-    "price": 160,
-    "dealScore": 9,
-    "aiInsight": "Excellent single mini-suite deal",
-    "region": "Other / Global"
   },
   {
     "portal": "onesource-princesscruises",
@@ -822,21 +777,6 @@
     "price": 969,
     "dealScore": 8,
     "aiInsight": "Affordable 12-night Caribbean escape",
-    "region": "Caribbean"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "7/25/2026",
-    "sailDateObj": 1784937600000,
-    "ship": "Disney Treasure",
-    "nights": 7,
-    "itinerary": "Western Caribbean from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$1,750",
-    "price": 1750,
-    "dealScore": 7,
-    "aiInsight": "Treasure Western Caribbean verandah",
     "region": "Caribbean"
   },
   {

@@ -1,5 +1,63 @@
 [
   {
+    "timestamp": "2026-07-26T14:26:23.225Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 60,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Koningsdam",
+          "date": "7/25/2026",
+          "category": "Inside",
+          "price": 2051,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "GRAND",
+          "date": "7/25/2026",
+          "category": "S4",
+          "price": 160,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "DISCOVERY",
+          "date": "7/25/2026",
+          "category": "M1",
+          "price": 160,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "7/25/2026",
+          "category": "Verandah",
+          "price": 1750,
+          "itinerary": "Western Caribbean from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-07-25T14:28:09.665Z",
     "status": "success",
     "newDealsCount": 0,
