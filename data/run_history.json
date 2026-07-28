@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-07-28T15:15:30.099Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 60,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-07-27T15:39:05.582Z",
     "status": "success",
     "newDealsCount": 0,
