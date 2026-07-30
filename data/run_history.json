@@ -1,5 +1,79 @@
 [
   {
+    "timestamp": "2026-07-30T21:06:10.893Z",
+    "status": "success",
+    "newDealsCount": 8,
+    "totalDealsCount": 121,
+    "portals": {
+      "virgin": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [
+        {
+          "ship": "VL",
+          "date": "8/5/2026",
+          "category": "N/A",
+          "price": 1500,
+          "itinerary": "Eclipse in the Land of Fire and Ice"
+        },
+        {
+          "ship": "SC",
+          "date": "8/10/2026",
+          "category": "N/A",
+          "price": 1200,
+          "itinerary": "Total Eclipse of the (Med)"
+        },
+        {
+          "ship": "BR",
+          "date": "8/13/2026",
+          "category": "N/A",
+          "price": 700,
+          "itinerary": "Alaska: Inside Passage & Glacial Fjords"
+        },
+        {
+          "ship": "SC",
+          "date": "8/22/2026",
+          "category": "N/A",
+          "price": 1350,
+          "itinerary": "Italy & French Riviera"
+        },
+        {
+          "ship": "BR",
+          "date": "8/27/2026",
+          "category": "N/A",
+          "price": 1050,
+          "itinerary": "Alaska: Inside Passage & Glacial Fjords"
+        },
+        {
+          "ship": "VL",
+          "date": "8/27/2026",
+          "category": "N/A",
+          "price": 1500,
+          "itinerary": "English Elegance to Idyllic Iceland"
+        },
+        {
+          "ship": "SC",
+          "date": "8/31/2026",
+          "category": "N/A",
+          "price": 1500,
+          "itinerary": "Rome, Florence, Mykonos & More"
+        },
+        {
+          "ship": "RS",
+          "date": "8/31/2026",
+          "category": "N/A",
+          "price": 750,
+          "itinerary": "Dominican Republic & Bimini Beach Club"
+        }
+      ],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-07-30T21:00:30.253Z",
     "status": "success",
     "newDealsCount": 15,
