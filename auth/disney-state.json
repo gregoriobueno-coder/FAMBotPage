@@ -1,45 +1,306 @@
 {
   "cookies": [
     {
+      "name": "PHPSESSID",
+      "value": "0542c30b3b43c6761c36ae042c9773d5",
+      "domain": "agentcentral.disneytravelagents.com",
+      "path": "/",
+      "expires": 1785377553,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ADRUM_BT",
+      "value": "R%3A35%7Cg%3A2f2b7cdd-35c9-4934-bca6-7ba0953067b812%7Cn%3ADisney-Prod_e4dfe7aa-6e26-4d68-9dc7-886d09949252%7Ci%3A12712341%7Ce%3A847",
+      "domain": "agentcentral.disneytravelagents.com",
+      "path": "/",
+      "expires": 1785373983,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cs_mk_aa",
+      "value": "0.1894141472562657_1785373954090",
+      "domain": "agentcentral.disneytravelagents.com",
+      "path": "/",
+      "expires": 1785375754,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AMCV_EDA101AC512D2B230A490D4C%40AdobeOrg",
+      "value": "-219703956%7CMCIDTS%7C20665%7CMCMID%7C05156514148788656522915985000030057225%7CMCAID%7CNONE%7CMCOPTOUT-1785381154s%7CNONE%7CMCAAMLH-1785978754%7C9%7CMCAAMB-1785978754%7Cj8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI%7CMCSYNCSOP%7C411-20672%7CvVersion%7C4.4.0",
+      "domain": "agentcentral.disneytravelagents.com",
+      "path": "/",
+      "expires": 1819933954,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "AMCVS_EDA101AC512D2B230A490D4C%40AdobeOrg",
+      "value": "1",
+      "domain": "agentcentral.disneytravelagents.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "ak_bmsc",
+      "value": "86BB5F4AB86D067381AB6BABC457823C~000000000000000000000000000000~YAAQspI6FwhD9KufAQAAwnWUsADhidR0z6/J5Ef/ZOlEGfwEP/lMYH87DMrDOahbm2/s7fFtmCEMr9UXoxjJ6US/Df/m4DsOLM1TAEzeX6InzUF/gsv4Lddmob/3EztUifj8N1kjqcvkuXQH39xLGNAdnUDeWM54qFrtH0CCDUeH7rkfqjBsuHwBXdTaMs+fGhlPw9fDSmfBckfe5CiWIeY0iLY2X1qTcGlFBoheo8tHyiF39u+TU5pAQYjE0LinCBpT2NtgPQDqlo9FqPL854QQ4I/LC/ysl7BVO7ltUiEnGtcU4ZkkdDgC7Wbvglj7MQDRMI6Oby+2E9V5XvX7v7/GBY1M4HIfwUHHwqTsxELbnDdPh4NSSnq5CKJPw0xLnZrszNC3xu14CfyWlgBE1NXypHijjo8ITFxN65cPGm96BROd0/EBKFGRaKmDTaGKJIoLpPQChV9igOSwv2ChVzc1X9lJsGidmw1xnDK4/Z6rfuBEHK+cIB8viA==",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": 1785381145,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "bm_sv",
+      "value": "BFA1AA0C6B9D9CCFD5E5B2FA7101830A~YAAQspI6F7ND9KufAQAAs42UsAAH5JfE6suSTOkICi4s9mWTbICnbcBICgiVwLtONhxPz9WpniQx/WLjfgn64CKPoXy2z7fE417xUV4+2cD12L/et2GWcmVjOEQQT9SIp6qBKTp+SDbPIJp2vE6Pk6xe9i6miy4sJNcA0Raq0ObeUe/+oU8J/muO45cvJr2VoYdZvcdkSz1wcalffHOhKu5DhJiA4fal4aWm/veASfSscESX4+gWhy9X47cjg7o0ggv3HYdQGjeKnZNk~1",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": 1785381145,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bm_mi",
+      "value": "459E5E71BBD8271804FFD111C8E05E0C~YAAQspI6F9JC9KufAQAAenCUsAALsbrWoHNtL53EhHprC74Pyyc5NT8irTjIFP4NQrG+Lwtjbfo6yI8/ZkkcZ84VMdQGYdQ6pyP690RqJ/ztjGy3OXg4hBW9J0fUGJTm+PmXLgWBqbq0dXY5ojzw+5PUmboD3MHyNuHoDq5dytYY+NCeg6ksawF+vDyv7JCDij2nfdvVsFHpKSDvGz0Fsvd+flSMY+SHCqSkNAa+ma5c9WZiMWijLO0J1F8bB3+d6buzi3XdOwIEVDytm+2HFF6mt+EaJrFf4Rs/WGJ9RZhWKO0bcJow1qxFk8o9KLFswdHwwE53OB24~1",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": 1785381145,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "at_check",
+      "value": "true",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "mbox",
+      "value": "session#26fefe5b41a74fb3a8739dbe4cec4372#1785375815|PC#26fefe5b41a74fb3a8739dbe4cec4372.34_0#1848618755",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": 1819933954,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "OptanonConsent",
+      "value": "isGpcEnabled=0&datestamp=Wed+Jul+29+2026+20%3A12%3A34+GMT-0500+(Central+Daylight+Time)&version=202301.2.0&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=C0001%3A1%2CC0003%3A1%2CSSPD_BG%3A1%2CC0002%3A1%2CC0004%3A1%2CC0005%3A1&AwaitingReconsent=false",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": 1816909954,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "s_sess",
+      "value": "%20s_tp%3D5404%3B%20s_slt%3D%3B%20s_cc%3Dtrue%3B%20s_ppv%3Dwdpro%252Fdta%252Fus%252Fen%252Fdomestic%252Fta%252Fagentcentral%252Favailablebenefits%252Fdynamicbenefitlist%252C19%252C19%252C1000%3B",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "s_pers",
+      "value": "%20s_gpv_pn%3Dwdpro%252Fdta%252Fus%252Fen%252Fdomestic%252Fta%252Fagentcentral%252Favailablebenefits%252Fdynamicbenefitlist%7C1785375754491%3B",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": 1785375754,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "mboxEdgeCluster",
+      "value": "34",
+      "domain": ".disneytravelagents.com",
+      "path": "/",
+      "expires": 1785375814,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
       "name": "ADRUM",
-      "value": "s=1782663061775&r=https%3A%2F%2Fwww.disneytravelagents.com%2F%3F1906785930",
+      "value": "s=1785373951392&r=https%3A%2F%2Fwww.disneytravelagents.com%2F%3F1906785930",
       "domain": ".disneytravelagents.com",
       "path": "/",
       "expires": -1,
       "httpOnly": false,
       "secure": true,
-      "sameSite": "Lax"
+      "sameSite": "None"
     },
     {
-      "name": "bm_sv",
-      "value": "3F50911C9044A58404696E2807FD3170~YAAQspI6F8FZzP6eAQAAktUjDwCR5IBLNHLROYzTCcvP5hHPHRM88Y7j+gnAd821g40lQV7YtxsbrviQu3Ffl2xL1reOeIhB/SuoJo3rDUf6OH89UkDcEUEkr05vbI4RZ90F1lA4h6Y7nAguLKbi7kY4pZkFfPCFBm1KAsNQ3KK1yOA6IUsVDi1O9hvJO/mG9Rj8F4Jb34bFZ848vI7cc6lIC4HP/lRx9FH0NtnZnY8uqxwjnoxJ6RQ55B1BC3D2ZB0xbco8YsrDKvIovA==~1",
-      "domain": ".disneytravelagents.com",
+      "name": "DOMESTIC_SESSID",
+      "value": "5101ba5f8be59be650011ff06ad1b481",
+      "domain": "www.disneytravelagents.com",
       "path": "/",
-      "expires": 1782670257.459375,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "bm_mi",
-      "value": "16151DAEF04F999D2C213C910E90B54F~YAAQr5I6F1071wafAQAAFJP/DgBfV/2xjOB7r588zGped4AZbLAlR6Trcewsts25P5iKybCcfOheyDs0HY0w6X+FpId27slraxho5P1ZW/D9tbB9hRSV70MaLGzIlp88RmaQYnuqPrIwXkM+Zn3rfOlDeFmWICLtfILYCWNTXMU3NWYcvgLT4fr22vN1QGUXROBPW0wyisO8AXa1qi+lPPw1APFVgR0Xp5PSkd6Bpbd2j8sq1dBcCwVKKeMXdW1ZVJK0C1LLPt7oo2ddJWjiPi2MP+CoepGUNHcbz51Ya4/uj7nLVJg67aAlktRqNtD1UW0DyduMoaef4Q==~1",
-      "domain": ".disneytravelagents.com",
-      "path": "/",
-      "expires": 1782670258.116873,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "Lax"
-    },
-    {
-      "name": "PHPSESSID",
-      "value": "f13a80ba42b5f65bf07752904c51710a",
-      "domain": "agentcentral.disneytravelagents.com",
-      "path": "/",
-      "expires": 1782669034.45934,
+      "expires": 1785377551,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
+    },
+    {
+      "name": "dta_locale",
+      "value": "en",
+      "domain": "www.disneytravelagents.com",
+      "path": "/",
+      "expires": 1787965951,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cs_mk_aa",
+      "value": "0.2655785341607013_1785373946574",
+      "domain": "www.disneytravelagents.com",
+      "path": "/",
+      "expires": 1785375746,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AMCV_EDA101AC512D2B230A490D4C%40AdobeOrg",
+      "value": "-219703956%7CMCIDTS%7C20665%7CMCMID%7C31631769901396333060240395242771529405%7CMCAID%7CNONE%7CMCOPTOUT-1785381147s%7CNONE%7CMCAAMLH-1785978747%7C9%7CMCAAMB-1785978747%7Cj8Odv6LonN4r3an7LhD3WZrU1bUpAkFkkiY1ncBR96t2PTI%7CMCSYNCSOP%7C411-20672%7CvVersion%7C4.4.0",
+      "domain": "www.disneytravelagents.com",
+      "path": "/",
+      "expires": 1819933947,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_cs_c",
+      "value": "0",
+      "domain": "www.disneytravelagents.com",
+      "path": "/",
+      "expires": 1819537947,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cs_cvars",
+      "value": "%7B%221%22%3A%5B%22s%20cVAR%22%2C%22wdpro%2Fdta%2Fus%2Fen%2Fdomestic%2Fcontent%2Fhome%2Fnotloggedin%22%5D%7D",
+      "domain": "www.disneytravelagents.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cs_id",
+      "value": "5d9835c7-52b8-ae4f-f88a-aee57015e25d.1785373947.1.1785373947.1785373947.1588953526.1819537947068.0.x",
+      "domain": "www.disneytravelagents.com",
+      "path": "/",
+      "expires": 1819537947,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_cs_s",
+      "value": "1.5.U.9.1785375747083",
+      "domain": "www.disneytravelagents.com",
+      "path": "/",
+      "expires": 1785375747,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "AMCVS_EDA101AC512D2B230A490D4C%40AdobeOrg",
+      "value": "1",
+      "domain": "www.disneytravelagents.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "ADRUM_BT",
+      "value": "R%3A41%7Cg%3A6e4ce2e8-4002-4550-abbf-939b8cc578ab352%7Cn%3ADisney-Prod_e4dfe7aa-6e26-4d68-9dc7-886d09949252%7Ci%3A12712309%7Ce%3A111",
+      "domain": "www.disneytravelagents.com",
+      "path": "/",
+      "expires": 1785373981,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
     }
   ],
-  "origins": []
+  "origins": [
+    {
+      "origin": "https://agentcentral.disneytravelagents.com",
+      "localStorage": [
+        {
+          "name": "tgt:tlm:upper",
+          "value": "1"
+        },
+        {
+          "name": "tgt:tlm:1",
+          "value": "{\"requestId\":3198432,\"timestamp\":1785373954571,\"execution\":2}"
+        },
+        {
+          "name": "tgt:tlm:0",
+          "value": "{\"execution\":176,\"parsing\":0,\"request\":{\"dns\":18,\"tls\":50,\"timeToFirstByte\":49,\"download\":1,\"responseSize\":335},\"telemetryServerToken\":\"6JefX4SixzpWNjo4zXr+4603XJ5CNTbch4GoB17VO0c=\",\"mode\":\"edge\",\"features\":{\"executePageLoad\":true,\"decisioningMethod\":\"server-side\"},\"requestId\":\"7ee4269af0034065b6f44537556f50dc\",\"timestamp\":1785373954568}"
+        },
+        {
+          "name": "loglevel",
+          "value": "INFO"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.disneytravelagents.com",
+      "localStorage": [
+        {
+          "name": "tgt:tlm:upper",
+          "value": "1"
+        },
+        {
+          "name": "tgt:tlm:1",
+          "value": "{\"requestId\":3198432,\"timestamp\":1785373947315,\"execution\":2}"
+        },
+        {
+          "name": "ADRUM_AGENT_INFO",
+          "value": "{\"ver\":\"20.3.0.3009\",\"id\":\"7a3e9106_de60_ce8b_ac5c_313dedebf7a7\"}"
+        },
+        {
+          "name": "ADRUM_CLIENTINFO",
+          "value": "{\"seqId\":13,\"clientId\":\"7a3e9106_de60_ce8b_ac5c_313dedebf7a7\",\"agentId\":\"7a3e9106_de60_ce8b_ac5c_313dedebf7a7\"}"
+        },
+        {
+          "name": "loglevel",
+          "value": "INFO"
+        },
+        {
+          "name": "tgt:tlm:0",
+          "value": "{\"execution\":154,\"parsing\":0,\"request\":{\"dns\":1,\"tls\":47,\"timeToFirstByte\":62,\"responseSize\":335},\"telemetryServerToken\":\"lPC1mETbld4mI1qSV6Ze01lKZ5Lwbb79yHiZJ8cFlqM=\",\"mode\":\"edge\",\"features\":{\"executePageLoad\":true,\"decisioningMethod\":\"server-side\"},\"requestId\":\"58fa73d669dc4579a502d559dd6217f7\",\"timestamp\":1785373947311}"
+        }
+      ]
+    }
+  ]
 }
