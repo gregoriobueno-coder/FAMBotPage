@@ -71,7 +71,33 @@ function compileStaticDashboard() {
       const cells = line.split('|').map(c => c.trim()).filter((c, i, a) => i > 0 && i < a.length - 1);
       if (cells.length < 5) continue;
 
-      const [sailDateStr, ship, nightsStr, itinerary, category, priceStr, rateBasis, dealScoreStr, aiInsight] = cells;
+      // Find the price cell dynamically by looking for a cell containing '$' or a number that isn't the sail date/nights/score
+      let priceIndex = -1;
+      const priceRegex = /^\s*\$?[0-9,%\s]+(pp|per-person|per person|single)?\s*$/i;
+      for (let i = 4; i < cells.length; i++) {
+        const cleanCell = cells[i].trim();
+        if (priceRegex.test(cleanCell)) {
+          const val = parseInt(cleanCell.replace(/[^0-9]/g, '')) || 0;
+          if (val > 10) { // Deal scores are 1-10, prices/percentages are >10
+            priceIndex = i;
+            break;
+          }
+        }
+      }
+
+      if (priceIndex === -1) {
+        priceIndex = 5; // fallback
+      }
+
+      const sailDateStr = cells[0];
+      const ship = cells[1];
+      const nightsStr = cells[2];
+      const priceStr = cells[priceIndex] || '';
+      const category = cells[priceIndex - 1] || '';
+      const itinerary = cells.slice(3, priceIndex - 1).join(' - ');
+      const rateBasis = cells[priceIndex + 1] || '';
+      const dealScoreStr = cells[priceIndex + 2] || '';
+      const aiInsight = cells.slice(priceIndex + 3).join(' - ') || '';
       
       // Parse pricing - if no price is available, do not add the sailing!
       const price = parseInt(priceStr.replace(/[^0-9]/g, '')) || 0;

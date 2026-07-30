@@ -1,7 +1,7 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 /**
- * Summarizes raw PDF text into a clean Markdown table of deals using Gemini 1.5 Flash
+ * Summarizes raw PDF text into a clean Markdown table of deals using Gemini 2.5 Flash
  */
 async function summarizePdfText(pdfText) {
   const apiKey = process.env.GEMINI_API_KEY;
@@ -14,13 +14,7 @@ async function summarizePdfText(pdfText) {
     return '';
   }
 
-  try {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
-
-    console.log('[Gemini] Generating clean markdown table of deals...');
-    
-    const prompt = `
+  const prompt = `
 You are an expert travel agent assistant. Analyze the following raw text content extracted from a cruise line's travel advisor / FAM rates flyer.
 Extract the list of active special rates / deals / sailings and format them as a clean, highly structured Markdown table.
 
@@ -38,12 +32,25 @@ Raw text content:
 ${pdfText.substring(0, 15000)}
 `;
 
-    const result = await model.generateContent(prompt);
-    const summary = result.response.text();
-    return summary.trim();
-  } catch (error) {
-    console.error('[Gemini] Failed to generate deals summary:', error.message);
-    return '';
+  let attempts = 3;
+  let delay = 2000;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const genAI = new GoogleGenerativeAI(apiKey);
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+
+      console.log(`[Gemini] Generating clean markdown table of deals (attempt ${i + 1})...`);
+      const result = await model.generateContent(prompt);
+      const summary = result.response.text();
+      return summary.trim();
+    } catch (error) {
+      console.error(`[Gemini] Attempt ${i + 1} failed:`, error.message);
+      if (i === attempts - 1) {
+        return '';
+      }
+      await new Promise(resolve => setTimeout(resolve, delay));
+      delay *= 2;
+    }
   }
 }
 
