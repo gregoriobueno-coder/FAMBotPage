@@ -39,7 +39,7 @@ jobs:
             ${{ runner.os }}-playwright-
 
       - name: Install Playwright & System Dependencies
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install --with-deps chromium webkit
 
       - name: Run FAM Scout
         env:

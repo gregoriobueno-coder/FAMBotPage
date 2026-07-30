@@ -1,4 +1,4 @@
-const { chromium } = require('playwright');
+const { chromium, webkit } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
@@ -94,9 +94,14 @@ async function tryAutoLogin(portal, browser, statePath) {
 
     console.log(`[${portal.displayName}] Session expired or missing. Attempting automatic login...`);
     
+    const isWebKit = browser.browserType().name() === 'webkit';
+    const userAgent = isWebKit
+      ? 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'
+      : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36';
+
     const context = await browser.newContext({
-      viewport: { width: 1280, height: 800 },
-      userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+      viewport: { width: 1280, height: 1000 },
+      userAgent,
       locale: 'en-US',
       timezoneId: 'America/New_York'
     });
@@ -104,15 +109,27 @@ async function tryAutoLogin(portal, browser, statePath) {
     await applyStealth(page);
     page.setDefaultTimeout(30000);
 
+    const inspectDir = path.join(__dirname, 'inspect');
+    if (!fs.existsSync(inspectDir)) {
+      fs.mkdirSync(inspectDir, { recursive: true });
+    }
+
     console.log(`[${portal.displayName}] Navigating to login URL: ${portal.loginUrl}`);
-    await page.goto(portal.loginUrl, { waitUntil: 'load' });
-    await page.waitForTimeout(3000);
+    try {
+      await page.goto(portal.loginUrl, { waitUntil: 'domcontentloaded' });
+    } catch (gotoErr) {
+      console.warn(`[${portal.displayName}] Navigation with domcontentloaded warning: ${gotoErr.message}`);
+      await page.goto(portal.loginUrl, { waitUntil: 'load', timeout: 45000 }).catch(e => console.error(`[${portal.displayName}] Final load failure:`, e.message));
+    }
+    await page.waitForTimeout(4000);
+    await page.screenshot({ path: path.join(inspectDir, `login-loaded-${portal.name}.png`), fullPage: true }).catch(() => {});
 
     // Click sign-in trigger if overlay needs opening
     if (portal.selectors.preLoginClick) {
       console.log(`[${portal.displayName}] Clicking pre-login overlay trigger...`);
       await page.locator(portal.selectors.preLoginClick).first().click();
-      await page.waitForTimeout(3000);
+      await page.waitForTimeout(4000);
+      await page.screenshot({ path: path.join(inspectDir, `login-prelogin-click-${portal.name}.png`), fullPage: true }).catch(() => {});
     }
 
     // Type credentials
@@ -122,11 +139,38 @@ async function tryAutoLogin(portal, browser, statePath) {
     
     // Submit form
     console.log(`[${portal.displayName}] Submitting login...`);
-    await page.locator(portal.selectors.submitButton).first().click();
+    await page.screenshot({ path: path.join(inspectDir, `login-filled-${portal.name}.png`), fullPage: true }).catch(() => {});
     
+    if (portal.name === 'disney') {
+      console.log(`[${portal.displayName}] Pressing Enter on password input...`);
+      await page.locator(portal.selectors.passwordInput).first().press('Enter');
+    } else {
+      await page.locator(portal.selectors.submitButton).first().click();
+    }
+    await page.waitForTimeout(6000);
+    await page.screenshot({ path: path.join(inspectDir, `login-submitted-${portal.name}.png`), fullPage: true }).catch(() => {});
+    
+    // Handle post-login Terms & Conditions popup if present (OneSource)
+    if (portal.name === 'onesource') {
+      const tncCheckbox = page.locator('#acceptTnc');
+      if (await tncCheckbox.count() > 0) {
+        console.log(`[${portal.displayName}] Terms & Conditions interstitial page detected. Accepting...`);
+        await tncCheckbox.check();
+        await page.waitForTimeout(1000);
+        await page.screenshot({ path: path.join(inspectDir, `login-tnc-checked-${portal.name}.png`), fullPage: true }).catch(() => {});
+        
+        const acceptBtn = page.locator('button:has-text("Accept Terms & Conditions")');
+        if (await acceptBtn.count() > 0) {
+          await acceptBtn.first().click();
+          await page.waitForTimeout(6000);
+          await page.screenshot({ path: path.join(inspectDir, `login-tnc-accepted-${portal.name}.png`), fullPage: true }).catch(() => {});
+        }
+      }
+    }
+
     // Wait for the verification indicator
     console.log(`[${portal.displayName}] Waiting for login verification element...`);
-    await page.waitForSelector(portal.selectors.checkLoggedIn, { timeout: 20000 });
+    await page.waitForSelector(portal.selectors.checkLoggedIn, { timeout: 25000 });
     
     // Save fresh storage state
     console.log(`[${portal.displayName}] Login verified successfully! Saving session state...`);
@@ -135,6 +179,15 @@ async function tryAutoLogin(portal, browser, statePath) {
     return context;
   } catch (error) {
     console.error(`[${portal.displayName}] Automatic login failed:`, error.message);
+    try {
+      const inspectDir = path.join(__dirname, 'inspect');
+      if (typeof page !== 'undefined') {
+        await page.screenshot({ path: path.join(inspectDir, `login-failure-${portal.name}.png`), fullPage: true });
+        console.log(`[${portal.displayName}] Saved login failure screenshot to: inspect/login-failure-${portal.name}.png`);
+      }
+    } catch (screenshotErr) {
+      console.error('Failed to take failure screenshot:', screenshotErr.message);
+    }
     return null;
   }
 }
@@ -364,8 +417,7 @@ async function scoutPdfPortalAxios(portal, browser) {
   }
 
   if (!pdfUrl) {
-    console.warn(`[${portal.displayName}] Could not locate PDF flyer link in HTML. User session might be expired.`);
-    return;
+    throw new Error(`Could not locate PDF flyer link in HTML. User session might be expired.`);
   }
 
     // Resolve relative URLs
@@ -508,9 +560,8 @@ async function scoutOneSourcePortal(portal, browser) {
   }
 
   if (!isLoggedIn) {
-    console.warn('[WARNING] Session expired and auto-login failed for OneSource.');
     if (context) await context.close();
-    return;
+    throw new Error('Session expired and auto-login failed for OneSource.');
   }
 
   // Accept cookie consent
@@ -728,21 +779,38 @@ async function scoutOneSourcePortal(portal, browser) {
   };
   const initialDealsCount = Object.keys(seenDeals).length;
 
-  // Launch Playwright browser
-  const browser = await chromium.launch({
-    headless,
-    args: ['--disable-http2']
-  });
+  // Launch Playwright browsers as needed
+  let chromiumBrowser = null;
+  let webkitBrowser = null;
 
   for (const portal of portalsToScout) {
     runRecord.portals[portal.name] = { status: "checking", details: "" };
     try {
+      const useWebKit = portal.name === 'disney' || portal.name === 'virgin';
+      let activeBrowser;
+      if (useWebKit) {
+        if (!webkitBrowser) {
+          console.log('Launching WebKit browser...');
+          webkitBrowser = await webkit.launch({ headless });
+        }
+        activeBrowser = webkitBrowser;
+      } else {
+        if (!chromiumBrowser) {
+          console.log('Launching Chromium browser...');
+          chromiumBrowser = await chromium.launch({
+            headless,
+            args: ['--disable-http2']
+          });
+        }
+        activeBrowser = chromiumBrowser;
+      }
+
       if (portal.name === 'onesource') {
-        await scoutOneSourcePortal(portal, browser);
+        await scoutOneSourcePortal(portal, activeBrowser);
       } else if (portal.type === 'pdf') {
-        await scoutPdfPortalAxios(portal, browser);
+        await scoutPdfPortalAxios(portal, activeBrowser);
       } else if (portal.type === 'table') {
-        await scoutPortal(portal, browser);
+        await scoutPortal(portal, activeBrowser);
       }
       runRecord.portals[portal.name].status = "success";
     } catch (portalErr) {
@@ -811,8 +879,11 @@ async function scoutOneSourcePortal(portal, browser) {
     }
   }
 
-  if (browser) {
-    await browser.close();
+  if (chromiumBrowser) {
+    await chromiumBrowser.close();
+  }
+  if (webkitBrowser) {
+    await webkitBrowser.close();
   }
   console.log('FAM Scout execution finished.');
 })();

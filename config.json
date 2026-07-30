@@ -7,7 +7,7 @@
       "url": "https://agentcentral.disneytravelagents.com/benefits/list",
       "type": "pdf",
       "selectors": {
-        "checkLoggedIn": ".user-profile-menu, .logout-link, a[href*='logout']",
+        "checkLoggedIn": "text=Sign Out",
         "pdfLink": "a[href*='dcl'], a[href$='.pdf']",
         "usernameInput": "input[name='username'], #username, input[type='email']:not([id*='create']), input[name='email']:not([id*='create'])",
         "passwordInput": "input[type='password'], #password",
@@ -21,12 +21,12 @@
       "url": "https://www.firstmates.com/fmrates",
       "type": "pdf",
       "selectors": {
-        "checkLoggedIn": ".user-profile, .logout, a[href*='logout']",
+        "checkLoggedIn": "text='Gregorio Bueno'",
         "pdfLink": "a[href*='rates'], a[href$='.pdf']",
         "preLoginClick": "text=SIGN IN",
         "usernameInput": "input[name='username'], input[type='email'], #username",
         "passwordInput": "input[name='password'], input[type='password'], #password",
-        "submitButton": "button[type='submit']"
+        "submitButton": "#kc-login"
       }
     },
     {
