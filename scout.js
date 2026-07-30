@@ -395,7 +395,7 @@ async function scoutPdfPortalAxios(portal, browser) {
       const match = hrefs.find(h => h.includes('dclspecialrates') || h.includes('dcltaaprates') || h.toLowerCase().endsWith('.pdf'));
       return match || '';
     } else if (portal.name === 'virgin') {
-      const match = hrefs.find(h => h.includes('First%20Mate%20Rates%20Flyer.pdf') || h.toLowerCase().includes('rates') && h.toLowerCase().endsWith('.pdf'));
+      const match = hrefs.find(h => h.includes('canto.com/b/') || h.includes('First%20Mate%20Rates%20Flyer.pdf') || h.toLowerCase().includes('rates') && h.toLowerCase().endsWith('.pdf'));
       return match || '';
     } else {
       const match = hrefs.find(h => h.toLowerCase().endsWith('.pdf'));
@@ -420,13 +420,62 @@ async function scoutPdfPortalAxios(portal, browser) {
     throw new Error(`Could not locate PDF flyer link in HTML. User session might be expired.`);
   }
 
-    // Resolve relative URLs
-    if (!pdfUrl.startsWith('http')) {
-      const baseUrl = new URL(portal.url);
-      pdfUrl = new URL(pdfUrl, baseUrl.origin).toString();
-    }
+  // Resolve relative URLs (if not a Canto link)
+  if (!pdfUrl.includes('canto.com') && !pdfUrl.startsWith('http')) {
+    const baseUrl = new URL(portal.url);
+    pdfUrl = new URL(pdfUrl, baseUrl.origin).toString();
+  }
 
-    console.log(`PDF URL located: ${pdfUrl}`);
+  // Resolve Canto URL to direct PDF Cloudfront URL
+  if (pdfUrl.includes('canto.com/b/')) {
+    console.log(`[${portal.displayName}] Detected Canto link: ${pdfUrl}. Resolving direct PDF download URL...`);
+    if (!browser) {
+      throw new Error(`Browser context required to resolve Canto link, but none was provided.`);
+    }
+    const cantoContext = await browser.newContext({
+      viewport: { width: 1280, height: 1000 },
+      userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15'
+    });
+    const cantoPage = await cantoContext.newPage();
+    try {
+      console.log(`Navigating to Canto album: ${pdfUrl}...`);
+      await cantoPage.goto(pdfUrl, { waitUntil: 'load', timeout: 30000 });
+      await cantoPage.waitForTimeout(6000);
+
+      console.log('Clicking Canto asset card...');
+      const card = cantoPage.locator('img[alt*="First Mate Rates"], .canto-library-grid-item img, .thumb-img').first();
+      await card.click({ force: true });
+      await cantoPage.waitForTimeout(6000);
+
+      console.log('Clicking Open to intercept PDF viewer popup...');
+      const [popupPage] = await Promise.all([
+        cantoContext.waitForEvent('page', { timeout: 15000 }),
+        cantoPage.locator('button:has-text("Open"), a:has-text("Open")').first().click({ force: true })
+      ]);
+      await popupPage.waitForLoadState();
+      const viewerUrl = popupPage.url();
+      console.log(`Viewer URL resolved: ${viewerUrl}`);
+
+      const vMatch = viewerUrl.match(/[&?]v=([^&]+)/);
+      const idMatch = viewerUrl.match(/[&?]id=([^&]+)/);
+
+      if (vMatch && idMatch) {
+        const v = vMatch[1];
+        const id = idMatch[1];
+        const restUrl = `https://virginvoyages.canto.com/rest/v/${v}/binary/document/${id}/url`;
+        console.log(`Fetching REST endpoint: ${restUrl}`);
+        const response = await axios.get(restUrl);
+        pdfUrl = response.data;
+        console.log(`Resolved direct Canto PDF URL: ${pdfUrl}`);
+      } else {
+        throw new Error('Could not parse v or id parameters from Canto viewer URL.');
+      }
+    } finally {
+      await cantoContext.close();
+    }
+  }
+
+  console.log(`PDF URL located: ${pdfUrl}`);
 
     // Track the URL itself
     const urlHash = generateHash(`${portal.name}-${pdfUrl}`);
