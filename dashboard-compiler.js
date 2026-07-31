@@ -100,7 +100,8 @@ function compileStaticDashboard() {
       const aiInsight = cells.slice(priceIndex + 3).join(' - ') || '';
       
       // Parse pricing - if no price is available, do not add the sailing!
-      const price = parseInt(priceStr.replace(/[^0-9]/g, '')) || 0;
+      const cleanPriceStr = priceStr.split(/[\s(]/)[0];
+      const price = parseInt(cleanPriceStr.replace(/[^0-9]/g, '')) || 0;
       if (price === 0 || priceStr.toLowerCase().includes('n/a') || !priceStr) {
         continue; // Skip sailings with no pricing
       }

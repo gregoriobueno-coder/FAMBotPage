@@ -1,7 +1,7 @@
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 /**
- * Summarizes raw PDF text into a clean Markdown table of deals using Gemini 2.5 Flash
+ * Summarizes raw PDF text into a clean Markdown table of deals using Gemini
  */
 async function summarizePdfText(pdfText) {
   const apiKey = process.env.GEMINI_API_KEY;
@@ -32,26 +32,32 @@ Raw text content:
 ${pdfText.substring(0, 15000)}
 `;
 
+  const models = ['gemini-3.5-flash', 'gemini-2.5-flash'];
   let attempts = 3;
-  let delay = 2000;
-  for (let i = 0; i < attempts; i++) {
-    try {
-      const genAI = new GoogleGenerativeAI(apiKey);
-      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+  
+  for (const m of models) {
+    let delay = 2000;
+    for (let i = 0; i < attempts; i++) {
+      try {
+        const genAI = new GoogleGenerativeAI(apiKey);
+        const model = genAI.getGenerativeModel({ model: m });
 
-      console.log(`[Gemini] Generating clean markdown table of deals (attempt ${i + 1})...`);
-      const result = await model.generateContent(prompt);
-      const summary = result.response.text();
-      return summary.trim();
-    } catch (error) {
-      console.error(`[Gemini] Attempt ${i + 1} failed:`, error.message);
-      if (i === attempts - 1) {
-        return '';
+        console.log(`[Gemini] Generating clean markdown table of deals (model ${m}, attempt ${i + 1})...`);
+        const result = await model.generateContent(prompt);
+        const summary = result.response.text();
+        if (summary && summary.trim()) {
+          return summary.trim();
+        }
+      } catch (error) {
+        console.error(`[Gemini] Model ${m} attempt ${i + 1} failed:`, error.message);
+        if (i < attempts - 1) {
+          await new Promise(resolve => setTimeout(resolve, delay));
+          delay *= 2;
+        }
       }
-      await new Promise(resolve => setTimeout(resolve, delay));
-      delay *= 2;
     }
   }
+  return '';
 }
 
 module.exports = { summarizePdfText };
