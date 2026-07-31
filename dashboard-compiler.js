@@ -110,6 +110,19 @@ function compileStaticDashboard() {
       if (parsedFloat > 0 && parsedFloat < 10) {
         price = Math.round(parsedFloat * 100);
       }
+      // Exclude solo traveler supplements (e.g. rates marked as Single, percentages, or multipliers)
+      const isSoloSupplement = 
+        rateBasis.toLowerCase().includes('single') || 
+        priceStr.includes('%') || 
+        priceStr.toLowerCase().includes('x') || 
+        (parsedFloat > 0 && parsedFloat < 10) ||
+        deal.pdfUrl.toLowerCase().includes('single') ||
+        deal.pdfUrl.toLowerCase().includes('solo');
+        
+      if (isSoloSupplement) {
+        continue; // Skip solo supplements
+      }
+
       if (price === 0 || priceStr.toLowerCase().includes('n/a') || !priceStr) {
         continue; // Skip sailings with no pricing
       }
