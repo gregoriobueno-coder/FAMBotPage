@@ -1,5 +1,105 @@
 [
   {
+    "timestamp": "2026-07-31T00:36:45.552Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 852,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "DISCOVERY",
+          "date": "8/1/2026",
+          "category": "Mini-Suite to Interior",
+          "price": 17,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "ISLAND",
+          "date": "8/5/2026",
+          "category": "Mini-Suite to Interior",
+          "price": 17,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "ISLAND",
+          "date": "8/12/2026",
+          "category": "Mini-Suite to Interior",
+          "price": 17,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "CORAL",
+          "date": "8/12/2026",
+          "category": "Mini-Suite to Interior",
+          "price": 17,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "ROYAL",
+          "date": "8/15/2026",
+          "category": "Balcony",
+          "price": 17,
+          "itinerary": "Inside Passage (with Glacier Bay National Park)"
+        },
+        {
+          "ship": "GRAND",
+          "date": "8/15/2026",
+          "category": "Suite to Oceanview",
+          "price": 17,
+          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
+        },
+        {
+          "ship": "DISCOVERY",
+          "date": "8/15/2026",
+          "category": "Suite to Interior",
+          "price": 16,
+          "itinerary": "Voyage of the Glaciers (Northbound)"
+        },
+        {
+          "ship": "ENCHANTED",
+          "date": "8/18/2026",
+          "category": "Suite to Interior",
+          "price": 18,
+          "itinerary": "Mediterranean & Aegean"
+        },
+        {
+          "ship": "SAPPHIRE",
+          "date": "9/23/2026",
+          "category": "Oceanview",
+          "price": 19,
+          "itinerary": "Classic Canada & New England"
+        },
+        {
+          "ship": "ENCHANTED",
+          "date": "11/10/2026",
+          "category": "Suite to Interior",
+          "price": 18,
+          "itinerary": "Mediterranean & Aegean"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-07-31T00:26:47.925Z",
     "status": "success",
     "newDealsCount": 0,
