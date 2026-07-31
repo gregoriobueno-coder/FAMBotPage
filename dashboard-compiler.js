@@ -73,12 +73,12 @@ function compileStaticDashboard() {
 
       // Find the price cell dynamically by looking for a cell containing '$' or a number that isn't the sail date/nights/score
       let priceIndex = -1;
-      const priceRegex = /^\s*\$?[0-9,%\s]+(pp|per-person|per person|single)?\s*$/i;
+      const priceRegex = /^\s*(?:usd\s*)?\$?[0-9.,%x\s]+(?:\([^)]*\))?\s*(?:pp|per-person|per person|single)?\s*$/i;
       for (let i = 4; i < cells.length; i++) {
         const cleanCell = cells[i].trim();
         if (priceRegex.test(cleanCell)) {
-          const val = parseInt(cleanCell.replace(/[^0-9]/g, '')) || 0;
-          if (val > 10) { // Deal scores are 1-10, prices/percentages are >10
+          const val = parseFloat(cleanCell.replace(/[^0-9.]/g, '')) || 0;
+          if (val > 10 || (val > 0 && val < 10)) { // Either a price/percentage >10 or a multiplier >0 and <10
             priceIndex = i;
             break;
           }
@@ -100,8 +100,16 @@ function compileStaticDashboard() {
       const aiInsight = cells.slice(priceIndex + 3).join(' - ') || '';
       
       // Parse pricing - if no price is available, do not add the sailing!
-      const cleanPriceStr = priceStr.split(/[\s(]/)[0];
-      const price = parseInt(cleanPriceStr.replace(/[^0-9]/g, '')) || 0;
+      let cleanPriceStr = priceStr;
+      const numberMatch = priceStr.match(/(\$?[0-9,]+(?:\.[0-9]+)?%?x?)/);
+      if (numberMatch) {
+        cleanPriceStr = numberMatch[1];
+      }
+      const parsedFloat = parseFloat(cleanPriceStr.replace(/[^0-9.]/g, '')) || 0;
+      let price = Math.round(parsedFloat);
+      if (parsedFloat > 0 && parsedFloat < 10) {
+        price = Math.round(parsedFloat * 100);
+      }
       if (price === 0 || priceStr.toLowerCase().includes('n/a') || !priceStr) {
         continue; // Skip sailings with no pricing
       }
