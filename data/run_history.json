@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-08-01T14:24:24.890Z",
+    "status": "partial_failure",
+    "newDealsCount": 0,
+    "totalDealsCount": 851,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "failed",
+        "details": "Session expired and auto-login failed for OneSource."
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-07-31T21:33:58.945Z",
     "status": "partial_failure",
     "newDealsCount": 0,
