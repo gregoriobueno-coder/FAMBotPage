@@ -1,5 +1,1339 @@
 [
   {
+    "timestamp": "2026-08-02T03:39:23.661Z",
+    "status": "success",
+    "newDealsCount": 188,
+    "totalDealsCount": 188,
+    "portals": {
+      "onesource": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [
+        {
+          "ship": "Crown Princess",
+          "date": "5/8/2027",
+          "category": "Interior",
+          "price": 1879,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Crown Princess",
+          "date": "5/8/2027",
+          "category": "Oceanview",
+          "price": 2129,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Crown Princess",
+          "date": "5/8/2027",
+          "category": "Balcony",
+          "price": 2604,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Crown Princess",
+          "date": "5/8/2027",
+          "category": "Mini-suite",
+          "price": 3079,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Crown Princess",
+          "date": "5/8/2027",
+          "category": "Full Suite",
+          "price": 4379,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "5/12/2027",
+          "category": "Interior",
+          "price": 1949,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "5/12/2027",
+          "category": "Oceanview",
+          "price": 2149,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "5/12/2027",
+          "category": "Balcony",
+          "price": 2474,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "5/12/2027",
+          "category": "Mini-suite",
+          "price": 2999,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "5/12/2027",
+          "category": "Full Suite",
+          "price": 3839,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "5/15/2027",
+          "category": "Interior",
+          "price": 2079,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "5/15/2027",
+          "category": "Balcony",
+          "price": 2804,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "5/15/2027",
+          "category": "Mini-suite",
+          "price": 3079,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "5/15/2027",
+          "category": "Full Suite",
+          "price": 5179,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "5/19/2027",
+          "category": "Interior",
+          "price": 2019,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "5/19/2027",
+          "category": "Oceanview",
+          "price": 2219,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "5/19/2027",
+          "category": "Balcony",
+          "price": 2444,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "5/19/2027",
+          "category": "Mini-suite",
+          "price": 2869,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "5/19/2027",
+          "category": "Full Suite",
+          "price": 3969,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Crown Princess",
+          "date": "5/22/2027",
+          "category": "Interior",
+          "price": 1979,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Crown Princess",
+          "date": "5/22/2027",
+          "category": "Oceanview",
+          "price": 2379,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Crown Princess",
+          "date": "5/22/2027",
+          "category": "Balcony",
+          "price": 2714,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Crown Princess",
+          "date": "5/22/2027",
+          "category": "Mini-suite",
+          "price": 3129,
+          "itinerary": "Alaska Cruisetour (Code: AA3 Crz-D-M-A)"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Standard Interior",
+          "price": 1850,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2540,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3350,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3430,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 5750,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Plus Interior",
+          "price": 2304,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2994,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3804,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3884,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/8/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 6204,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Interior",
+          "price": 1800,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2060,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Balcony",
+          "price": 2840,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3110,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 4530,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Interior",
+          "price": 2254,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2514,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3294,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3564,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 4984,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/15/2026",
+          "category": "Princess Standard Interior",
+          "price": 1750,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/15/2026",
+          "category": "Princess Standard Balcony",
+          "price": 2910,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/15/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3250,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/15/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 5510,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/15/2026",
+          "category": "Princess Plus Interior",
+          "price": 2204,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/15/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3364,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/15/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3704,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/15/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 5964,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Standard Interior",
+          "price": 1800,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2010,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Standard Balcony",
+          "price": 2560,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3120,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 4220,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Plus Interior",
+          "price": 2254,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2464,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3014,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3574,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/19/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 4674,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Standard Interior",
+          "price": 1850,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2410,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3120,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3540,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 4860,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Plus Interior",
+          "price": 2304,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2864,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3574,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3994,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/22/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 5314,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Interior",
+          "price": 1800,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2160,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Balcony",
+          "price": 2580,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3070,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 4590,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Plus Interior",
+          "price": 2254,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2614,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3034,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3524,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/26/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 5044,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/29/2026",
+          "category": "Princess Standard Interior",
+          "price": 2130,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/29/2026",
+          "category": "Princess Standard Balcony",
+          "price": 2910,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/29/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3590,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/29/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 6260,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/29/2026",
+          "category": "Princess Plus Interior",
+          "price": 2584,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/29/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3364,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/29/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 4044,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/29/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 6714,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Standard Interior",
+          "price": 2079,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2329,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3324,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3479,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 4359,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Plus Interior",
+          "price": 2534,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2784,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3779,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3934,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "9/2/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 4814,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Standard Interior",
+          "price": 1929,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2649,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3714,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3849,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 4779,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Plus Interior",
+          "price": 2384,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 3104,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Plus Balcony",
+          "price": 4169,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 4304,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "9/5/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 5234,
+          "itinerary": "AA3 Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Standard Interior",
+          "price": 1650,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3000,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3340,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 6090,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Plus Interior",
+          "price": 2104,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3454,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3794,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 6544,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Standard Interior",
+          "price": 1900,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2240,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3590,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3890,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 5390,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Plus Interior",
+          "price": 2354,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2694,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Plus Balcony",
+          "price": 4044,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 4344,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/2/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 5844,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/5/2026",
+          "category": "Princess Standard Interior",
+          "price": 1800,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/5/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3030,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/5/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3880,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/5/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 6710,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/5/2026",
+          "category": "Princess Plus Interior",
+          "price": 2254,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/5/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3484,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/5/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 4334,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/5/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 7164,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Standard Interior",
+          "price": 1800,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 1980,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3120,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3150,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 4850,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Plus Interior",
+          "price": 2254,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2434,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3574,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3604,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/9/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 5304,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Interior",
+          "price": 1800,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2310,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3580,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3820,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 5690,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Interior",
+          "price": 2254,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2764,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Balcony",
+          "price": 4034,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 4274,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/12/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 6144,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Standard Interior",
+          "price": 2500,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2860,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3900,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 4100,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 6100,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Plus Interior",
+          "price": 2954,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 3314,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Plus Balcony",
+          "price": 4354,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 4554,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Coral Princess",
+          "date": "8/16/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 6554,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/19/2026",
+          "category": "Princess Standard Interior",
+          "price": 1800,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/19/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3090,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/19/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3590,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/19/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 6190,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/19/2026",
+          "category": "Princess Plus Interior",
+          "price": 2254,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/19/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3544,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/19/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 4044,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/19/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 6644,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Standard Interior",
+          "price": 1800,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2000,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3090,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3500,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 4700,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Plus Interior",
+          "price": 2254,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Plus Oceanview",
+          "price": 2454,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3544,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3954,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Island Princess",
+          "date": "8/23/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 5154,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Interior",
+          "price": 2200,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Oceanview",
+          "price": 2820,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Balcony",
+          "price": 4280,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 4460,
+          "itinerary": "AB3 A-M-D-Crz"
+        },
+        {
+          "ship": "Grand Princess",
+          "date": "8/26/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 5880,
+          "itinerary": "AB3 A-M-D-Crz"
+        }
+      ],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-08-02T03:19:17.253Z",
     "status": "partial_failure",
     "newDealsCount": 0,
