@@ -1,5 +1,91 @@
 [
   {
+    "timestamp": "2026-08-02T03:53:27.345Z",
+    "status": "partial_failure",
+    "newDealsCount": 0,
+    "totalDealsCount": 180,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "failed",
+        "details": "Session expired and auto-login failed for OneSource."
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Standard Interior",
+          "price": 1650,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Standard Balcony",
+          "price": 3000,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Standard Mini-suite",
+          "price": 3340,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Standard Full Suite",
+          "price": 6090,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Plus Interior",
+          "price": 2104,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Plus Balcony",
+          "price": 3454,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Plus Mini-suite",
+          "price": 3794,
+          "itinerary": "AAX Crz-D-M-A"
+        },
+        {
+          "ship": "Discovery Princess",
+          "date": "8/1/2026",
+          "category": "Princess Plus Full Suite",
+          "price": 6544,
+          "itinerary": "AAX Crz-D-M-A"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-02T03:39:23.661Z",
     "status": "success",
     "newDealsCount": 188,
