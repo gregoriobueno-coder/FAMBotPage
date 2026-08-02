@@ -1,5 +1,5992 @@
 [
   {
+    "timestamp": "2026-08-02T03:19:17.253Z",
+    "status": "partial_failure",
+    "newDealsCount": 0,
+    "totalDealsCount": 0,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "failed",
+        "details": "Session expired and auto-login failed for OneSource."
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Queen Elizabeth",
+          "date": "8/27/2026",
+          "category": "Inside",
+          "price": 1299,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "8/27/2026",
+          "category": "Outside",
+          "price": 1299,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "8/27/2026",
+          "category": "Balcony",
+          "price": 1999,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/7/2026",
+          "category": "Inside",
+          "price": 1199,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/7/2026",
+          "category": "Outside",
+          "price": 1199,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/7/2026",
+          "category": "Balcony",
+          "price": 1859,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/17/2026",
+          "category": "Inside",
+          "price": 999,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/17/2026",
+          "category": "Outside",
+          "price": 1099,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/17/2026",
+          "category": "Balcony",
+          "price": 1349,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "price": 1239,
+          "itinerary": "New England and Canada"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Balcony",
+          "price": 1609,
+          "itinerary": "New England and Canada"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Grills",
+          "price": 4389,
+          "itinerary": "New England and Canada"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "7/2/2027",
+          "category": "Inside",
+          "price": 1279,
+          "itinerary": "Independence Day Celebration"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "7/2/2027",
+          "category": "Outside",
+          "price": 1679,
+          "itinerary": "Independence Day Celebration"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "7/2/2027",
+          "category": "Balcony",
+          "price": 1849,
+          "itinerary": "Independence Day Celebration"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/24/2027",
+          "category": "Inside",
+          "price": 1189,
+          "itinerary": "Canada"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/24/2027",
+          "category": "Outside",
+          "price": 1719,
+          "itinerary": "Canada"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/24/2027",
+          "category": "Balcony",
+          "price": 1829,
+          "itinerary": "Canada"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/24/2026",
+          "category": "Inside",
+          "price": 1399,
+          "itinerary": "Panama Canal"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "N/A",
+          "category": "Inside",
+          "price": 899,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "N/A",
+          "category": "Outside",
+          "price": 899,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "N/A",
+          "category": "Balcony",
+          "price": 1059,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "N/A",
+          "category": "Grills",
+          "price": 2899,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "N/A",
+          "category": "Inside",
+          "price": 769,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "N/A",
+          "category": "Outside",
+          "price": 799,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "N/A",
+          "category": "Balcony",
+          "price": 869,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "N/A",
+          "category": "Grills",
+          "price": 2739,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "11/5/2026",
+          "category": "Inside",
+          "price": 969,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "11/5/2026",
+          "category": "Outside",
+          "price": 999,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "11/5/2026",
+          "category": "Balcony",
+          "price": 1099,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "11/5/2026",
+          "category": "Grills",
+          "price": 3099,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Inside",
+          "price": 1029,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Outside",
+          "price": 1369,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Balcony",
+          "price": 1369,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Grills",
+          "price": 3899,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "12/8/2026",
+          "category": "Inside",
+          "price": 699,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "12/8/2026",
+          "category": "Outside",
+          "price": 799,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "12/8/2026",
+          "category": "Balcony",
+          "price": 949,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "12/8/2026",
+          "category": "Grills",
+          "price": 2999,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Inside",
+          "price": 1899,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Outside",
+          "price": 2329,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Balcony",
+          "price": 2399,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "8/4/2026",
+          "category": "Inside",
+          "price": 1799,
+          "itinerary": "Transatlantic Crossing, Norway and"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "8/4/2026",
+          "category": "Outside",
+          "price": 2699,
+          "itinerary": "Transatlantic Crossing, Norway and"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "8/4/2026",
+          "category": "Balcony",
+          "price": 2699,
+          "itinerary": "Transatlantic Crossing, Norway and"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "4/21/2027",
+          "category": "Inside",
+          "price": 1259,
+          "itinerary": "Spain and Morocco"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "4/21/2027",
+          "category": "Outside",
+          "price": 1499,
+          "itinerary": "Spain and Morocco"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "4/21/2027",
+          "category": "Balcony",
+          "price": 1579,
+          "itinerary": "Spain and Morocco"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "8/1/2027",
+          "category": "Inside",
+          "price": 999,
+          "itinerary": "Norwegian Fjords"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "8/1/2027",
+          "category": "Outside",
+          "price": 1139,
+          "itinerary": "Norwegian Fjords"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "8/1/2027",
+          "category": "Balcony",
+          "price": 1299,
+          "itinerary": "Norwegian Fjords"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "6/4/2027",
+          "category": "Inside",
+          "price": 1699,
+          "itinerary": "Mediterranean and Croatia"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "6/4/2027",
+          "category": "Outside",
+          "price": 1799,
+          "itinerary": "Mediterranean and Croatia"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "6/4/2027",
+          "category": "Balcony",
+          "price": 1999,
+          "itinerary": "Mediterranean and Croatia"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "6/4/2027",
+          "category": "Grills",
+          "price": 5299,
+          "itinerary": "Mediterranean and Croatia"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/2/2027",
+          "category": "Inside",
+          "price": 709,
+          "itinerary": "Italy, France and Spain"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/2/2027",
+          "category": "Outside",
+          "price": 849,
+          "itinerary": "Italy, France and Spain"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/2/2027",
+          "category": "Balcony",
+          "price": 899,
+          "itinerary": "Italy, France and Spain"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/2/2027",
+          "category": "Grills",
+          "price": 3679,
+          "itinerary": "Italy, France and Spain"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/2/2027",
+          "category": "Inside",
+          "price": 1699,
+          "itinerary": "Mediterranean and Adriatic"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/2/2027",
+          "category": "Outside",
+          "price": 1799,
+          "itinerary": "Mediterranean and Adriatic"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/2/2027",
+          "category": "Balcony",
+          "price": 1999,
+          "itinerary": "Mediterranean and Adriatic"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/2/2027",
+          "category": "Grills",
+          "price": 5299,
+          "itinerary": "Mediterranean and Adriatic"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/9/2027",
+          "category": "Inside",
+          "price": 709,
+          "itinerary": "Malta, Croatia and Montenegro"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/9/2027",
+          "category": "Outside",
+          "price": 899,
+          "itinerary": "Malta, Croatia and Montenegro"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/9/2027",
+          "category": "Balcony",
+          "price": 1099,
+          "itinerary": "Malta, Croatia and Montenegro"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "7/9/2027",
+          "category": "Grills",
+          "price": 2699,
+          "itinerary": "Malta, Croatia and Montenegro"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "8/18/2026",
+          "category": "Inside",
+          "price": 639,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "8/18/2026",
+          "category": "Balcony",
+          "price": 819,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/5/2026",
+          "category": "Inside",
+          "price": 729,
+          "itinerary": "Anthony Inglis and the National"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/5/2026",
+          "category": "Balcony",
+          "price": 1019,
+          "itinerary": "Anthony Inglis and the National"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Inside",
+          "price": 689,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Balcony",
+          "price": 959,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Grills",
+          "price": 4089,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "1/7/2027",
+          "category": "Inside",
+          "price": 939,
+          "itinerary": "Miami to Southampton"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "1/7/2027",
+          "category": "Outside",
+          "price": 1059,
+          "itinerary": "Miami to Southampton"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "1/7/2027",
+          "category": "Balcony",
+          "price": 1239,
+          "itinerary": "Miami to Southampton"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "1/7/2027",
+          "category": "Grills",
+          "price": 3499,
+          "itinerary": "Miami to Southampton"
+        },
+        {
+          "ship": "Queen Victoria",
+          "date": "1/10/2027",
+          "category": "Inside",
+          "price": 809,
+          "itinerary": "Westbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Victoria",
+          "date": "1/10/2027",
+          "category": "Outside",
+          "price": 1039,
+          "itinerary": "Westbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Victoria",
+          "date": "1/10/2027",
+          "category": "Balcony",
+          "price": 1329,
+          "itinerary": "Westbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Victoria",
+          "date": "1/10/2027",
+          "category": "Grills",
+          "price": 4079,
+          "itinerary": "Westbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "1/10/2027",
+          "category": "Inside",
+          "price": 909,
+          "itinerary": "Southampton to Fort Lauderdale"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "1/10/2027",
+          "category": "Outside",
+          "price": 1219,
+          "itinerary": "Southampton to Fort Lauderdale"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "1/10/2027",
+          "category": "Balcony",
+          "price": 1489,
+          "itinerary": "Southampton to Fort Lauderdale"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "3/19/2027",
+          "category": "Inside",
+          "price": 1199,
+          "itinerary": "Fort Lauderdale to Southampton"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "3/19/2027",
+          "category": "Outside",
+          "price": 1599,
+          "itinerary": "Fort Lauderdale to Southampton"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "3/19/2027",
+          "category": "Balcony",
+          "price": 1829,
+          "itinerary": "Fort Lauderdale to Southampton"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "7/2/2027",
+          "category": "Grills",
+          "price": 5169,
+          "itinerary": "Independence Day Celebration"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/24/2027",
+          "category": "Grills",
+          "price": 5009,
+          "itinerary": "Canada"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/24/2026",
+          "category": "Grills",
+          "price": 11699,
+          "itinerary": "Panama Canal"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "N/A",
+          "category": "Grills",
+          "price": 7899,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "4/21/2027",
+          "category": "Grills",
+          "price": 5029,
+          "itinerary": "Spain and Morocco"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "8/1/2027",
+          "category": "Grills",
+          "price": 4019,
+          "itinerary": "Norwegian Fjords"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "1/10/2027",
+          "category": "Grills",
+          "price": 3699,
+          "itinerary": "Southampton to Fort Lauderdale"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "3/19/2027",
+          "category": "Grills",
+          "price": 4399,
+          "itinerary": "Fort Lauderdale to Southampton"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Aug 7, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 3779,
+          "itinerary": "Glaciers & Alaska Inside Passage (Vancouver, B.C., CA to Juneau, Alaska, US)"
+        },
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Aug 8, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 9029,
+          "itinerary": "West Ireland Gems & Solar Eclipse (Dover (London), England, UK to Reykjavik, Iceland)"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Aug 14, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 3779,
+          "itinerary": "Alaska Fjords & Canadian Inside Passage (Juneau, Alaska, US to Vancouver, B.C., CA)"
+        },
+        {
+          "ship": "Seabourn Quest",
+          "date": "Sep 6, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 4509,
+          "itinerary": "Adriatic & Grecian Gems (Fusina (Venice), Italy to Piraeus (Athens), Greece)"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Sep 18, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 4979,
+          "itinerary": "Pacific Passage & Jewels of Japan (Vancouver, B.C., CA to Tokyo, Japan)"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Sep 18, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 8699,
+          "itinerary": "Pacific Passage & Japan's Hidden Gems (Vancouver, B.C., CA to Osaka, Japan)"
+        },
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Sep 25, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 6059,
+          "itinerary": "Newfoundland & Gulf of St. Lawrence Reverie (Round-trip Montreal, Quebec, Canada)"
+        },
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Oct 4, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 9299,
+          "itinerary": "Melanesia & Polynesia: Island Cultures & Coral Coasts (Lautoka, Fiji to Papeete, French Polynesia)"
+        },
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Oct 16, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 6999,
+          "itinerary": "Easter & Pitcairn Islands: Marooned, Moai & Mutineers (Papeete, French Polynesia to San Antonio (Santiago), Chile)"
+        },
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Oct 19, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 4259,
+          "itinerary": "Canada & New England Fall Foliage (New York, New York, US to Montreal, Quebec, Canada)"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Oct 22, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 10439,
+          "itinerary": "Autumn Reverie: Japan's Hidden Gems (Round-trip Osaka, Japan)"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Nov 3, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 7079,
+          "itinerary": "Exploration of Japan & South Korea (Tokyo, Japan to Osaka, Japan)"
+        },
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Nov 12, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 4499,
+          "itinerary": "Chilean Fjords (San Antonio (Santiago), Chile to Buenos Aires)"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Nov 15, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 4859,
+          "itinerary": "Japan, Hong Kong, Vietnam & Taiwan (Osaka, Japan to Singapore)"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Apr 24, 2027",
+          "category": "Ocean View (Guaranteed)",
+          "price": 11699,
+          "itinerary": "Japan, Alaska, Glacier Bay & Pacific Crossing (Tokyo, Japan to Vancouver, B.C., CA)"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/29/2026",
+          "category": "Inside",
+          "price": 956,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/5/2026",
+          "category": "Inside",
+          "price": 926,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/12/2026",
+          "category": "Inside",
+          "price": 986,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/19/2026",
+          "category": "Inside",
+          "price": 926,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/19/2026",
+          "category": "Obstructed Oceanview",
+          "price": 1001,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "price": 889,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/26/2026",
+          "category": "Obstructed Oceanview",
+          "price": 1661,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "4/24/2027",
+          "category": "Inside",
+          "price": 785,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "4/24/2027",
+          "category": "Obstructed Oceanview",
+          "price": 818,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "4/24/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 948,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "4/24/2027",
+          "category": "Lanai",
+          "price": 1110,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "4/24/2027",
+          "category": "Obstructed Verandah",
+          "price": 1565,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "4/24/2027",
+          "category": "Verandah",
+          "price": 2085,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/1/2027",
+          "category": "Inside",
+          "price": 847,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/1/2027",
+          "category": "Obstructed Oceanview",
+          "price": 879,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/1/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 977,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/1/2027",
+          "category": "Lanai",
+          "price": 1172,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/1/2027",
+          "category": "Obstructed Verandah",
+          "price": 1594,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/1/2027",
+          "category": "Verandah",
+          "price": 2114,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/8/2027",
+          "category": "Inside",
+          "price": 847,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/8/2027",
+          "category": "Obstructed Oceanview",
+          "price": 879,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/8/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 977,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/8/2027",
+          "category": "Lanai",
+          "price": 1172,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/8/2027",
+          "category": "Obstructed Verandah",
+          "price": 1594,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/8/2027",
+          "category": "Verandah",
+          "price": 2114,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/15/2027",
+          "category": "Inside",
+          "price": 878,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/15/2027",
+          "category": "Obstructed Oceanview",
+          "price": 910,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/15/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1008,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/15/2027",
+          "category": "Lanai",
+          "price": 1235,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/15/2027",
+          "category": "Obstructed Verandah",
+          "price": 1736,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/15/2027",
+          "category": "Verandah",
+          "price": 2210,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/22/2027",
+          "category": "Inside",
+          "price": 960,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/22/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1038,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/22/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1220,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/22/2027",
+          "category": "Lanai",
+          "price": 1396,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/22/2027",
+          "category": "Obstructed Verandah",
+          "price": 2033,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/22/2027",
+          "category": "Verandah",
+          "price": 2338,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/29/2027",
+          "category": "Inside",
+          "price": 993,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/29/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1058,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/29/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1220,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/29/2027",
+          "category": "Lanai",
+          "price": 1513,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/29/2027",
+          "category": "Obstructed Verandah",
+          "price": 2013,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "5/29/2027",
+          "category": "Verandah",
+          "price": 2459,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/5/2027",
+          "category": "Inside",
+          "price": 1165,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/5/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1198,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/5/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1493,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/5/2027",
+          "category": "Lanai",
+          "price": 1916,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/5/2027",
+          "category": "Obstructed Verandah",
+          "price": 2293,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/5/2027",
+          "category": "Verandah",
+          "price": 2728,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/12/2027",
+          "category": "Inside",
+          "price": 1146,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/12/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1198,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/12/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1419,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/12/2027",
+          "category": "Lanai",
+          "price": 1948,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/12/2027",
+          "category": "Obstructed Verandah",
+          "price": 2296,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/12/2027",
+          "category": "Verandah",
+          "price": 2680,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/19/2027",
+          "category": "Inside",
+          "price": 1191,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/19/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1211,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/19/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1461,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/19/2027",
+          "category": "Lanai",
+          "price": 1916,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/19/2027",
+          "category": "Obstructed Verandah",
+          "price": 2361,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/19/2027",
+          "category": "Verandah",
+          "price": 2849,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/26/2027",
+          "category": "Inside",
+          "price": 1191,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/26/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1256,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/26/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1419,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/26/2027",
+          "category": "Lanai",
+          "price": 1822,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/26/2027",
+          "category": "Obstructed Verandah",
+          "price": 2238,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "6/26/2027",
+          "category": "Verandah",
+          "price": 2699,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/3/2027",
+          "category": "Inside",
+          "price": 1271,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/3/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1388,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/3/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1525,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/3/2027",
+          "category": "Lanai",
+          "price": 1902,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/3/2027",
+          "category": "Obstructed Verandah",
+          "price": 2253,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/3/2027",
+          "category": "Verandah",
+          "price": 2714,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/10/2027",
+          "category": "Inside",
+          "price": 1251,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/10/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1368,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/10/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1505,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/10/2027",
+          "category": "Lanai",
+          "price": 1934,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/10/2027",
+          "category": "Obstructed Verandah",
+          "price": 2337,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/10/2027",
+          "category": "Verandah",
+          "price": 2811,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/17/2027",
+          "category": "Inside",
+          "price": 1251,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/17/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1303,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/17/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1505,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/17/2027",
+          "category": "Lanai",
+          "price": 1979,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/17/2027",
+          "category": "Obstructed Verandah",
+          "price": 2428,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/24/2027",
+          "category": "Inside",
+          "price": 1256,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/24/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1308,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/24/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1445,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/24/2027",
+          "category": "Lanai",
+          "price": 1906,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/24/2027",
+          "category": "Obstructed Verandah",
+          "price": 2332,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/24/2027",
+          "category": "Verandah",
+          "price": 2751,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/31/2027",
+          "category": "Inside",
+          "price": 1219,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/31/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1251,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/31/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1375,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/31/2027",
+          "category": "Lanai",
+          "price": 1836,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/31/2027",
+          "category": "Obstructed Verandah",
+          "price": 2213,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "7/31/2027",
+          "category": "Verandah",
+          "price": 2675,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/7/2027",
+          "category": "Inside",
+          "price": 1191,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/7/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1224,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/7/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1396,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/7/2027",
+          "category": "Lanai",
+          "price": 1851,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/7/2027",
+          "category": "Obstructed Verandah",
+          "price": 2676,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/14/2027",
+          "category": "Inside",
+          "price": 1164,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/14/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1203,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/14/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1372,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/14/2027",
+          "category": "Lanai",
+          "price": 1749,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/14/2027",
+          "category": "Obstructed Verandah",
+          "price": 2178,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/14/2027",
+          "category": "Verandah",
+          "price": 2548,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/21/2027",
+          "category": "Inside",
+          "price": 1136,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/21/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1201,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/21/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1266,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/21/2027",
+          "category": "Lanai",
+          "price": 1656,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/21/2027",
+          "category": "Obstructed Verandah",
+          "price": 2111,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/21/2027",
+          "category": "Verandah",
+          "price": 2404,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/28/2027",
+          "category": "Inside",
+          "price": 1053,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/28/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1131,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/28/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1261,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/28/2027",
+          "category": "Lanai",
+          "price": 1684,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/28/2027",
+          "category": "Obstructed Verandah",
+          "price": 1944,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "8/28/2027",
+          "category": "Verandah",
+          "price": 2366,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/4/2027",
+          "category": "Inside",
+          "price": 977,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/4/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1074,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/4/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1204,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/4/2027",
+          "category": "Lanai",
+          "price": 1464,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/4/2027",
+          "category": "Obstructed Verandah",
+          "price": 1854,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/4/2027",
+          "category": "Verandah",
+          "price": 2244,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/11/2027",
+          "category": "Inside",
+          "price": 1044,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/11/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1109,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/11/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1239,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/11/2027",
+          "category": "Lanai",
+          "price": 1525,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/11/2027",
+          "category": "Obstructed Verandah",
+          "price": 1947,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/11/2027",
+          "category": "Verandah",
+          "price": 2344,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/18/2027",
+          "category": "Inside",
+          "price": 1039,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/18/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1104,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/18/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1234,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/18/2027",
+          "category": "Lanai",
+          "price": 1520,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/18/2027",
+          "category": "Obstructed Verandah",
+          "price": 1981,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/18/2027",
+          "category": "Verandah",
+          "price": 2339,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/25/2027",
+          "category": "Inside",
+          "price": 1039,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/25/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1104,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/25/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1234,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/25/2027",
+          "category": "Lanai",
+          "price": 1520,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/25/2027",
+          "category": "Obstructed Verandah",
+          "price": 1942,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/25/2027",
+          "category": "Verandah",
+          "price": 2339,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "price": 961,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/26/2026",
+          "category": "Obstructed Oceanview",
+          "price": 2484,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/26/2026",
+          "category": "Unobstructed Oceanview",
+          "price": 2431,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "4/24/2027",
+          "category": "Inside",
+          "price": 746,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "4/24/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1071,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "4/24/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1104,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "4/24/2027",
+          "category": "Lanai",
+          "price": 1234,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "4/24/2027",
+          "category": "Obstructed Verandah",
+          "price": 1429,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "4/24/2027",
+          "category": "Verandah",
+          "price": 1884,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "4/24/2027",
+          "category": "Vista",
+          "price": 2079,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/1/2027",
+          "category": "Inside",
+          "price": 779,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/1/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1071,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/1/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1169,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/1/2027",
+          "category": "Lanai",
+          "price": 1266,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/1/2027",
+          "category": "Obstructed Verandah",
+          "price": 1526,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/1/2027",
+          "category": "Verandah",
+          "price": 1949,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/1/2027",
+          "category": "Vista",
+          "price": 2079,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/8/2027",
+          "category": "Inside",
+          "price": 779,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/8/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1104,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/8/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1234,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/8/2027",
+          "category": "Lanai",
+          "price": 1364,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/8/2027",
+          "category": "Obstructed Verandah",
+          "price": 1656,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/8/2027",
+          "category": "Verandah",
+          "price": 2144,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/8/2027",
+          "category": "Vista",
+          "price": 2339,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Inside",
+          "price": 779,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1104,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1351,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Lanai",
+          "price": 1526,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Obstructed Verandah",
+          "price": 1786,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Verandah",
+          "price": 2209,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Vista",
+          "price": 2469,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Inside",
+          "price": 806,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1099,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1411,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Lanai",
+          "price": 1612,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Verandah",
+          "price": 1814,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Verandah",
+          "price": 2334,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Vista",
+          "price": 2626,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Inside",
+          "price": 904,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1131,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1411,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Lanai",
+          "price": 1768,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Verandah",
+          "price": 1944,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Verandah",
+          "price": 2529,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Vista",
+          "price": 2854,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Inside",
+          "price": 904,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1196,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1521,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Lanai",
+          "price": 1814,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Obstructed Verandah",
+          "price": 2009,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Verandah",
+          "price": 2659,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Vista",
+          "price": 3270,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Inside",
+          "price": 899,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1159,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1487,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Lanai",
+          "price": 1805,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Obstructed Verandah",
+          "price": 2004,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Verandah",
+          "price": 2979,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Inside",
+          "price": 964,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1191,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1565,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Lanai",
+          "price": 2000,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Obstructed Verandah",
+          "price": 2270,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/26/2027",
+          "category": "Inside",
+          "price": 926,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/26/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1186,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/26/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1544,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/26/2027",
+          "category": "Lanai",
+          "price": 1999,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/26/2027",
+          "category": "Obstructed Verandah",
+          "price": 2129,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/26/2027",
+          "category": "Verandah",
+          "price": 3448,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/3/2027",
+          "category": "Inside",
+          "price": 926,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/3/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1219,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/3/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1531,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/3/2027",
+          "category": "Lanai",
+          "price": 1901,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/3/2027",
+          "category": "Obstructed Verandah",
+          "price": 2031,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/3/2027",
+          "category": "Verandah",
+          "price": 2909,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/10/2027",
+          "category": "Inside",
+          "price": 926,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/10/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1219,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/10/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1498,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/10/2027",
+          "category": "Lanai",
+          "price": 1901,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/10/2027",
+          "category": "Obstructed Verandah",
+          "price": 2031,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/10/2027",
+          "category": "Verandah",
+          "price": 2681,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/10/2027",
+          "category": "Vista",
+          "price": 3637,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/17/2027",
+          "category": "Inside",
+          "price": 871,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/17/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1164,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/17/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1508,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/17/2027",
+          "category": "Lanai",
+          "price": 1911,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/17/2027",
+          "category": "Obstructed Verandah",
+          "price": 2041,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/17/2027",
+          "category": "Verandah",
+          "price": 2886,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/24/2027",
+          "category": "Inside",
+          "price": 861,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/24/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1154,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/24/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1498,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/24/2027",
+          "category": "Lanai",
+          "price": 1739,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/24/2027",
+          "category": "Obstructed Verandah",
+          "price": 1934,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/24/2027",
+          "category": "Verandah",
+          "price": 2584,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/24/2027",
+          "category": "Vista",
+          "price": 2844,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/31/2027",
+          "category": "Inside",
+          "price": 861,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/31/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1154,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/31/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1498,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/31/2027",
+          "category": "Lanai",
+          "price": 1706,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/31/2027",
+          "category": "Obstructed Verandah",
+          "price": 1934,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/31/2027",
+          "category": "Verandah",
+          "price": 2649,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "7/31/2027",
+          "category": "Vista",
+          "price": 2844,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/7/2027",
+          "category": "Inside",
+          "price": 829,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/7/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1089,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/7/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1446,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/7/2027",
+          "category": "Lanai",
+          "price": 1674,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/7/2027",
+          "category": "Obstructed Verandah",
+          "price": 1934,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/7/2027",
+          "category": "Verandah",
+          "price": 2584,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/7/2027",
+          "category": "Vista",
+          "price": 2844,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/14/2027",
+          "category": "Inside",
+          "price": 769,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/14/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1094,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/14/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1380,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/14/2027",
+          "category": "Lanai",
+          "price": 1643,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/14/2027",
+          "category": "Obstructed Verandah",
+          "price": 1809,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/14/2027",
+          "category": "Verandah",
+          "price": 2426,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/14/2027",
+          "category": "Vista",
+          "price": 2686,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/21/2027",
+          "category": "Inside",
+          "price": 769,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/21/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1061,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/21/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1373,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/21/2027",
+          "category": "Lanai",
+          "price": 1578,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/21/2027",
+          "category": "Obstructed Verandah",
+          "price": 1809,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/21/2027",
+          "category": "Verandah",
+          "price": 2329,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/21/2027",
+          "category": "Vista",
+          "price": 2686,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/28/2027",
+          "category": "Inside",
+          "price": 774,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/28/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1066,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/28/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1346,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/28/2027",
+          "category": "Lanai",
+          "price": 1586,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/28/2027",
+          "category": "Obstructed Verandah",
+          "price": 1749,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/28/2027",
+          "category": "Verandah",
+          "price": 2464,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "8/28/2027",
+          "category": "Vista",
+          "price": 2626,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/4/2027",
+          "category": "Inside",
+          "price": 746,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/4/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1039,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/4/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1292,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/4/2027",
+          "category": "Lanai",
+          "price": 1484,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/4/2027",
+          "category": "Obstructed Verandah",
+          "price": 1689,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/4/2027",
+          "category": "Verandah",
+          "price": 2209,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/4/2027",
+          "category": "Vista",
+          "price": 2631,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/11/2027",
+          "category": "Inside",
+          "price": 746,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/11/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1039,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/11/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1247,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/11/2027",
+          "category": "Lanai",
+          "price": 1451,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/11/2027",
+          "category": "Obstructed Verandah",
+          "price": 1656,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/11/2027",
+          "category": "Verandah",
+          "price": 2209,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/11/2027",
+          "category": "Vista",
+          "price": 2599,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/18/2027",
+          "category": "Inside",
+          "price": 741,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/18/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1066,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/18/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1196,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/18/2027",
+          "category": "Lanai",
+          "price": 1450,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/18/2027",
+          "category": "Obstructed Verandah",
+          "price": 1619,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/18/2027",
+          "category": "Verandah",
+          "price": 2139,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/18/2027",
+          "category": "Vista",
+          "price": 2399,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/25/2027",
+          "category": "Inside",
+          "price": 741,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/25/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1034,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/25/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1196,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/25/2027",
+          "category": "Lanai",
+          "price": 1359,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/25/2027",
+          "category": "Obstructed Verandah",
+          "price": 1619,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/25/2027",
+          "category": "Verandah",
+          "price": 2139,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/25/2027",
+          "category": "Vista",
+          "price": 2399,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/8/2027",
+          "category": "Inside",
+          "price": 828,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/8/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1023,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/8/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1120,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/8/2027",
+          "category": "Lanai",
+          "price": 1283,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/8/2027",
+          "category": "Obstructed Verandah",
+          "price": 1738,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/8/2027",
+          "category": "Verandah",
+          "price": 2095,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/16/2027",
+          "category": "Inside",
+          "price": 689,
+          "itinerary": "GLACIER DISCOVERY NORTHBOUND VANCOUVER to W HITTIER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/16/2027",
+          "category": "Obstructed Oceanview",
+          "price": 832,
+          "itinerary": "GLACIER DISCOVERY NORTHBOUND VANCOUVER to W HITTIER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/16/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1215,
+          "itinerary": "GLACIER DISCOVERY NORTHBOUND VANCOUVER to W HITTIER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/23/2027",
+          "category": "Inside",
+          "price": 701,
+          "itinerary": "GLACIER DISCOVERY SOUTHBOUND W HITTIER to VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/23/2027",
+          "category": "Obstructed Oceanview",
+          "price": 857,
+          "itinerary": "GLACIER DISCOVERY SOUTHBOUND W HITTIER to VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "5/23/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1156,
+          "itinerary": "GLACIER DISCOVERY SOUTHBOUND W HITTIER to VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/19/2027",
+          "category": "Inside",
+          "price": 734,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/19/2027",
+          "category": "Obstructed Oceanview",
+          "price": 896,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/19/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 994,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/19/2027",
+          "category": "Lanai",
+          "price": 1124,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/19/2027",
+          "category": "Obstructed Verandah",
+          "price": 1514,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/19/2027",
+          "category": "Verandah",
+          "price": 1839,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/26/2027",
+          "category": "Inside",
+          "price": 1253,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/26/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1513,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/26/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1708,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/26/2027",
+          "category": "Lanai",
+          "price": 2033,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/26/2027",
+          "category": "Obstructed Verandah",
+          "price": 2488,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/26/2027",
+          "category": "Verandah",
+          "price": 3073,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/2/2027",
+          "category": "Inside",
+          "price": 729,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/2/2027",
+          "category": "Obstructed Oceanview",
+          "price": 761,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/2/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 794,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/2/2027",
+          "category": "Lanai",
+          "price": 924,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/2/2027",
+          "category": "Obstructed Verandah",
+          "price": 1314,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/2/2027",
+          "category": "Verandah",
+          "price": 1739,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/9/2027",
+          "category": "Inside",
+          "price": 729,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/9/2027",
+          "category": "Obstructed Oceanview",
+          "price": 761,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/9/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 794,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/9/2027",
+          "category": "Lanai",
+          "price": 924,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/9/2027",
+          "category": "Obstructed Verandah",
+          "price": 1346,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/9/2027",
+          "category": "Verandah",
+          "price": 1739,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/16/2027",
+          "category": "Inside",
+          "price": 761,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/16/2027",
+          "category": "Obstructed Oceanview",
+          "price": 794,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/16/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 826,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/16/2027",
+          "category": "Lanai",
+          "price": 1119,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/16/2027",
+          "category": "Obstructed Verandah",
+          "price": 1379,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/16/2027",
+          "category": "Verandah",
+          "price": 1837,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/23/2027",
+          "category": "Inside",
+          "price": 794,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/23/2027",
+          "category": "Obstructed Oceanview",
+          "price": 839,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/23/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 872,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/23/2027",
+          "category": "Lanai",
+          "price": 1086,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/23/2027",
+          "category": "Obstructed Verandah",
+          "price": 1444,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/23/2027",
+          "category": "Verandah",
+          "price": 1837,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/30/2027",
+          "category": "Inside",
+          "price": 824,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/30/2027",
+          "category": "Obstructed Oceanview",
+          "price": 857,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/30/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 889,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/30/2027",
+          "category": "Lanai",
+          "price": 1149,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/30/2027",
+          "category": "Obstructed Verandah",
+          "price": 1637,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "5/30/2027",
+          "category": "Verandah",
+          "price": 2030,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/4/2027",
+          "category": "Inside",
+          "price": 1072,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/4/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1143,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/4/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1273,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/4/2027",
+          "category": "Lanai",
+          "price": 1572,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/4/2027",
+          "category": "Obstructed Verandah",
+          "price": 1936,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/4/2027",
+          "category": "Verandah",
+          "price": 2534,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/11/2027",
+          "category": "Inside",
+          "price": 1086,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/11/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1151,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/11/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1281,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/11/2027",
+          "category": "Lanai",
+          "price": 1671,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/11/2027",
+          "category": "Obstructed Verandah",
+          "price": 1996,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/11/2027",
+          "category": "Verandah",
+          "price": 2529,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/18/2027",
+          "category": "Inside",
+          "price": 1067,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/18/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1138,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/18/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1268,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/18/2027",
+          "category": "Lanai",
+          "price": 1671,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/18/2027",
+          "category": "Obstructed Verandah",
+          "price": 1931,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/18/2027",
+          "category": "Verandah",
+          "price": 2464,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/25/2027",
+          "category": "Inside",
+          "price": 1067,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/25/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1138,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/25/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1268,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/25/2027",
+          "category": "Lanai",
+          "price": 1671,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/25/2027",
+          "category": "Obstructed Verandah",
+          "price": 1931,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "7/25/2027",
+          "category": "Verandah",
+          "price": 2464,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/1/2027",
+          "category": "Inside",
+          "price": 990,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/1/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1055,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/1/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1192,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/1/2027",
+          "category": "Lanai",
+          "price": 1699,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/1/2027",
+          "category": "Obstructed Verandah",
+          "price": 1907,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/1/2027",
+          "category": "Verandah",
+          "price": 2433,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/8/2027",
+          "category": "Inside",
+          "price": 989,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/8/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1054,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/8/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1184,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/8/2027",
+          "category": "Lanai",
+          "price": 1606,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/8/2027",
+          "category": "Obstructed Verandah",
+          "price": 1834,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/8/2027",
+          "category": "Verandah",
+          "price": 2354,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/15/2027",
+          "category": "Inside",
+          "price": 994,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/15/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1059,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/15/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1189,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/15/2027",
+          "category": "Lanai",
+          "price": 1546,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/15/2027",
+          "category": "Obstructed Verandah",
+          "price": 1774,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/15/2027",
+          "category": "Verandah",
+          "price": 2294,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/22/2027",
+          "category": "Inside",
+          "price": 1807,
+          "itinerary": "GREAT ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/22/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2067,
+          "itinerary": "GREAT ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/22/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2236,
+          "itinerary": "GREAT ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/22/2027",
+          "category": "Lanai",
+          "price": 3042,
+          "itinerary": "GREAT ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "8/22/2027",
+          "category": "Obstructed Verandah",
+          "price": 4374,
+          "itinerary": "GREAT ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "9/5/2027",
+          "category": "Inside",
+          "price": 999,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "9/5/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1064,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "9/5/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1194,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "9/5/2027",
+          "category": "Lanai",
+          "price": 1418,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "9/5/2027",
+          "category": "Obstructed Verandah",
+          "price": 1714,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Noordam",
+          "date": "9/5/2027",
+          "category": "Verandah",
+          "price": 2234,
+          "itinerary": "ALASKA EXPLORER Roundtrip SEATTLE"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "5/9/2027",
+          "category": "Inside",
+          "price": 696,
+          "itinerary": "GLACIER DISCOVERY NORTHBOUND VANCOUVER to W HITTIER"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "5/9/2027",
+          "category": "Obstructed Oceanview",
+          "price": 826,
+          "itinerary": "GLACIER DISCOVERY NORTHBOUND VANCOUVER to W HITTIER"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "5/9/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1131,
+          "itinerary": "GLACIER DISCOVERY NORTHBOUND VANCOUVER to W HITTIER"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "5/16/2027",
+          "category": "Inside",
+          "price": 710,
+          "itinerary": "GLACIER DISCOVERY SOUTHBOUND W HITTIER to VANCOUVER"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "5/16/2027",
+          "category": "Obstructed Oceanview",
+          "price": 846,
+          "itinerary": "GLACIER DISCOVERY SOUTHBOUND W HITTIER to VANCOUVER"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "5/16/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1178,
+          "itinerary": "GLACIER DISCOVERY SOUTHBOUND W HITTIER to VANCOUVER"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "9/12/2027",
+          "category": "Inside",
+          "price": 804,
+          "itinerary": "ALASKA INSIDE PASSAGE VANCOUVER to SEATTLE"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "9/12/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1002,
+          "itinerary": "ALASKA INSIDE PASSAGE VANCOUVER to SEATTLE"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "9/12/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1012,
+          "itinerary": "ALASKA INSIDE PASSAGE VANCOUVER to SEATTLE"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "9/12/2027",
+          "category": "Lanai",
+          "price": 1356,
+          "itinerary": "ALASKA INSIDE PASSAGE VANCOUVER to SEATTLE"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "9/12/2027",
+          "category": "Obstructed Verandah",
+          "price": 2136,
+          "itinerary": "ALASKA INSIDE PASSAGE VANCOUVER to SEATTLE"
+        },
+        {
+          "ship": "Westerdam",
+          "date": "9/12/2027",
+          "category": "Verandah",
+          "price": 2396,
+          "itinerary": "ALASKA INSIDE PASSAGE VANCOUVER to SEATTLE"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/19/2026",
+          "category": "Inside",
+          "price": 941,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/26/2026",
+          "category": "Inside",
+          "price": 1039,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/2/2026",
+          "category": "Inside",
+          "price": 926,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/2/2026",
+          "category": "Obstructed Oceanview",
+          "price": 1001,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/9/2026",
+          "category": "Inside",
+          "price": 941,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/16/2026",
+          "category": "Inside",
+          "price": 2179,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "4/24/2027",
+          "category": "Inside",
+          "price": 1894,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "4/24/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2154,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "4/24/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2414,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "4/24/2027",
+          "category": "Lanai",
+          "price": 3695,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/12/2027",
+          "category": "Inside",
+          "price": 756,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/12/2027",
+          "category": "Obstructed Oceanview",
+          "price": 860,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/12/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 893,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/12/2027",
+          "category": "Lanai",
+          "price": 1608,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/12/2027",
+          "category": "Obstructed Verandah",
+          "price": 2284,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/19/2027",
+          "category": "Inside",
+          "price": 769,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/19/2027",
+          "category": "Obstructed Oceanview",
+          "price": 925,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/19/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 958,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/19/2027",
+          "category": "Lanai",
+          "price": 1803,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/19/2027",
+          "category": "Obstructed Verandah",
+          "price": 2414,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/26/2027",
+          "category": "Inside",
+          "price": 769,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/26/2027",
+          "category": "Obstructed Oceanview",
+          "price": 925,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/26/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 958,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/26/2027",
+          "category": "Lanai",
+          "price": 1738,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "5/26/2027",
+          "category": "Obstructed Verandah",
+          "price": 2609,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/2/2027",
+          "category": "Inside",
+          "price": 759,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/2/2027",
+          "category": "Obstructed Oceanview",
+          "price": 954,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/2/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 987,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/2/2027",
+          "category": "Lanai",
+          "price": 1754,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/2/2027",
+          "category": "Obstructed Verandah",
+          "price": 2599,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/9/2027",
+          "category": "Inside",
+          "price": 779,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/9/2027",
+          "category": "Obstructed Oceanview",
+          "price": 987,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/9/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1006,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/9/2027",
+          "category": "Lanai",
+          "price": 1903,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/9/2027",
+          "category": "Obstructed Verandah",
+          "price": 2625,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/16/2027",
+          "category": "Inside",
+          "price": 811,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/16/2027",
+          "category": "Obstructed Oceanview",
+          "price": 987,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/16/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1052,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/16/2027",
+          "category": "Lanai",
+          "price": 1916,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/16/2027",
+          "category": "Obstructed Verandah",
+          "price": 2644,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/23/2027",
+          "category": "Inside",
+          "price": 819,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/23/2027",
+          "category": "Obstructed Oceanview",
+          "price": 998,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/23/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1112,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/23/2027",
+          "category": "Lanai",
+          "price": 1846,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/23/2027",
+          "category": "Obstructed Verandah",
+          "price": 2958,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/30/2027",
+          "category": "Inside",
+          "price": 814,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/30/2027",
+          "category": "Obstructed Oceanview",
+          "price": 996,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/30/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1042,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/30/2027",
+          "category": "Lanai",
+          "price": 1906,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "6/30/2027",
+          "category": "Obstructed Verandah",
+          "price": 2699,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/7/2027",
+          "category": "Inside",
+          "price": 814,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/7/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1016,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/7/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1042,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/7/2027",
+          "category": "Lanai",
+          "price": 1841,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/7/2027",
+          "category": "Obstructed Verandah",
+          "price": 2634,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/14/2027",
+          "category": "Inside",
+          "price": 814,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/14/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1025,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/14/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1042,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/14/2027",
+          "category": "Lanai",
+          "price": 1906,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/14/2027",
+          "category": "Obstructed Verandah",
+          "price": 2699,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/21/2027",
+          "category": "Inside",
+          "price": 819,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/21/2027",
+          "category": "Obstructed Oceanview",
+          "price": 998,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/21/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1043,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/21/2027",
+          "category": "Lanai",
+          "price": 1911,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/21/2027",
+          "category": "Obstructed Verandah",
+          "price": 2639,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/28/2027",
+          "category": "Inside",
+          "price": 819,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/28/2027",
+          "category": "Obstructed Oceanview",
+          "price": 998,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/28/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1043,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/28/2027",
+          "category": "Lanai",
+          "price": 1911,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "7/28/2027",
+          "category": "Obstructed Verandah",
+          "price": 2639,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/4/2027",
+          "category": "Inside",
+          "price": 806,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/4/2027",
+          "category": "Obstructed Oceanview",
+          "price": 985,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/4/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1043,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/4/2027",
+          "category": "Lanai",
+          "price": 1814,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/4/2027",
+          "category": "Obstructed Verandah",
+          "price": 2639,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/11/2027",
+          "category": "Inside",
+          "price": 811,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/11/2027",
+          "category": "Obstructed Oceanview",
+          "price": 954,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/11/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1013,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/11/2027",
+          "category": "Lanai",
+          "price": 1702,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/11/2027",
+          "category": "Obstructed Verandah",
+          "price": 2488,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/18/2027",
+          "category": "Inside",
+          "price": 816,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/18/2027",
+          "category": "Obstructed Oceanview",
+          "price": 956,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/18/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 988,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/18/2027",
+          "category": "Lanai",
+          "price": 1642,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/18/2027",
+          "category": "Obstructed Verandah",
+          "price": 2428,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/25/2027",
+          "category": "Inside",
+          "price": 797,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/25/2027",
+          "category": "Obstructed Oceanview",
+          "price": 923,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/25/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 988,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/25/2027",
+          "category": "Lanai",
+          "price": 1629,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/25/2027",
+          "category": "Obstructed Verandah",
+          "price": 2441,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/1/2027",
+          "category": "Inside",
+          "price": 789,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/1/2027",
+          "category": "Obstructed Oceanview",
+          "price": 893,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/1/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 932,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/1/2027",
+          "category": "Lanai",
+          "price": 1569,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/1/2027",
+          "category": "Obstructed Verandah",
+          "price": 2446,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/8/2027",
+          "category": "Inside",
+          "price": 789,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/8/2027",
+          "category": "Obstructed Oceanview",
+          "price": 893,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/8/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 932,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/8/2027",
+          "category": "Lanai",
+          "price": 1569,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/8/2027",
+          "category": "Obstructed Verandah",
+          "price": 2284,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/15/2027",
+          "category": "Inside",
+          "price": 2228,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/15/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2378,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "9/15/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2605,
+          "itinerary": "GREAT BEAR RAINFOREST AND ALASKA EXPLORER Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Inside",
+          "price": 1644,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1839,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1884,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Lanai",
+          "price": 1904,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Verandah",
+          "price": 2034,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Verandah",
+          "price": 2229,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Vista",
+          "price": 2424,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Inside",
+          "price": 1677,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Oceanview",
+          "price": 1872,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 1918,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Lanai",
+          "price": 1937,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Verandah",
+          "price": 2067,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Verandah",
+          "price": 2262,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Vista",
+          "price": 2457,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Inside",
+          "price": 2088,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2283,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2329,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Lanai",
+          "price": 2348,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Verandah",
+          "price": 2478,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Verandah",
+          "price": 2673,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Vista",
+          "price": 2868,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/17/2027",
+          "category": "Inside",
+          "price": 2311,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/17/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2506,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/17/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2617,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/17/2027",
+          "category": "Lanai",
+          "price": 2636,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/17/2027",
+          "category": "Obstructed Verandah",
+          "price": 2766,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/17/2027",
+          "category": "Verandah",
+          "price": 3091,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/17/2027",
+          "category": "Vista",
+          "price": 3221,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Inside",
+          "price": 2491,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2686,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2797,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Lanai",
+          "price": 2816,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Obstructed Verandah",
+          "price": 2946,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Verandah",
+          "price": 3271,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/15/2027",
+          "category": "Vista",
+          "price": 3401,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Inside",
+          "price": 1839,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2034,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2079,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Lanai",
+          "price": 2099,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Verandah",
+          "price": 2229,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Verandah",
+          "price": 2424,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Vista",
+          "price": 2619,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Inside",
+          "price": 1937,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2132,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2178,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Lanai",
+          "price": 2197,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Verandah",
+          "price": 2327,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Verandah",
+          "price": 2522,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Vista",
+          "price": 2717,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Inside",
+          "price": 2153,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2348,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2394,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Lanai",
+          "price": 2413,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Verandah",
+          "price": 2543,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Verandah",
+          "price": 2738,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Vista",
+          "price": 2933,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/24/2027",
+          "category": "Inside",
+          "price": 2571,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/24/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2766,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/24/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2877,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/24/2027",
+          "category": "Lanai",
+          "price": 2896,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/24/2027",
+          "category": "Obstructed Verandah",
+          "price": 3026,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/24/2027",
+          "category": "Verandah",
+          "price": 3286,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/24/2027",
+          "category": "Vista",
+          "price": 3481,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Inside",
+          "price": 2751,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2946,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 3057,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Lanai",
+          "price": 3076,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Obstructed Verandah",
+          "price": 3206,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Verandah",
+          "price": 3466,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/22/2027",
+          "category": "Vista",
+          "price": 3661,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Inside",
+          "price": 1967,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2162,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2208,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Lanai",
+          "price": 2227,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Obstructed Verandah",
+          "price": 2357,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Verandah",
+          "price": 2552,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Vista",
+          "price": 2747,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Inside",
+          "price": 2281,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2476,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2522,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Lanai",
+          "price": 2541,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Obstructed Verandah",
+          "price": 2671,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Verandah",
+          "price": 2866,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/5/2027",
+          "category": "Vista",
+          "price": 3061,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/31/2027",
+          "category": "Inside",
+          "price": 2636,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/31/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2831,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/31/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2942,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/31/2027",
+          "category": "Lanai",
+          "price": 2961,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/31/2027",
+          "category": "Obstructed Verandah",
+          "price": 3091,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/31/2027",
+          "category": "Verandah",
+          "price": 3416,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/31/2027",
+          "category": "Vista",
+          "price": 3611,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Inside",
+          "price": 2816,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Oceanview",
+          "price": 3011,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 3122,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Lanai",
+          "price": 3141,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Obstructed Verandah",
+          "price": 3271,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Verandah",
+          "price": 3596,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "5/29/2027",
+          "category": "Vista",
+          "price": 3791,
+          "itinerary": "Denali & Yukon Y3L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Inside",
+          "price": 2032,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2227,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2273,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Lanai",
+          "price": 2292,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Obstructed Verandah",
+          "price": 2422,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Verandah",
+          "price": 2617,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Vista",
+          "price": 2812,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Inside",
+          "price": 2066,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2261,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2306,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Lanai",
+          "price": 2326,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Obstructed Verandah",
+          "price": 2456,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Verandah",
+          "price": 2651,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Vista",
+          "price": 2846,
+          "itinerary": "Denali & Yukon Y4C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Inside",
+          "price": 2346,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2541,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2587,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Lanai",
+          "price": 2606,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Obstructed Verandah",
+          "price": 2736,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Verandah",
+          "price": 2931,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/12/2027",
+          "category": "Vista",
+          "price": 3126,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/7/2027",
+          "category": "Inside",
+          "price": 2700,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/7/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2895,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/7/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 3005,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/7/2027",
+          "category": "Lanai",
+          "price": 3025,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/7/2027",
+          "category": "Obstructed Verandah",
+          "price": 3155,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/7/2027",
+          "category": "Verandah",
+          "price": 3675,
+          "itinerary": "Denali & Yukon Y4L ANCHORAGE to VANCOUVER"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Inside",
+          "price": 2065,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Obstructed Oceanview",
+          "price": 2260,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Unobstructed Oceanview",
+          "price": 2305,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Lanai",
+          "price": 2325,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Obstructed Verandah",
+          "price": 2455,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Verandah",
+          "price": 2650,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Vista",
+          "price": 2845,
+          "itinerary": "Denali & Yukon Y5C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "6/19/2027",
+          "category": "Inside",
+          "price": 2379,
+          "itinerary": "Denali & Yukon Y3C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "VL",
+          "date": "2026-08-05",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1500,
+          "itinerary": "Eclipse in the Land of Fire and Ice"
+        },
+        {
+          "ship": "SC",
+          "date": "2026-08-10",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1200,
+          "itinerary": "Total Eclipse of the (Med)"
+        },
+        {
+          "ship": "BR",
+          "date": "2026-08-13",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 700,
+          "itinerary": "Alaska: Inside Passage & Glacial Fjords"
+        },
+        {
+          "ship": "SC",
+          "date": "2026-08-22",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1350,
+          "itinerary": "Italy & French Riviera"
+        },
+        {
+          "ship": "BR",
+          "date": "2026-08-27",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1050,
+          "itinerary": "Alaska: Inside Passage & Glacial Fjords"
+        },
+        {
+          "ship": "VL",
+          "date": "2026-08-27",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1500,
+          "itinerary": "English Elegance to Idyllic Iceland"
+        },
+        {
+          "ship": "SC",
+          "date": "2026-08-31",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1500,
+          "itinerary": "Rome, Florence, Mykonos & More"
+        },
+        {
+          "ship": "RS",
+          "date": "2026-08-31",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 750,
+          "itinerary": "Dominican Republic & Bimini Beach Club"
+        },
+        {
+          "ship": "BR",
+          "date": "2026-09-03",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1200,
+          "itinerary": "Alaska: Seattle to Vancouver"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "8/31/2026",
+          "category": "Verandah",
+          "price": 720,
+          "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "9/7/2026",
+          "category": "Verandah",
+          "price": 720,
+          "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "9/11/2026",
+          "category": "Verandah",
+          "price": 570,
+          "itinerary": "3-Night Bahamian Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "9/14/2026",
+          "category": "Verandah",
+          "price": 640,
+          "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "9/26/2026",
+          "category": "Verandah",
+          "price": 800,
+          "itinerary": "5-Night Western Caribbean Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "10/10/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Halloween on the High Seas Western Caribbean Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "11/7/2026",
+          "category": "Verandah",
+          "price": 800,
+          "itinerary": "5-Night Western Caribbean Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Dream",
+          "date": "10/2/2026",
+          "category": "Inside",
+          "price": 840,
+          "itinerary": "7-Night Halloween on the High Seas Eastern Caribbean Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Fantasy",
+          "date": "10/18/2026",
+          "category": "Verandah",
+          "price": 800,
+          "itinerary": "5-Night Halloween on the High Seas Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Fantasy",
+          "date": "10/23/2026",
+          "category": "Verandah",
+          "price": 800,
+          "itinerary": "5-Night Halloween on the High Seas Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Magic",
+          "date": "10/30/2026",
+          "category": "Oceanview",
+          "price": 770,
+          "itinerary": "7-Night Halloween on the High Seas Mexican Riviera Cruise from San Diego"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "9/5/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Western Caribbean Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "9/19/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Western Caribbean Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "10/3/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Halloween on the High Seas Western Caribbean Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "10/17/2026",
+          "category": "Verandah",
+          "price": 1085,
+          "itinerary": "7-Night Halloween on the High Seas Western Caribbean Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "10/24/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Halloween on the High Seas Eastern Caribbean Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "11/7/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Eastern Caribbean Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "8/10/2026",
+          "category": "Verandah",
+          "price": 940,
+          "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "8/14/2026",
+          "category": "Verandah",
+          "price": 690,
+          "itinerary": "3-Night Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "8/21/2026",
+          "category": "Verandah",
+          "price": 645,
+          "itinerary": "3-Night Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "8/24/2026",
+          "category": "Verandah",
+          "price": 760,
+          "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "8/28/2026",
+          "category": "Verandah",
+          "price": 645,
+          "itinerary": "3-Night Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "9/7/2026",
+          "category": "Verandah",
+          "price": 700,
+          "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "9/14/2026",
+          "category": "Verandah",
+          "price": 660,
+          "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Wonder",
+          "date": "10/3/2026",
+          "category": "Oceanview",
+          "price": 770,
+          "itinerary": "7-Night Halloween on the High Seas Mexican Riviera Cruise from San Diego"
+        },
+        {
+          "ship": "Disney Wonder",
+          "date": "10/27/2026",
+          "category": "Verandah",
+          "price": 810,
+          "itinerary": "6-Night Halloween on the High Seas Mexican Riviera Cruise from San Diego"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "8/10/2026",
+          "category": "Inside",
+          "price": 1563,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "8/30/2026",
+          "category": "Inside",
+          "price": 1019,
+          "itinerary": "Norwegian Fjords with Michel Roux"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/12/2026",
+          "category": "Inside",
+          "price": 739,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "08/04/2026",
+          "category": "Inside",
+          "price": 2019,
+          "itinerary": "Transatlantic Crossing, Norway and Iceland"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "08/18/2026",
+          "category": "Inside",
+          "price": 689,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "08/27/2026",
+          "category": "Inside",
+          "price": 1099,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "09/05/2026",
+          "category": "Inside",
+          "price": 729,
+          "itinerary": "Anthony Inglis and the National Symphony Orchestra"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "09/12/2026",
+          "category": "Inside",
+          "price": 789,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "09/24/2026",
+          "category": "Inside",
+          "price": 1599,
+          "itinerary": "Panama Canal"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "12/08/2026",
+          "category": "Inside",
+          "price": 699,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "01/07/2027",
+          "category": "Inside",
+          "price": 939,
+          "itinerary": "Miami to Southampton"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "01/10/2027",
+          "category": "Inside",
+          "price": 909,
+          "itinerary": "Southampton to Fort Lauderdale"
+        },
+        {
+          "ship": "Queen Victoria",
+          "date": "01/10/2027",
+          "category": "Inside",
+          "price": 809,
+          "itinerary": "Westbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Seabourn Venture",
+          "date": "Aug 5, 2026",
+          "category": "Ocean View (RR)",
+          "price": 19749,
+          "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Reykjavik, Iceland to Anchorage, Alaska, US)"
+        },
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Aug 8, 2026",
+          "category": "Ocean View (RR)",
+          "price": 9029,
+          "itinerary": "WEST IRELAND GEMS & SOLAR ECLIPSE (Dover (London), England, UK to Reykjavik, Iceland)"
+        },
+        {
+          "ship": "Seabourn Venture",
+          "date": "Aug 29, 2026",
+          "category": "Ocean View (RR)",
+          "price": 20499,
+          "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Anchorage, Alaska, US to Reykjavik, Iceland)"
+        },
+        {
+          "ship": "Seabourn Quest",
+          "date": "Sep 6, 2026",
+          "category": "Ocean View (RR)",
+          "price": 5059,
+          "itinerary": "ADRIATIC & GRECIAN GEMS (Fusina (Venice), Italy to Piraeus (Athens), Greece)"
+        },
+        {
+          "ship": "Seabourn Quest",
+          "date": "Sep 13, 2026",
+          "category": "Ocean View (RR)",
+          "price": 4179,
+          "itinerary": "EPHESUS & GREEK ISLAND GEMS (Round-trip Piraeus (Athens), Greece)"
+        },
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Sep 25, 2026",
+          "category": "Ocean View (RR)",
+          "price": 6059,
+          "itinerary": "NEWFOUNDLAND & GULF OF ST. LAWRENCE REVERIE (Round-trip Montreal, Quebec, Canada)"
+        },
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Oct 7, 2026",
+          "category": "Ocean View (RR)",
+          "price": 5099,
+          "itinerary": "CANADA & NEW ENGLAND FALL FOLIAGE (Montreal, Quebec, Canada to New York, New York, US)"
+        },
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Oct 16, 2026",
+          "category": "Ocean View (RR)",
+          "price": 6999,
+          "itinerary": "EASTER & PITCAIRN ISLANDS: MAROONED, MOAI & MUTINEERS (Papeete, French Polynesia to San Antonio (Santiago), Chile)"
+        },
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Nov 12, 2026",
+          "category": "Ocean View (RR)",
+          "price": 4499,
+          "itinerary": "CHILEAN FJORDS (San Antonio (Santiago), Chile to Buenos Aires)"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Apr 24, 2027",
+          "category": "Ocean View (RR)",
+          "price": 11699,
+          "itinerary": "JAPAN, ALASKA, GLACIER BAY & PACIFIC CROSSING (Tokyo, Japan to Vancouver, B.C., CA)"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "8/9/2026",
+          "category": "Inside",
+          "price": 1771,
+          "itinerary": "Signature Denali D6C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "8/9/2026",
+          "category": "Inside",
+          "price": 1394,
+          "itinerary": "Classic Denali D8C VANCOUVER to FAIRBANKS"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "8/9/2026",
+          "category": "Inside",
+          "price": 2448,
+          "itinerary": "Signature Denali D2C VANCOUVER to ANCHORAGE"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/12/2026",
+          "category": "Inside",
+          "price": 971,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/12/2026",
+          "category": "Obstructed Oceanview",
+          "price": 1091,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "8/12/2026",
+          "category": "Unobstructed Oceanview",
+          "price": 1151,
+          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "8/14/2026",
+          "category": "Inside",
+          "price": 1687,
+          "itinerary": "Classic Denali D8L FAIRBANKS to VANCOUVER"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "2026-08-18",
+          "category": "Inside",
+          "price": 639,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "2026-08-30",
+          "category": "Inside",
+          "price": 1019,
+          "itinerary": "Norwegian Fjords with Michel Roux"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "2026-09-05",
+          "category": "Inside",
+          "price": 799,
+          "itinerary": "Anthony Inglis and the National Symphony Orchestra"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "2026-09-12",
+          "category": "Inside",
+          "price": 739,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "2026-09-24",
+          "category": "Inside",
+          "price": 1399,
+          "itinerary": "Panama Canal"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "2026-11-05",
+          "category": "Inside",
+          "price": 969,
+          "itinerary": "Eastern Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "2026-12-08",
+          "category": "Inside",
+          "price": 699,
+          "itinerary": "Western Caribbean"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "2027-01-07",
+          "category": "Inside",
+          "price": 939,
+          "itinerary": "Miami to Southampton"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "2027-01-10",
+          "category": "Inside",
+          "price": 909,
+          "itinerary": "Southampton to Fort Lauderdale"
+        },
+        {
+          "ship": "Queen Anne",
+          "date": "2027-03-19",
+          "category": "Inside",
+          "price": 1199,
+          "itinerary": "Fort Lauderdale To Southampton"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "price": 1879,
+          "itinerary": "New England and Canada"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "8/7/2026",
+          "category": "Verandah",
+          "price": 720,
+          "itinerary": "Bahamas from Port Canaveral"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "8/8/2026",
+          "category": "Verandah",
+          "price": 1505,
+          "itinerary": "Western Caribbean from Port Canaveral"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "8/15/2026",
+          "category": "Verandah",
+          "price": 925,
+          "itinerary": "Western Caribbean from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "8/17/2026",
+          "category": "Oceanview",
+          "price": 800,
+          "itinerary": "Bahamas from Port Canaveral"
+        },
+        {
+          "ship": "Disney Magic",
+          "date": "8/27/2026",
+          "category": "Inside",
+          "price": 840,
+          "itinerary": "Alaska from Vancouver"
+        },
+        {
+          "ship": "Disney Magic",
+          "date": "9/3/2026",
+          "category": "Verandah",
+          "price": 1680,
+          "itinerary": "Alaska from Vancouver"
+        },
+        {
+          "ship": "Disney Magic",
+          "date": "9/10/2026",
+          "category": "Inside",
+          "price": 770,
+          "itinerary": "Alaska from Vancouver"
+        },
+        {
+          "ship": "Disney Dream",
+          "date": "9/14/2026",
+          "category": "Oceanview",
+          "price": 1300,
+          "itinerary": "Transatlantic ending in Fort Lauderdale from Southampton"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-02T02:54:49.715Z",
     "status": "partial_failure",
     "newDealsCount": 0,
