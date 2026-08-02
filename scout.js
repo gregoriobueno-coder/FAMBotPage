@@ -918,8 +918,21 @@ async function scoutOneSourcePortal(portal, browser) {
       const hasRemote = execSync('git remote', { encoding: 'utf8' }).trim();
       if (hasRemote) {
         console.log('Pushing updates to GitHub remote...');
-        execSync('git push', { stdio: 'inherit' });
-        console.log('Git push completed successfully!');
+        try {
+          execSync('git push', { stdio: 'inherit' });
+          console.log('Git push completed successfully!');
+        } catch (pushErr) {
+          console.log('Git push failed. Attempting to pull and rebase...');
+          try {
+            execSync('git stash', { stdio: 'inherit' });
+          } catch (e) {}
+          execSync('git pull --rebase origin main', { stdio: 'inherit' });
+          try {
+            execSync('git stash pop', { stdio: 'inherit' });
+          } catch (e) {}
+          execSync('git push origin main', { stdio: 'inherit' });
+          console.log('Git push resolved and completed successfully after pull/rebase!');
+        }
       } else {
         console.log('Warning: No git remote configured. Local commit completed, but push skipped.');
       }
