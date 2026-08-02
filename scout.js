@@ -18,6 +18,18 @@ if (!fs.existsSync(configPath)) {
 }
 const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
+// Auto-pull changes from remote at startup if git is configured
+if (fs.existsSync(path.join(__dirname, '.git')) && process.env.GITHUB_ACTIONS !== 'true') {
+  console.log('Attempting to pull latest changes from remote...');
+  const { execSync } = require('child_process');
+  try {
+    execSync('git pull --rebase origin main', { stdio: 'inherit' });
+    console.log('Successfully pulled latest changes!');
+  } catch (err) {
+    console.log('Warning: Startup git pull failed:', err.message);
+  }
+}
+
 // Initialize data folder
 const dataDir = path.join(__dirname, 'data');
 if (!fs.existsSync(dataDir)) {
