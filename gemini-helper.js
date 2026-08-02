@@ -29,7 +29,7 @@ Rules:
 8. If no deals or rates lists are found in the text, simply output: "No active rates lists found in document."
 
 Raw text content:
-${pdfText.substring(0, 15000)}
+${pdfText.substring(0, 300000)}
 `;
 
   const models = ['gemini-3.5-flash', 'gemini-2.5-flash'];
