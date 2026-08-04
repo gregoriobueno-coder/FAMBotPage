@@ -462,5 +462,23 @@
     "firstSeen": "2026-08-03T15:40:52.097Z",
     "title": "Virgin Voyages First Mates Flyer",
     "summary": ""
+  },
+  "06f0958c208a0b6d767584b18fa784c8": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252080326.pdf&Expires=1785931200&Signature=TBrQAPj86Z1FsZyaiqn2X9hI~m8P0IeENxtrUECRro4cZNo5fLgUGDca~ei8HMS0zi3oA1jAlHORIzFVXpw11jl8oh8baJYuwfoZ9Cayfs7DsSmL23iMY5oCpMH6O2EgJnjIo~rECcZX1KDsyjb2tgq8u8VuWZ~eCbpxnjAJe1kixW1gGzr6jDz2cr7HlZsjksC4906Pr4qdyurjcWJqcTkjrvDglpt1Twhf1aPV9U70b~3hF36pb5m6OxWWlfL29UW0HHWelyA3C~unB~2jl9fiC54XJHA4~UYwUAlfVvnX9WsM6Vj~6GzKg55zMH11AfpLtSjgtPBRTyDX-rMmzw__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "06f0958c208a0b6d767584b18fa784c8",
+    "bufferHash": "virgin-rawbuf-edebc6bf8318a9f7e3d5b0cad147ad10",
+    "firstSeen": "2026-08-04T02:30:57.663Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "virgin-rawbuf-edebc6bf8318a9f7e3d5b0cad147ad10": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252080326.pdf&Expires=1785931200&Signature=TBrQAPj86Z1FsZyaiqn2X9hI~m8P0IeENxtrUECRro4cZNo5fLgUGDca~ei8HMS0zi3oA1jAlHORIzFVXpw11jl8oh8baJYuwfoZ9Cayfs7DsSmL23iMY5oCpMH6O2EgJnjIo~rECcZX1KDsyjb2tgq8u8VuWZ~eCbpxnjAJe1kixW1gGzr6jDz2cr7HlZsjksC4906Pr4qdyurjcWJqcTkjrvDglpt1Twhf1aPV9U70b~3hF36pb5m6OxWWlfL29UW0HHWelyA3C~unB~2jl9fiC54XJHA4~UYwUAlfVvnX9WsM6Vj~6GzKg55zMH11AfpLtSjgtPBRTyDX-rMmzw__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "06f0958c208a0b6d767584b18fa784c8",
+    "bufferHash": "virgin-rawbuf-edebc6bf8318a9f7e3d5b0cad147ad10",
+    "firstSeen": "2026-08-04T02:30:57.663Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
   }
 }
