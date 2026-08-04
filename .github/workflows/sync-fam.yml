@@ -66,14 +66,26 @@ jobs:
           cp -r flyers public/ || true
 
       - name: Deploy to Firebase Hosting
+        env:
+          FIREBASE_ADMIN_SECRET: "${{ secrets['firebase-admin'] }}"
         run: |
-          SECRET_VAL="${{ secrets['firebase-admin'] }}"
-          if [[ "$SECRET_VAL" =~ ^\{ ]]; then
-            echo "Detected Service Account JSON key..."
-            echo "$SECRET_VAL" > service-account.json
+          node -e '
+            const fs = require("fs");
+            const secret = process.env.FIREBASE_ADMIN_SECRET || "";
+            if (secret.trim().startsWith("{")) {
+              console.log("Writing service-account.json...");
+              fs.writeFileSync("service-account.json", secret);
+            }
+          '
+          if [ -f service-account.json ]; then
+            echo "Authenticating via Service Account JSON..."
             export GOOGLE_APPLICATION_CREDENTIALS=service-account.json
+            echo "Listing projects..."
+            npx firebase-tools projects:list || true
             npx firebase-tools deploy --only hosting --project fambotpage
           else
-            echo "Detected Firebase Auth Token..."
-            npx firebase-tools deploy --only hosting --project fambotpage --token "$SECRET_VAL"
+            echo "Authenticating via Firebase Auth Token..."
+            echo "Listing projects..."
+            npx firebase-tools projects:list --token "$FIREBASE_ADMIN_SECRET" || true
+            npx firebase-tools deploy --only hosting --project fambotpage --token "$FIREBASE_ADMIN_SECRET"
           fi
