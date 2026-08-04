@@ -69,6 +69,11 @@ jobs:
         env:
           FIREBASE_ADMIN_SECRET: "${{ secrets['firebase-admin'] }}"
         run: |
+          echo "Secret info: length=${#FIREBASE_ADMIN_SECRET}"
+          if [ -n "$FIREBASE_ADMIN_SECRET" ]; then
+            echo "First 10 chars: $(echo -n "$FIREBASE_ADMIN_SECRET" | head -c 10)"
+            echo "Last 10 chars: $(echo -n "$FIREBASE_ADMIN_SECRET" | tail -c 10)"
+          fi
           node -e '
             const fs = require("fs");
             const secret = process.env.FIREBASE_ADMIN_SECRET || "";
