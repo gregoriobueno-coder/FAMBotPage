@@ -65,15 +65,25 @@ jobs:
           cp logo.png public/
           cp -r flyers public/ || true
 
+      - name: Debug Secret Key
+        env:
+          FIREBASE_ADMIN_SECRET: "${{ secrets['firebase-admin'] }}"
+        run: |
+          echo "Secret length: ${#FIREBASE_ADMIN_SECRET}" > secret-debug.txt
+          if [ -n "$FIREBASE_ADMIN_SECRET" ]; then
+            echo "First 10 chars: $(echo -n "$FIREBASE_ADMIN_SECRET" | head -c 10)" >> secret-debug.txt
+            echo "Last 10 chars: $(echo -n "$FIREBASE_ADMIN_SECRET" | tail -c 10)" >> secret-debug.txt
+          fi
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add secret-debug.txt
+          git commit -m "Auto-capture secret debug info [skip ci]" || true
+          git push origin main || true
+
       - name: Deploy to Firebase Hosting
         env:
           FIREBASE_ADMIN_SECRET: "${{ secrets['firebase-admin'] }}"
         run: |
-          echo "Secret info: length=${#FIREBASE_ADMIN_SECRET}" > deploy-error.log
-          if [ -n "$FIREBASE_ADMIN_SECRET" ]; then
-            echo "First 10 chars: $(echo -n "$FIREBASE_ADMIN_SECRET" | head -c 10)" >> deploy-error.log
-            echo "Last 10 chars: $(echo -n "$FIREBASE_ADMIN_SECRET" | tail -c 10)" >> deploy-error.log
-          fi
           node -e '
             const fs = require("fs");
             const secret = process.env.FIREBASE_ADMIN_SECRET || "";
@@ -83,23 +93,14 @@ jobs:
             }
           '
           if [ -f service-account.json ]; then
-            echo "Authenticating via Service Account JSON..." >> deploy-error.log
+            echo "Authenticating via Service Account JSON..."
             export GOOGLE_APPLICATION_CREDENTIALS=service-account.json
-            echo "Listing projects..." >> deploy-error.log
-            npx firebase-tools projects:list >> deploy-error.log 2>&1 || true
-            npx firebase-tools deploy --only hosting --project fambotpage >> deploy-error.log 2>&1
+            echo "Listing projects..."
+            npx firebase-tools projects:list || true
+            npx firebase-tools deploy --only hosting --project fambotpage
           else
-            echo "Authenticating via Firebase Auth Token..." >> deploy-error.log
-            echo "Listing projects..." >> deploy-error.log
-            npx firebase-tools projects:list --token "$FIREBASE_ADMIN_SECRET" >> deploy-error.log 2>&1 || true
-            npx firebase-tools deploy --only hosting --project fambotpage --token "$FIREBASE_ADMIN_SECRET" >> deploy-error.log 2>&1
+            echo "Authenticating via Firebase Auth Token..."
+            echo "Listing projects..."
+            npx firebase-tools projects:list --token "$FIREBASE_ADMIN_SECRET" || true
+            npx firebase-tools deploy --only hosting --project fambotpage --token "$FIREBASE_ADMIN_SECRET"
           fi
-
-      - name: Push Error Logs if Failed
-        if: failure()
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add deploy-error.log
-          git commit -m "Auto-capture deploy error logs [skip ci]" || true
-          git push origin main || true
