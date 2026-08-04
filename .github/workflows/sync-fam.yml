@@ -66,9 +66,14 @@ jobs:
           cp -r flyers public/ || true
 
       - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: "${{ secrets['firebase-admin'] }}"
-          projectId: fambotpage
-          channelId: live
+        run: |
+          SECRET_VAL="${{ secrets['firebase-admin'] }}"
+          if [[ "$SECRET_VAL" =~ ^\{ ]]; then
+            echo "Detected Service Account JSON key..."
+            echo "$SECRET_VAL" > service-account.json
+            export GOOGLE_APPLICATION_CREDENTIALS=service-account.json
+            npx firebase-tools deploy --only hosting --project fambotpage
+          else
+            echo "Detected Firebase Auth Token..."
+            npx firebase-tools deploy --only hosting --project fambotpage --token "$SECRET_VAL"
+          fi
