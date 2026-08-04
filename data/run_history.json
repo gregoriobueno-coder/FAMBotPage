@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-08-04T02:47:25.835Z",
+    "status": "partial_failure",
+    "newDealsCount": 0,
+    "totalDealsCount": 851,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "failed",
+        "details": "Session expired and auto-login failed for OneSource."
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-08-04T02:45:20.788Z",
     "status": "partial_failure",
     "newDealsCount": 0,
@@ -15657,64 +15686,6 @@
   },
   {
     "timestamp": "2026-07-17T14:28:13.705Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 41,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "ISLAND",
-          "date": "7/15/2026",
-          "category": "ME",
-          "price": 170,
-          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
-        },
-        {
-          "ship": "CORAL",
-          "date": "7/15/2026",
-          "category": "ME",
-          "price": 170,
-          "itinerary": "Voyage of the Glaciers (Northbound)"
-        },
-        {
-          "ship": "ISLAND",
-          "date": "07/15/2026",
-          "category": "ME,MY,B2,BC,BE,BF,OB,OC,OE,OV,IA,IB,IC",
-          "price": 170,
-          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
-        },
-        {
-          "ship": "CORAL",
-          "date": "07/15/2026",
-          "category": "ME,MY,BD,BE,BF,O5,O6,OB,OC,OE,OV,OW,OY,OZ,IA,IB,IC,ID,IE,IF",
-          "price": 170,
-          "itinerary": "Voyage of the Glaciers (Northbound)"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-07-16T14:55:34.297Z",
     "status": "success",
     "newDealsCount": 0,
     "totalDealsCount": 41,
