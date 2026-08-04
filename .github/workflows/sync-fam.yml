@@ -65,22 +65,6 @@ jobs:
           cp logo.png public/
           cp -r flyers public/ || true
 
-      - name: Debug Secret Key
-        env:
-          SECRET_HYPHEN: "${{ secrets['firebase-admin'] }}"
-          SECRET_UNDERSCORE: "${{ secrets.firebase_admin }}"
-          SECRET_UPPER_UNDERSCORE: "${{ secrets.FIREBASE_ADMIN }}"
-        run: |
-          echo "Secret hyphen length: ${#SECRET_HYPHEN}" > secret-debug.txt
-          echo "Secret underscore length: ${#SECRET_UNDERSCORE}" >> secret-debug.txt
-          echo "Secret upper underscore length: ${#SECRET_UPPER_UNDERSCORE}" >> secret-debug.txt
-          
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add secret-debug.txt
-          git commit -m "Auto-capture secret debug info [skip ci]" || true
-          git push origin main || true
-
       - name: Deploy to Firebase Hosting
         env:
           FIREBASE_ADMIN_SECRET: "${{ secrets['firebase-admin'] }}"
