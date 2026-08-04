@@ -67,13 +67,14 @@ jobs:
 
       - name: Debug Secret Key
         env:
-          FIREBASE_ADMIN_SECRET: "${{ secrets['firebase-admin'] }}"
+          SECRET_HYPHEN: "${{ secrets['firebase-admin'] }}"
+          SECRET_UNDERSCORE: "${{ secrets.firebase_admin }}"
+          SECRET_UPPER_UNDERSCORE: "${{ secrets.FIREBASE_ADMIN }}"
         run: |
-          echo "Secret length: ${#FIREBASE_ADMIN_SECRET}" > secret-debug.txt
-          if [ -n "$FIREBASE_ADMIN_SECRET" ]; then
-            echo "First 10 chars: $(echo -n "$FIREBASE_ADMIN_SECRET" | head -c 10)" >> secret-debug.txt
-            echo "Last 10 chars: $(echo -n "$FIREBASE_ADMIN_SECRET" | tail -c 10)" >> secret-debug.txt
-          fi
+          echo "Secret hyphen length: ${#SECRET_HYPHEN}" > secret-debug.txt
+          echo "Secret underscore length: ${#SECRET_UNDERSCORE}" >> secret-debug.txt
+          echo "Secret upper underscore length: ${#SECRET_UPPER_UNDERSCORE}" >> secret-debug.txt
+          
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add secret-debug.txt
