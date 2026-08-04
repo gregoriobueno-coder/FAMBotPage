@@ -69,6 +69,6 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_ADMIN }}'
+          firebaseServiceAccount: "${{ secrets['firebase-admin'] }}"
           projectId: fambotpage
           channelId: live
