@@ -455,5 +455,14 @@
     "firstSeen": "2026-08-05T01:26:59.501Z",
     "title": "Virgin Voyages First Mates Flyer",
     "summary": ""
+  },
+  "0b6de6c935766dc080164db0618716e6": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252080326.pdf&Expires=1786060800&Signature=fFAbSJBt459LykaSqHsBgMbB1bfdpiuEFnDuv96dfLCO4OBMlNCOEkz0rbvCFXXpQ~g347y3e4wS8mJs2vlq1dv3V66H~IufljuK6U06KQ8CLHLqZ7ZxOxzfsED0shGPryZRxa~XC2OWVVAE5rgrVwC4KnxDYciQSktGJG3YF9~L3~ceePNBYHMcs50lvDL0RyLvSQjdqUMteTCdRmhn~oPkfHEwVvVMS-iz2JDTznaDGYUQY83FKrlZUGDokaZqHCgU1SjohKXcpvbtTpnj29dDGOFCQ0liYP5ssrY-Wl0pYMlLtx1RKdvk0p75TpaIlKjt2Be4GZlqctt9EIr3cA__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "0b6de6c935766dc080164db0618716e6",
+    "bufferHash": "virgin-rawbuf-edebc6bf8318a9f7e3d5b0cad147ad10",
+    "firstSeen": "2026-08-05T15:11:47.687Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
   }
 }
