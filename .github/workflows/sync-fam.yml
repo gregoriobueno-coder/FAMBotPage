@@ -72,9 +72,29 @@ jobs:
           node -e '
             const fs = require("fs");
             const secret = process.env.FIREBASE_ADMIN_SECRET || "";
-            if (secret.trim().startsWith("{")) {
+            let jsonContent = null;
+            try {
+              JSON.parse(secret);
+              jsonContent = secret;
+            } catch (e) {
+              const start = secret.indexOf("{");
+              const end = secret.lastIndexOf("}");
+              if (start !== -1 && end !== -1 && end > start) {
+                const candidate = secret.substring(start, end + 1);
+                try {
+                  const obj = eval("(" + candidate + ")");
+                  if (obj && typeof obj === "object" && obj.project_id) {
+                    jsonContent = JSON.stringify(obj);
+                    console.log("Successfully extracted JSON from JS code snippet!");
+                  }
+                } catch (evalErr) {
+                  console.log("Failed to parse extracted JS object:", evalErr.message);
+                }
+              }
+            }
+            if (jsonContent) {
               console.log("Writing service-account.json...");
-              fs.writeFileSync("service-account.json", secret);
+              fs.writeFileSync("service-account.json", jsonContent);
             }
           '
           if [ -f service-account.json ]; then
