@@ -27,6 +27,8 @@ Rules:
 6. In "Deal Score", evaluate the deal value on a scale from 1 (Poor) to 10 (Exceptional) considering the brand standard, itinerary, nights, and cabin type price.
 7. In "AI Insight", provide a 3-5 word summary of the unique value (e.g., "70% off retail", "Rare solo rate", "Great balcony deal").
 8. If no deals or rates lists are found in the text, simply output: "No active rates lists found in document."
+9. IMPORTANT - Handling Concatenated Text: Some fields may be run together in the PDF extract (e.g., "RotterdamY67010/18/202613-DAY" should be split into Ship: "Rotterdam", Code: "Y670", Date: "10/18/2026", Nights: "13"). Correctly parse and separate these.
+10. IMPORTANT - Handling Multi-Line Split Entries: A single sailing's details may be split across two adjacent lines (e.g., the ship/date/itinerary on one line and the destination/prices on the next line). Correlate and combine these into a single row in the output table.
 
 Raw text content:
 ${pdfText.substring(0, 300000)}
