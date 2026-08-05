@@ -67,7 +67,7 @@ jobs:
 
       - name: Deploy to Firebase Hosting
         env:
-          FIREBASE_ADMIN_SECRET: "${{ secrets['firebase-admin'] }}"
+          FIREBASE_ADMIN_SECRET: "${{ secrets['fireball'] || secrets['firebase-admin'] }}"
         run: |
           node -e '
             const fs = require("fs");
