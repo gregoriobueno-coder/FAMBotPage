@@ -1,5 +1,49 @@
 [
   {
+    "timestamp": "2026-08-06T00:31:35.386Z",
+    "status": "partial_failure",
+    "newDealsCount": 0,
+    "totalDealsCount": 182,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "failed",
+        "details": "Session expired and auto-login failed for OneSource."
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "VL",
+          "date": "2026-08-05",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1500,
+          "itinerary": "Eclipse in the Land of Fire and Ice"
+        },
+        {
+          "ship": "Seabourn Venture",
+          "date": "Aug 5, 2026",
+          "category": "Ocean View (RR)",
+          "price": 19749,
+          "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Reykjavik, Iceland to Anchorage, Alaska, US)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-05T15:11:24.625Z",
     "status": "partial_failure",
     "newDealsCount": 0,
@@ -20033,57 +20077,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-07-23T15:04:49.152Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 64,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Zaandam",
-          "date": "7/22/2026",
-          "category": "Inside",
-          "price": 1014,
-          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
-        },
-        {
-          "ship": "CORAL",
-          "date": "7/22/2026",
-          "category": "S5",
-          "price": 160,
-          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
-        },
-        {
-          "ship": "ISLAND",
-          "date": "7/22/2026",
-          "category": "MB",
-          "price": 170,
-          "itinerary": "Voyage of the Glaciers (Northbound)"
-        }
-      ]
     }
   }
 ]
