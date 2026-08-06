@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-08-06T03:51:32.857Z",
+    "status": "partial_failure",
+    "newDealsCount": 0,
+    "totalDealsCount": 182,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "failed",
+        "details": "Session expired and auto-login failed for OneSource."
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-08-06T02:32:45.057Z",
     "status": "partial_failure",
     "newDealsCount": 0,
@@ -20048,35 +20077,6 @@
           "itinerary": "Western Caribbean from Port Canaveral"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-07-25T14:28:09.665Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 64,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
