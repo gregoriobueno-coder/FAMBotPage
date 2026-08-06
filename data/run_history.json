@@ -1,5 +1,931 @@
 [
   {
+    "timestamp": "2026-08-06T04:01:26.135Z",
+    "status": "success",
+    "newDealsCount": 128,
+    "totalDealsCount": 310,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [
+        {
+          "ship": "11",
+          "date": "Queen Elizabeth",
+          "category": "Inside",
+          "price": 1299,
+          "itinerary": ""
+        },
+        {
+          "ship": "10",
+          "date": "Queen Elizabeth",
+          "category": "Inside",
+          "price": 1299,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Queen Elizabeth",
+          "category": "Outside",
+          "price": 1495,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Queen Elizabeth",
+          "category": "Inside",
+          "price": 899,
+          "itinerary": ""
+        },
+        {
+          "ship": "9",
+          "date": "Queen Elizabeth",
+          "category": "Inside",
+          "price": 699,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Queen Elizabeth",
+          "category": "Balcony",
+          "price": 1495,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Queen Victoria",
+          "category": "Inside",
+          "price": 2699,
+          "itinerary": ""
+        },
+        {
+          "ship": "16",
+          "date": "Queen Victoria",
+          "category": "Inside",
+          "price": 3049,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Queen Elizabeth",
+          "category": "Inside",
+          "price": 1699,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Queen Elizabeth",
+          "category": "Inside",
+          "price": 709,
+          "itinerary": ""
+        },
+        {
+          "ship": "17",
+          "date": "Queen Victoria",
+          "category": "Inside",
+          "price": 3129,
+          "itinerary": ""
+        },
+        {
+          "ship": "18",
+          "date": "Queen Victoria",
+          "category": "Inside",
+          "price": 2959,
+          "itinerary": ""
+        },
+        {
+          "ship": "9",
+          "date": "Queen Victoria",
+          "category": "Inside",
+          "price": 809,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Queen Anne",
+          "category": "Inside",
+          "price": 939,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Queen Anne",
+          "category": "Inside",
+          "price": 1199,
+          "itinerary": ""
+        },
+        {
+          "ship": "22",
+          "date": "Seabourn Ovation",
+          "category": "Guarantee (RR/RB)",
+          "price": 7839,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Seabourn Quest",
+          "category": "Guarantee (RR/RB)",
+          "price": 4509,
+          "itinerary": ""
+        },
+        {
+          "ship": "33",
+          "date": "Seabourn Encore",
+          "category": "Guarantee (RR/RB)",
+          "price": 8699,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Seabourn Ovation",
+          "category": "Guarantee (RR/RB)",
+          "price": 6059,
+          "itinerary": ""
+        },
+        {
+          "ship": "13",
+          "date": "Seabourn Pursuit",
+          "category": "Guarantee (RR/RB)",
+          "price": 9299,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Seabourn Encore",
+          "category": "Guarantee (RR/RB)",
+          "price": 4679,
+          "itinerary": ""
+        },
+        {
+          "ship": "19",
+          "date": "Seabourn Pursuit",
+          "category": "Guarantee (RR/RB)",
+          "price": 6649,
+          "itinerary": ""
+        },
+        {
+          "ship": "24",
+          "date": "Seabourn Encore",
+          "category": "Guarantee (RR/RB)",
+          "price": 10439,
+          "itinerary": ""
+        },
+        {
+          "ship": "30",
+          "date": "Seabourn Pursuit",
+          "category": "Guarantee (RR/RB)",
+          "price": 16199,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Seabourn Encore",
+          "category": "Guarantee (RR/RB)",
+          "price": 4859,
+          "itinerary": ""
+        },
+        {
+          "ship": "35",
+          "date": "Seabourn Encore",
+          "category": "Guarantee (RR/RB)",
+          "price": 11699,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 434,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 529,
+          "itinerary": ""
+        },
+        {
+          "ship": "8",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 828,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 522,
+          "itinerary": ""
+        },
+        {
+          "ship": "11",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 1253,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Noordam",
+          "category": "Inside",
+          "price": 622,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Noordam",
+          "category": "Inside",
+          "price": 1490,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Westerdam",
+          "category": "Inside",
+          "price": 696,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 649,
+          "itinerary": ""
+        },
+        {
+          "ship": "18",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 1513,
+          "itinerary": ""
+        },
+        {
+          "ship": "10",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 574,
+          "itinerary": ""
+        },
+        {
+          "ship": "11",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 569,
+          "itinerary": ""
+        },
+        {
+          "ship": "13",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 2088,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 2311,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 2491,
+          "itinerary": ""
+        },
+        {
+          "ship": "10",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 1534,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 2158,
+          "itinerary": ""
+        },
+        {
+          "ship": "9",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 539,
+          "itinerary": ""
+        },
+        {
+          "ship": "13",
+          "date": "Noordam",
+          "category": "Inside",
+          "price": 1179,
+          "itinerary": ""
+        },
+        {
+          "ship": "8",
+          "date": "Noordam",
+          "category": "Inside",
+          "price": 842,
+          "itinerary": ""
+        },
+        {
+          "ship": "16",
+          "date": "Noordam",
+          "category": "Inside",
+          "price": 1900,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Noordam",
+          "category": "Inside",
+          "price": 1310,
+          "itinerary": ""
+        },
+        {
+          "ship": "15",
+          "date": "Noordam",
+          "category": "Inside",
+          "price": 1693,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Westerdam",
+          "category": "Inside",
+          "price": 1696,
+          "itinerary": ""
+        },
+        {
+          "ship": "28",
+          "date": "Westerdam",
+          "category": "Inside",
+          "price": 3731,
+          "itinerary": ""
+        },
+        {
+          "ship": "15",
+          "date": "Westerdam",
+          "category": "Inside",
+          "price": 1374,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Volendam",
+          "category": "Inside",
+          "price": 1074,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Zuiderdam",
+          "category": "Inside",
+          "price": 537,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Zuiderdam",
+          "category": "Inside",
+          "price": 1235,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 784,
+          "itinerary": ""
+        },
+        {
+          "ship": "10",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 809,
+          "itinerary": ""
+        },
+        {
+          "ship": "11",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 937,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 977,
+          "itinerary": ""
+        },
+        {
+          "ship": "21",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 1319,
+          "itinerary": ""
+        },
+        {
+          "ship": "16",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 949,
+          "itinerary": ""
+        },
+        {
+          "ship": "19",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 1544,
+          "itinerary": ""
+        },
+        {
+          "ship": "35",
+          "date": "Volendam",
+          "category": "Inside",
+          "price": 4607,
+          "itinerary": ""
+        },
+        {
+          "ship": "40",
+          "date": "Volendam",
+          "category": "Inside",
+          "price": 5024,
+          "itinerary": ""
+        },
+        {
+          "ship": "18",
+          "date": "Volendam",
+          "category": "Inside",
+          "price": 2422,
+          "itinerary": ""
+        },
+        {
+          "ship": "54",
+          "date": "Volendam",
+          "category": "Inside",
+          "price": 6562,
+          "itinerary": ""
+        },
+        {
+          "ship": "19",
+          "date": "Volendam",
+          "category": "Inside",
+          "price": 2042,
+          "itinerary": ""
+        },
+        {
+          "ship": "41",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 5442,
+          "itinerary": ""
+        },
+        {
+          "ship": "29",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 3434,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Nieuw Statendam",
+          "category": "Inside",
+          "price": 1795,
+          "itinerary": ""
+        },
+        {
+          "ship": "15",
+          "date": "Nieuw Statendam",
+          "category": "Inside",
+          "price": 846,
+          "itinerary": ""
+        },
+        {
+          "ship": "13",
+          "date": "Nieuw Statendam",
+          "category": "Inside",
+          "price": 698,
+          "itinerary": ""
+        },
+        {
+          "ship": "28",
+          "date": "Nieuw Statendam",
+          "category": "Inside",
+          "price": 3856,
+          "itinerary": ""
+        },
+        {
+          "ship": "11",
+          "date": "Oosterdam",
+          "category": "Inside",
+          "price": 912,
+          "itinerary": ""
+        },
+        {
+          "ship": "10",
+          "date": "Oosterdam",
+          "category": "Inside",
+          "price": 772,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Oosterdam",
+          "category": "Inside",
+          "price": 791,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Oosterdam",
+          "category": "Inside",
+          "price": 969,
+          "itinerary": ""
+        },
+        {
+          "ship": "13",
+          "date": "Rotterdam",
+          "category": "Inside",
+          "price": 839,
+          "itinerary": ""
+        },
+        {
+          "ship": "15",
+          "date": "Rotterdam",
+          "category": "Inside",
+          "price": 933,
+          "itinerary": ""
+        },
+        {
+          "ship": "7",
+          "date": "Rotterdam",
+          "category": "Inside",
+          "price": 1009,
+          "itinerary": ""
+        },
+        {
+          "ship": "45",
+          "date": "Volendam",
+          "category": "Inside",
+          "price": 4834,
+          "itinerary": ""
+        },
+        {
+          "ship": "17",
+          "date": "Volendam",
+          "category": "Inside",
+          "price": 3660,
+          "itinerary": ""
+        },
+        {
+          "ship": "1",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 108,
+          "itinerary": ""
+        },
+        {
+          "ship": "4",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 304,
+          "itinerary": ""
+        },
+        {
+          "ship": "6",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 781,
+          "itinerary": ""
+        },
+        {
+          "ship": "4",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 317,
+          "itinerary": ""
+        },
+        {
+          "ship": "5",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 422,
+          "itinerary": ""
+        },
+        {
+          "ship": "4",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 423,
+          "itinerary": ""
+        },
+        {
+          "ship": "6",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 599,
+          "itinerary": ""
+        },
+        {
+          "ship": "4",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 287,
+          "itinerary": ""
+        },
+        {
+          "ship": "17",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 1428,
+          "itinerary": ""
+        },
+        {
+          "ship": "18",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 1609,
+          "itinerary": ""
+        },
+        {
+          "ship": "35",
+          "date": "Koningsdam",
+          "category": "Inside",
+          "price": 3913,
+          "itinerary": ""
+        },
+        {
+          "ship": "27",
+          "date": "Noordam",
+          "category": "Inside",
+          "price": 3205,
+          "itinerary": ""
+        },
+        {
+          "ship": "35",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 3763,
+          "itinerary": ""
+        },
+        {
+          "ship": "11",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 767,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 742,
+          "itinerary": ""
+        },
+        {
+          "ship": "21",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 1852,
+          "itinerary": ""
+        },
+        {
+          "ship": "20",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 1691,
+          "itinerary": ""
+        },
+        {
+          "ship": "16",
+          "date": "Eurodam",
+          "category": "Inside",
+          "price": 1508,
+          "itinerary": ""
+        },
+        {
+          "ship": "15",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 1528,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Zaandam",
+          "category": "Inside",
+          "price": 1429,
+          "itinerary": ""
+        },
+        {
+          "ship": "26",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 2469,
+          "itinerary": ""
+        },
+        {
+          "ship": "41",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 3553,
+          "itinerary": ""
+        },
+        {
+          "ship": "15",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 1576,
+          "itinerary": ""
+        },
+        {
+          "ship": "22",
+          "date": "Nieuw Amsterdam",
+          "category": "Inside",
+          "price": 4451,
+          "itinerary": ""
+        },
+        {
+          "ship": "16",
+          "date": "Oosterdam",
+          "category": "Inside",
+          "price": 1948,
+          "itinerary": ""
+        },
+        {
+          "ship": "22",
+          "date": "Oosterdam",
+          "category": "Inside",
+          "price": 4584,
+          "itinerary": ""
+        },
+        {
+          "ship": "30",
+          "date": "Volendam",
+          "category": "Inside",
+          "price": 4262,
+          "itinerary": ""
+        },
+        {
+          "ship": "29",
+          "date": "Noordam",
+          "category": "Inside",
+          "price": 2548,
+          "itinerary": ""
+        },
+        {
+          "ship": "10",
+          "date": "Crown Princess",
+          "category": "Interior",
+          "price": 1399,
+          "itinerary": ""
+        },
+        {
+          "ship": "10",
+          "date": "Island Princess",
+          "category": "Interior",
+          "price": 1569,
+          "itinerary": ""
+        },
+        {
+          "ship": "10",
+          "date": "Discovery Princess",
+          "category": "Interior",
+          "price": 1689,
+          "itinerary": ""
+        },
+        {
+          "ship": "10",
+          "date": "Coral Princess",
+          "category": "Interior",
+          "price": 1489,
+          "itinerary": ""
+        },
+        {
+          "ship": "11",
+          "date": "Crown Princess",
+          "category": "Interior",
+          "price": 1469,
+          "itinerary": ""
+        },
+        {
+          "ship": "11",
+          "date": "Island Princess",
+          "category": "Interior",
+          "price": 1939,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Crown Princess",
+          "category": "Interior",
+          "price": 1599,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Discovery Princess",
+          "category": "Interior",
+          "price": 1789,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Island Princess",
+          "category": "Interior",
+          "price": 1889,
+          "itinerary": ""
+        },
+        {
+          "ship": "12",
+          "date": "Coral Princess",
+          "category": "Interior",
+          "price": 2169,
+          "itinerary": ""
+        },
+        {
+          "ship": "13",
+          "date": "Crown Princess",
+          "category": "Interior",
+          "price": 1749,
+          "itinerary": ""
+        },
+        {
+          "ship": "13",
+          "date": "Discovery Princess",
+          "category": "Interior",
+          "price": 2189,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Crown Princess",
+          "category": "Interior",
+          "price": 2249,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Discovery Princess",
+          "category": "Interior",
+          "price": 2589,
+          "itinerary": ""
+        },
+        {
+          "ship": "14",
+          "date": "Island Princess",
+          "category": "Interior",
+          "price": 2469,
+          "itinerary": ""
+        },
+        {
+          "ship": "15",
+          "date": "Island Princess",
+          "category": "Interior",
+          "price": 2889,
+          "itinerary": ""
+        },
+        {
+          "ship": "13",
+          "date": "Island Princess",
+          "category": "Interior",
+          "price": 2799,
+          "itinerary": ""
+        },
+        {
+          "ship": "Seabourn Venture",
+          "date": "Aug 5, 2026",
+          "category": "Ocean View (RR)",
+          "price": 19749,
+          "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Reykjavik, Iceland to Anchorage, Alaska, US)"
+        }
+      ],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-08-06T03:51:32.857Z",
     "status": "partial_failure",
     "newDealsCount": 0,
@@ -20019,64 +20945,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-07-26T14:26:23.225Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 60,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Koningsdam",
-          "date": "7/25/2026",
-          "category": "Inside",
-          "price": 2051,
-          "itinerary": "ALASKA INSIDE PASSAGE Roundtrip VANCOUVER"
-        },
-        {
-          "ship": "GRAND",
-          "date": "7/25/2026",
-          "category": "S4",
-          "price": 160,
-          "itinerary": "Voyage of the Glaciers (Northbound)"
-        },
-        {
-          "ship": "DISCOVERY",
-          "date": "7/25/2026",
-          "category": "M1",
-          "price": 160,
-          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
-        },
-        {
-          "ship": "Disney Treasure",
-          "date": "7/25/2026",
-          "category": "Verandah",
-          "price": 1750,
-          "itinerary": "Western Caribbean from Port Canaveral"
-        }
-      ]
     }
   }
 ]
