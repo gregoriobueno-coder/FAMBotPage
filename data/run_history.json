@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-08-06T05:34:53.408Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 309,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Venture",
+          "date": "Aug 5, 2026",
+          "category": "Ocean View (RR)",
+          "price": 19749,
+          "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Reykjavik, Iceland to Anchorage, Alaska, US)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-06T04:01:26.135Z",
     "status": "success",
     "newDealsCount": 128,
@@ -20891,35 +20928,6 @@
   },
   {
     "timestamp": "2026-07-28T15:15:30.099Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 60,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-07-27T15:39:05.582Z",
     "status": "success",
     "newDealsCount": 0,
     "totalDealsCount": 60,
