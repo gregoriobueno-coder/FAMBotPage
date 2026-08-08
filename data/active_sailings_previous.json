@@ -3302,21 +3302,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Aug 7, 2026",
-    "sailDateObj": 1786060800000,
-    "ship": "Seabourn Encore",
-    "nights": 7,
-    "itinerary": "Glaciers & Alaska Inside Passage (Vancouver, B.C., CA to Juneau, Alaska, US)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$3,779",
-    "price": 3779,
-    "dealScore": 8,
-    "aiInsight": "Excellent Alaska TA rate",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Aug 8, 2026",
     "sailDateObj": 1786147200000,
     "ship": "Seabourn Ovation",
@@ -4513,21 +4498,6 @@
     "dealScore": 8,
     "aiInsight": "Extended New England Canada Cruise",
     "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "8/7/2026",
-    "sailDateObj": 1786060800000,
-    "ship": "Disney Wish",
-    "nights": 3,
-    "itinerary": "Bahamas from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$720",
-    "price": 720,
-    "dealScore": 7,
-    "aiInsight": "Quick Bahamas verandah escape",
-    "region": "Bahamas"
   },
   {
     "portal": "disney",

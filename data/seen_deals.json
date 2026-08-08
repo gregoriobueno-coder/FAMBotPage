@@ -671,5 +671,23 @@
     "firstSeen": "2026-08-07T14:10:25.405Z",
     "title": "Cunard Best Buys 8.5.26 CAD",
     "summary": ""
+  },
+  "onesource-rawbuf-75fa142519d0d8b875dbebb0b82beb74": {
+    "portal": "onesource-hollandamericaline",
+    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
+    "urlHash": "a4d27c68441b94b4f1caceeb033bde1a",
+    "bufferHash": "onesource-rawbuf-75fa142519d0d8b875dbebb0b82beb74",
+    "firstSeen": "2026-08-08T13:42:58.188Z",
+    "title": "Travel Advisor Rates",
+    "summary": ""
+  },
+  "onesource-rawbuf-74c33458116d52c8bbd3aece183e627b": {
+    "portal": "onesource-seabourn",
+    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
+    "urlHash": "ee54d081c6e4e00cbefffbe520252e93",
+    "bufferHash": "onesource-rawbuf-74c33458116d52c8bbd3aece183e627b",
+    "firstSeen": "2026-08-08T13:43:02.692Z",
+    "title": "Travel Advisor Appreciation Fares (Web)",
+    "summary": ""
   }
 }
