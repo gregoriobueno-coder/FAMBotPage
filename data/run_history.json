@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-08-09T13:45:04.045Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 304,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Aug 8, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 9029,
+          "itinerary": "West Ireland Gems & Solar Eclipse (Dover (London), England, UK to Reykjavik, Iceland)"
+        },
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Aug 8, 2026",
+          "category": "Ocean View (RR)",
+          "price": 9029,
+          "itinerary": "WEST IRELAND GEMS & SOLAR ECLIPSE (Dover (London), England, UK to Reykjavik, Iceland)"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "8/8/2026",
+          "category": "Verandah",
+          "price": 1505,
+          "itinerary": "Western Caribbean from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-08T13:41:02.636Z",
     "status": "success",
     "newDealsCount": 0,
@@ -20939,35 +20990,6 @@
           "itinerary": "Anthony Inglis and the National Symphony Orchestra"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-07-30T00:59:13.177Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 60,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]

@@ -3302,21 +3302,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Aug 8, 2026",
-    "sailDateObj": 1786147200000,
-    "ship": "Seabourn Ovation",
-    "nights": 14,
-    "itinerary": "West Ireland Gems & Solar Eclipse (Dover (London), England, UK to Reykjavik, Iceland)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$9,029",
-    "price": 9029,
-    "dealScore": 9,
-    "aiInsight": "Rare Solar Eclipse itinerary",
-    "region": "Northern Europe"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Aug 14, 2026",
     "sailDateObj": 1786665600000,
     "ship": "Seabourn Encore",
@@ -4202,21 +4187,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Aug 8, 2026",
-    "sailDateObj": 1786147200000,
-    "ship": "Seabourn Ovation",
-    "nights": 14,
-    "itinerary": "WEST IRELAND GEMS & SOLAR ECLIPSE (Dover (London), England, UK to Reykjavik, Iceland)",
-    "category": "Ocean View (RR)",
-    "priceStr": "$9,029",
-    "price": 9029,
-    "dealScore": 8,
-    "aiInsight": "Rare Solar Eclipse itinerary",
-    "region": "Northern Europe"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Aug 29, 2026",
     "sailDateObj": 1787961600000,
     "ship": "Seabourn Venture",
@@ -4498,21 +4468,6 @@
     "dealScore": 8,
     "aiInsight": "Extended New England Canada Cruise",
     "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "8/8/2026",
-    "sailDateObj": 1786147200000,
-    "ship": "Disney Treasure",
-    "nights": 7,
-    "itinerary": "Western Caribbean from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$1,505",
-    "price": 1505,
-    "dealScore": 8,
-    "aiInsight": "Great Treasure Western Caribbean",
-    "region": "Caribbean"
   },
   {
     "portal": "disney",
