@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-08-11T14:16:34.989Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 301,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "SC",
+          "date": "2026-08-10",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1200,
+          "itinerary": "Total Eclipse of the (Med)"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "8/10/2026",
+          "category": "Verandah",
+          "price": 940,
+          "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "8/10/2026",
+          "category": "Inside",
+          "price": 1563,
+          "itinerary": "Alaska"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-10T14:18:05.356Z",
     "status": "success",
     "newDealsCount": 0,
@@ -20654,50 +20705,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-07-30T01:24:46.454Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 95,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "ISLAND",
-          "date": "7/29/2026",
-          "category": "MB, MD, ME, MY, B2, BB, BE, BF, BZ, OB, OC, OE, OW, OY, OZ, IA, IB, IC, ID, IE, IF",
-          "price": 170,
-          "itinerary": "Voyage of the Glaciers with Glacier Bay (Southbound)"
-        },
-        {
-          "ship": "CORAL",
-          "date": "7/29/2026",
-          "category": "MB, ME, MY, B1, B2, BA, BB, BC, BD, BE, BF, BY, OB, OC, OD, OE, OV, OW, OY, OZ, IA, IB, IC, ID, IE, IF",
-          "price": 170,
-          "itinerary": "Voyage of the Glaciers (Northbound)"
-        }
-      ]
     }
   }
 ]

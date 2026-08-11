@@ -3497,21 +3497,6 @@
   {
     "portal": "virgin",
     "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252072426.pdf&Expires=1785585600&Signature=G4jlfMx8OQ-ICStVlI7aRXKAvq27~cmmEs0ejRE7VKATKNWJ-GCo0Q8TLngxEQ515KoLpuVFNvhOuncdBVK-KBSQbZES1CC3wyNij40A~Zh1Sr3FXHnaDgtUkYxMM~8KYgFXk0ENtNYcjQ5NYZFUeIikg~Xg4~UBIFFr2NY4EumcVzR6iR3FkTAQyIwFQyqJ3zR1sTkiYGCKkKEdWpmGZvQDG9k~Vhl31s4ilYb9-NNjFCXJrUX5oVAKrl2gFv8y-Nb~AN2TyjScJ1C0TXnHP2sq7ttgrYbuIFqRM99TfFZXnVxLJH81lq5YOnEo7hxpx7KZLjMgdL86IVMGINEVpQ__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
-    "sailDateStr": "2026-08-10",
-    "sailDateObj": 1786320000000,
-    "ship": "SC",
-    "nights": 12,
-    "itinerary": "Total Eclipse of the (Med)",
-    "category": "Interior/Oceanview (Assumed)",
-    "priceStr": "$1200",
-    "price": 1200,
-    "dealScore": 9,
-    "aiInsight": "Mediterranean, excellent rate",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "virgin",
-    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252072426.pdf&Expires=1785585600&Signature=G4jlfMx8OQ-ICStVlI7aRXKAvq27~cmmEs0ejRE7VKATKNWJ-GCo0Q8TLngxEQ515KoLpuVFNvhOuncdBVK-KBSQbZES1CC3wyNij40A~Zh1Sr3FXHnaDgtUkYxMM~8KYgFXk0ENtNYcjQ5NYZFUeIikg~Xg4~UBIFFr2NY4EumcVzR6iR3FkTAQyIwFQyqJ3zR1sTkiYGCKkKEdWpmGZvQDG9k~Vhl31s4ilYb9-NNjFCXJrUX5oVAKrl2gFv8y-Nb~AN2TyjScJ1C0TXnHP2sq7ttgrYbuIFqRM99TfFZXnVxLJH81lq5YOnEo7hxpx7KZLjMgdL86IVMGINEVpQ__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
     "sailDateStr": "2026-08-13",
     "sailDateObj": 1786579200000,
     "ship": "BR",
@@ -3872,21 +3857,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "8/10/2026",
-    "sailDateObj": 1786320000000,
-    "ship": "Disney Wish",
-    "nights": 4,
-    "itinerary": "4-Night Bahamian Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$940",
-    "price": 940,
-    "dealScore": 7,
-    "aiInsight": "Solid Verandah Price",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "8/14/2026",
     "sailDateObj": 1786665600000,
     "ship": "Disney Wish",
@@ -4003,21 +3973,6 @@
     "dealScore": 9,
     "aiInsight": "Exceptional Halloween Verandah Deal",
     "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_16_26CAD.pdf",
-    "sailDateStr": "8/10/2026",
-    "sailDateObj": 1786320000000,
-    "ship": "Queen Elizabeth",
-    "nights": 10,
-    "itinerary": "Alaska",
-    "category": "Inside",
-    "priceStr": "$1,563",
-    "price": 1563,
-    "dealScore": 8,
-    "aiInsight": "Great value Alaska cruise",
-    "region": "Alaska"
   },
   {
     "portal": "onesource-cunardline",
