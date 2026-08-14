@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-08-14T14:13:10.417Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 300,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "BR",
+          "date": "2026-08-13",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 700,
+          "itinerary": "Alaska: Inside Passage & Glacial Fjords"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-13T14:20:20.133Z",
     "status": "success",
     "newDealsCount": 0,
@@ -20527,184 +20564,6 @@
       ],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-07-30T21:00:30.253Z",
-    "status": "success",
-    "newDealsCount": 15,
-    "totalDealsCount": 113,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [
-        {
-          "ship": "Seabourn Encore",
-          "date": "Aug 7, 2026",
-          "category": "Ocean View",
-          "price": 3779,
-          "itinerary": "GLACIERS & ALASKA INSIDE PASSAGE (Vancouver, B.C., CA to Juneau, Alaska, US)"
-        },
-        {
-          "ship": "Seabourn Ovation",
-          "date": "Aug 8, 2026",
-          "category": "Ocean View",
-          "price": 9029,
-          "itinerary": "WEST IRELAND GEMS & SOLAR ECLIPSE (Dover (London), England, UK to Reykjavik, Iceland)"
-        },
-        {
-          "ship": "Seabourn Encore",
-          "date": "Aug 14, 2026",
-          "category": "Ocean View",
-          "price": 3779,
-          "itinerary": "ALASKA FJORDS & CANADIAN INSIDE PASSAGE (Juneau, Alaska, US to Vancouver, B.C., CA)"
-        },
-        {
-          "ship": "Seabourn Quest",
-          "date": "Sep 6, 2026",
-          "category": "Ocean View",
-          "price": 4509,
-          "itinerary": "ADRIATIC & GRECIAN GEMS (Fusina (Venice), Italy to Piraeus (Athens), Greece)"
-        },
-        {
-          "ship": "Seabourn Ovation",
-          "date": "Sep 25, 2026",
-          "category": "Ocean View",
-          "price": 6059,
-          "itinerary": "NEWFOUNDLAND & GULF OF ST. LAWRENCE REVERIE (Round-trip Montreal, Quebec, Canada)"
-        },
-        {
-          "ship": "Seabourn Pursuit",
-          "date": "Oct 4, 2026",
-          "category": "Ocean View",
-          "price": 9299,
-          "itinerary": "MELANESIA & POLYNESIA: ISLAND CULTURES & CORAL COASTS (Lautoka, Fiji to Papeete, French Polynesia)"
-        },
-        {
-          "ship": "Seabourn Pursuit",
-          "date": "Oct 16, 2026",
-          "category": "Ocean View",
-          "price": 6999,
-          "itinerary": "EASTER & PITCAIRN ISLANDS: MAROONED, MOAI & MUTINEERS (Papeete, French Polynesia to San Antonio (Santiago), Chile)"
-        },
-        {
-          "ship": "Seabourn Ovation",
-          "date": "Oct 19, 2026",
-          "category": "Ocean View",
-          "price": 4259,
-          "itinerary": "CANADA & NEW ENGLAND FALL FOLIAGE (New York, New York, US to Montreal, Quebec, Canada)"
-        },
-        {
-          "ship": "Disney Wish",
-          "date": "08/10/2026",
-          "category": "Verandah",
-          "price": 940,
-          "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
-        },
-        {
-          "ship": "Disney Destiny",
-          "date": "08/31/2026",
-          "category": "Verandah",
-          "price": 720,
-          "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale"
-        },
-        {
-          "ship": "Disney Treasure",
-          "date": "09/05/2026",
-          "category": "Verandah",
-          "price": 1120,
-          "itinerary": "7-Night Western Caribbean Cruise from Port Canaveral"
-        },
-        {
-          "ship": "Disney Destiny",
-          "date": "09/14/2026",
-          "category": "Verandah",
-          "price": 640,
-          "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale"
-        },
-        {
-          "ship": "Disney Wish",
-          "date": "09/14/2026",
-          "category": "Verandah",
-          "price": 660,
-          "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
-        },
-        {
-          "ship": "Disney Treasure",
-          "date": "09/19/2026",
-          "category": "Verandah",
-          "price": 1120,
-          "itinerary": "7-Night Western Caribbean Cruise from Port Canaveral"
-        },
-        {
-          "ship": "Disney Wonder",
-          "date": "10/03/2026",
-          "category": "Oceanview",
-          "price": 770,
-          "itinerary": "7-Night Halloween on the High Seas Mexican Riviera Cruise from San Diego"
-        }
-      ],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Seabourn Ovation",
-          "date": "Aug 8, 2026",
-          "category": "Ocean View",
-          "price": 9029,
-          "itinerary": "14-DAY WEST IRELAND GEMS & SOLAR ECLIPSE Dover (London), UK to Reykjavik, Iceland"
-        },
-        {
-          "ship": "Seabourn Quest",
-          "date": "Sep 6, 2026",
-          "category": "Ocean View",
-          "price": 5059,
-          "itinerary": "7-DAY ADRIATIC & GRECIAN GEMS Fusina (Venice), Italy to Piraeus (Athens), Greece"
-        },
-        {
-          "ship": "Seabourn Ovation",
-          "date": "Sep 25, 2026",
-          "category": "Ocean View",
-          "price": 6059,
-          "itinerary": "12-DAY NEWFOUNDLAND & GULF OF ST. LAWRENCE REVERIE Round-trip Montreal, Canada"
-        },
-        {
-          "ship": "Seabourn Pursuit",
-          "date": "Oct 4, 2026",
-          "category": "Ocean View",
-          "price": 9299,
-          "itinerary": "13-DAY MELANESIA & POLYNESIA: ISLAND CULTURES & CORAL COASTS Lautoka, Fiji to Papeete, French Polynesia"
-        },
-        {
-          "ship": "Seabourn Pursuit",
-          "date": "Oct 16, 2026",
-          "category": "Ocean View",
-          "price": 6999,
-          "itinerary": "19-DAY EASTER & PITCAIRN ISLANDS: MAROONED, MOAI & MUTINEERS Papeete, French Polynesia to San Antonio (Santiago), Chile"
-        },
-        {
-          "ship": "Seabourn Ovation",
-          "date": "Oct 19, 2026",
-          "category": "Ocean View",
-          "price": 4259,
-          "itinerary": "12-DAY CANADA & NEW ENGLAND FALL FOLIAGE New York, US to Montreal, Canada"
-        }
-      ]
     }
   }
 ]
