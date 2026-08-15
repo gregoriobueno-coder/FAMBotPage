@@ -1,5 +1,49 @@
 [
   {
+    "timestamp": "2026-08-15T13:25:59.958Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 298,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Encore",
+          "date": "Aug 14, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 3779,
+          "itinerary": "Alaska Fjords & Canadian Inside Passage (Juneau, Alaska, US to Vancouver, B.C., CA)"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "8/14/2026",
+          "category": "Verandah",
+          "price": 690,
+          "itinerary": "3-Night Bahamian Cruise from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-14T14:13:10.417Z",
     "status": "success",
     "newDealsCount": 0,
@@ -20488,80 +20532,6 @@
     },
     "changes": {
       "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-07-30T21:06:10.893Z",
-    "status": "success",
-    "newDealsCount": 8,
-    "totalDealsCount": 121,
-    "portals": {
-      "virgin": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [
-        {
-          "ship": "VL",
-          "date": "8/5/2026",
-          "category": "N/A",
-          "price": 1500,
-          "itinerary": "Eclipse in the Land of Fire and Ice"
-        },
-        {
-          "ship": "SC",
-          "date": "8/10/2026",
-          "category": "N/A",
-          "price": 1200,
-          "itinerary": "Total Eclipse of the (Med)"
-        },
-        {
-          "ship": "BR",
-          "date": "8/13/2026",
-          "category": "N/A",
-          "price": 700,
-          "itinerary": "Alaska: Inside Passage & Glacial Fjords"
-        },
-        {
-          "ship": "SC",
-          "date": "8/22/2026",
-          "category": "N/A",
-          "price": 1350,
-          "itinerary": "Italy & French Riviera"
-        },
-        {
-          "ship": "BR",
-          "date": "8/27/2026",
-          "category": "N/A",
-          "price": 1050,
-          "itinerary": "Alaska: Inside Passage & Glacial Fjords"
-        },
-        {
-          "ship": "VL",
-          "date": "8/27/2026",
-          "category": "N/A",
-          "price": 1500,
-          "itinerary": "English Elegance to Idyllic Iceland"
-        },
-        {
-          "ship": "SC",
-          "date": "8/31/2026",
-          "category": "N/A",
-          "price": 1500,
-          "itinerary": "Rome, Florence, Mykonos & More"
-        },
-        {
-          "ship": "RS",
-          "date": "8/31/2026",
-          "category": "N/A",
-          "price": 750,
-          "itinerary": "Dominican Republic & Bimini Beach Club"
-        }
-      ],
       "priceChanged": [],
       "removed": []
     }
