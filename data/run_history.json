@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-08-16T13:26:36.691Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 297,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Disney Destiny",
+          "date": "8/15/2026",
+          "category": "Verandah",
+          "price": 925,
+          "itinerary": "Western Caribbean from Fort Lauderdale"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-15T13:25:59.958Z",
     "status": "success",
     "newDealsCount": 0,
@@ -20505,35 +20542,6 @@
           "itinerary": "7-Night Halloween on the High Seas Eastern Caribbean Cruise from Fort Lauderdale"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-07-30T21:07:54.506Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 121,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]

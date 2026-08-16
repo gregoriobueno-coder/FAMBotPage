@@ -4382,21 +4382,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "8/15/2026",
-    "sailDateObj": 1786752000000,
-    "ship": "Disney Destiny",
-    "nights": 5,
-    "itinerary": "Western Caribbean from Fort Lauderdale",
-    "category": "Verandah",
-    "priceStr": "$925",
-    "price": 925,
-    "dealScore": 9,
-    "aiInsight": "New Destiny verandah steal",
-    "region": "Caribbean"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "8/17/2026",
     "sailDateObj": 1786924800000,
     "ship": "Disney Wish",
