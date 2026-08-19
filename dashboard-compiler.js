@@ -68,7 +68,13 @@ function compileStaticDashboard() {
     for (const line of lines) {
       if (line.includes('|-') || line.toLowerCase().includes('sail date')) continue;
       
-      const cells = line.split('|').map(c => c.trim()).filter((c, i, a) => i > 0 && i < a.length - 1);
+      let cells = line.split('|').map(c => c.trim());
+      if (cells[0] === '') {
+        cells.shift();
+      }
+      if (cells[cells.length - 1] === '') {
+        cells.pop();
+      }
       if (cells.length < 5) continue;
 
       // Find the price cell dynamically by looking for a cell containing '$' or a number that isn't the sail date/nights/score
