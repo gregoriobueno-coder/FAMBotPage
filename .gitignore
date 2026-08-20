@@ -6,6 +6,7 @@ node_modules/
 .env
 *cookies.json
 data/credentials.enc
+auth/*-state.json
 
 # Logs
 *.log

@@ -41,6 +41,17 @@ jobs:
       - name: Install Playwright & System Dependencies
         run: npx playwright install --with-deps chromium webkit
 
+      - name: Recreate Auth States from Secrets
+        env:
+          DISNEY_STATE: ${{ secrets.DISNEY_STATE }}
+          ONESOURCE_STATE: ${{ secrets.ONESOURCE_STATE }}
+          VIRGIN_STATE: ${{ secrets.VIRGIN_STATE }}
+        run: |
+          mkdir -p auth
+          echo "$DISNEY_STATE" > auth/disney-state.json
+          echo "$ONESOURCE_STATE" > auth/onesource-state.json
+          echo "$VIRGIN_STATE" > auth/virgin-state.json
+
       - name: Run FAM Scout
         env:
           CREDENTIALS_KEY: ${{ secrets.CREDENTIALS_KEY }}
@@ -55,7 +66,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html data/seen_deals.json data/run_history.json data/seen_sailing_keys.json data/active_sailings_previous.json flyers/ auth/*-state.json
+          git add index.html data/seen_deals.json data/run_history.json data/seen_sailing_keys.json data/active_sailings_previous.json flyers/
           git diff --quiet && git diff --staged --quiet || (git commit -m "Automated Sync: Update FAM deals database & dashboard" && git push origin main)
 
       - name: Prepare Public Directory for Firebase
