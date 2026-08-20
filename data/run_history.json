@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-08-20T20:37:04.904Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 612,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Zaandam",
+          "date": "8/19/2026",
+          "category": "Inside",
+          "price": 1016,
+          "itinerary": "Alaska Inside Passage (Roundtrip Vancouver)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-17T13:35:37.681Z",
     "status": "success",
     "newDealsCount": 0,
@@ -14488,43 +14525,6 @@
           "category": "Suite to Interior",
           "price": 18,
           "itinerary": "Mediterranean & Aegean"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-07-31T00:26:47.925Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 862,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Queen Elizabeth",
-          "date": "7/30/2026",
-          "category": "Inside",
-          "price": 1049,
-          "itinerary": "Alaska"
         }
       ]
     }
