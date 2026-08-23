@@ -722,21 +722,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Aug 22, 2026",
-    "sailDateObj": 1787356800000,
-    "ship": "Seabourn Ovation",
-    "nights": 22,
-    "itinerary": "Fire & Ice Passage (Reykjavik, Iceland to New York, NY)",
-    "category": "Guarantee (RR/RB)",
-    "priceStr": "$7,839",
-    "price": 7839,
-    "dealScore": 9,
-    "aiInsight": "Excellent per-night ultra-luxury value",
-    "region": "Northern Europe"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Sep 6, 2026",
     "sailDateObj": 1788652800000,
     "ship": "Seabourn Quest",
@@ -8338,21 +8323,6 @@
     "dealScore": 10,
     "aiInsight": "Ultimate multi-region expedition",
     "region": "Alaska"
-  },
-  {
-    "portal": "virgin",
-    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252072426.pdf&Expires=1785585600&Signature=G4jlfMx8OQ-ICStVlI7aRXKAvq27~cmmEs0ejRE7VKATKNWJ-GCo0Q8TLngxEQ515KoLpuVFNvhOuncdBVK-KBSQbZES1CC3wyNij40A~Zh1Sr3FXHnaDgtUkYxMM~8KYgFXk0ENtNYcjQ5NYZFUeIikg~Xg4~UBIFFr2NY4EumcVzR6iR3FkTAQyIwFQyqJ3zR1sTkiYGCKkKEdWpmGZvQDG9k~Vhl31s4ilYb9-NNjFCXJrUX5oVAKrl2gFv8y-Nb~AN2TyjScJ1C0TXnHP2sq7ttgrYbuIFqRM99TfFZXnVxLJH81lq5YOnEo7hxpx7KZLjMgdL86IVMGINEVpQ__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
-    "sailDateStr": "2026-08-22",
-    "sailDateObj": 1787356800000,
-    "ship": "SC",
-    "nights": 9,
-    "itinerary": "Italy & French Riviera",
-    "category": "Interior/Oceanview (Assumed)",
-    "priceStr": "$1350",
-    "price": 1350,
-    "dealScore": 8,
-    "aiInsight": "Italy/Riviera, solid advisor rate",
-    "region": "Europe & Med"
   },
   {
     "portal": "virgin",
