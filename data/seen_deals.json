@@ -1094,5 +1094,41 @@
     "firstSeen": "2026-08-24T13:47:15.198Z",
     "title": "Travel Advisor Appreciation Fares (Web)",
     "summary": ""
+  },
+  "36dd9ad9c2f52914f37d88ee5cc3acd4": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252081126.pdf&Expires=1787788800&Signature=fevdHgh8N1hAi5~Xgc-fnns9TkvmAesxvwqUMOIbgXnrouN7RRlTMk-Bk-Nv1JnrLXB25RBEq3DEKUMHVGrn4Q6ueLnnn-ROpkD0LXcMmDd~cJaoz13KSTicoD3Au0Nlv8ElPhipzg1Ti6yZo01OUWm7QvFuawgsxWoCH3JsaH24mRP4Ah6SOfQ4Zpl7w7ounYXjYz7dw2O1U-3pN-o6ddckNgnRFWlRO0IsQzyTgKVfwoY2WQdegpgnGP5jcRBgb-xf01HGJaUOcF9rYaRw6TxR-aZIY1J3GPJWFwQIruzXZh4KHbYWA2umFC-8oLWLjIhmLmuhzJLDu-kLgm49lw__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "36dd9ad9c2f52914f37d88ee5cc3acd4",
+    "bufferHash": "virgin-rawbuf-65883834978ea5a1919a27df723df402",
+    "firstSeen": "2026-08-25T13:44:25.186Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "456f96ca8571d97d97d7077368743176": {
+    "portal": "onesource-princesscruises",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/pc/deals-and-limited-time-offers/weekly-deals/ReducedSingleSupplementVoyageList-8.23.pdf",
+    "urlHash": "456f96ca8571d97d97d7077368743176",
+    "bufferHash": "onesource-rawbuf-0a8db72cda75e63d61853d44e2170c01",
+    "firstSeen": "2026-08-25T13:45:18.037Z",
+    "title": "Solo Traveler Rates Voyage List 8.23 (pdf)",
+    "summary": ""
+  },
+  "onesource-rawbuf-0a8db72cda75e63d61853d44e2170c01": {
+    "portal": "onesource-princesscruises",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/pc/deals-and-limited-time-offers/weekly-deals/ReducedSingleSupplementVoyageList-8.23.pdf",
+    "urlHash": "456f96ca8571d97d97d7077368743176",
+    "bufferHash": "onesource-rawbuf-0a8db72cda75e63d61853d44e2170c01",
+    "firstSeen": "2026-08-25T13:45:18.037Z",
+    "title": "Solo Traveler Rates Voyage List 8.23 (pdf)",
+    "summary": ""
+  },
+  "onesource-rawbuf-b39c8a6ac931d90de6f620759c30deaf": {
+    "portal": "onesource-seabourn",
+    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
+    "urlHash": "ee54d081c6e4e00cbefffbe520252e93",
+    "bufferHash": "onesource-rawbuf-b39c8a6ac931d90de6f620759c30deaf",
+    "firstSeen": "2026-08-25T13:45:23.384Z",
+    "title": "Travel Advisor Appreciation Fares (Web)",
+    "summary": ""
   }
 }
