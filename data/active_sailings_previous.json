@@ -1997,21 +1997,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "8/26/2026",
-    "sailDateObj": 1787702400000,
-    "ship": "Zaandam",
-    "nights": 7,
-    "itinerary": "Alaska Inside Passage (Roundtrip Vancouver)",
-    "category": "Inside",
-    "priceStr": "$1,039",
-    "price": 1039,
-    "dealScore": 6,
-    "aiInsight": "Late August standard",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "9/2/2026",
     "sailDateObj": 1788307200000,
     "ship": "Zaandam",
