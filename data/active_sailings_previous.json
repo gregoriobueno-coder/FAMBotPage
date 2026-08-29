@@ -8552,21 +8552,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "8/28/2026",
-    "sailDateObj": 1787875200000,
-    "ship": "Disney Wish",
-    "nights": 3,
-    "itinerary": "3-Night Bahamian Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$645",
-    "price": 645,
-    "dealScore": 7,
-    "aiInsight": "Solid Verandah Price",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "9/7/2026",
     "sailDateObj": 1788739200000,
     "ship": "Disney Wish",
