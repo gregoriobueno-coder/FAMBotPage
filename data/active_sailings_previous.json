@@ -857,21 +857,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "8/29/2026",
-    "sailDateObj": 1787961600000,
-    "ship": "Eurodam",
-    "nights": 7,
-    "itinerary": "Alaska Explorer (Roundtrip Seattle)",
-    "category": "Inside",
-    "priceStr": "$956",
-    "price": 956,
-    "dealScore": 7,
-    "aiInsight": "Solid autumn lead rate",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "9/5/2026",
     "sailDateObj": 1788566400000,
     "ship": "Eurodam",
@@ -8668,21 +8653,6 @@
     "dealScore": 9,
     "aiInsight": "Unbeatable 21-night Panama Canal",
     "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Aug 29, 2026",
-    "sailDateObj": 1787961600000,
-    "ship": "Seabourn Venture",
-    "nights": 24,
-    "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Anchorage, Alaska, US to Reykjavik, Iceland)",
-    "category": "Ocean View (RR)",
-    "priceStr": "$20,499",
-    "price": 20499,
-    "dealScore": 8,
-    "aiInsight": "Reverse Northwest Passage expedition",
-    "region": "Alaska"
   },
   {
     "portal": "onesource-seabourn",

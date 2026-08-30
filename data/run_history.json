@@ -1,5 +1,49 @@
 [
   {
+    "timestamp": "2026-08-30T17:07:31.757Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 597,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Eurodam",
+          "date": "8/29/2026",
+          "category": "Inside",
+          "price": 956,
+          "itinerary": "Alaska Explorer (Roundtrip Seattle)"
+        },
+        {
+          "ship": "Seabourn Venture",
+          "date": "Aug 29, 2026",
+          "category": "Ocean View (RR)",
+          "price": 20499,
+          "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Anchorage, Alaska, US to Reykjavik, Iceland)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-29T16:57:07.944Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7204,92 +7248,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-02T03:53:27.345Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 180,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Discovery Princess",
-          "date": "8/1/2026",
-          "category": "Princess Standard Interior",
-          "price": 1650,
-          "itinerary": "AAX Crz-D-M-A"
-        },
-        {
-          "ship": "Discovery Princess",
-          "date": "8/1/2026",
-          "category": "Princess Standard Balcony",
-          "price": 3000,
-          "itinerary": "AAX Crz-D-M-A"
-        },
-        {
-          "ship": "Discovery Princess",
-          "date": "8/1/2026",
-          "category": "Princess Standard Mini-suite",
-          "price": 3340,
-          "itinerary": "AAX Crz-D-M-A"
-        },
-        {
-          "ship": "Discovery Princess",
-          "date": "8/1/2026",
-          "category": "Princess Standard Full Suite",
-          "price": 6090,
-          "itinerary": "AAX Crz-D-M-A"
-        },
-        {
-          "ship": "Discovery Princess",
-          "date": "8/1/2026",
-          "category": "Princess Plus Interior",
-          "price": 2104,
-          "itinerary": "AAX Crz-D-M-A"
-        },
-        {
-          "ship": "Discovery Princess",
-          "date": "8/1/2026",
-          "category": "Princess Plus Balcony",
-          "price": 3454,
-          "itinerary": "AAX Crz-D-M-A"
-        },
-        {
-          "ship": "Discovery Princess",
-          "date": "8/1/2026",
-          "category": "Princess Plus Mini-suite",
-          "price": 3794,
-          "itinerary": "AAX Crz-D-M-A"
-        },
-        {
-          "ship": "Discovery Princess",
-          "date": "8/1/2026",
-          "category": "Princess Plus Full Suite",
-          "price": 6544,
-          "itinerary": "AAX Crz-D-M-A"
-        }
-      ]
     }
   }
 ]
