@@ -8597,21 +8597,6 @@
   {
     "portal": "onesource-cunardline",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys2-07_09_26USD.pdf",
-    "sailDateStr": "8/30/2026",
-    "sailDateObj": 1788048000000,
-    "ship": "Queen Anne",
-    "nights": 7,
-    "itinerary": "Norwegian Fjords with Michel Roux",
-    "category": "Inside",
-    "priceStr": "$1,019",
-    "price": 1019,
-    "dealScore": 7,
-    "aiInsight": "Themed Fjord cruise value",
-    "region": "Northern Europe"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys2-07_09_26USD.pdf",
     "sailDateStr": "9/12/2026",
     "sailDateObj": 1789171200000,
     "ship": "Queen Mary 2",
@@ -8758,21 +8743,6 @@
     "dealScore": 9,
     "aiInsight": "Ultra-long exotic Pacific journey",
     "region": "Alaska"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys2-07_09_26CAD.pdf",
-    "sailDateStr": "2026-08-30",
-    "sailDateObj": 1788048000000,
-    "ship": "Queen Anne",
-    "nights": 7,
-    "itinerary": "Norwegian Fjords with Michel Roux",
-    "category": "Inside",
-    "priceStr": "$1,019",
-    "price": 1019,
-    "dealScore": 8,
-    "aiInsight": "New Ship Fjords Culinary",
-    "region": "Northern Europe"
   },
   {
     "portal": "onesource-cunardline",
