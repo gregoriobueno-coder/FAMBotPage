@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-09-01T17:07:26.652Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 592,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "SC",
+          "date": "2026-08-31",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1500,
+          "itinerary": "Rome, Florence, Mykonos & More"
+        },
+        {
+          "ship": "RS",
+          "date": "2026-08-31",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 750,
+          "itinerary": "Dominican Republic & Bimini Beach Club"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "8/31/2026",
+          "category": "Verandah",
+          "price": 720,
+          "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-08-31T19:21:02.766Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7209,35 +7260,6 @@
   },
   {
     "timestamp": "2026-08-03T01:18:00.731Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 851,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-02T14:26:06.556Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 851,
