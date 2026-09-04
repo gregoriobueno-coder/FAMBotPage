@@ -1346,5 +1346,68 @@
     "firstSeen": "2026-09-03T16:53:55.208Z",
     "title": "Travel Advisor Appreciation Fares (Web)",
     "summary": ""
+  },
+  "e2da8bfa95321a876f989a4b434bc5c2": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252090226.pdf&Expires=1788652800&Signature=ShHLjvu3D6UbbBGqNb2z04j3zWiNk~qtUZ8ZS7uU6wGMu0qhWZc8INdyn2xKKH2lQ9RKlAEp2oREy1gBaPL9l9PLVO7zvS~g9hR9Op9a7-L4eNzOrtW2-8GeIPbJ1UtcQrOmyDkHSSQQiCkuoc752EAsf7fsrc8ZuSBQaPRdu7A3fzeukOWMOMOKz3dEAM-GX4YlMSa0PjsReYcm5YiOWtafHIl6wOC0clUtJuV74TcFeFzVxA~sMuy-8EhyiC20KPwwGz6VT8d1e16QCqtW3mCOJiE5cq7xOirEN2p95wInjZKg15TiPBHuBnuoodsmqgHO1Hq04tVG~mRQhSeJJA__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "e2da8bfa95321a876f989a4b434bc5c2",
+    "bufferHash": "virgin-rawbuf-dbd701a059f7f8a5acccc13a530c03e2",
+    "firstSeen": "2026-09-04T16:42:55.815Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "onesource-rawbuf-242f1c90614376a5aadad985d801afcf": {
+    "portal": "onesource-hollandamericaline",
+    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
+    "urlHash": "a4d27c68441b94b4f1caceeb033bde1a",
+    "bufferHash": "onesource-rawbuf-242f1c90614376a5aadad985d801afcf",
+    "firstSeen": "2026-09-04T16:43:48.887Z",
+    "title": "Travel Advisor Rates",
+    "summary": ""
+  },
+  "onesource-rawbuf-44e3e1562b3f20f8698d8db7c6dcca97": {
+    "portal": "onesource-seabourn",
+    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
+    "urlHash": "ee54d081c6e4e00cbefffbe520252e93",
+    "bufferHash": "onesource-rawbuf-44e3e1562b3f20f8698d8db7c6dcca97",
+    "firstSeen": "2026-09-04T16:43:53.622Z",
+    "title": "Travel Advisor Appreciation Fares (Web)",
+    "summary": ""
+  },
+  "3b162d71c5ec9f55892a4e8b14f61844": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/Cunard%20Best%20Buys%2009.03.26USD.pdf",
+    "urlHash": "3b162d71c5ec9f55892a4e8b14f61844",
+    "bufferHash": "onesource-rawbuf-ff4149fa5b87d8e023854922d285be09",
+    "firstSeen": "2026-09-04T16:43:54.761Z",
+    "title": "Cunard Best Buys 9.3.26 USD",
+    "summary": ""
+  },
+  "onesource-rawbuf-ff4149fa5b87d8e023854922d285be09": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/Cunard%20Best%20Buys%2009.03.26USD.pdf",
+    "urlHash": "3b162d71c5ec9f55892a4e8b14f61844",
+    "bufferHash": "onesource-rawbuf-ff4149fa5b87d8e023854922d285be09",
+    "firstSeen": "2026-09-04T16:43:54.761Z",
+    "title": "Cunard Best Buys 9.3.26 USD",
+    "summary": ""
+  },
+  "00042447b6a13848f439691d133c353d": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys09_03_26CAD.pdf",
+    "urlHash": "00042447b6a13848f439691d133c353d",
+    "bufferHash": "onesource-rawbuf-c857cadd3cae5da361e8e16677c79732",
+    "firstSeen": "2026-09-04T16:43:55.050Z",
+    "title": "Cunard Best Buys 9.3.26 CAD",
+    "summary": ""
+  },
+  "onesource-rawbuf-c857cadd3cae5da361e8e16677c79732": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys09_03_26CAD.pdf",
+    "urlHash": "00042447b6a13848f439691d133c353d",
+    "bufferHash": "onesource-rawbuf-c857cadd3cae5da361e8e16677c79732",
+    "firstSeen": "2026-09-04T16:43:55.050Z",
+    "title": "Cunard Best Buys 9.3.26 CAD",
+    "summary": ""
   }
 }

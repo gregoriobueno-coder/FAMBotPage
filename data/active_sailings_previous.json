@@ -8220,21 +8220,6 @@
     "region": "Alaska"
   },
   {
-    "portal": "virgin",
-    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252072426.pdf&Expires=1785585600&Signature=G4jlfMx8OQ-ICStVlI7aRXKAvq27~cmmEs0ejRE7VKATKNWJ-GCo0Q8TLngxEQ515KoLpuVFNvhOuncdBVK-KBSQbZES1CC3wyNij40A~Zh1Sr3FXHnaDgtUkYxMM~8KYgFXk0ENtNYcjQ5NYZFUeIikg~Xg4~UBIFFr2NY4EumcVzR6iR3FkTAQyIwFQyqJ3zR1sTkiYGCKkKEdWpmGZvQDG9k~Vhl31s4ilYb9-NNjFCXJrUX5oVAKrl2gFv8y-Nb~AN2TyjScJ1C0TXnHP2sq7ttgrYbuIFqRM99TfFZXnVxLJH81lq5YOnEo7hxpx7KZLjMgdL86IVMGINEVpQ__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
-    "sailDateStr": "2026-09-03",
-    "sailDateObj": 1788393600000,
-    "ship": "BR",
-    "nights": 8,
-    "itinerary": "Alaska: Seattle to Vancouver",
-    "category": "Interior/Oceanview (Assumed)",
-    "priceStr": "$1200",
-    "price": 1200,
-    "dealScore": 7,
-    "aiInsight": "Alaska, good advisor rate",
-    "region": "Alaska"
-  },
-  {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "9/7/2026",
@@ -8818,21 +8803,6 @@
     "dealScore": 8,
     "aiInsight": "Extended New England Canada Cruise",
     "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "9/3/2026",
-    "sailDateObj": 1788393600000,
-    "ship": "Disney Magic",
-    "nights": 7,
-    "itinerary": "Alaska from Vancouver",
-    "category": "Verandah",
-    "priceStr": "$1,680",
-    "price": 1680,
-    "dealScore": 8,
-    "aiInsight": "Great Alaska verandah late season",
-    "region": "Alaska"
   },
   {
     "portal": "disney",

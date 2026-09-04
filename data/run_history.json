@@ -1,5 +1,49 @@
 [
   {
+    "timestamp": "2026-09-04T16:41:57.394Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 589,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "BR",
+          "date": "2026-09-03",
+          "category": "Interior/Oceanview (Assumed)",
+          "price": 1200,
+          "itinerary": "Alaska: Seattle to Vancouver"
+        },
+        {
+          "ship": "Disney Magic",
+          "date": "9/3/2026",
+          "category": "Verandah",
+          "price": 1680,
+          "itinerary": "Alaska from Vancouver"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-03T16:51:39.821Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7239,35 +7283,6 @@
   },
   {
     "timestamp": "2026-08-04T02:32:27.975Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 851,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-04T02:30:41.214Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 851,
