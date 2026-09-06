@@ -286,21 +286,6 @@
   },
   {
     "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
-    "sailDateStr": "9/5/2026",
-    "sailDateObj": 1788566400000,
-    "ship": "Queen Mary 2",
-    "nights": 7,
-    "itinerary": "Anthony Inglis and the National",
-    "category": "Inside",
-    "priceStr": "$729",
-    "price": 729,
-    "dealScore": 9,
-    "aiInsight": "Solid Savings Offer",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_30_26USD.pdf",
     "sailDateStr": "N/A",
     "sailDateObj": null,
@@ -617,21 +602,6 @@
   {
     "portal": "onesource-cunardline",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_30_26USD.pdf",
-    "sailDateStr": "09/05/2026",
-    "sailDateObj": 1788566400000,
-    "ship": "Queen Mary 2",
-    "nights": 7,
-    "itinerary": "Anthony Inglis & the National Symphony Orchestra",
-    "category": "Inside",
-    "priceStr": "$719",
-    "price": 719,
-    "dealScore": 9,
-    "aiInsight": "Themed crossing deal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_30_26USD.pdf",
     "sailDateStr": "01/07/2027",
     "sailDateObj": 1799280000000,
     "ship": "Queen Elizabeth",
@@ -852,21 +822,6 @@
     "price": 11699,
     "dealScore": 9,
     "aiInsight": "Massive 35-day crossing value",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "9/5/2026",
-    "sailDateObj": 1788566400000,
-    "ship": "Eurodam",
-    "nights": 7,
-    "itinerary": "Alaska Explorer (Roundtrip Seattle)",
-    "category": "Inside",
-    "priceStr": "$926",
-    "price": 926,
-    "dealScore": 7,
-    "aiInsight": "Low season Alaska value",
     "region": "Alaska"
   },
   {
@@ -7742,21 +7697,6 @@
   {
     "portal": "onesource-cunardline",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
-    "sailDateStr": "9/5/2026",
-    "sailDateObj": 1788566400000,
-    "ship": "Queen Mary 2",
-    "nights": 7,
-    "itinerary": "Anthony Inglis and the National",
-    "category": "Balcony",
-    "priceStr": "$1,019",
-    "price": 1019,
-    "dealScore": 8,
-    "aiInsight": "Affordable Balcony Deal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
     "sailDateStr": "N/A",
     "sailDateObj": null,
     "ship": "Queen Mary 2",
@@ -8372,21 +8312,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "9/5/2026",
-    "sailDateObj": 1788566400000,
-    "ship": "Disney Treasure",
-    "nights": 7,
-    "itinerary": "7-Night Western Caribbean Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$1120",
-    "price": 1120,
-    "dealScore": 8,
-    "aiInsight": "Great New Ship Verandah Deal",
-    "region": "Caribbean"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "9/19/2026",
     "sailDateObj": 1789776000000,
     "ship": "Disney Treasure",
@@ -8668,21 +8593,6 @@
     "dealScore": 9,
     "aiInsight": "Ultra-long exotic Pacific journey",
     "region": "Alaska"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys2-07_09_26CAD.pdf",
-    "sailDateStr": "2026-09-05",
-    "sailDateObj": 1788566400000,
-    "ship": "Queen Mary 2",
-    "nights": 7,
-    "itinerary": "Anthony Inglis and the National Symphony Orchestra",
-    "category": "Inside",
-    "priceStr": "$799",
-    "price": 799,
-    "dealScore": 9,
-    "aiInsight": "Themed TA Crossing Bargain",
-    "region": "Other / Global"
   },
   {
     "portal": "onesource-cunardline",

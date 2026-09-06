@@ -1,5 +1,77 @@
 [
   {
+    "timestamp": "2026-09-06T15:57:24.541Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 583,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/5/2026",
+          "category": "Inside",
+          "price": 729,
+          "itinerary": "Anthony Inglis and the National"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "09/05/2026",
+          "category": "Inside",
+          "price": 719,
+          "itinerary": "Anthony Inglis & the National Symphony Orchestra"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/5/2026",
+          "category": "Inside",
+          "price": 926,
+          "itinerary": "Alaska Explorer (Roundtrip Seattle)"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/5/2026",
+          "category": "Balcony",
+          "price": 1019,
+          "itinerary": "Anthony Inglis and the National"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "9/5/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Western Caribbean Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "2026-09-05",
+          "category": "Inside",
+          "price": 799,
+          "itinerary": "Anthony Inglis and the National Symphony Orchestra"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-05T15:45:27.257Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7254,35 +7326,6 @@
   },
   {
     "timestamp": "2026-08-04T02:37:36.088Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 851,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-04T02:35:40.255Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 851,
