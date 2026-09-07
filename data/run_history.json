@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-09-07T18:02:51.509Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 580,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Quest",
+          "date": "Sep 6, 2026",
+          "category": "Guarantee (RR/RB)",
+          "price": 4509,
+          "itinerary": "Adriatic & Grecian Gems (Venice, Italy to Athens, Greece)"
+        },
+        {
+          "ship": "Seabourn Quest",
+          "date": "Sep 6, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 4509,
+          "itinerary": "Adriatic & Grecian Gems (Fusina (Venice), Italy to Piraeus (Athens), Greece)"
+        },
+        {
+          "ship": "Seabourn Quest",
+          "date": "Sep 6, 2026",
+          "category": "Ocean View (RR)",
+          "price": 5059,
+          "itinerary": "ADRIATIC & GRECIAN GEMS (Fusina (Venice), Italy to Piraeus (Athens), Greece)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-06T15:57:24.541Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7297,35 +7348,6 @@
   },
   {
     "timestamp": "2026-08-04T02:40:11.383Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 851,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-04T02:37:36.088Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 851,

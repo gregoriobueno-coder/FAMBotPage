@@ -662,21 +662,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 6, 2026",
-    "sailDateObj": 1788652800000,
-    "ship": "Seabourn Quest",
-    "nights": 7,
-    "itinerary": "Adriatic & Grecian Gems (Venice, Italy to Athens, Greece)",
-    "category": "Guarantee (RR/RB)",
-    "priceStr": "$4,509",
-    "price": 4509,
-    "dealScore": 7,
-    "aiInsight": "Classic Mediterranean luxury route",
-    "region": "Europe & Med"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Sep 18, 2026",
     "sailDateObj": 1789689600000,
     "ship": "Seabourn Encore",
@@ -7982,21 +7967,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 6, 2026",
-    "sailDateObj": 1788652800000,
-    "ship": "Seabourn Quest",
-    "nights": 7,
-    "itinerary": "Adriatic & Grecian Gems (Fusina (Venice), Italy to Piraeus (Athens), Greece)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$4,509",
-    "price": 4509,
-    "dealScore": 8,
-    "aiInsight": "Classic Mediterranean luxury journey",
-    "region": "Europe & Med"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Sep 18, 2026",
     "sailDateObj": 1789689600000,
     "ship": "Seabourn Encore",
@@ -8488,21 +8458,6 @@
     "dealScore": 9,
     "aiInsight": "Unbeatable 21-night Panama Canal",
     "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 6, 2026",
-    "sailDateObj": 1788652800000,
-    "ship": "Seabourn Quest",
-    "nights": 7,
-    "itinerary": "ADRIATIC & GRECIAN GEMS (Fusina (Venice), Italy to Piraeus (Athens), Greece)",
-    "category": "Ocean View (RR)",
-    "priceStr": "$5,059",
-    "price": 5059,
-    "dealScore": 7,
-    "aiInsight": "Classic Mediterranean luxury short cruise",
-    "region": "Europe & Med"
   },
   {
     "portal": "onesource-seabourn",
