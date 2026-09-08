@@ -1,5 +1,84 @@
 [
   {
+    "timestamp": "2026-09-08T17:00:27.460Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 573,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/7/2026",
+          "category": "Inside",
+          "price": 1199,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "09/07/2026",
+          "category": "Inside",
+          "price": 1299,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Noordam",
+          "date": "9/7/2026",
+          "category": "Inside",
+          "price": 3205,
+          "itinerary": "Legendary Glaciers: Alaska to Hawaii (Vancouver to Seattle)"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/7/2026",
+          "category": "Outside",
+          "price": 1199,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/7/2026",
+          "category": "Balcony",
+          "price": 1859,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "9/7/2026",
+          "category": "Verandah",
+          "price": 720,
+          "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "9/7/2026",
+          "category": "Verandah",
+          "price": 700,
+          "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-07T18:02:51.509Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7319,35 +7398,6 @@
   },
   {
     "timestamp": "2026-08-04T02:42:46.223Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 851,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-04T02:40:11.383Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 851,
