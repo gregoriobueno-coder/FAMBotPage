@@ -8552,21 +8552,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "9/10/2026",
-    "sailDateObj": 1788998400000,
-    "ship": "Disney Magic",
-    "nights": 7,
-    "itinerary": "Alaska from Vancouver",
-    "category": "Inside",
-    "priceStr": "$770",
-    "price": 770,
-    "dealScore": 10,
-    "aiInsight": "Cheapest Alaska inside cabin ever",
-    "region": "Alaska"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "9/14/2026",
     "sailDateObj": 1789344000000,
     "ship": "Disney Dream",
