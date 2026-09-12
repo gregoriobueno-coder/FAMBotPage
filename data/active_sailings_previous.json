@@ -8042,21 +8042,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "9/11/2026",
-    "sailDateObj": 1789084800000,
-    "ship": "Disney Destiny",
-    "nights": 3,
-    "itinerary": "3-Night Bahamian Cruise from Fort Lauderdale",
-    "category": "Verandah",
-    "priceStr": "$570",
-    "price": 570,
-    "dealScore": 7,
-    "aiInsight": "Good Verandah Offer",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "9/14/2026",
     "sailDateObj": 1789344000000,
     "ship": "Disney Destiny",

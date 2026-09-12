@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-09-12T15:57:59.780Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 570,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Disney Destiny",
+          "date": "9/11/2026",
+          "category": "Verandah",
+          "price": 570,
+          "itinerary": "3-Night Bahamian Cruise from Fort Lauderdale"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-11T16:51:30.737Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7385,35 +7422,6 @@
   },
   {
     "timestamp": "2026-08-04T15:22:21.715Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 851,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-04T02:50:19.311Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 851,
