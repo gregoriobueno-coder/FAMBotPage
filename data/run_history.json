@@ -1,5 +1,63 @@
 [
   {
+    "timestamp": "2026-09-13T16:47:33.798Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 566,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Eurodam",
+          "date": "9/12/2026",
+          "category": "Inside",
+          "price": 986,
+          "itinerary": "Alaska Explorer (Roundtrip Seattle)"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/12/2026",
+          "category": "Inside",
+          "price": 739,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "09/12/2026",
+          "category": "Inside",
+          "price": 789,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "2026-09-12",
+          "category": "Inside",
+          "price": 739,
+          "itinerary": "Eastbound Transatlantic Crossing"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-12T15:57:59.780Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7418,35 +7476,6 @@
           "itinerary": "Transatlantic Crossing, Norway and Iceland"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-08-04T15:22:21.715Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 851,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
