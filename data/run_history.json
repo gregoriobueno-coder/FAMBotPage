@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-09-14T18:18:56.247Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 565,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Quest",
+          "date": "Sep 13, 2026",
+          "category": "Ocean View (RR)",
+          "price": 4179,
+          "itinerary": "EPHESUS & GREEK ISLAND GEMS (Round-trip Piraeus (Athens), Greece)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-13T16:47:33.798Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7418,64 +7455,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-05T01:26:38.972Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 847,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Queen Mary 2",
-          "date": "8/4/2026",
-          "category": "Inside",
-          "price": 1799,
-          "itinerary": "Transatlantic Crossing, Norway and"
-        },
-        {
-          "ship": "Queen Mary 2",
-          "date": "8/4/2026",
-          "category": "Outside",
-          "price": 2699,
-          "itinerary": "Transatlantic Crossing, Norway and"
-        },
-        {
-          "ship": "Queen Mary 2",
-          "date": "8/4/2026",
-          "category": "Balcony",
-          "price": 2699,
-          "itinerary": "Transatlantic Crossing, Norway and"
-        },
-        {
-          "ship": "Queen Mary 2",
-          "date": "08/04/2026",
-          "category": "Inside",
-          "price": 2019,
-          "itinerary": "Transatlantic Crossing, Norway and Iceland"
-        }
-      ]
     }
   }
 ]

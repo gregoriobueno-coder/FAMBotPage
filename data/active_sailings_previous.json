@@ -8282,21 +8282,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 13, 2026",
-    "sailDateObj": 1789257600000,
-    "ship": "Seabourn Quest",
-    "nights": 7,
-    "itinerary": "EPHESUS & GREEK ISLAND GEMS (Round-trip Piraeus (Athens), Greece)",
-    "category": "Ocean View (RR)",
-    "priceStr": "$4,179",
-    "price": 4179,
-    "dealScore": 8,
-    "aiInsight": "Affordable Greek Isles exploration",
-    "region": "Europe & Med"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Sep 25, 2026",
     "sailDateObj": 1790294400000,
     "ship": "Seabourn Ovation",
