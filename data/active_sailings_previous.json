@@ -8027,21 +8027,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "9/14/2026",
-    "sailDateObj": 1789344000000,
-    "ship": "Disney Destiny",
-    "nights": 4,
-    "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale",
-    "category": "Verandah",
-    "priceStr": "$640",
-    "price": 640,
-    "dealScore": 8,
-    "aiInsight": "Great Verandah Rate",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "9/26/2026",
     "sailDateObj": 1790380800000,
     "ship": "Disney Destiny",
@@ -8218,21 +8203,6 @@
     "dealScore": 8,
     "aiInsight": "Great New Ship Verandah Deal",
     "region": "Caribbean"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "9/14/2026",
-    "sailDateObj": 1789344000000,
-    "ship": "Disney Wish",
-    "nights": 4,
-    "itinerary": "4-Night Bahamian Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$660",
-    "price": 660,
-    "dealScore": 8,
-    "aiInsight": "Great Verandah Rate",
-    "region": "Other / Global"
   },
   {
     "portal": "disney",
@@ -8458,20 +8428,5 @@
     "dealScore": 8,
     "aiInsight": "Extended New England Canada Cruise",
     "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "9/14/2026",
-    "sailDateObj": 1789344000000,
-    "ship": "Disney Dream",
-    "nights": 13,
-    "itinerary": "Transatlantic ending in Fort Lauderdale from Southampton",
-    "category": "Oceanview",
-    "priceStr": "$1,300",
-    "price": 1300,
-    "dealScore": 10,
-    "aiInsight": "Unmissable Transatlantic Oceanview deal",
-    "region": "Transatlantic"
   }
 ]

@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-09-15T17:26:45.519Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 562,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Disney Destiny",
+          "date": "9/14/2026",
+          "category": "Verandah",
+          "price": 640,
+          "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Disney Wish",
+          "date": "9/14/2026",
+          "category": "Verandah",
+          "price": 660,
+          "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Dream",
+          "date": "9/14/2026",
+          "category": "Oceanview",
+          "price": 1300,
+          "itinerary": "Transatlantic ending in Fort Lauderdale from Southampton"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-14T18:18:56.247Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7401,35 +7452,6 @@
   },
   {
     "timestamp": "2026-08-05T01:36:21.617Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 847,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-05T01:30:42.793Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 847,
