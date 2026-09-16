@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-09-16T17:25:48.773Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 562,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-09-15T17:26:45.519Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7423,35 +7452,6 @@
   },
   {
     "timestamp": "2026-08-05T01:42:44.046Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 847,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-05T01:36:21.617Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 847,
