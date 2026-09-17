@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-09-17T17:25:09.193Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 561,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Zaandam",
+          "date": "9/16/2026",
+          "category": "Inside",
+          "price": 2179,
+          "itinerary": "Great Bear Rainforest & Alaska Explorer (Roundtrip Vancouver)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-16T17:25:48.773Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7423,35 +7460,6 @@
   },
   {
     "timestamp": "2026-08-05T01:50:02.580Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 847,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-05T01:42:44.046Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 847,
