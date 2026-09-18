@@ -2,21 +2,6 @@
   {
     "portal": "onesource-cunardline",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
-    "sailDateStr": "9/17/2026",
-    "sailDateObj": 1789603200000,
-    "ship": "Queen Elizabeth",
-    "nights": 7,
-    "itinerary": "Alaska",
-    "category": "Outside",
-    "priceStr": "$1,099",
-    "price": 1099,
-    "dealScore": 7,
-    "aiInsight": "Solid Savings Offer",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
     "sailDateStr": "9/26/2026",
     "sailDateObj": 1790380800000,
     "ship": "Queen Mary 2",
@@ -358,21 +343,6 @@
     "dealScore": 9,
     "aiInsight": "Excellent Value Fare",
     "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_30_26USD.pdf",
-    "sailDateStr": "09/17/2026",
-    "sailDateObj": 1789603200000,
-    "ship": "Queen Elizabeth",
-    "nights": 7,
-    "itinerary": "Alaska",
-    "category": "Inside",
-    "priceStr": "$1,099",
-    "price": 1099,
-    "dealScore": 7,
-    "aiInsight": "Affordable Alaska escape",
-    "region": "Alaska"
   },
   {
     "portal": "onesource-cunardline",
@@ -6868,36 +6838,6 @@
     "dealScore": 7,
     "aiInsight": "High summer peak",
     "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys2-07_09_26USD.pdf",
-    "sailDateStr": "9/17/2026",
-    "sailDateObj": 1789603200000,
-    "ship": "Queen Elizabeth",
-    "nights": 7,
-    "itinerary": "Alaska",
-    "category": "Inside",
-    "priceStr": "$999",
-    "price": 999,
-    "dealScore": 7,
-    "aiInsight": "Alaska last-minute savings",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
-    "sailDateStr": "9/17/2026",
-    "sailDateObj": 1789603200000,
-    "ship": "Queen Elizabeth",
-    "nights": 7,
-    "itinerary": "Alaska",
-    "category": "Balcony",
-    "priceStr": "$1,349",
-    "price": 1349,
-    "dealScore": 7,
-    "aiInsight": "Solid Savings Offer",
-    "region": "Alaska"
   },
   {
     "portal": "onesource-cunardline",

@@ -1,5 +1,63 @@
 [
   {
+    "timestamp": "2026-09-18T16:53:35.135Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 557,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/17/2026",
+          "category": "Outside",
+          "price": 1099,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "09/17/2026",
+          "category": "Inside",
+          "price": 1099,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/17/2026",
+          "category": "Inside",
+          "price": 999,
+          "itinerary": "Alaska"
+        },
+        {
+          "ship": "Queen Elizabeth",
+          "date": "9/17/2026",
+          "category": "Balcony",
+          "price": 1349,
+          "itinerary": "Alaska"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-17T17:25:09.193Z",
     "status": "success",
     "newDealsCount": 0,
@@ -7456,35 +7514,6 @@
           "itinerary": "Classic Denali D8L FAIRBANKS to VANCOUVER"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-08-05T01:50:02.580Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 847,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
