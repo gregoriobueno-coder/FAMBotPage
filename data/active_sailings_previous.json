@@ -602,21 +602,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 18, 2026",
-    "sailDateObj": 1789689600000,
-    "ship": "Seabourn Encore",
-    "nights": 33,
-    "itinerary": "Pacific Passage & Japan's Hidden Gems (Vancouver, Canada to Osaka, Japan)",
-    "category": "Guarantee (RR/RB)",
-    "priceStr": "$8,699",
-    "price": 8699,
-    "dealScore": 10,
-    "aiInsight": "Stunning transpacific value",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Sep 25, 2026",
     "sailDateObj": 1790294400000,
     "ship": "Seabourn Ovation",
@@ -7782,36 +7767,6 @@
     "price": 4399,
     "dealScore": 9,
     "aiInsight": "Grills Suite Value",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 18, 2026",
-    "sailDateObj": 1789689600000,
-    "ship": "Seabourn Encore",
-    "nights": 21,
-    "itinerary": "Pacific Passage & Jewels of Japan (Vancouver, B.C., CA to Tokyo, Japan)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$4,979",
-    "price": 4979,
-    "dealScore": 10,
-    "aiInsight": "Exceptional long passage value",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 18, 2026",
-    "sailDateObj": 1789689600000,
-    "ship": "Seabourn Encore",
-    "nights": 33,
-    "itinerary": "Pacific Passage & Japan's Hidden Gems (Vancouver, B.C., CA to Osaka, Japan)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$8,699",
-    "price": 8699,
-    "dealScore": 10,
-    "aiInsight": "Amazing extended Japan discovery",
     "region": "Other / Global"
   },
   {
