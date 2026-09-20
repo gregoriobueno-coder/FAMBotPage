@@ -737,21 +737,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "9/19/2026",
-    "sailDateObj": 1789776000000,
-    "ship": "Eurodam",
-    "nights": 7,
-    "itinerary": "Alaska Explorer (Roundtrip Seattle)",
-    "category": "Inside",
-    "priceStr": "$926",
-    "price": 926,
-    "dealScore": 7,
-    "aiInsight": "Good late season price",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "9/26/2026",
     "sailDateObj": 1790380800000,
     "ship": "Eurodam",
@@ -3178,36 +3163,6 @@
     "dealScore": 9,
     "aiInsight": "Top-tier transpacific crossing value",
     "region": "Transatlantic"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "9/19/2026",
-    "sailDateObj": 1789776000000,
-    "ship": "Volendam",
-    "nights": 7,
-    "itinerary": "Canada & New England: Maine & Montreal (Boston to Montreal)",
-    "category": "Inside",
-    "priceStr": "$1,074",
-    "price": 1074,
-    "dealScore": 7,
-    "aiInsight": "Autumn foliage prime run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "9/19/2026",
-    "sailDateObj": 1789776000000,
-    "ship": "Zuiderdam",
-    "nights": 7,
-    "itinerary": "Canada & New England: UNESCO Sites (Boston to Quebec)",
-    "category": "Inside",
-    "priceStr": "$1,125",
-    "price": 1125,
-    "dealScore": 7,
-    "aiInsight": "Great foliage lead-in price",
-    "region": "Other / Global"
   },
   {
     "portal": "onesource-hollandamericaline",
@@ -8008,21 +7963,6 @@
     "dealScore": 10,
     "aiInsight": "Exceptional Halloween Inside/Oceanview Deal",
     "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "9/19/2026",
-    "sailDateObj": 1789776000000,
-    "ship": "Disney Treasure",
-    "nights": 7,
-    "itinerary": "7-Night Western Caribbean Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$1120",
-    "price": 1120,
-    "dealScore": 8,
-    "aiInsight": "Great New Ship Verandah Deal",
-    "region": "Caribbean"
   },
   {
     "portal": "disney",

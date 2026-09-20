@@ -1,5 +1,63 @@
 [
   {
+    "timestamp": "2026-09-20T16:40:05.604Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 550,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Eurodam",
+          "date": "9/19/2026",
+          "category": "Inside",
+          "price": 926,
+          "itinerary": "Alaska Explorer (Roundtrip Seattle)"
+        },
+        {
+          "ship": "Volendam",
+          "date": "9/19/2026",
+          "category": "Inside",
+          "price": 1074,
+          "itinerary": "Canada & New England: Maine & Montreal (Boston to Montreal)"
+        },
+        {
+          "ship": "Zuiderdam",
+          "date": "9/19/2026",
+          "category": "Inside",
+          "price": 1125,
+          "itinerary": "Canada & New England: UNESCO Sites (Boston to Quebec)"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "9/19/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Western Caribbean Cruise from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-19T16:11:40.618Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2840,35 +2898,6 @@
   },
   {
     "timestamp": "2026-08-05T15:11:24.625Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 184,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-05T02:07:46.400Z",
     "status": "partial_failure",
     "newDealsCount": 0,
     "totalDealsCount": 184,
