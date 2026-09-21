@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-09-21T18:26:09.416Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 550,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-09-20T16:40:05.604Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2894,35 +2923,6 @@
           "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Reykjavik, Iceland to Anchorage, Alaska, US)"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-08-05T15:11:24.625Z",
-    "status": "partial_failure",
-    "newDealsCount": 0,
-    "totalDealsCount": 184,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "failed",
-        "details": "Session expired and auto-login failed for OneSource."
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
