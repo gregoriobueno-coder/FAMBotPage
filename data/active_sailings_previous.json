@@ -6871,21 +6871,6 @@
   },
   {
     "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys2-07_09_26USD.pdf",
-    "sailDateStr": "9/24/2026",
-    "sailDateObj": 1790208000000,
-    "ship": "Queen Elizabeth",
-    "nights": 21,
-    "itinerary": "Panama Canal",
-    "category": "Inside",
-    "priceStr": "$1,399",
-    "price": 1399,
-    "dealScore": 10,
-    "aiInsight": "Unbelievable 21-night Panama Canal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
     "sailDateStr": "N/A",
     "sailDateObj": null,
@@ -7637,21 +7622,6 @@
   {
     "portal": "onesource-cunardline",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
-    "sailDateStr": "9/24/2026",
-    "sailDateObj": 1790208000000,
-    "ship": "Queen Elizabeth",
-    "nights": 21,
-    "itinerary": "Panama Canal",
-    "category": "Grills",
-    "priceStr": "$11,699",
-    "price": 11699,
-    "dealScore": 8,
-    "aiInsight": "Grills Suite Value",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
     "sailDateStr": "N/A",
     "sailDateObj": null,
     "ship": "Queen Mary 2",
@@ -8055,21 +8025,6 @@
     "region": "Other / Global"
   },
   {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_16_26USD.pdf",
-    "sailDateStr": "09/24/2026",
-    "sailDateObj": 1790208000000,
-    "ship": "Queen Elizabeth",
-    "nights": 21,
-    "itinerary": "Panama Canal",
-    "category": "Inside",
-    "priceStr": "$1,599",
-    "price": 1599,
-    "dealScore": 9,
-    "aiInsight": "Unbeatable 21-night Panama Canal",
-    "region": "Other / Global"
-  },
-  {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Sep 25, 2026",
@@ -8143,21 +8098,6 @@
     "dealScore": 9,
     "aiInsight": "Ultra-long exotic Pacific journey",
     "region": "Alaska"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys2-07_09_26CAD.pdf",
-    "sailDateStr": "2026-09-24",
-    "sailDateObj": 1790208000000,
-    "ship": "Queen Elizabeth",
-    "nights": 21,
-    "itinerary": "Panama Canal",
-    "category": "Inside",
-    "priceStr": "$1,399",
-    "price": 1399,
-    "dealScore": 10,
-    "aiInsight": "Unbeatable 21-Night Canal",
-    "region": "Other / Global"
   },
   {
     "portal": "onesource-cunardline",

@@ -1940,5 +1940,59 @@
     "firstSeen": "2026-09-24T17:44:53.748Z",
     "title": "Travel Advisor Appreciation Fares (Web)",
     "summary": ""
+  },
+  "c1d499d078c474a79bb9fbe4a221ca50": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252092326.pdf&Expires=1790467200&Signature=NQageqff4f-oDTD3jQbr-eOSdREF9e591m3~~l6EsvbSKTYC-KbK1Lk-cOEoBGbmocsFz7XZIyjiz5PFcydmXMQsB2rGow2v4cRmJBVUuAwJq~o2~BN62vm4u5rIa-l6DsxcriZcBBagm5-MEH1utHiL27Lcz1SHdVSo~tftonuqsCAP8KA3WGPqY04VZQWAoYXLeqZrweYbTx1B0PO6dPjIXYoMRJZUH1uiL6-dRyHu4OL~ewLHiFugiNULVC2Tp3Qw1eiFtGRQxVV4tzPjSk4vBgOeGr7K4JVxavPp-SUygaWsHRKdM2SmK9KVWH-0~g4~BDqU4a~HOkxi2Tbwiw__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "c1d499d078c474a79bb9fbe4a221ca50",
+    "bufferHash": "virgin-rawbuf-09fef805838e8002cfd3482e1a853b68",
+    "firstSeen": "2026-09-25T17:45:13.581Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "onesource-rawbuf-555587447d563b8a331c72e694a4a57c": {
+    "portal": "onesource-seabourn",
+    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
+    "urlHash": "ee54d081c6e4e00cbefffbe520252e93",
+    "bufferHash": "onesource-rawbuf-555587447d563b8a331c72e694a4a57c",
+    "firstSeen": "2026-09-25T17:46:11.315Z",
+    "title": "Travel Advisor Appreciation Fares (Web)",
+    "summary": ""
+  },
+  "c48b1cda8670530592b0ab7b15fa0461": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/Cunard%20Best%20Buys09_24_26USD.pdf",
+    "urlHash": "c48b1cda8670530592b0ab7b15fa0461",
+    "bufferHash": "onesource-rawbuf-183d02af3685c0a4fad8d454c556f722",
+    "firstSeen": "2026-09-25T17:46:12.226Z",
+    "title": "Cunard Best Buys 9.24.26 USD",
+    "summary": ""
+  },
+  "onesource-rawbuf-183d02af3685c0a4fad8d454c556f722": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/Cunard%20Best%20Buys09_24_26USD.pdf",
+    "urlHash": "c48b1cda8670530592b0ab7b15fa0461",
+    "bufferHash": "onesource-rawbuf-183d02af3685c0a4fad8d454c556f722",
+    "firstSeen": "2026-09-25T17:46:12.226Z",
+    "title": "Cunard Best Buys 9.24.26 USD",
+    "summary": ""
+  },
+  "e918d25816fcc348cd68995bee5978dd": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/Cunard%20Best%20Buys09_24_26CAD.pdf",
+    "urlHash": "e918d25816fcc348cd68995bee5978dd",
+    "bufferHash": "onesource-rawbuf-ef54af2519d3a1b0fccd1665ff408f2f",
+    "firstSeen": "2026-09-25T17:46:12.536Z",
+    "title": "Cunard Best Buys 9.24.26 CAD",
+    "summary": ""
+  },
+  "onesource-rawbuf-ef54af2519d3a1b0fccd1665ff408f2f": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/Cunard%20Best%20Buys09_24_26CAD.pdf",
+    "urlHash": "e918d25816fcc348cd68995bee5978dd",
+    "bufferHash": "onesource-rawbuf-ef54af2519d3a1b0fccd1665ff408f2f",
+    "firstSeen": "2026-09-25T17:46:12.536Z",
+    "title": "Cunard Best Buys 9.24.26 CAD",
+    "summary": ""
   }
 }
