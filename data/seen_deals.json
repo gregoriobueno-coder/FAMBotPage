@@ -1994,5 +1994,23 @@
     "firstSeen": "2026-09-25T17:46:12.536Z",
     "title": "Cunard Best Buys 9.24.26 CAD",
     "summary": ""
+  },
+  "aa8b6a2ffdc6fc2f02c5ea2ecb3b964b": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252092326.pdf&Expires=1790553600&Signature=UXOhptijWspaDhITvTOSBxji-3nJTYbbNaEi~Wai0nzbjbs7HKdkbEVuvQt99U27Hy00PDcg0UZ0QLgXKkw0cOmBiUGNX4-h1xMKz5Ow9GmKGmRrP2krjNwhj4rASU52GFiRI~d2l7~eLZAkzoRKaWyqhRF-ZpbqSlT~M1A5f~H~5cKhzf-dO1CCPqbyDu3Jkn7K9j8dU427QaHG~QWJKedMe5XT~QpxpiB1PoE4DwGm5nMN~7SpIgFNO3sBP4psY5rOJjVsGsOiHw4MlDBveTvyMc9ZmyUk1RG-GVOWs0oaUEgJEc4frd~ZEsLz5y6oWKA~lJ7FurTptjuVYn52Yg__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "aa8b6a2ffdc6fc2f02c5ea2ecb3b964b",
+    "bufferHash": "virgin-rawbuf-09fef805838e8002cfd3482e1a853b68",
+    "firstSeen": "2026-09-26T16:52:38.661Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "onesource-rawbuf-0fd2cc4ed4b55e8f3852e0b10e32b8cf": {
+    "portal": "onesource-seabourn",
+    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
+    "urlHash": "ee54d081c6e4e00cbefffbe520252e93",
+    "bufferHash": "onesource-rawbuf-0fd2cc4ed4b55e8f3852e0b10e32b8cf",
+    "firstSeen": "2026-09-26T16:53:37.920Z",
+    "title": "Travel Advisor Appreciation Fares (Web)",
+    "summary": ""
   }
 }

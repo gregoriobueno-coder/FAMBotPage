@@ -602,21 +602,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 25, 2026",
-    "sailDateObj": 1790294400000,
-    "ship": "Seabourn Ovation",
-    "nights": 12,
-    "itinerary": "Newfoundland & Gulf of St. Lawrence Reverie (Round-trip Montreal, Canada)",
-    "category": "Guarantee (RR/RB)",
-    "priceStr": "$6,059",
-    "price": 6059,
-    "dealScore": 8,
-    "aiInsight": "Great Canada fall deal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Oct 4, 2026",
     "sailDateObj": 1791072000000,
     "ship": "Seabourn Pursuit",
@@ -7697,21 +7682,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 25, 2026",
-    "sailDateObj": 1790294400000,
-    "ship": "Seabourn Ovation",
-    "nights": 12,
-    "itinerary": "Newfoundland & Gulf of St. Lawrence Reverie (Round-trip Montreal, Quebec, Canada)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$6,059",
-    "price": 6059,
-    "dealScore": 9,
-    "aiInsight": "Unique Canadian Atlantic exploration",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Oct 4, 2026",
     "sailDateObj": 1791072000000,
     "ship": "Seabourn Pursuit",
@@ -8022,21 +7992,6 @@
     "price": 810,
     "dealScore": 9,
     "aiInsight": "Exceptional Halloween Verandah Deal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Sep 25, 2026",
-    "sailDateObj": 1790294400000,
-    "ship": "Seabourn Ovation",
-    "nights": 12,
-    "itinerary": "NEWFOUNDLAND & GULF OF ST. LAWRENCE REVERIE (Round-trip Montreal, Quebec, Canada)",
-    "category": "Ocean View (RR)",
-    "priceStr": "$6,059",
-    "price": 6059,
-    "dealScore": 7,
-    "aiInsight": "Unique Canada coastal journey",
     "region": "Other / Global"
   },
   {

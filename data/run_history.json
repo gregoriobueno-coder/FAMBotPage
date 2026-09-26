@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-09-26T16:51:22.743Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 543,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Sep 25, 2026",
+          "category": "Guarantee (RR/RB)",
+          "price": 6059,
+          "itinerary": "Newfoundland & Gulf of St. Lawrence Reverie (Round-trip Montreal, Canada)"
+        },
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Sep 25, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 6059,
+          "itinerary": "Newfoundland & Gulf of St. Lawrence Reverie (Round-trip Montreal, Quebec, Canada)"
+        },
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Sep 25, 2026",
+          "category": "Ocean View (RR)",
+          "price": 6059,
+          "itinerary": "NEWFOUNDLAND & GULF OF ST. LAWRENCE REVERIE (Round-trip Montreal, Quebec, Canada)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-25T17:44:02.361Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2003,43 +2054,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-06T05:34:53.408Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 309,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Seabourn Venture",
-          "date": "Aug 5, 2026",
-          "category": "Ocean View (RR)",
-          "price": 19749,
-          "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Reykjavik, Iceland to Anchorage, Alaska, US)"
-        }
-      ]
     }
   }
 ]
