@@ -2,21 +2,6 @@
   {
     "portal": "onesource-cunardline",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
-    "sailDateStr": "9/26/2026",
-    "sailDateObj": 1790380800000,
-    "ship": "Queen Mary 2",
-    "nights": 8,
-    "itinerary": "New England and Canada",
-    "category": "Inside",
-    "priceStr": "$1,239",
-    "price": 1239,
-    "dealScore": 7,
-    "aiInsight": "Solid Savings Offer",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
     "sailDateStr": "7/2/2027",
     "sailDateObj": 1814486400000,
     "ship": "Queen Mary 2",
@@ -342,21 +327,6 @@
     "price": 1199,
     "dealScore": 9,
     "aiInsight": "Excellent Value Fare",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_30_26USD.pdf",
-    "sailDateStr": "09/26/2026",
-    "sailDateObj": 1790380800000,
-    "ship": "Queen Mary 2",
-    "nights": 8,
-    "itinerary": "New England and Canada",
-    "category": "Inside",
-    "priceStr": "$1,289",
-    "price": 1289,
-    "dealScore": 7,
-    "aiInsight": "Scenic autumn voyage",
     "region": "Other / Global"
   },
   {
@@ -722,21 +692,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "9/26/2026",
-    "sailDateObj": 1790380800000,
-    "ship": "Eurodam",
-    "nights": 7,
-    "itinerary": "Alaska Explorer (Roundtrip Seattle)",
-    "category": "Inside",
-    "priceStr": "$889",
-    "price": 889,
-    "dealScore": 8,
-    "aiInsight": "Great autumn season deal",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "4/24/2027",
     "sailDateObj": 1808524800000,
     "ship": "Eurodam",
@@ -1077,21 +1032,6 @@
     "price": 1039,
     "dealScore": 7,
     "aiInsight": "End of season lead",
-    "region": "Alaska"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "9/26/2026",
-    "sailDateObj": 1790380800000,
-    "ship": "Koningsdam",
-    "nights": 7,
-    "itinerary": "Alaska Inside Passage (Roundtrip Vancouver)",
-    "category": "Inside",
-    "priceStr": "$961",
-    "price": 961,
-    "dealScore": 7,
-    "aiInsight": "Inside Passage autumn run",
     "region": "Alaska"
   },
   {
@@ -6767,36 +6707,6 @@
   {
     "portal": "onesource-cunardline",
     "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
-    "sailDateStr": "9/26/2026",
-    "sailDateObj": 1790380800000,
-    "ship": "Queen Mary 2",
-    "nights": 8,
-    "itinerary": "New England and Canada",
-    "category": "Balcony",
-    "priceStr": "$1,609",
-    "price": 1609,
-    "dealScore": 7,
-    "aiInsight": "Solid Savings Offer",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
-    "sailDateStr": "9/26/2026",
-    "sailDateObj": 1790380800000,
-    "ship": "Queen Mary 2",
-    "nights": 8,
-    "itinerary": "New England and Canada",
-    "category": "Grills",
-    "priceStr": "$4,389",
-    "price": 4389,
-    "dealScore": 7,
-    "aiInsight": "Grills Suite Value",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys07_23_26USD.pdf",
     "sailDateStr": "7/2/2027",
     "sailDateObj": 1814486400000,
     "ship": "Queen Mary 2",
@@ -7802,21 +7712,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "9/26/2026",
-    "sailDateObj": 1790380800000,
-    "ship": "Disney Destiny",
-    "nights": 5,
-    "itinerary": "5-Night Western Caribbean Cruise from Fort Lauderdale",
-    "category": "Verandah",
-    "priceStr": "$800",
-    "price": 800,
-    "dealScore": 8,
-    "aiInsight": "Great Verandah Rate",
-    "region": "Caribbean"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "10/10/2026",
     "sailDateObj": 1791590400000,
     "ship": "Disney Destiny",
@@ -8127,21 +8022,6 @@
     "price": 1199,
     "dealScore": 9,
     "aiInsight": "Excellent New Ship Crossing",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-cunardline",
-    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/deals-and-limited-time-offers/weekly-deals/CunardBestBuys2-07_09_26USD.pdf",
-    "sailDateStr": "9/26/2026",
-    "sailDateObj": 1790380800000,
-    "ship": "Queen Mary 2",
-    "nights": 15,
-    "itinerary": "New England and Canada",
-    "category": "Inside",
-    "priceStr": "$1,879",
-    "price": 1879,
-    "dealScore": 8,
-    "aiInsight": "Extended New England Canada Cruise",
     "region": "Other / Global"
   }
 ]

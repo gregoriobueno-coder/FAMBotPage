@@ -1,5 +1,91 @@
 [
   {
+    "timestamp": "2026-09-27T17:24:04.507Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 535,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "price": 1239,
+          "itinerary": "New England and Canada"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "09/26/2026",
+          "category": "Inside",
+          "price": 1289,
+          "itinerary": "New England and Canada"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "price": 889,
+          "itinerary": "Alaska Explorer (Roundtrip Seattle)"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "price": 961,
+          "itinerary": "Alaska Inside Passage (Roundtrip Vancouver)"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Balcony",
+          "price": 1609,
+          "itinerary": "New England and Canada"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Grills",
+          "price": 4389,
+          "itinerary": "New England and Canada"
+        },
+        {
+          "ship": "Disney Destiny",
+          "date": "9/26/2026",
+          "category": "Verandah",
+          "price": 800,
+          "itinerary": "5-Night Western Caribbean Cruise from Fort Lauderdale"
+        },
+        {
+          "ship": "Queen Mary 2",
+          "date": "9/26/2026",
+          "category": "Inside",
+          "price": 1879,
+          "itinerary": "New England and Canada"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-26T16:51:22.743Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2000,35 +2086,6 @@
   },
   {
     "timestamp": "2026-08-07T14:08:47.134Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 309,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-06T15:12:06.718Z",
     "status": "success",
     "newDealsCount": 0,
     "totalDealsCount": 309,
