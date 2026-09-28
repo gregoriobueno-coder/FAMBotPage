@@ -4247,21 +4247,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "9/27/2026",
-    "sailDateObj": 1790467200000,
-    "ship": "Nieuw Amsterdam",
-    "nights": 5,
-    "itinerary": "Pacific Coastal Cruise (Vancouver to San Diego)",
-    "category": "Inside",
-    "priceStr": "$422",
-    "price": 422,
-    "dealScore": 8,
-    "aiInsight": "Quick autumn West Coast run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "4/28/2027",
     "sailDateObj": 1808870400000,
     "ship": "Nieuw Amsterdam",
@@ -4677,21 +4662,6 @@
     "price": 1879,
     "dealScore": 9,
     "aiInsight": "Spring transition transit",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "9/27/2026",
-    "sailDateObj": 1790467200000,
-    "ship": "Nieuw Amsterdam",
-    "nights": 21,
-    "itinerary": "Panama Canal (Vancouver to Fort Lauderdale)",
-    "category": "Inside",
-    "priceStr": "$1,941",
-    "price": 1941,
-    "dealScore": 9,
-    "aiInsight": "West-to-East 3-week epic",
     "region": "Other / Global"
   },
   {

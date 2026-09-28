@@ -1,5 +1,49 @@
 [
   {
+    "timestamp": "2026-09-28T19:57:38.905Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 533,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/27/2026",
+          "category": "Inside",
+          "price": 422,
+          "itinerary": "Pacific Coastal Cruise (Vancouver to San Diego)"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "9/27/2026",
+          "category": "Inside",
+          "price": 1941,
+          "itinerary": "Panama Canal (Vancouver to Fort Lauderdale)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-09-27T17:24:04.507Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2082,35 +2126,6 @@
           "itinerary": "Bahamas from Port Canaveral"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-08-07T14:08:47.134Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 309,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
