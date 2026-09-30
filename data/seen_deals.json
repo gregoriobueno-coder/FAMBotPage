@@ -2093,5 +2093,41 @@
     "firstSeen": "2026-09-29T18:27:58.240Z",
     "title": "Travel Advisor Appreciation Fares (Web)",
     "summary": ""
+  },
+  "53afcd56c09eeff0301c39f7dddc6cf4": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%252092326.pdf&Expires=1790899200&Signature=FGwxScHQIaL-1WLGJHTeQr5TBu4qXredhsLzu7CFI6Gn-x0h88YlipKFkA05LWM3LaCLGYTHZBgiWMFNUWvvWWqmYyiuKYwLKY5ADf6ysZL-IllWcK4iPWJnGulBxHvPp2~lB1rz05FGZTZrPRIOWyd3guLcDVN6eHLGn5GfUV5PP9GYeZO8wAg2X8tBp037wcqfOUDKTAX2fLqj16BXkIIhOLVd1BRWIC2omGu5xr4bEyCk75FYEqpIeTdnFMKq32hdGn0n6rg0C-fAtcMLCmzq7mC52QFuwxb5AC4xF6Pyt7xvYp3HAkGpfVKh1pSQ18t0IYq4vMqNjH2bKtt~RA__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "53afcd56c09eeff0301c39f7dddc6cf4",
+    "bufferHash": "virgin-rawbuf-09fef805838e8002cfd3482e1a853b68",
+    "firstSeen": "2026-09-30T18:16:12.967Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "onesource-rawbuf-5154152e106487a90d885ba120a8a4c7": {
+    "portal": "onesource-seabourn",
+    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
+    "urlHash": "ee54d081c6e4e00cbefffbe520252e93",
+    "bufferHash": "onesource-rawbuf-5154152e106487a90d885ba120a8a4c7",
+    "firstSeen": "2026-09-30T18:17:11.808Z",
+    "title": "Travel Advisor Appreciation Fares (Web)",
+    "summary": ""
+  },
+  "9a005962d09d7cf83dc0a1e26abe19e1": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/booking-tools/travel-advisor-rates/Cunard-TravelAdvisorRates-0926.pdf",
+    "urlHash": "9a005962d09d7cf83dc0a1e26abe19e1",
+    "bufferHash": "onesource-rawbuf-a265684400b76e670e6d35477fa03748",
+    "firstSeen": "2026-09-30T18:17:12.953Z",
+    "title": "2026 TA Rates",
+    "summary": ""
+  },
+  "onesource-rawbuf-a265684400b76e670e6d35477fa03748": {
+    "portal": "onesource-cunardline",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/cu/booking-tools/travel-advisor-rates/Cunard-TravelAdvisorRates-0926.pdf",
+    "urlHash": "9a005962d09d7cf83dc0a1e26abe19e1",
+    "bufferHash": "onesource-rawbuf-a265684400b76e670e6d35477fa03748",
+    "firstSeen": "2026-09-30T18:17:12.953Z",
+    "title": "2026 TA Rates",
+    "summary": ""
   }
 }

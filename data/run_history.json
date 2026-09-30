@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-09-30T18:15:02.368Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 533,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-09-29T18:25:43.413Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2060,57 +2089,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-09T13:45:04.045Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 304,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Seabourn Ovation",
-          "date": "Aug 8, 2026",
-          "category": "Ocean View (Guaranteed)",
-          "price": 9029,
-          "itinerary": "West Ireland Gems & Solar Eclipse (Dover (London), England, UK to Reykjavik, Iceland)"
-        },
-        {
-          "ship": "Seabourn Ovation",
-          "date": "Aug 8, 2026",
-          "category": "Ocean View (RR)",
-          "price": 9029,
-          "itinerary": "WEST IRELAND GEMS & SOLAR ECLIPSE (Dover (London), England, UK to Reykjavik, Iceland)"
-        },
-        {
-          "ship": "Disney Treasure",
-          "date": "8/8/2026",
-          "category": "Verandah",
-          "price": 1505,
-          "itinerary": "Western Caribbean from Port Canaveral"
-        }
-      ]
     }
   }
 ]
