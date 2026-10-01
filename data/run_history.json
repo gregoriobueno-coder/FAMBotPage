@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-10-01T18:44:59.511Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 533,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-09-30T18:15:02.368Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2060,35 +2089,6 @@
           "itinerary": "Alaska"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-08-10T14:18:05.356Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 304,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
