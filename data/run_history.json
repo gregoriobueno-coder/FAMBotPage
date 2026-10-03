@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-10-03T16:56:19.753Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 530,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Nieuw Statendam",
+          "date": "10/2/2026",
+          "category": "Inside",
+          "price": 2019,
+          "itinerary": "Canary Island Enchantment with Portugal (Roundtrip Dover)"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "10/2/2026",
+          "category": "Inside",
+          "price": 1601,
+          "itinerary": "Panama Canal (San Diego to Fort Lauderdale)"
+        },
+        {
+          "ship": "Disney Dream",
+          "date": "10/2/2026",
+          "category": "Inside",
+          "price": 840,
+          "itinerary": "7-Night Halloween on the High Seas Eastern Caribbean Cruise from Fort Lauderdale"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-02T18:10:18.256Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2013,35 +2064,6 @@
   },
   {
     "timestamp": "2026-08-13T14:20:20.133Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 301,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-12T14:18:11.198Z",
     "status": "success",
     "newDealsCount": 0,
     "totalDealsCount": 301,

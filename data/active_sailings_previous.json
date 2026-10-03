@@ -3872,21 +3872,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/2/2026",
-    "sailDateObj": 1790899200000,
-    "ship": "Nieuw Statendam",
-    "nights": 14,
-    "itinerary": "Canary Island Enchantment with Portugal (Roundtrip Dover)",
-    "category": "Inside",
-    "priceStr": "$2,019",
-    "price": 2019,
-    "dealScore": 8,
-    "aiInsight": "High value European fall run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "10/16/2026",
     "sailDateObj": 1792108800000,
     "ship": "Nieuw Statendam",
@@ -4662,21 +4647,6 @@
     "price": 1879,
     "dealScore": 9,
     "aiInsight": "Spring transition transit",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/2/2026",
-    "sailDateObj": 1790899200000,
-    "ship": "Nieuw Amsterdam",
-    "nights": 16,
-    "itinerary": "Panama Canal (San Diego to Fort Lauderdale)",
-    "category": "Inside",
-    "priceStr": "$1,601",
-    "price": 1601,
-    "dealScore": 9,
-    "aiInsight": "Direct 16-night transit run",
     "region": "Other / Global"
   },
   {
@@ -7707,21 +7677,6 @@
     "price": 800,
     "dealScore": 8,
     "aiInsight": "Great Verandah Rate",
-    "region": "Caribbean"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "10/2/2026",
-    "sailDateObj": 1790899200000,
-    "ship": "Disney Dream",
-    "nights": 7,
-    "itinerary": "7-Night Halloween on the High Seas Eastern Caribbean Cruise from Fort Lauderdale",
-    "category": "Inside",
-    "priceStr": "$840",
-    "price": 840,
-    "dealScore": 9,
-    "aiInsight": "Great Halloween Inside/Oceanview Deal",
     "region": "Caribbean"
   },
   {
