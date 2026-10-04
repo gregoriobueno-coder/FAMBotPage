@@ -3977,21 +3977,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/3/2026",
-    "sailDateObj": 1790985600000,
-    "ship": "Oosterdam",
-    "nights": 11,
-    "itinerary": "Adriatic Antiquities: Greece & Istanbul (Roundtrip Athens)",
-    "category": "Inside",
-    "priceStr": "$912",
-    "price": 912,
-    "dealScore": 8,
-    "aiInsight": "Top-value Eastern Med",
-    "region": "Europe & Med"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "10/14/2026",
     "sailDateObj": 1791936000000,
     "ship": "Oosterdam",
@@ -4157,21 +4142,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/3/2026",
-    "sailDateObj": 1790985600000,
-    "ship": "Eurodam",
-    "nights": 1,
-    "itinerary": "Pacific Northwest Cruise (Seattle to Vancouver)",
-    "category": "Inside",
-    "priceStr": "$108",
-    "price": 108,
-    "dealScore": 9,
-    "aiInsight": "Single-night fun coastal run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "10/4/2026",
     "sailDateObj": 1791072000000,
     "ship": "Eurodam",
@@ -4317,21 +4287,6 @@
     "price": 649,
     "dealScore": 8,
     "aiInsight": "Wine-themed spring route",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/3/2026",
-    "sailDateObj": 1790985600000,
-    "ship": "Koningsdam",
-    "nights": 17,
-    "itinerary": "Circle Hawaii (Vancouver to San Diego)",
-    "category": "Inside",
-    "priceStr": "$1,428",
-    "price": 1428,
-    "dealScore": 9,
-    "aiInsight": "Amazing 17-night Hawaii value",
     "region": "Other / Global"
   },
   {
@@ -4587,21 +4542,6 @@
     "price": 537,
     "dealScore": 9,
     "aiInsight": "Outstanding January Mexico run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/3/2026",
-    "sailDateObj": 1790985600000,
-    "ship": "Eurodam",
-    "nights": 21,
-    "itinerary": "Panama Canal (Seattle to Fort Lauderdale)",
-    "category": "Inside",
-    "priceStr": "$1,852",
-    "price": 1852,
-    "dealScore": 9,
-    "aiInsight": "3-week full transition transit",
     "region": "Other / Global"
   },
   {
@@ -7727,21 +7667,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "10/3/2026",
-    "sailDateObj": 1790985600000,
-    "ship": "Disney Treasure",
-    "nights": 7,
-    "itinerary": "7-Night Halloween on the High Seas Western Caribbean Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$1120",
-    "price": 1120,
-    "dealScore": 8,
-    "aiInsight": "Great New Ship Halloween Verandah Deal",
-    "region": "Caribbean"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "10/17/2026",
     "sailDateObj": 1792195200000,
     "ship": "Disney Treasure",
@@ -7783,21 +7708,6 @@
     "dealScore": 8,
     "aiInsight": "Great New Ship Verandah Deal",
     "region": "Caribbean"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "10/3/2026",
-    "sailDateObj": 1790985600000,
-    "ship": "Disney Wonder",
-    "nights": 7,
-    "itinerary": "7-Night Halloween on the High Seas Mexican Riviera Cruise from San Diego",
-    "category": "Oceanview",
-    "priceStr": "$770",
-    "price": 770,
-    "dealScore": 10,
-    "aiInsight": "Exceptional Halloween Inside/Oceanview Deal",
-    "region": "Other / Global"
   },
   {
     "portal": "disney",

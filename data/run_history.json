@@ -1,5 +1,77 @@
 [
   {
+    "timestamp": "2026-10-04T17:15:07.516Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 524,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Oosterdam",
+          "date": "10/3/2026",
+          "category": "Inside",
+          "price": 912,
+          "itinerary": "Adriatic Antiquities: Greece & Istanbul (Roundtrip Athens)"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "10/3/2026",
+          "category": "Inside",
+          "price": 108,
+          "itinerary": "Pacific Northwest Cruise (Seattle to Vancouver)"
+        },
+        {
+          "ship": "Koningsdam",
+          "date": "10/3/2026",
+          "category": "Inside",
+          "price": 1428,
+          "itinerary": "Circle Hawaii (Vancouver to San Diego)"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "10/3/2026",
+          "category": "Inside",
+          "price": 1852,
+          "itinerary": "Panama Canal (Seattle to Fort Lauderdale)"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "10/3/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Halloween on the High Seas Western Caribbean Cruise from Port Canaveral"
+        },
+        {
+          "ship": "Disney Wonder",
+          "date": "10/3/2026",
+          "category": "Oceanview",
+          "price": 770,
+          "itinerary": "7-Night Halloween on the High Seas Mexican Riviera Cruise from San Diego"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-03T16:56:19.753Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2060,35 +2132,6 @@
           "itinerary": "Alaska: Inside Passage & Glacial Fjords"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-08-13T14:20:20.133Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 301,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
