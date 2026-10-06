@@ -1,5 +1,84 @@
 [
   {
+    "timestamp": "2026-10-06T18:44:22.022Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 517,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Oct 4, 2026",
+          "category": "Guarantee (RR/RB)",
+          "price": 9299,
+          "itinerary": "Melanesia & Polynesia: Island Cultures & Coral Coasts (Lautoka, Fiji to Papeete, French Polynesia)"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "10/4/2026",
+          "category": "Inside",
+          "price": 304,
+          "itinerary": "Pacific Coastal Cruise (Vancouver to San Diego)"
+        },
+        {
+          "ship": "Noordam",
+          "date": "10/4/2026",
+          "category": "Inside",
+          "price": 622,
+          "itinerary": "Great Bear Rainforest (Roundtrip Seattle)"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "10/4/2026",
+          "category": "Inside",
+          "price": 287,
+          "itinerary": "Pacific Coastal Cruise (Vancouver to San Diego)"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "10/4/2026",
+          "category": "Inside",
+          "price": 767,
+          "itinerary": "Mexican Riviera (Vancouver to San Diego)"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "10/4/2026",
+          "category": "Inside",
+          "price": 1691,
+          "itinerary": "Panama Canal (Vancouver to Fort Lauderdale)"
+        },
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Oct 4, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 9299,
+          "itinerary": "Melanesia & Polynesia: Island Cultures & Coral Coasts (Lautoka, Fiji to Papeete, French Polynesia)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-04T17:15:07.516Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2093,43 +2172,6 @@
           "category": "Verandah",
           "price": 690,
           "itinerary": "3-Night Bahamian Cruise from Port Canaveral"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-08-14T14:13:10.417Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 300,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "BR",
-          "date": "2026-08-13",
-          "category": "Interior/Oceanview (Assumed)",
-          "price": 700,
-          "itinerary": "Alaska: Inside Passage & Glacial Fjords"
         }
       ]
     }

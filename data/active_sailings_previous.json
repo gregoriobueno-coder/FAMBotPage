@@ -572,21 +572,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Oct 4, 2026",
-    "sailDateObj": 1791072000000,
-    "ship": "Seabourn Pursuit",
-    "nights": 13,
-    "itinerary": "Melanesia & Polynesia: Island Cultures & Coral Coasts (Lautoka, Fiji to Papeete, French Polynesia)",
-    "category": "Guarantee (RR/RB)",
-    "priceStr": "$9,299",
-    "price": 9299,
-    "dealScore": 8,
-    "aiInsight": "Rare luxury expedition discount",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Oct 10, 2026",
     "sailDateObj": 1791590400000,
     "ship": "Seabourn Encore",
@@ -4142,21 +4127,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/4/2026",
-    "sailDateObj": 1791072000000,
-    "ship": "Eurodam",
-    "nights": 4,
-    "itinerary": "Pacific Coastal Cruise (Vancouver to San Diego)",
-    "category": "Inside",
-    "priceStr": "$304",
-    "price": 304,
-    "dealScore": 9,
-    "aiInsight": "Great 4-night coastal run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "4/17/2027",
     "sailDateObj": 1807920000000,
     "ship": "Eurodam",
@@ -4232,21 +4202,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/4/2026",
-    "sailDateObj": 1791072000000,
-    "ship": "Noordam",
-    "nights": 7,
-    "itinerary": "Great Bear Rainforest (Roundtrip Seattle)",
-    "category": "Inside",
-    "priceStr": "$622",
-    "price": 622,
-    "dealScore": 8,
-    "aiInsight": "Exceptional late-season wilderness",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "4/25/2027",
     "sailDateObj": 1808611200000,
     "ship": "Noordam",
@@ -4257,21 +4212,6 @@
     "price": 699,
     "dealScore": 8,
     "aiInsight": "Beautiful spring wilderness loop",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/4/2026",
-    "sailDateObj": 1791072000000,
-    "ship": "Zaandam",
-    "nights": 4,
-    "itinerary": "Pacific Coastal Cruise (Vancouver to San Diego)",
-    "category": "Inside",
-    "priceStr": "$287",
-    "price": 287,
-    "dealScore": 9,
-    "aiInsight": "Top cheap 4-night coastal",
     "region": "Other / Global"
   },
   {
@@ -4487,21 +4427,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/4/2026",
-    "sailDateObj": 1791072000000,
-    "ship": "Zaandam",
-    "nights": 11,
-    "itinerary": "Mexican Riviera (Vancouver to San Diego)",
-    "category": "Inside",
-    "priceStr": "$767",
-    "price": 767,
-    "dealScore": 8,
-    "aiInsight": "Unique West Coast transition",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "10/8/2026",
     "sailDateObj": 1791417600000,
     "ship": "Zaandam",
@@ -4542,21 +4467,6 @@
     "price": 537,
     "dealScore": 9,
     "aiInsight": "Outstanding January Mexico run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/4/2026",
-    "sailDateObj": 1791072000000,
-    "ship": "Eurodam",
-    "nights": 20,
-    "itinerary": "Panama Canal (Vancouver to Fort Lauderdale)",
-    "category": "Inside",
-    "priceStr": "$1,691",
-    "price": 1691,
-    "dealScore": 9,
-    "aiInsight": "Epic 20-night transit value",
     "region": "Other / Global"
   },
   {
@@ -7467,21 +7377,6 @@
     "price": 4399,
     "dealScore": 9,
     "aiInsight": "Grills Suite Value",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Oct 4, 2026",
-    "sailDateObj": 1791072000000,
-    "ship": "Seabourn Pursuit",
-    "nights": 13,
-    "itinerary": "Melanesia & Polynesia: Island Cultures & Coral Coasts (Lautoka, Fiji to Papeete, French Polynesia)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$9,299",
-    "price": 9299,
-    "dealScore": 9,
-    "aiInsight": "Exotic South Pacific adventure",
     "region": "Other / Global"
   },
   {
