@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-10-08T19:06:58.772Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 516,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Oct 7, 2026",
+          "category": "Ocean View (RR)",
+          "price": 5099,
+          "itinerary": "CANADA & NEW ENGLAND FALL FOLIAGE (Montreal, Quebec, Canada to New York, New York, US)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-07T19:15:23.639Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2122,43 +2159,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-16T13:26:36.691Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 297,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Disney Destiny",
-          "date": "8/15/2026",
-          "category": "Verandah",
-          "price": 925,
-          "itinerary": "Western Caribbean from Fort Lauderdale"
-        }
-      ]
     }
   }
 ]
