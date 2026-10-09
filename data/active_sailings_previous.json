@@ -4082,21 +4082,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/8/2026",
-    "sailDateObj": 1791417600000,
-    "ship": "Volendam",
-    "nights": 45,
-    "itinerary": "Legendary Ultimate Med & Atlantic Passage (Roundtrip NY)",
-    "category": "Inside",
-    "priceStr": "$4,834",
-    "price": 4834,
-    "dealScore": 10,
-    "aiInsight": "Epic 45-day Med masterpiece",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "7/17/2027",
     "sailDateObj": 1815782400000,
     "ship": "Volendam",
@@ -4427,21 +4412,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/8/2026",
-    "sailDateObj": 1791417600000,
-    "ship": "Zaandam",
-    "nights": 7,
-    "itinerary": "Mexican Riviera (Roundtrip San Diego)",
-    "category": "Inside",
-    "priceStr": "$842",
-    "price": 842,
-    "dealScore": 8,
-    "aiInsight": "Classic Mexican Riviera loop",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "12/7/2026",
     "sailDateObj": 1796601600000,
     "ship": "Zaandam",
@@ -4467,21 +4437,6 @@
     "price": 537,
     "dealScore": 9,
     "aiInsight": "Outstanding January Mexico run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/8/2026",
-    "sailDateObj": 1791417600000,
-    "ship": "Eurodam",
-    "nights": 16,
-    "itinerary": "Panama Canal (San Diego to Fort Lauderdale)",
-    "category": "Inside",
-    "priceStr": "$1,508",
-    "price": 1508,
-    "dealScore": 9,
-    "aiInsight": "Classic 16-night transit run",
     "region": "Other / Global"
   },
   {

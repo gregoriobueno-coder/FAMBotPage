@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-10-09T18:37:30.505Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 513,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Volendam",
+          "date": "10/8/2026",
+          "category": "Inside",
+          "price": 4834,
+          "itinerary": "Legendary Ultimate Med & Atlantic Passage (Roundtrip NY)"
+        },
+        {
+          "ship": "Zaandam",
+          "date": "10/8/2026",
+          "category": "Inside",
+          "price": 842,
+          "itinerary": "Mexican Riviera (Roundtrip San Diego)"
+        },
+        {
+          "ship": "Eurodam",
+          "date": "10/8/2026",
+          "category": "Inside",
+          "price": 1508,
+          "itinerary": "Panama Canal (San Diego to Fort Lauderdale)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-08T19:06:58.772Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2130,35 +2181,6 @@
           "itinerary": "Alaska Inside Passage (Roundtrip Vancouver)"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-08-17T13:35:37.681Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 297,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
