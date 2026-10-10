@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-10-10T17:35:50.152Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 513,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-10-09T18:37:30.505Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2144,43 +2173,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-08-20T20:37:04.904Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 612,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Zaandam",
-          "date": "8/19/2026",
-          "category": "Inside",
-          "price": 1016,
-          "itinerary": "Alaska Inside Passage (Roundtrip Vancouver)"
-        }
-      ]
     }
   }
 ]
