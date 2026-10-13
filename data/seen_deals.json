@@ -2462,5 +2462,32 @@
     "firstSeen": "2026-10-12T21:33:19.103Z",
     "title": "Travel Advisor Appreciation Fares (Web)",
     "summary": ""
+  },
+  "0214b973f10bb9360a4d8249f88aec01": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%2520100726.pdf&Expires=1792022400&Signature=DilQC-CrtRoyaEfgzCGxr9VlBU1mPLmAs6e9gdSbeqpZSJLgsRSHVIpxlNxb0MauFeB2nSDB5-vXZOK66dMVFeijeeKpwxEDZC8syzQDl4DkSJjJR1jpjfi7BPgPTUx5IJoHY3uqgVZI3A1pGZlOsGMcLxhGXEkkAA9DnTmbS2zr3Ik0mWoaSAiGbI6m8m1YYyPk2BsAXEkSBmSTWt5OlBL-6fPNBeGiwfo4PJ~ud4bcjkgeGceZRBzoy6c62wYUewJfxm-W4sdpCR~p7CWU6y7nnIU4DyDGtQ2eEnE08bssvFgcp6YgFvlq10w6rFsFXHbo-7NxU9YWkN8XKwqlFw__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "0214b973f10bb9360a4d8249f88aec01",
+    "bufferHash": "virgin-rawbuf-47513025cc6320a993fea65d116f04da",
+    "firstSeen": "2026-10-13T19:44:00.817Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "onesource-rawbuf-905df4c647588f20340ee26e5c0317f2": {
+    "portal": "onesource-hollandamericaline",
+    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
+    "urlHash": "a4d27c68441b94b4f1caceeb033bde1a",
+    "bufferHash": "onesource-rawbuf-905df4c647588f20340ee26e5c0317f2",
+    "firstSeen": "2026-10-13T19:44:55.160Z",
+    "title": "Travel Advisor Rates",
+    "summary": ""
+  },
+  "onesource-rawbuf-e77c46496919720c9cdb0e0a59ba3e1d": {
+    "portal": "onesource-seabourn",
+    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
+    "urlHash": "ee54d081c6e4e00cbefffbe520252e93",
+    "bufferHash": "onesource-rawbuf-e77c46496919720c9cdb0e0a59ba3e1d",
+    "firstSeen": "2026-10-13T19:45:00.143Z",
+    "title": "Travel Advisor Appreciation Fares (Web)",
+    "summary": ""
   }
 }
