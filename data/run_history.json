@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-10-14T17:44:46.059Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 510,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-10-13T19:42:49.931Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2143,35 +2172,6 @@
           "itinerary": "4-Night Bahamian Cruise from Port Canaveral"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-08-24T13:45:37.357Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 609,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
