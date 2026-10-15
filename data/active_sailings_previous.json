@@ -3932,21 +3932,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/14/2026",
-    "sailDateObj": 1791936000000,
-    "ship": "Oosterdam",
-    "nights": 10,
-    "itinerary": "Adriatic Antiquities: Greek Isles (Roundtrip Athens)",
-    "category": "Inside",
-    "priceStr": "$772",
-    "price": 772,
-    "dealScore": 9,
-    "aiInsight": "Outstanding sub-$800 Med run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "11/4/2026",
     "sailDateObj": 1793750400000,
     "ship": "Oosterdam",
