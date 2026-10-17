@@ -1,5 +1,63 @@
 [
   {
+    "timestamp": "2026-10-17T16:05:06.932Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 505,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Oct 16, 2026",
+          "category": "Guarantee (RR/RB)",
+          "price": 6649,
+          "itinerary": "Easter & Pitcairn Islands: Marooned, Moai & Mutineers (Papeete, French Polynesia to Santiago, Chile)"
+        },
+        {
+          "ship": "Nieuw Statendam",
+          "date": "10/16/2026",
+          "category": "Inside",
+          "price": 1605,
+          "itinerary": "Arctic Journey & Northern Lights (Dover to Rotterdam)"
+        },
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Oct 16, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 6999,
+          "itinerary": "Easter & Pitcairn Islands: Marooned, Moai & Mutineers (Papeete, French Polynesia to San Antonio (Santiago), Chile)"
+        },
+        {
+          "ship": "Seabourn Pursuit",
+          "date": "Oct 16, 2026",
+          "category": "Ocean View (RR)",
+          "price": 6999,
+          "itinerary": "EASTER & PITCAIRN ISLANDS: MAROONED, MOAI & MUTINEERS (Papeete, French Polynesia to San Antonio (Santiago), Chile)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-16T17:08:50.717Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2133,43 +2191,6 @@
           "category": "Inside",
           "price": 840,
           "itinerary": "Alaska from Vancouver"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-08-27T22:44:07.622Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 607,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Zaandam",
-          "date": "8/26/2026",
-          "category": "Inside",
-          "price": 1039,
-          "itinerary": "Alaska Inside Passage (Roundtrip Vancouver)"
         }
       ]
     }

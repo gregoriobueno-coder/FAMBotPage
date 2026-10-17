@@ -572,21 +572,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Oct 16, 2026",
-    "sailDateObj": 1792108800000,
-    "ship": "Seabourn Pursuit",
-    "nights": 19,
-    "itinerary": "Easter & Pitcairn Islands: Marooned, Moai & Mutineers (Papeete, French Polynesia to Santiago, Chile)",
-    "category": "Guarantee (RR/RB)",
-    "priceStr": "$6,649",
-    "price": 6649,
-    "dealScore": 10,
-    "aiInsight": "Incredible bucket-list expedition price",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Oct 22, 2026",
     "sailDateObj": 1792627200000,
     "ship": "Seabourn Encore",
@@ -3822,21 +3807,6 @@
     "price": 3434,
     "dealScore": 9,
     "aiInsight": "Rare 29-day deep South America",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/16/2026",
-    "sailDateObj": 1792108800000,
-    "ship": "Nieuw Statendam",
-    "nights": 15,
-    "itinerary": "Arctic Journey & Northern Lights (Dover to Rotterdam)",
-    "category": "Inside",
-    "priceStr": "$1,605",
-    "price": 1605,
-    "dealScore": 9,
-    "aiInsight": "Exceptional Arctic run value",
     "region": "Other / Global"
   },
   {
@@ -7292,21 +7262,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Oct 16, 2026",
-    "sailDateObj": 1792108800000,
-    "ship": "Seabourn Pursuit",
-    "nights": 19,
-    "itinerary": "Easter & Pitcairn Islands: Marooned, Moai & Mutineers (Papeete, French Polynesia to San Antonio (Santiago), Chile)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$6,999",
-    "price": 6999,
-    "dealScore": 10,
-    "aiInsight": "Rare expedition to remote islands",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Oct 19, 2026",
     "sailDateObj": 1792368000000,
     "ship": "Seabourn Ovation",
@@ -7512,21 +7467,6 @@
     "price": 810,
     "dealScore": 9,
     "aiInsight": "Exceptional Halloween Verandah Deal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Oct 16, 2026",
-    "sailDateObj": 1792108800000,
-    "ship": "Seabourn Pursuit",
-    "nights": 19,
-    "itinerary": "EASTER & PITCAIRN ISLANDS: MAROONED, MOAI & MUTINEERS (Papeete, French Polynesia to San Antonio (Santiago), Chile)",
-    "category": "Ocean View (RR)",
-    "priceStr": "$6,999",
-    "price": 6999,
-    "dealScore": 9,
-    "aiInsight": "Exotic South Pacific expedition",
     "region": "Other / Global"
   },
   {
