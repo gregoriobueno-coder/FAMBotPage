@@ -3047,21 +3047,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/17/2026",
-    "sailDateObj": 1792195200000,
-    "ship": "Zuiderdam",
-    "nights": 14,
-    "itinerary": "Atlantic Seaboard & Colonial New England (Quebec to Miami)",
-    "category": "Inside",
-    "priceStr": "$1,235",
-    "price": 1235,
-    "dealScore": 8,
-    "aiInsight": "Unbelievable $88/night 14-day cruise",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "10/24/2026",
     "sailDateObj": 1792800000000,
     "ship": "Eurodam",
@@ -7408,21 +7393,6 @@
     "dealScore": 10,
     "aiInsight": "Exceptional Halloween Inside/Oceanview Deal",
     "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "10/17/2026",
-    "sailDateObj": 1792195200000,
-    "ship": "Disney Treasure",
-    "nights": 7,
-    "itinerary": "7-Night Halloween on the High Seas Western Caribbean Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$1085",
-    "price": 1085,
-    "dealScore": 10,
-    "aiInsight": "Premium New Ship Halloween Verandah Deal",
-    "region": "Caribbean"
   },
   {
     "portal": "disney",

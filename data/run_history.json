@@ -1,5 +1,49 @@
 [
   {
+    "timestamp": "2026-10-18T16:19:32.796Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 503,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Zuiderdam",
+          "date": "10/17/2026",
+          "category": "Inside",
+          "price": 1235,
+          "itinerary": "Atlantic Seaboard & Colonial New England (Quebec to Miami)"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "10/17/2026",
+          "category": "Verandah",
+          "price": 1085,
+          "itinerary": "7-Night Halloween on the High Seas Western Caribbean Cruise from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-17T16:05:06.932Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2112,85 +2156,6 @@
           "category": "Verandah",
           "price": 645,
           "itinerary": "3-Night Bahamian Cruise from Port Canaveral"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-08-28T22:51:22.271Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 600,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Queen Elizabeth",
-          "date": "8/27/2026",
-          "category": "Inside",
-          "price": 1299,
-          "itinerary": "Alaska"
-        },
-        {
-          "ship": "Queen Elizabeth",
-          "date": "08/27/2026",
-          "category": "Inside",
-          "price": 1099,
-          "itinerary": "Alaska"
-        },
-        {
-          "ship": "Queen Elizabeth",
-          "date": "8/27/2026",
-          "category": "Outside",
-          "price": 1299,
-          "itinerary": "Alaska"
-        },
-        {
-          "ship": "Queen Elizabeth",
-          "date": "8/27/2026",
-          "category": "Balcony",
-          "price": 1999,
-          "itinerary": "Alaska"
-        },
-        {
-          "ship": "BR",
-          "date": "2026-08-27",
-          "category": "Interior/Oceanview (Assumed)",
-          "price": 1050,
-          "itinerary": "Alaska: Inside Passage & Glacial Fjords"
-        },
-        {
-          "ship": "VL",
-          "date": "2026-08-27",
-          "category": "Interior/Oceanview (Assumed)",
-          "price": 1500,
-          "itinerary": "English Elegance to Idyllic Iceland"
-        },
-        {
-          "ship": "Disney Magic",
-          "date": "8/27/2026",
-          "category": "Inside",
-          "price": 840,
-          "itinerary": "Alaska from Vancouver"
         }
       ]
     }
