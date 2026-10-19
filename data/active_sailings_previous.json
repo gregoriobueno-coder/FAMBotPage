@@ -3362,36 +3362,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/18/2026",
-    "sailDateObj": 1792281600000,
-    "ship": "Nieuw Amsterdam",
-    "nights": 12,
-    "itinerary": "Panama Canal Discovery: Costa Rica & Greater Antilles (Roundtrip FLL)",
-    "category": "Inside",
-    "priceStr": "$1,027",
-    "price": 1027,
-    "dealScore": 9,
-    "aiInsight": "High value Panama run",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/18/2026",
-    "sailDateObj": 1792281600000,
-    "ship": "Nieuw Amsterdam",
-    "nights": 21,
-    "itinerary": "Panama Canal & Southern Caribbean: ABC Islands (Roundtrip FLL)",
-    "category": "Inside",
-    "priceStr": "$1,459",
-    "price": 1459,
-    "dealScore": 9,
-    "aiInsight": "Three-week mega explorer value",
-    "region": "Caribbean"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "10/30/2026",
     "sailDateObj": 1793318400000,
     "ship": "Nieuw Amsterdam",
@@ -3943,21 +3913,6 @@
     "dealScore": 8,
     "aiInsight": "Rome to Barcelona summer run",
     "region": "Europe & Med"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/18/2026",
-    "sailDateObj": 1792281600000,
-    "ship": "Rotterdam",
-    "nights": 13,
-    "itinerary": "Cultural Crossing with Brugge (Amsterdam to FLL)",
-    "category": "Inside",
-    "priceStr": "$839",
-    "price": 839,
-    "dealScore": 9,
-    "aiInsight": "Exceptional Euro-transatlantic run",
-    "region": "Transatlantic"
   },
   {
     "portal": "onesource-hollandamericaline",
@@ -7348,21 +7303,6 @@
     "dealScore": 8,
     "aiInsight": "Great Verandah Rate",
     "region": "Caribbean"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "10/18/2026",
-    "sailDateObj": 1792281600000,
-    "ship": "Disney Fantasy",
-    "nights": 5,
-    "itinerary": "5-Night Halloween on the High Seas Bahamian Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$800",
-    "price": 800,
-    "dealScore": 8,
-    "aiInsight": "Great Halloween Verandah Deal",
-    "region": "Other / Global"
   },
   {
     "portal": "disney",

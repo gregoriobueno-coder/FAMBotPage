@@ -1,5 +1,63 @@
 [
   {
+    "timestamp": "2026-10-19T18:57:19.580Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 499,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "10/18/2026",
+          "category": "Inside",
+          "price": 1027,
+          "itinerary": "Panama Canal Discovery: Costa Rica & Greater Antilles (Roundtrip FLL)"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "10/18/2026",
+          "category": "Inside",
+          "price": 1459,
+          "itinerary": "Panama Canal & Southern Caribbean: ABC Islands (Roundtrip FLL)"
+        },
+        {
+          "ship": "Rotterdam",
+          "date": "10/18/2026",
+          "category": "Inside",
+          "price": 839,
+          "itinerary": "Cultural Crossing with Brugge (Amsterdam to FLL)"
+        },
+        {
+          "ship": "Disney Fantasy",
+          "date": "10/18/2026",
+          "category": "Verandah",
+          "price": 800,
+          "itinerary": "5-Night Halloween on the High Seas Bahamian Cruise from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-18T16:19:32.796Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2119,43 +2177,6 @@
           "category": "Ocean View (RR)",
           "price": 20499,
           "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Anchorage, Alaska, US to Reykjavik, Iceland)"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-08-29T16:57:07.944Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 599,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Disney Wish",
-          "date": "8/28/2026",
-          "category": "Verandah",
-          "price": 645,
-          "itinerary": "3-Night Bahamian Cruise from Port Canaveral"
         }
       ]
     }
