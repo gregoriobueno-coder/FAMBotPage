@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-10-20T17:43:38.804Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 498,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Ovation",
+          "date": "Oct 19, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 4259,
+          "itinerary": "Canada & New England Fall Foliage (New York, New York, US to Montreal, Quebec, Canada)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-19T18:57:19.580Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2133,50 +2170,6 @@
           "category": "Inside",
           "price": 1019,
           "itinerary": "Norwegian Fjords with Michel Roux"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-08-30T17:07:31.757Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 597,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Eurodam",
-          "date": "8/29/2026",
-          "category": "Inside",
-          "price": 956,
-          "itinerary": "Alaska Explorer (Roundtrip Seattle)"
-        },
-        {
-          "ship": "Seabourn Venture",
-          "date": "Aug 29, 2026",
-          "category": "Ocean View (RR)",
-          "price": 20499,
-          "itinerary": "JOURNEY ACROSS THE NORTHWEST PASSAGE (Anchorage, Alaska, US to Reykjavik, Iceland)"
         }
       ]
     }

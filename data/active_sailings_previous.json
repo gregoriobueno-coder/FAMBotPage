@@ -7202,21 +7202,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Oct 19, 2026",
-    "sailDateObj": 1792368000000,
-    "ship": "Seabourn Ovation",
-    "nights": 12,
-    "itinerary": "Canada & New England Fall Foliage (New York, New York, US to Montreal, Quebec, Canada)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$4,259",
-    "price": 4259,
-    "dealScore": 9,
-    "aiInsight": "Superb Fall Foliage journey",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Oct 22, 2026",
     "sailDateObj": 1792627200000,
     "ship": "Seabourn Encore",
