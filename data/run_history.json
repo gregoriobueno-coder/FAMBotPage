@@ -1,5 +1,42 @@
 [
   {
+    "timestamp": "2026-10-21T17:49:32.543Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 497,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Koningsdam",
+          "date": "10/20/2026",
+          "category": "Inside",
+          "price": 614,
+          "itinerary": "Mexican Riviera & Sea of Cortez (Roundtrip San Diego)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-20T17:43:38.804Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2126,50 +2163,6 @@
           "category": "Verandah",
           "price": 720,
           "itinerary": "4-Night Bahamian Cruise from Fort Lauderdale"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-08-31T19:21:02.766Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 595,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Queen Anne",
-          "date": "8/30/2026",
-          "category": "Inside",
-          "price": 1019,
-          "itinerary": "Norwegian Fjords with Michel Roux"
-        },
-        {
-          "ship": "Queen Anne",
-          "date": "2026-08-30",
-          "category": "Inside",
-          "price": 1019,
-          "itinerary": "Norwegian Fjords with Michel Roux"
         }
       ]
     }
