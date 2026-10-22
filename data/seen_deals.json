@@ -2714,5 +2714,50 @@
     "firstSeen": "2026-10-21T17:51:43.865Z",
     "title": "Travel Advisor Appreciation Fares (Web)",
     "summary": ""
+  },
+  "7e20486c6a9725b6c3817b92a40c6499": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%2520102226.pdf&Expires=1792800000&Signature=VkTxrJ63oEO98WIaYh-NcWeJ2ocvpxstrVPT9K~H5pA-iSIbh~eAiVGkadonHy3XUl7IypjathvLo9JCRpX~BOPQhLiraXo06WE7NZXSg7E9PR7AktlYIXCm6hfFw64kM3NDKoPRKsqqTkyCV6Tia502upb73WgBffy8MZaQk5KV~wKWGKJ~35azjEZe86S4xxrECJ200uBovvEXeTesjK5WsPa4pteac3VYq3k3vVhodA9iH9moYkpUKgXYYpk27HZQE7OBuGDtOIUyWxd6fZHFwnBNJv~Pc4CC9fRsIcJw4nKW4dSxeDupaTC6oA8Hgcnwle6cFxME~Cr8scBMug__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "7e20486c6a9725b6c3817b92a40c6499",
+    "bufferHash": "virgin-rawbuf-4c438c07cb356e692fb655ff6eee64e0",
+    "firstSeen": "2026-10-22T17:50:44.450Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "virgin-rawbuf-4c438c07cb356e692fb655ff6eee64e0": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%2520102226.pdf&Expires=1792800000&Signature=VkTxrJ63oEO98WIaYh-NcWeJ2ocvpxstrVPT9K~H5pA-iSIbh~eAiVGkadonHy3XUl7IypjathvLo9JCRpX~BOPQhLiraXo06WE7NZXSg7E9PR7AktlYIXCm6hfFw64kM3NDKoPRKsqqTkyCV6Tia502upb73WgBffy8MZaQk5KV~wKWGKJ~35azjEZe86S4xxrECJ200uBovvEXeTesjK5WsPa4pteac3VYq3k3vVhodA9iH9moYkpUKgXYYpk27HZQE7OBuGDtOIUyWxd6fZHFwnBNJv~Pc4CC9fRsIcJw4nKW4dSxeDupaTC6oA8Hgcnwle6cFxME~Cr8scBMug__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "7e20486c6a9725b6c3817b92a40c6499",
+    "bufferHash": "virgin-rawbuf-4c438c07cb356e692fb655ff6eee64e0",
+    "firstSeen": "2026-10-22T17:50:44.450Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "c23eef9de62186b8976a75d805245efe": {
+    "portal": "onesource-princesscruises",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/pc/deals-and-limited-time-offers/weekly-deals/2027AlaskaCruisetourFarechart-1026.pdf",
+    "urlHash": "c23eef9de62186b8976a75d805245efe",
+    "bufferHash": "onesource-rawbuf-7bfd36f118e9b24781eaf568842f8379",
+    "firstSeen": "2026-10-22T17:51:38.708Z",
+    "title": "Alaska Cruisetour Fare Charts 2027",
+    "summary": ""
+  },
+  "onesource-rawbuf-7bfd36f118e9b24781eaf568842f8379": {
+    "portal": "onesource-princesscruises",
+    "pdfUrl": "https://www.onesourcecruises.com/pdf/onesource/pc/deals-and-limited-time-offers/weekly-deals/2027AlaskaCruisetourFarechart-1026.pdf",
+    "urlHash": "c23eef9de62186b8976a75d805245efe",
+    "bufferHash": "onesource-rawbuf-7bfd36f118e9b24781eaf568842f8379",
+    "firstSeen": "2026-10-22T17:51:38.708Z",
+    "title": "Alaska Cruisetour Fare Charts 2027",
+    "summary": ""
+  },
+  "onesource-rawbuf-379b668056f0e2615f4d68492eccd7b0": {
+    "portal": "onesource-seabourn",
+    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
+    "urlHash": "ee54d081c6e4e00cbefffbe520252e93",
+    "bufferHash": "onesource-rawbuf-379b668056f0e2615f4d68492eccd7b0",
+    "firstSeen": "2026-10-22T17:51:44.629Z",
+    "title": "Travel Advisor Appreciation Fares (Web)",
+    "summary": ""
   }
 }
