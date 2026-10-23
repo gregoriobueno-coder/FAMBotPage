@@ -572,21 +572,6 @@
   {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Oct 22, 2026",
-    "sailDateObj": 1792627200000,
-    "ship": "Seabourn Encore",
-    "nights": 24,
-    "itinerary": "Autumn Reverie: Japan's Hidden Gems (Round-trip Osaka, Japan)",
-    "category": "Guarantee (RR/RB)",
-    "priceStr": "$10,439",
-    "price": 10439,
-    "dealScore": 9,
-    "aiInsight": "Superb Japan regional exploration",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Nov 3, 2026",
     "sailDateObj": 1793664000000,
     "ship": "Seabourn Encore",
@@ -7182,21 +7167,6 @@
     "price": 4399,
     "dealScore": 9,
     "aiInsight": "Grills Suite Value",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "onesource-seabourn",
-    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
-    "sailDateStr": "Oct 22, 2026",
-    "sailDateObj": 1792627200000,
-    "ship": "Seabourn Encore",
-    "nights": 24,
-    "itinerary": "Autumn Reverie: Japan's Hidden Gems (Round-trip Osaka, Japan)",
-    "category": "Ocean View (Guaranteed)",
-    "priceStr": "$10,439",
-    "price": 10439,
-    "dealScore": 9,
-    "aiInsight": "Immersive deep Japan exploration",
     "region": "Other / Global"
   },
   {

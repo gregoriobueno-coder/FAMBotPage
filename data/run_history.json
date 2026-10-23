@@ -1,5 +1,49 @@
 [
   {
+    "timestamp": "2026-10-23T18:31:58.707Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 495,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Seabourn Encore",
+          "date": "Oct 22, 2026",
+          "category": "Guarantee (RR/RB)",
+          "price": 10439,
+          "itinerary": "Autumn Reverie: Japan's Hidden Gems (Round-trip Osaka, Japan)"
+        },
+        {
+          "ship": "Seabourn Encore",
+          "date": "Oct 22, 2026",
+          "category": "Ocean View (Guaranteed)",
+          "price": 10439,
+          "itinerary": "Autumn Reverie: Japan's Hidden Gems (Round-trip Osaka, Japan)"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-22T17:49:27.702Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2114,35 +2158,6 @@
           "itinerary": "Alaska Inside Passage (Roundtrip Vancouver)"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-09-02T16:57:46.514Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 592,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
