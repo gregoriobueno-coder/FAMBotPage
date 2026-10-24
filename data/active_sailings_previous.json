@@ -7247,21 +7247,6 @@
   {
     "portal": "disney",
     "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "10/23/2026",
-    "sailDateObj": 1792713600000,
-    "ship": "Disney Fantasy",
-    "nights": 5,
-    "itinerary": "5-Night Halloween on the High Seas Bahamian Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$800",
-    "price": 800,
-    "dealScore": 8,
-    "aiInsight": "Great Halloween Verandah Deal",
-    "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
     "sailDateStr": "10/30/2026",
     "sailDateObj": 1793318400000,
     "ship": "Disney Magic",
