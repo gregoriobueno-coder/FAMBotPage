@@ -1,5 +1,49 @@
 [
   {
+    "timestamp": "2026-10-25T16:56:27.082Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 492,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Eurodam",
+          "date": "10/24/2026",
+          "category": "Inside",
+          "price": 559,
+          "itinerary": "Eastern Caribbean: Amber Cove & Key West (Roundtrip FLL)"
+        },
+        {
+          "ship": "Disney Treasure",
+          "date": "10/24/2026",
+          "category": "Verandah",
+          "price": 1120,
+          "itinerary": "7-Night Halloween on the High Seas Eastern Caribbean Cruise from Port Canaveral"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-24T16:24:49.380Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2114,50 +2158,6 @@
       "added": [],
       "priceChanged": [],
       "removed": []
-    }
-  },
-  {
-    "timestamp": "2026-09-04T16:41:57.394Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 589,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "BR",
-          "date": "2026-09-03",
-          "category": "Interior/Oceanview (Assumed)",
-          "price": 1200,
-          "itinerary": "Alaska: Seattle to Vancouver"
-        },
-        {
-          "ship": "Disney Magic",
-          "date": "9/3/2026",
-          "category": "Verandah",
-          "price": 1680,
-          "itinerary": "Alaska from Vancouver"
-        }
-      ]
     }
   }
 ]

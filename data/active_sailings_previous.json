@@ -3032,21 +3032,6 @@
   {
     "portal": "onesource-hollandamericaline",
     "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
-    "sailDateStr": "10/24/2026",
-    "sailDateObj": 1792800000000,
-    "ship": "Eurodam",
-    "nights": 7,
-    "itinerary": "Eastern Caribbean: Amber Cove & Key West (Roundtrip FLL)",
-    "category": "Inside",
-    "priceStr": "$559",
-    "price": 559,
-    "dealScore": 9,
-    "aiInsight": "Under $80/night Caribbean starter",
-    "region": "Caribbean"
-  },
-  {
-    "portal": "onesource-hollandamericaline",
-    "pdfUrl": "https://media.hollandamerica.com/pdf/TA-current.pdf?stop_mobi=yes&camp=CME:Travel_Partners_Appreciation_Fares&rmid=Travel_Partners_Appreciation_Fares&rrid=48137627322&lid=primarycta&XID=HEMV1814",
     "sailDateStr": "11/14/2026",
     "sailDateObj": 1794614400000,
     "ship": "Eurodam",
@@ -7258,21 +7243,6 @@
     "dealScore": 10,
     "aiInsight": "Exceptional Halloween Inside/Oceanview Deal",
     "region": "Other / Global"
-  },
-  {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "10/24/2026",
-    "sailDateObj": 1792800000000,
-    "ship": "Disney Treasure",
-    "nights": 7,
-    "itinerary": "7-Night Halloween on the High Seas Eastern Caribbean Cruise from Port Canaveral",
-    "category": "Verandah",
-    "priceStr": "$1120",
-    "price": 1120,
-    "dealScore": 8,
-    "aiInsight": "Great New Ship Halloween Verandah Deal",
-    "region": "Caribbean"
   },
   {
     "portal": "disney",
