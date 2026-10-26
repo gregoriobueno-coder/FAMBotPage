@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-10-26T18:59:25.901Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 492,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-10-25T16:56:27.082Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2129,35 +2158,6 @@
           "itinerary": "Anthony Inglis and the National Symphony Orchestra"
         }
       ]
-    }
-  },
-  {
-    "timestamp": "2026-09-05T15:45:27.257Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 589,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": []
     }
   }
 ]
