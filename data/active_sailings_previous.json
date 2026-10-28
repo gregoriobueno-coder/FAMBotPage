@@ -7260,21 +7260,6 @@
     "region": "Caribbean"
   },
   {
-    "portal": "disney",
-    "pdfUrl": "https://www.disneytravelagents.com/dclspecialrates",
-    "sailDateStr": "10/27/2026",
-    "sailDateObj": 1793059200000,
-    "ship": "Disney Wonder",
-    "nights": 6,
-    "itinerary": "6-Night Halloween on the High Seas Mexican Riviera Cruise from San Diego",
-    "category": "Verandah",
-    "priceStr": "$810",
-    "price": 810,
-    "dealScore": 9,
-    "aiInsight": "Exceptional Halloween Verandah Deal",
-    "region": "Other / Global"
-  },
-  {
     "portal": "onesource-seabourn",
     "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
     "sailDateStr": "Nov 12, 2026",
