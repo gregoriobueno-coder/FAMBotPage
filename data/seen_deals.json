@@ -2903,5 +2903,23 @@
     "firstSeen": "2026-10-29T18:48:39.738Z",
     "title": "Virgin Voyages First Mates Flyer",
     "summary": ""
+  },
+  "056fbe5b53dfe1395245da410a956203": {
+    "portal": "virgin",
+    "pdfUrl": "https://d2zd6ny1q7rvh6.cloudfront.net/12981765-a5c0-41b1-bd8c-dc65766d0dfb/0777275243b64057a50835ab219876e9?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27First%2520Mate%2520Rates%2520Flyer%2520-%2520102826.pdf&Expires=1793491200&Signature=Hmqc2NcKCmne9grxX6fBOSOmJD~yEt7r8KnQwm~MV94T1QKXzOlZbSLboPkw~Sm0gLoto9FaBoEEBaj8VS93w2YTg~VqTrayr9SDvj0zUnL6TPQCISP2-dOCzsoMu~pvbjtxeFvujULGA00nc1a1A5bJLRh2~pEgjNJNQqt5GPbAcpg2Rs4LWsrDjxNamQC7oeMbFrGabMlyE3HvXh2EZBz3dYw0aMCHiUi5iFfKZB-taYZ5CZoZWrjoRrhaw9F8XMocoeTcrvwSu4~m9xJ956aEgE2UY68wt7ewpVrUxR2Oc7H2RVE8K4uRG~AwCIk10oiJN98kmaGwTQVLxB6amA__&Key-Pair-Id=APKAI33AGAEAYCXFBDTA",
+    "urlHash": "056fbe5b53dfe1395245da410a956203",
+    "bufferHash": "virgin-rawbuf-3f82e5828b4412d5b7c84f7df2c52141",
+    "firstSeen": "2026-10-30T18:24:13.561Z",
+    "title": "Virgin Voyages First Mates Flyer",
+    "summary": ""
+  },
+  "onesource-rawbuf-f124dc0ec5fdae1cff0627aea8216bf3": {
+    "portal": "onesource-seabourn",
+    "pdfUrl": "https://seabourninsider.com/tafares/?VID=&camp=CME:080723_SE2336TAFARES_AGT_list&rmid=080723_SE2336TAFARES_AGT_list&rrid=11983648282&stop_mobi=yes&XID=",
+    "urlHash": "ee54d081c6e4e00cbefffbe520252e93",
+    "bufferHash": "onesource-rawbuf-f124dc0ec5fdae1cff0627aea8216bf3",
+    "firstSeen": "2026-10-30T18:25:12.947Z",
+    "title": "Travel Advisor Appreciation Fares (Web)",
+    "summary": ""
   }
 }
