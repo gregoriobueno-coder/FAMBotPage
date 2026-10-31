@@ -1,5 +1,56 @@
 [
   {
+    "timestamp": "2026-10-31T17:28:57.110Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 488,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": [
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "10/30/2026",
+          "category": "Inside",
+          "price": 589,
+          "itinerary": "Southern Caribbean (Roundtrip FLL)"
+        },
+        {
+          "ship": "Nieuw Amsterdam",
+          "date": "10/30/2026",
+          "category": "Inside",
+          "price": 1454,
+          "itinerary": "Southern Caribbean & Panama Canal (Roundtrip FLL)"
+        },
+        {
+          "ship": "Disney Magic",
+          "date": "10/30/2026",
+          "category": "Oceanview",
+          "price": 770,
+          "itinerary": "7-Night Halloween on the High Seas Mexican Riviera Cruise from San Diego"
+        }
+      ]
+    }
+  },
+  {
     "timestamp": "2026-10-30T18:22:56.862Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2012,43 +2063,6 @@
           "category": "Inside",
           "price": 770,
           "itinerary": "Alaska from Vancouver"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-09-10T16:51:25.973Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 572,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Zaandam",
-          "date": "9/9/2026",
-          "category": "Inside",
-          "price": 941,
-          "itinerary": "Alaska Inside Passage (Roundtrip Vancouver)"
         }
       ]
     }
