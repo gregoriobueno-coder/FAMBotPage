@@ -1,5 +1,34 @@
 [
   {
+    "timestamp": "2026-11-01T18:13:54.596Z",
+    "status": "success",
+    "newDealsCount": 0,
+    "totalDealsCount": 488,
+    "portals": {
+      "disney": {
+        "status": "success",
+        "details": ""
+      },
+      "virgin": {
+        "status": "success",
+        "details": ""
+      },
+      "onesource": {
+        "status": "success",
+        "details": ""
+      },
+      "cruisingpower": {
+        "status": "success",
+        "details": ""
+      }
+    },
+    "changes": {
+      "added": [],
+      "priceChanged": [],
+      "removed": []
+    }
+  },
+  {
     "timestamp": "2026-10-31T17:28:57.110Z",
     "status": "success",
     "newDealsCount": 0,
@@ -2026,43 +2055,6 @@
           "category": "Verandah",
           "price": 570,
           "itinerary": "3-Night Bahamian Cruise from Fort Lauderdale"
-        }
-      ]
-    }
-  },
-  {
-    "timestamp": "2026-09-11T16:51:30.737Z",
-    "status": "success",
-    "newDealsCount": 0,
-    "totalDealsCount": 571,
-    "portals": {
-      "disney": {
-        "status": "success",
-        "details": ""
-      },
-      "virgin": {
-        "status": "success",
-        "details": ""
-      },
-      "onesource": {
-        "status": "success",
-        "details": ""
-      },
-      "cruisingpower": {
-        "status": "success",
-        "details": ""
-      }
-    },
-    "changes": {
-      "added": [],
-      "priceChanged": [],
-      "removed": [
-        {
-          "ship": "Disney Magic",
-          "date": "9/10/2026",
-          "category": "Inside",
-          "price": 770,
-          "itinerary": "Alaska from Vancouver"
         }
       ]
     }
